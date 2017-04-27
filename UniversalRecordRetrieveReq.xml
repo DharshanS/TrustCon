@@ -1,0 +1,9 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:univ="http://www.travelport.com/schema/universal_v35_0" xmlns:com="http://www.travelport.com/schema/common_v35_0">
+   <soapenv:Header/>
+         <soapenv:Body>
+      <univ:UniversalRecordRetrieveReq TargetBranch="P2721018" >
+<com:BillingPointOfSaleInfo OriginApplication="UAPI" />
+<univ:ProviderReservationInfo ProviderCode="1G" ProviderLocatorCode="" />
+</univ:UniversalRecordRetrieveReq>
+   </soapenv:Body>
+</soapenv:Envelope>

@@ -1,0 +1,1224 @@
+<SOAP:Envelope xmlns:SOAP="http://schemas.xmlsoap.org/soap/envelope/">
+	<SOAP:Body>
+		<air:LowFareSearchRsp TraceId="trace" TransactionId="1104E55E0A0742535E599A2EADB9E8C8" ResponseTime="3447" DistanceUnits="MI" CurrencyType="LKR" xmlns:air="http://www.travelport.com/schema/air_v32_0" xmlns:common_v32_0="http://www.travelport.com/schema/common_v32_0">
+			<common_v32_0:ResponseMessage Code="14" Type="Warning" ProviderCode="1G">No result found for Brand ID 62510</common_v32_0:ResponseMessage>
+			<common_v32_0:ResponseMessage Code="14" Type="Warning" ProviderCode="1G">No result found for Brand ID 62490</common_v32_0:ResponseMessage>
+			<air:FlightDetailsList>
+				<air:FlightDetails Key="kFvB9rBAAA/B3gxjTFAAAA==" Origin="CMB" Destination="BKK" DepartureTime="2017-04-13T01:20:00.000+05:30" ArrivalTime="2017-04-13T06:15:00.000+07:00" FlightTime="205" TravelTime="205" Equipment="330"/>
+				<air:FlightDetails Key="kFvB9rBAAA/B5gxjTFAAAA==" Origin="CMB" Destination="BKK" DepartureTime="2017-04-13T01:15:00.000+05:30" ArrivalTime="2017-04-13T06:15:00.000+07:00" FlightTime="210" TravelTime="210" Equipment="321"/>
+				<air:FlightDetails Key="kFvB9rBAAA/B7gxjTFAAAA==" Origin="CMB" Destination="BKK" DepartureTime="2017-04-13T07:20:00.000+05:30" ArrivalTime="2017-04-13T12:20:00.000+07:00" FlightTime="210" TravelTime="210" Equipment="333"/>
+				<air:FlightDetails Key="kFvB9rBAAA/B9gxjTFAAAA==" Origin="CMB" Destination="BOM" DepartureTime="2017-04-13T05:40:00.000+05:30" ArrivalTime="2017-04-13T08:15:00.000+05:30" FlightTime="155" TravelTime="700" Equipment="73H" DestinationTerminal="2"/>
+				<air:FlightDetails Key="kFvB9rBAAA/B/gxjTFAAAA==" Origin="BOM" Destination="BKK" DepartureTime="2017-04-13T12:50:00.000+05:30" ArrivalTime="2017-04-13T18:50:00.000+07:00" FlightTime="270" TravelTime="700" Equipment="73H" OriginTerminal="2"/>
+				<air:FlightDetails Key="kFvB9rBAAA/BBhxjTFAAAA==" Origin="CMB" Destination="SIN" DepartureTime="2017-04-13T07:25:00.000+05:30" ArrivalTime="2017-04-13T14:05:00.000+08:00" FlightTime="250" TravelTime="1760" Equipment="320" DestinationTerminal="3"/>
+				<air:FlightDetails Key="kFvB9rBAAA/BDhxjTFAAAA==" Origin="SIN" Destination="BKK" DepartureTime="2017-04-14T12:50:00.000+08:00" ArrivalTime="2017-04-14T14:15:00.000+07:00" FlightTime="145" TravelTime="1760" Equipment="320" OriginTerminal="1"/>
+				<air:FlightDetails Key="kFvB9rBAAA/BFhxjTFAAAA==" Origin="BOM" Destination="BKK" DepartureTime="2017-04-14T01:05:00.000+05:30" ArrivalTime="2017-04-14T06:50:00.000+07:00" FlightTime="255" TravelTime="1420" Equipment="739" OriginTerminal="2"/>
+				<air:FlightDetails Key="kFvB9rBAAA/BHhxjTFAAAA==" Origin="CMB" Destination="SIN" DepartureTime="2017-04-13T01:55:00.000+05:30" ArrivalTime="2017-04-13T08:35:00.000+08:00" FlightTime="250" TravelTime="525" Equipment="320" DestinationTerminal="3"/>
+				<air:FlightDetails Key="kFvB9rBAAA/BJhxjTFAAAA==" Origin="SIN" Destination="BKK" DepartureTime="2017-04-13T10:45:00.000+08:00" ArrivalTime="2017-04-13T12:10:00.000+07:00" FlightTime="145" TravelTime="525" Equipment="320" OriginTerminal="1"/>
+				<air:FlightDetails Key="kFvB9rBAAA/BLhxjTFAAAA==" Origin="SIN" Destination="BKK" DepartureTime="2017-04-13T12:50:00.000+08:00" ArrivalTime="2017-04-13T14:15:00.000+07:00" FlightTime="145" TravelTime="650" Equipment="320" OriginTerminal="1"/>
+				<air:FlightDetails Key="kFvB9rBAAA/BNhxjTFAAAA==" Origin="CMB" Destination="DXB" DepartureTime="2017-04-13T11:30:00.000+05:30" ArrivalTime="2017-04-13T14:40:00.000+04:00" FlightTime="280" TravelTime="755" Equipment="73H" DestinationTerminal="2"/>
+				<air:FlightDetails Key="kFvB9rBAAA/BPhxjTFAAAA==" Origin="DXB" Destination="BKK" DepartureTime="2017-04-13T16:15:00.000+04:00" ArrivalTime="2017-04-14T01:35:00.000+07:00" FlightTime="380" TravelTime="755" Equipment="73H" OriginTerminal="2"/>
+				<air:FlightDetails Key="kFvB9rBAAA/BRhxjTFAAAA==" Origin="CMB" Destination="HRI" Equipment="73H"/>
+				<air:FlightDetails Key="kFvB9rBAAA/BShxjTFAAAA==" Origin="HRI" Destination="DXB" Equipment="73H"/>
+				<air:FlightDetails Key="kFvB9rBAAA/BUhxjTFAAAA==" Origin="CMB" Destination="KUL" DepartureTime="2017-04-13T13:30:00.000+05:30" ArrivalTime="2017-04-13T19:35:00.000+08:00" FlightTime="215" TravelTime="500" Equipment="738" DestinationTerminal="M"/>
+				<air:FlightDetails Key="kFvB9rBAAA/BWhxjTFAAAA==" Origin="KUL" Destination="BKK" DepartureTime="2017-04-13T22:15:00.000+08:00" ArrivalTime="2017-04-13T23:20:00.000+07:00" FlightTime="125" TravelTime="500" Equipment="738" OriginTerminal="M"/>
+				<air:FlightDetails Key="kFvB9rBAAA/BYhxjTFAAAA==" Origin="CMB" Destination="KMG" DepartureTime="2017-04-13T00:45:00.000+05:30" ArrivalTime="2017-04-13T08:00:00.000+08:00" FlightTime="285" TravelTime="740" Equipment="738"/>
+				<air:FlightDetails Key="kFvB9rBAAA/BahxjTFAAAA==" Origin="KMG" Destination="BKK" DepartureTime="2017-04-13T13:00:00.000+08:00" ArrivalTime="2017-04-13T14:35:00.000+07:00" FlightTime="155" TravelTime="740" Equipment="738"/>
+				<air:FlightDetails Key="kFvB9rBAAA/BchxjTFAAAA==" Origin="KMG" Destination="CTU" DepartureTime="2017-04-13T10:35:00.000+08:00" ArrivalTime="2017-04-13T12:20:00.000+08:00" FlightTime="105" TravelTime="995" Equipment="738" DestinationTerminal="2"/>
+				<air:FlightDetails Key="kFvB9rBAAA/BehxjTFAAAA==" Origin="CTU" Destination="BKK" DepartureTime="2017-04-13T16:40:00.000+08:00" ArrivalTime="2017-04-13T18:50:00.000+07:00" FlightTime="190" TravelTime="995" Equipment="320" OriginTerminal="1"/>
+				<air:FlightDetails Key="kFvB9rBAAA/BghxjTFAAAA==" Origin="SIN" Destination="SGN" DepartureTime="2017-04-13T18:25:00.000+08:00" ArrivalTime="2017-04-13T19:35:00.000+07:00" FlightTime="130" TravelTime="1525" Equipment="321" OriginTerminal="3" DestinationTerminal="2"/>
+				<air:FlightDetails Key="kFvB9rBAAA/BihxjTFAAAA==" Origin="SGN" Destination="BKK" DepartureTime="2017-04-14T08:45:00.000+07:00" ArrivalTime="2017-04-14T10:20:00.000+07:00" FlightTime="95" TravelTime="1525" Equipment="321" OriginTerminal="2"/>
+				<air:FlightDetails Key="kFvB9rBAAA/BkhxjTFAAAA==" Origin="SIN" Destination="SGN" DepartureTime="2017-04-13T13:10:00.000+08:00" ArrivalTime="2017-04-13T14:20:00.000+07:00" FlightTime="130" TravelTime="905" Equipment="321" OriginTerminal="3" DestinationTerminal="2"/>
+				<air:FlightDetails Key="kFvB9rBAAA/BmhxjTFAAAA==" Origin="SGN" Destination="BKK" DepartureTime="2017-04-13T16:55:00.000+07:00" ArrivalTime="2017-04-13T18:30:00.000+07:00" FlightTime="95" TravelTime="905" Equipment="321" OriginTerminal="2"/>
+				<air:FlightDetails Key="kFvB9rBAAA/BohxjTFAAAA==" Origin="CMB" Destination="SIN" DepartureTime="2017-04-13T01:10:00.000+05:30" ArrivalTime="2017-04-13T07:40:00.000+08:00" FlightTime="240" TravelTime="505" Equipment="333" DestinationTerminal="0"/>
+				<air:FlightDetails Key="kFvB9rBAAA/BqhxjTFAAAA==" Origin="SIN" Destination="BKK" DepartureTime="2017-04-13T09:35:00.000+08:00" ArrivalTime="2017-04-13T11:05:00.000+07:00" FlightTime="150" TravelTime="505" Equipment="333" OriginTerminal="2"/>
+				<air:FlightDetails Key="kFvB9rBAAA/BshxjTFAAAA==" Origin="CMB" Destination="KUL" DepartureTime="2017-04-13T07:45:00.000+05:30" ArrivalTime="2017-04-13T14:05:00.000+08:00" FlightTime="230" TravelTime="425" Equipment="332" DestinationTerminal="M"/>
+				<air:FlightDetails Key="kFvB9rBAAA/BuhxjTFAAAA==" Origin="KUL" Destination="BKK" DepartureTime="2017-04-13T15:10:00.000+08:00" ArrivalTime="2017-04-13T16:20:00.000+07:00" FlightTime="130" TravelTime="425" Equipment="737" OriginTerminal="M"/>
+				<air:FlightDetails Key="kFvB9rBAAA/BxhxjTFAAAA==" Origin="CMB" Destination="HKG" DepartureTime="2017-04-13T00:25:00.000+05:30" ArrivalTime="2017-04-13T08:20:00.000+08:00" FlightTime="325" TravelTime="570" Equipment="333" DestinationTerminal="1"/>
+				<air:FlightDetails Key="kFvB9rBAAA/BzhxjTFAAAA==" Origin="HKG" Destination="BKK" DepartureTime="2017-04-13T09:30:00.000+08:00" ArrivalTime="2017-04-13T11:25:00.000+07:00" FlightTime="175" TravelTime="570" Equipment="333" OriginTerminal="1"/>
+				<air:FlightDetails Key="kFvB9rBAAA/B1hxjTFAAAA==" Origin="KUL" Destination="HKT" DepartureTime="2017-04-13T17:10:00.000+08:00" ArrivalTime="2017-04-13T17:25:00.000+07:00" FlightTime="75" TravelTime="1590" Equipment="738" OriginTerminal="M" DestinationTerminal="1"/>
+				<air:FlightDetails Key="kFvB9rBAAA/B3hxjTFAAAA==" Origin="HKT" Destination="BKK" DepartureTime="2017-04-14T10:20:00.000+07:00" ArrivalTime="2017-04-14T11:45:00.000+07:00" FlightTime="85" TravelTime="1590" Equipment="320" OriginTerminal="1"/>
+				<air:FlightDetails Key="kFvB9rBAAA/B5hxjTFAAAA==" Origin="CMB" Destination="CTU" DepartureTime="2017-04-13T23:10:00.000+05:30" ArrivalTime="2017-04-14T06:45:00.000+08:00" FlightTime="305" TravelTime="1090" Equipment="330" DestinationTerminal="0"/>
+				<air:FlightDetails Key="kFvB9rBAAA/B7hxjTFAAAA==" Origin="CTU" Destination="BKK" DepartureTime="2017-04-14T16:40:00.000+08:00" ArrivalTime="2017-04-14T18:50:00.000+07:00" FlightTime="190" TravelTime="1090" Equipment="320" OriginTerminal="1"/>
+				<air:FlightDetails Key="kFvB9rBAAA/B9hxjTFAAAA==" Origin="CTU" Destination="BKK" DepartureTime="2017-04-14T16:05:00.000+08:00" ArrivalTime="2017-04-14T17:25:00.000+07:00" FlightTime="140" TravelTime="1005" Equipment="321" OriginTerminal="1"/>
+				<air:FlightDetails Key="kFvB9rBAAA/B/hxjTFAAAA==" Origin="KMG" Destination="NAO" Equipment="319"/>
+				<air:FlightDetails Key="kFvB9rBAAA/BAixjTFAAAA==" Origin="NAO" Destination="PVG" Equipment="319"/>
+				<air:FlightDetails Key="kFvB9rBAAA/BCixjTFAAAA==" Origin="PVG" Destination="BKK" DepartureTime="2017-04-13T22:30:00.000+08:00" ArrivalTime="2017-04-14T01:55:00.000+07:00" FlightTime="265" TravelTime="1420" Equipment="73H" OriginTerminal="1"/>
+				<air:FlightDetails Key="kFvB9rBAAA/BEixjTFAAAA==" Origin="CMB" Destination="DXB" DepartureTime="2017-04-13T03:15:00.000+05:30" ArrivalTime="2017-04-13T06:00:00.000+04:00" FlightTime="255" TravelTime="810" Equipment="77W" DestinationTerminal="3"/>
+				<air:FlightDetails Key="kFvB9rBAAA/BGixjTFAAAA==" Origin="DXB" Destination="BKK" DepartureTime="2017-04-13T08:45:00.000+04:00" ArrivalTime="2017-04-13T18:15:00.000+07:00" FlightTime="390" TravelTime="810" Equipment="388" OriginTerminal="3"/>
+				<air:FlightDetails Key="kFvB9rBAAA/BIixjTFAAAA==" Origin="CMB" Destination="MLE" Equipment="333"/>
+				<air:FlightDetails Key="kFvB9rBAAA/BJixjTFAAAA==" Origin="MLE" Destination="IST" Equipment="333"/>
+				<air:FlightDetails Key="kFvB9rBAAA/BLixjTFAAAA==" Origin="IST" Destination="BKK" DepartureTime="2017-04-14T20:10:00.000+03:00" ArrivalTime="2017-04-15T09:25:00.000+07:00" FlightTime="555" TravelTime="2130" Equipment="333" OriginTerminal="I"/>
+				<air:FlightDetails Key="kFvB9rBAAA/BNixjTFAAAA==" Origin="CMB" Destination="AUH" DepartureTime="2017-04-13T18:50:00.000+05:30" ArrivalTime="2017-04-13T22:00:00.000+04:00" FlightTime="280" TravelTime="1070" Equipment="320" DestinationTerminal="1"/>
+				<air:FlightDetails Key="kFvB9rBAAA/BPixjTFAAAA==" Origin="AUH" Destination="BOM" DepartureTime="2017-04-13T23:30:00.000+04:00" ArrivalTime="2017-04-14T04:15:00.000+05:30" FlightTime="195" TravelTime="1070" Equipment="73H" OriginTerminal="1" DestinationTerminal="2"/>
+				<air:FlightDetails Key="kFvB9rBAAA/BRixjTFAAAA==" Origin="BOM" Destination="BKK" DepartureTime="2017-04-14T08:10:00.000+05:30" ArrivalTime="2017-04-14T14:10:00.000+07:00" FlightTime="270" TravelTime="1070" Equipment="332" OriginTerminal="2"/>
+			</air:FlightDetailsList>
+			<air:AirSegmentList>
+				<air:AirSegment Key="kFvB9rBAAA/B2gxjTFAAAA==" Group="0" Carrier="TG" FlightNumber="308" Origin="CMB" Destination="BKK" DepartureTime="2017-04-13T01:20:00.000+05:30" ArrivalTime="2017-04-13T06:15:00.000+07:00" FlightTime="205" Distance="1485" ETicketability="Yes" Equipment="330" ChangeOfPlane="false" ParticipantLevel="Secure Sell" LinkAvailability="true" PolledAvailabilityOption="Polled avail used" OptionalServicesIndicator="false" AvailabilitySource="S" AvailabilityDisplayType="Fare Shop/Optimal Shop">
+					<air:AirAvailInfo ProviderCode="1G">
+						<air:BookingCodeInfo BookingCounts="C9|D9|J9|Z9|Y9|B9|M9|H9|Q9|T0|K0|S0|V0|W0|L0"/>
+					</air:AirAvailInfo>
+					<air:FlightDetailsRef Key="kFvB9rBAAA/B3gxjTFAAAA=="/>
+				</air:AirSegment>
+				<air:AirSegment Key="kFvB9rBAAA/B4gxjTFAAAA==" Group="0" Carrier="UL" FlightNumber="402" Origin="CMB" Destination="BKK" DepartureTime="2017-04-13T01:15:00.000+05:30" ArrivalTime="2017-04-13T06:15:00.000+07:00" FlightTime="210" Distance="1485" ETicketability="Yes" Equipment="321" ChangeOfPlane="false" ParticipantLevel="Secure Sell" LinkAvailability="true" PolledAvailabilityOption="Cache status used. No polled avail exists." OptionalServicesIndicator="false" AvailabilitySource="H" AvailabilityDisplayType="Fare Shop/Optimal Shop">
+					<air:AirAvailInfo ProviderCode="1G">
+						<air:BookingCodeInfo BookingCounts="J4|C4|D4|I7|Y7|B7|P7|H7|K7|W7|M7|E7|L7|R7|V7|S7|N0|Q0|O0"/>
+					</air:AirAvailInfo>
+					<air:FlightDetailsRef Key="kFvB9rBAAA/B5gxjTFAAAA=="/>
+				</air:AirSegment>
+				<air:AirSegment Key="kFvB9rBAAA/B6gxjTFAAAA==" Group="0" Carrier="UL" FlightNumber="890" Origin="CMB" Destination="BKK" DepartureTime="2017-04-13T07:20:00.000+05:30" ArrivalTime="2017-04-13T12:20:00.000+07:00" FlightTime="210" Distance="1485" ETicketability="Yes" Equipment="333" ChangeOfPlane="false" ParticipantLevel="Secure Sell" LinkAvailability="true" PolledAvailabilityOption="Cache status used. No polled avail exists." OptionalServicesIndicator="false" AvailabilitySource="H" AvailabilityDisplayType="Fare Shop/Optimal Shop">
+					<air:AirAvailInfo ProviderCode="1G">
+						<air:BookingCodeInfo BookingCounts="J4|C4|D4|I7|Y7|B7|P7|H7|K7|W7|M7|E7|L7|R7|V7|S7|N1|Q0|O0"/>
+					</air:AirAvailInfo>
+					<air:FlightDetailsRef Key="kFvB9rBAAA/B7gxjTFAAAA=="/>
+				</air:AirSegment>
+				<air:AirSegment Key="kFvB9rBAAA/B8gxjTFAAAA==" Group="0" Carrier="9W" FlightNumber="255" Origin="CMB" Destination="BOM" DepartureTime="2017-04-13T05:40:00.000+05:30" ArrivalTime="2017-04-13T08:15:00.000+05:30" FlightTime="155" Distance="948" ETicketability="Yes" Equipment="73H" ChangeOfPlane="false" ParticipantLevel="Secure Sell" LinkAvailability="true" PolledAvailabilityOption="Cached status used. Polled avail exists" OptionalServicesIndicator="false" AvailabilityDisplayType="Fare Shop/Optimal Shop">
+					<air:AirAvailInfo ProviderCode="1G">
+						<air:BookingCodeInfo BookingCounts="C6|J6|Z6|I5|P4|Y7|M7|T7|U7|N7|L7|Q7|S7|K7|H7|V7|O7|W7|B0|K0|V0|W0|C5|J3|S0|I1|P0|O0|Q0|H0|Z2"/>
+					</air:AirAvailInfo>
+					<air:FlightDetailsRef Key="kFvB9rBAAA/B9gxjTFAAAA=="/>
+				</air:AirSegment>
+				<air:AirSegment Key="kFvB9rBAAA/B+gxjTFAAAA==" Group="0" Carrier="9W" FlightNumber="60" Origin="BOM" Destination="BKK" DepartureTime="2017-04-13T12:50:00.000+05:30" ArrivalTime="2017-04-13T18:50:00.000+07:00" FlightTime="270" Distance="1878" ETicketability="Yes" Equipment="73H" ChangeOfPlane="false" ParticipantLevel="Secure Sell" LinkAvailability="true" PolledAvailabilityOption="Cached status used. Polled avail exists" OptionalServicesIndicator="false" AvailabilityDisplayType="Fare Shop/Optimal Shop">
+					<air:AirAvailInfo ProviderCode="1G">
+						<air:BookingCodeInfo BookingCounts="C6|J6|Z6|I5|P4|Y7|M7|T7|U7|N7|L7|Q7|S7|K7|H7|V7|O7|W7|B0"/>
+					</air:AirAvailInfo>
+					<air:FlightDetailsRef Key="kFvB9rBAAA/B/gxjTFAAAA=="/>
+				</air:AirSegment>
+				<air:AirSegment Key="kFvB9rBAAA/BAhxjTFAAAA==" Group="0" Carrier="UL" FlightNumber="302" Origin="CMB" Destination="SIN" DepartureTime="2017-04-13T07:25:00.000+05:30" ArrivalTime="2017-04-13T14:05:00.000+08:00" FlightTime="250" Distance="1709" ETicketability="Yes" Equipment="320" ChangeOfPlane="false" ParticipantLevel="Secure Sell" LinkAvailability="true" PolledAvailabilityOption="Cache status used. No polled avail exists." OptionalServicesIndicator="false" AvailabilitySource="E" AvailabilityDisplayType="Fare Shop/Optimal Shop">
+					<air:AirAvailInfo ProviderCode="1G">
+						<air:BookingCodeInfo BookingCounts="J4|C4|D4|I2|Y7|B7|P7|H7|K7|W7|M7|E7|L7|R7|V7|S7|N0|Q0|O0"/>
+					</air:AirAvailInfo>
+					<air:FlightDetailsRef Key="kFvB9rBAAA/BBhxjTFAAAA=="/>
+				</air:AirSegment>
+				<air:AirSegment Key="kFvB9rBAAA/BChxjTFAAAA==" Group="0" Carrier="3K" FlightNumber="509" Origin="SIN" Destination="BKK" DepartureTime="2017-04-14T12:50:00.000+08:00" ArrivalTime="2017-04-14T14:15:00.000+07:00" FlightTime="145" Distance="889" ETicketability="Yes" Equipment="320" ChangeOfPlane="false" ParticipantLevel="Guar against alpha AVS" PolledAvailabilityOption="No polled avail exists" OptionalServicesIndicator="false" AvailabilitySource="A" AvailabilityDisplayType="Fare Shop/Optimal Shop">
+					<air:AirAvailInfo ProviderCode="1G">
+						<air:BookingCodeInfo BookingCounts="Y4|B4|V4|T4|S4|R4|Q4|P4|O4|N4|M0|E0|F0|L0|A0|Z0|I0|K0|H0"/>
+					</air:AirAvailInfo>
+					<air:FlightDetailsRef Key="kFvB9rBAAA/BDhxjTFAAAA=="/>
+				</air:AirSegment>
+				<air:AirSegment Key="kFvB9rBAAA/BEhxjTFAAAA==" Group="0" Carrier="9W" FlightNumber="62" Origin="BOM" Destination="BKK" DepartureTime="2017-04-14T01:05:00.000+05:30" ArrivalTime="2017-04-14T06:50:00.000+07:00" FlightTime="255" Distance="1878" ETicketability="Yes" Equipment="739" ChangeOfPlane="false" ParticipantLevel="Secure Sell" LinkAvailability="true" PolledAvailabilityOption="Polled avail used" OptionalServicesIndicator="false" AvailabilitySource="S" AvailabilityDisplayType="Fare Shop/Optimal Shop">
+					<air:AirAvailInfo ProviderCode="1G">
+						<air:BookingCodeInfo BookingCounts="C5|J3|Z2|I1|P0|Y7|M7|T7|U7|N7|L7|Q0|S0|K0|H0|V0|O0|W0|B0"/>
+					</air:AirAvailInfo>
+					<air:FlightDetailsRef Key="kFvB9rBAAA/BFhxjTFAAAA=="/>
+				</air:AirSegment>
+				<air:AirSegment Key="kFvB9rBAAA/BGhxjTFAAAA==" Group="0" Carrier="UL" FlightNumber="306" Origin="CMB" Destination="SIN" DepartureTime="2017-04-13T01:55:00.000+05:30" ArrivalTime="2017-04-13T08:35:00.000+08:00" FlightTime="250" Distance="1709" ETicketability="Yes" Equipment="320" ChangeOfPlane="false" ParticipantLevel="Secure Sell" LinkAvailability="true" PolledAvailabilityOption="Cache status used. No polled avail exists." OptionalServicesIndicator="false" AvailabilitySource="E" AvailabilityDisplayType="Fare Shop/Optimal Shop">
+					<air:AirAvailInfo ProviderCode="1G">
+						<air:BookingCodeInfo BookingCounts="J4|C4|D4|I7|Y7|B7|P7|H7|K7|W7|M7|E7|L7|R7|V7|S0|N0|Q0|O0"/>
+					</air:AirAvailInfo>
+					<air:FlightDetailsRef Key="kFvB9rBAAA/BHhxjTFAAAA=="/>
+				</air:AirSegment>
+				<air:AirSegment Key="kFvB9rBAAA/BIhxjTFAAAA==" Group="0" Carrier="3K" FlightNumber="515" Origin="SIN" Destination="BKK" DepartureTime="2017-04-13T10:45:00.000+08:00" ArrivalTime="2017-04-13T12:10:00.000+07:00" FlightTime="145" Distance="889" ETicketability="Yes" Equipment="320" ChangeOfPlane="false" ParticipantLevel="Guar against alpha AVS" PolledAvailabilityOption="No polled avail exists" OptionalServicesIndicator="false" AvailabilitySource="A" AvailabilityDisplayType="Fare Shop/Optimal Shop">
+					<air:AirAvailInfo ProviderCode="1G">
+						<air:BookingCodeInfo BookingCounts="Y4|B4|V4|T4|S4|R4|Q4|P4|O4|N0|M0|E0|F0|L0|A0|Z0|I0|K0|H0"/>
+					</air:AirAvailInfo>
+					<air:FlightDetailsRef Key="kFvB9rBAAA/BJhxjTFAAAA=="/>
+				</air:AirSegment>
+				<air:AirSegment Key="kFvB9rBAAA/BKhxjTFAAAA==" Group="0" Carrier="3K" FlightNumber="509" Origin="SIN" Destination="BKK" DepartureTime="2017-04-13T12:50:00.000+08:00" ArrivalTime="2017-04-13T14:15:00.000+07:00" FlightTime="145" Distance="889" ETicketability="Yes" Equipment="320" ChangeOfPlane="false" ParticipantLevel="Guar against alpha AVS" PolledAvailabilityOption="No polled avail exists" OptionalServicesIndicator="false" AvailabilitySource="A" AvailabilityDisplayType="Fare Shop/Optimal Shop">
+					<air:AirAvailInfo ProviderCode="1G">
+						<air:BookingCodeInfo BookingCounts="Y4|B4|V4|T4|S4|R4|Q4|P4|O4|N0|M0|E0|F0|L0|A0|Z0|I0|K0|H0"/>
+					</air:AirAvailInfo>
+					<air:FlightDetailsRef Key="kFvB9rBAAA/BLhxjTFAAAA=="/>
+				</air:AirSegment>
+				<air:AirSegment Key="kFvB9rBAAA/BMhxjTFAAAA==" Group="0" Carrier="FZ" FlightNumber="559" Origin="CMB" Destination="DXB" DepartureTime="2017-04-13T11:30:00.000+05:30" ArrivalTime="2017-04-13T14:40:00.000+04:00" FlightTime="280" Distance="2043" ETicketability="Yes" Equipment="73H" ChangeOfPlane="false" ParticipantLevel="Secure Sell" LinkAvailability="true" PolledAvailabilityOption="Cache status used. No polled avail exists." OptionalServicesIndicator="false" AvailabilitySource="H" AvailabilityDisplayType="Fare Shop/Optimal Shop">
+					<air:AirAvailInfo ProviderCode="1G">
+						<air:BookingCodeInfo BookingCounts="J4|C4|Z4|D0|Y4|A4|I4|E4|O4|W4|T4|M4|N4|R4|B4|U4|V4|K4|Q4|L4|X0"/>
+					</air:AirAvailInfo>
+					<air:FlightDetailsRef Key="kFvB9rBAAA/BNhxjTFAAAA=="/>
+				</air:AirSegment>
+				<air:AirSegment Key="kFvB9rBAAA/BOhxjTFAAAA==" Group="0" Carrier="FZ" FlightNumber="521" Origin="DXB" Destination="BKK" DepartureTime="2017-04-13T16:15:00.000+04:00" ArrivalTime="2017-04-14T01:35:00.000+07:00" FlightTime="380" Distance="3046" ETicketability="Yes" Equipment="73H" ChangeOfPlane="false" ParticipantLevel="Secure Sell" LinkAvailability="true" PolledAvailabilityOption="No polled avail exists" OptionalServicesIndicator="false" AvailabilitySource="A" AvailabilityDisplayType="Fare Shop/Optimal Shop">
+					<air:AirAvailInfo ProviderCode="1G">
+						<air:BookingCodeInfo BookingCounts="J4|C4|Z4|Y4|A4|I4|E4|O4|W4|T4|M4|N4|R4|B4|U4|V4|K4|Q4|L4|X0"/>
+					</air:AirAvailInfo>
+					<air:FlightDetailsRef Key="kFvB9rBAAA/BPhxjTFAAAA=="/>
+				</air:AirSegment>
+				<air:AirSegment Key="kFvB9rBAAA/BQhxjTFAAAA==" Group="0" Carrier="FZ" FlightNumber="551" Origin="CMB" Destination="DXB" DepartureTime="2017-04-13T06:15:00.000+05:30" ArrivalTime="2017-04-13T11:15:00.000+04:00" FlightTime="390" Distance="2043" ETicketability="Yes" Equipment="73H" ChangeOfPlane="false" ParticipantLevel="Secure Sell" LinkAvailability="true" PolledAvailabilityOption="No polled avail exists" OptionalServicesIndicator="false" NumberOfStops="1" AvailabilitySource="A" AvailabilityDisplayType="Fare Shop/Optimal Shop">
+					<air:AirAvailInfo ProviderCode="1G">
+						<air:BookingCodeInfo BookingCounts="J4|C4|Z4|Y4|A4|I4|E4|O4|W4|T4|M4|N4|R4|B4|U4|V4|K4|Q0|L0|X0"/>
+					</air:AirAvailInfo>
+					<air:FlightDetailsRef Key="kFvB9rBAAA/BRhxjTFAAAA=="/>
+					<air:FlightDetailsRef Key="kFvB9rBAAA/BShxjTFAAAA=="/>
+				</air:AirSegment>
+				<air:AirSegment Key="kFvB9rBAAA/BThxjTFAAAA==" Group="0" Carrier="MH" FlightNumber="184" Origin="CMB" Destination="KUL" DepartureTime="2017-04-13T13:30:00.000+05:30" ArrivalTime="2017-04-13T19:35:00.000+08:00" FlightTime="215" Distance="1526" ETicketability="Yes" Equipment="738" ChangeOfPlane="false" ParticipantLevel="Secure Sell" LinkAvailability="true" PolledAvailabilityOption="Cache status used. No polled avail exists." OptionalServicesIndicator="false" AvailabilitySource="H" AvailabilityDisplayType="Fare Shop/Optimal Shop">
+					<air:AirAvailInfo ProviderCode="1G">
+						<air:BookingCodeInfo BookingCounts="J4|C4|D4|Z4|I3|U1|Y9|B9|H9|K9|M9|L0|V0|S0|N0|Q0|O0|X0|G0"/>
+					</air:AirAvailInfo>
+					<air:FlightDetailsRef Key="kFvB9rBAAA/BUhxjTFAAAA=="/>
+				</air:AirSegment>
+				<air:AirSegment Key="kFvB9rBAAA/BVhxjTFAAAA==" Group="0" Carrier="MH" FlightNumber="796" Origin="KUL" Destination="BKK" DepartureTime="2017-04-13T22:15:00.000+08:00" ArrivalTime="2017-04-13T23:20:00.000+07:00" FlightTime="125" Distance="754" ETicketability="Yes" Equipment="738" ChangeOfPlane="false" ParticipantLevel="Secure Sell" LinkAvailability="true" PolledAvailabilityOption="Cache status used. No polled avail exists." OptionalServicesIndicator="false" AvailabilitySource="H" AvailabilityDisplayType="Fare Shop/Optimal Shop">
+					<air:AirAvailInfo ProviderCode="1G">
+						<air:BookingCodeInfo BookingCounts="J4|C3|D0|Z0|I0|U0|Y9|B3|H0|K0|M0|L0|V0|S0|N0|Q0|O0|X0|G0"/>
+					</air:AirAvailInfo>
+					<air:FlightDetailsRef Key="kFvB9rBAAA/BWhxjTFAAAA=="/>
+				</air:AirSegment>
+				<air:AirSegment Key="kFvB9rBAAA/BXhxjTFAAAA==" Group="0" Carrier="MU" FlightNumber="714" Origin="CMB" Destination="KMG" DepartureTime="2017-04-13T00:45:00.000+05:30" ArrivalTime="2017-04-13T08:00:00.000+08:00" FlightTime="285" Distance="1962" ETicketability="Yes" Equipment="738" ChangeOfPlane="false" ParticipantLevel="Secure Sell" LinkAvailability="true" PolledAvailabilityOption="Cached status used. Polled avail exists" OptionalServicesIndicator="false" AvailabilitySource="H" AvailabilityDisplayType="Fare Shop/Optimal Shop">
+					<air:AirAvailInfo ProviderCode="1G">
+						<air:BookingCodeInfo BookingCounts="U0|F0|P0|J4|C4|D4|I0|W0|Y9|B9|M9|E9|H9|K9|L9|N9|R9|S9|V0|T0|G0|Z2|Q9"/>
+					</air:AirAvailInfo>
+					<air:FlightDetailsRef Key="kFvB9rBAAA/BYhxjTFAAAA=="/>
+				</air:AirSegment>
+				<air:AirSegment Key="kFvB9rBAAA/BZhxjTFAAAA==" Group="0" Carrier="MU" FlightNumber="741" Origin="KMG" Destination="BKK" DepartureTime="2017-04-13T13:00:00.000+08:00" ArrivalTime="2017-04-13T14:35:00.000+07:00" FlightTime="155" Distance="795" ETicketability="Yes" Equipment="738" ChangeOfPlane="false" ParticipantLevel="Secure Sell" LinkAvailability="true" PolledAvailabilityOption="Cached status used. Polled avail exists" OptionalServicesIndicator="false" AvailabilitySource="H" AvailabilityDisplayType="Fare Shop/Optimal Shop">
+					<air:AirAvailInfo ProviderCode="1G">
+						<air:BookingCodeInfo BookingCounts="U0|F0|P0|J4|C2|D1|I0|W0|Y9|B9|M9|E9|H9|K9|L9|N9|R9|S0|V0|T0|G0|Z0|Q6"/>
+					</air:AirAvailInfo>
+					<air:FlightDetailsRef Key="kFvB9rBAAA/BahxjTFAAAA=="/>
+				</air:AirSegment>
+				<air:AirSegment Key="kFvB9rBAAA/BbhxjTFAAAA==" Group="0" Carrier="MU" FlightNumber="2496" Origin="KMG" Destination="CTU" DepartureTime="2017-04-13T10:35:00.000+08:00" ArrivalTime="2017-04-13T12:20:00.000+08:00" FlightTime="105" Distance="392" ETicketability="Yes" Equipment="738" ChangeOfPlane="false" ParticipantLevel="Secure Sell" LinkAvailability="true" PolledAvailabilityOption="Cached status used. Polled avail exists" OptionalServicesIndicator="false" AvailabilitySource="H" AvailabilityDisplayType="Fare Shop/Optimal Shop">
+					<air:AirAvailInfo ProviderCode="1G">
+						<air:BookingCodeInfo BookingCounts="U0|F4|P4|J4|C4|D4|I0|W0|Y9|B9|M9|E9|H9|K9|L9|N9|R9|S0|V0|T0|G0|Z9|Q9"/>
+					</air:AirAvailInfo>
+					<air:FlightDetailsRef Key="kFvB9rBAAA/BchxjTFAAAA=="/>
+				</air:AirSegment>
+				<air:AirSegment Key="kFvB9rBAAA/BdhxjTFAAAA==" Group="0" Carrier="MU" FlightNumber="5035" Origin="CTU" Destination="BKK" DepartureTime="2017-04-13T16:40:00.000+08:00" ArrivalTime="2017-04-13T18:50:00.000+07:00" FlightTime="190" Distance="1186" ETicketability="Yes" Equipment="320" ChangeOfPlane="false" ParticipantLevel="Secure Sell" LinkAvailability="true" PolledAvailabilityOption="Cached status used. Polled avail exists" OptionalServicesIndicator="false" AvailabilitySource="H" AvailabilityDisplayType="Fare Shop/Optimal Shop">
+					<air:AirAvailInfo ProviderCode="1G">
+						<air:BookingCodeInfo BookingCounts="U0|F0|P0|J4|C4|D3|I2|W0|Y9|B9|M9|E9|H9|K9|L9|N9|R9|S9|V9|T9|G0|Z0|Q0"/>
+					</air:AirAvailInfo>
+					<air:FlightDetailsRef Key="kFvB9rBAAA/BehxjTFAAAA=="/>
+				</air:AirSegment>
+				<air:AirSegment Key="kFvB9rBAAA/BfhxjTFAAAA==" Group="0" Carrier="VN" FlightNumber="654" Origin="SIN" Destination="SGN" DepartureTime="2017-04-13T18:25:00.000+08:00" ArrivalTime="2017-04-13T19:35:00.000+07:00" FlightTime="130" Distance="679" ETicketability="Yes" Equipment="321" ChangeOfPlane="false" ParticipantLevel="Secure Sell" LinkAvailability="true" PolledAvailabilityOption="Polled avail used" OptionalServicesIndicator="false" AvailabilitySource="L" AvailabilityDisplayType="Fare Shop/Optimal Shop">
+					<air:AirAvailInfo ProviderCode="1G">
+						<air:BookingCodeInfo BookingCounts="J7|C7|D0|I0|O1|Y7|B7|M7|S7|H4|K7|L4|Q4|N0|R0|T0|A0|E0|P0|G7|X7"/>
+					</air:AirAvailInfo>
+					<air:FlightDetailsRef Key="kFvB9rBAAA/BghxjTFAAAA=="/>
+				</air:AirSegment>
+				<air:AirSegment Key="kFvB9rBAAA/BhhxjTFAAAA==" Group="0" Carrier="VN" FlightNumber="601" Origin="SGN" Destination="BKK" DepartureTime="2017-04-14T08:45:00.000+07:00" ArrivalTime="2017-04-14T10:20:00.000+07:00" FlightTime="95" Distance="453" ETicketability="Yes" Equipment="321" ChangeOfPlane="false" ParticipantLevel="Secure Sell" LinkAvailability="true" PolledAvailabilityOption="Polled avail used" OptionalServicesIndicator="false" AvailabilitySource="L" AvailabilityDisplayType="Fare Shop/Optimal Shop">
+					<air:AirAvailInfo ProviderCode="1G">
+						<air:BookingCodeInfo BookingCounts="J7|C7|D7|I0|O2|Y7|B7|M7|S7|H7|K0|L7|Q7|N6|R0|T0|A1|E0|P0|G0|X0"/>
+					</air:AirAvailInfo>
+					<air:FlightDetailsRef Key="kFvB9rBAAA/BihxjTFAAAA=="/>
+				</air:AirSegment>
+				<air:AirSegment Key="kFvB9rBAAA/BjhxjTFAAAA==" Group="0" Carrier="VN" FlightNumber="650" Origin="SIN" Destination="SGN" DepartureTime="2017-04-13T13:10:00.000+08:00" ArrivalTime="2017-04-13T14:20:00.000+07:00" FlightTime="130" Distance="679" ETicketability="Yes" Equipment="321" ChangeOfPlane="false" ParticipantLevel="Secure Sell" LinkAvailability="true" PolledAvailabilityOption="Polled avail used" OptionalServicesIndicator="false" AvailabilitySource="L" AvailabilityDisplayType="Fare Shop/Optimal Shop">
+					<air:AirAvailInfo ProviderCode="1G">
+						<air:BookingCodeInfo BookingCounts="J4|C0|D0|I0|O1|Y7|B7|M7|S7|H0|K0|L0|Q0|N0|R0|T0|A0|E0|P0|G0|X0"/>
+					</air:AirAvailInfo>
+					<air:FlightDetailsRef Key="kFvB9rBAAA/BkhxjTFAAAA=="/>
+				</air:AirSegment>
+				<air:AirSegment Key="kFvB9rBAAA/BlhxjTFAAAA==" Group="0" Carrier="VN" FlightNumber="603" Origin="SGN" Destination="BKK" DepartureTime="2017-04-13T16:55:00.000+07:00" ArrivalTime="2017-04-13T18:30:00.000+07:00" FlightTime="95" Distance="453" ETicketability="Yes" Equipment="321" ChangeOfPlane="false" ParticipantLevel="Secure Sell" LinkAvailability="true" PolledAvailabilityOption="Polled avail used" OptionalServicesIndicator="false" AvailabilitySource="L" AvailabilityDisplayType="Fare Shop/Optimal Shop">
+					<air:AirAvailInfo ProviderCode="1G">
+						<air:BookingCodeInfo BookingCounts="J7|C7|D7|I0|O2|Y7|B7|M7|S7|H7|K0|L7|Q7|N0|R0|T0|A5|E0|P0|G0|X2"/>
+					</air:AirAvailInfo>
+					<air:FlightDetailsRef Key="kFvB9rBAAA/BmhxjTFAAAA=="/>
+				</air:AirSegment>
+				<air:AirSegment Key="kFvB9rBAAA/BnhxjTFAAAA==" Group="0" Carrier="SQ" FlightNumber="469" Origin="CMB" Destination="SIN" DepartureTime="2017-04-13T01:10:00.000+05:30" ArrivalTime="2017-04-13T07:40:00.000+08:00" FlightTime="240" Distance="1709" ETicketability="Yes" Equipment="333" ChangeOfPlane="false" ParticipantLevel="Secure Sell" LinkAvailability="true" PolledAvailabilityOption="Polled avail used" OptionalServicesIndicator="false" AvailabilitySource="S" AvailabilityDisplayType="Fare Shop/Optimal Shop">
+					<air:AirAvailInfo ProviderCode="1G">
+						<air:BookingCodeInfo BookingCounts="Z9|C9|J9|U9|D6|Y9|B9|E0|M3|H0|W0|Q0|N0|V0|G0|L0|K0"/>
+					</air:AirAvailInfo>
+					<air:FlightDetailsRef Key="kFvB9rBAAA/BohxjTFAAAA=="/>
+				</air:AirSegment>
+				<air:AirSegment Key="kFvB9rBAAA/BphxjTFAAAA==" Group="0" Carrier="SQ" FlightNumber="972" Origin="SIN" Destination="BKK" DepartureTime="2017-04-13T09:35:00.000+08:00" ArrivalTime="2017-04-13T11:05:00.000+07:00" FlightTime="150" Distance="889" ETicketability="Yes" Equipment="333" ChangeOfPlane="false" ParticipantLevel="Secure Sell" LinkAvailability="true" PolledAvailabilityOption="Polled avail used" OptionalServicesIndicator="false" AvailabilitySource="S" AvailabilityDisplayType="Fare Shop/Optimal Shop">
+					<air:AirAvailInfo ProviderCode="1G">
+						<air:BookingCodeInfo BookingCounts="Z9|C9|J9|U9|D6|Y9|B9|E0|M3|H0|W0|Q0|N0|V0|G0|L0|K0"/>
+					</air:AirAvailInfo>
+					<air:FlightDetailsRef Key="kFvB9rBAAA/BqhxjTFAAAA=="/>
+				</air:AirSegment>
+				<air:AirSegment Key="kFvB9rBAAA/BrhxjTFAAAA==" Group="0" Carrier="UL" FlightNumber="314" Origin="CMB" Destination="KUL" DepartureTime="2017-04-13T07:45:00.000+05:30" ArrivalTime="2017-04-13T14:05:00.000+08:00" FlightTime="230" Distance="1526" ETicketability="Yes" Equipment="332" ChangeOfPlane="false" ParticipantLevel="Secure Sell" LinkAvailability="true" PolledAvailabilityOption="Cache status used. No polled avail exists." OptionalServicesIndicator="false" AvailabilitySource="E" AvailabilityDisplayType="Fare Shop/Optimal Shop">
+					<air:AirAvailInfo ProviderCode="1G">
+						<air:BookingCodeInfo BookingCounts="J4|C4|D4|I0|Y7|B7|P7|H7|K7|W7|M7|E7|L7|R7|V7|S7|N7|Q0|O0"/>
+					</air:AirAvailInfo>
+					<air:FlightDetailsRef Key="kFvB9rBAAA/BshxjTFAAAA=="/>
+				</air:AirSegment>
+				<air:AirSegment Key="kFvB9rBAAA/BthxjTFAAAA==" Group="0" Carrier="8M" FlightNumber="9511" Origin="KUL" Destination="BKK" DepartureTime="2017-04-13T15:10:00.000+08:00" ArrivalTime="2017-04-13T16:20:00.000+07:00" FlightTime="130" Distance="754" ETicketability="Yes" Equipment="737" ChangeOfPlane="false" ParticipantLevel="Secure Sell" PolledAvailabilityOption="No polled avail exists" OptionalServicesIndicator="false" AvailabilitySource="A" AvailabilityDisplayType="Fare Shop/Optimal Shop">
+					<air:CodeshareInfo OperatingCarrier="MH" OperatingFlightNumber="782">MALAYSIA AIRLINES BERHAD</air:CodeshareInfo>
+					<air:AirAvailInfo ProviderCode="1G">
+						<air:BookingCodeInfo BookingCounts="J4|D4|Y4|E0|B0|H0|K0|W0|S0"/>
+					</air:AirAvailInfo>
+					<air:FlightDetailsRef Key="kFvB9rBAAA/BuhxjTFAAAA=="/>
+				</air:AirSegment>
+				<air:AirSegment Key="kFvB9rBAAA/BwhxjTFAAAA==" Group="0" Carrier="CX" FlightNumber="610" Origin="CMB" Destination="HKG" DepartureTime="2017-04-13T00:25:00.000+05:30" ArrivalTime="2017-04-13T08:20:00.000+08:00" FlightTime="325" Distance="2494" ETicketability="Yes" Equipment="333" ChangeOfPlane="false" ParticipantLevel="Secure Sell" LinkAvailability="true" PolledAvailabilityOption="Polled avail used" OptionalServicesIndicator="false" AvailabilitySource="S" AvailabilityDisplayType="Fare Shop/Optimal Shop">
+					<air:AirAvailInfo ProviderCode="1G">
+						<air:BookingCodeInfo BookingCounts="J0|C0|D0|I0|Y3|B2|H1|K0|M0|L0|V0|S0|N0|Q0|O0"/>
+					</air:AirAvailInfo>
+					<air:FlightDetailsRef Key="kFvB9rBAAA/BxhxjTFAAAA=="/>
+				</air:AirSegment>
+				<air:AirSegment Key="kFvB9rBAAA/ByhxjTFAAAA==" Group="0" Carrier="CX" FlightNumber="755" Origin="HKG" Destination="BKK" DepartureTime="2017-04-13T09:30:00.000+08:00" ArrivalTime="2017-04-13T11:25:00.000+07:00" FlightTime="175" Distance="1049" ETicketability="Yes" Equipment="333" ChangeOfPlane="false" ParticipantLevel="Secure Sell" LinkAvailability="true" PolledAvailabilityOption="Polled avail used" OptionalServicesIndicator="false" AvailabilitySource="S" AvailabilityDisplayType="Fare Shop/Optimal Shop">
+					<air:AirAvailInfo ProviderCode="1G">
+						<air:BookingCodeInfo BookingCounts="J0|C0|D0|I0|W3|R3|E3|Y1|B2|H1|K0|M0|L0|V0|S0|N0|Q0|O0"/>
+					</air:AirAvailInfo>
+					<air:FlightDetailsRef Key="kFvB9rBAAA/BzhxjTFAAAA=="/>
+				</air:AirSegment>
+				<air:AirSegment Key="kFvB9rBAAA/BvhxjTFAAAA==" Group="0" Carrier="MH" FlightNumber="782" Origin="KUL" Destination="BKK" DepartureTime="2017-04-13T15:10:00.000+08:00" ArrivalTime="2017-04-13T16:20:00.000+07:00" FlightTime="130" Distance="754" ETicketability="Yes" Equipment="738" ChangeOfPlane="false" ParticipantLevel="Secure Sell" LinkAvailability="true" PolledAvailabilityOption="Cache status used. No polled avail exists." OptionalServicesIndicator="false" AvailabilitySource="H" AvailabilityDisplayType="Fare Shop/Optimal Shop">
+					<air:AirAvailInfo ProviderCode="1G">
+						<air:BookingCodeInfo BookingCounts="J4|C4|D4|Z4|I2|U1|Y9|B8|H3|K0|M0|L0|V0|S0|N0|Q0|O0|X0|G0"/>
+					</air:AirAvailInfo>
+					<air:FlightDetailsRef Key="kFvB9rBAAA/BuhxjTFAAAA=="/>
+				</air:AirSegment>
+				<air:AirSegment Key="kFvB9rBAAA/B0hxjTFAAAA==" Group="0" Carrier="MH" FlightNumber="790" Origin="KUL" Destination="HKT" DepartureTime="2017-04-13T17:10:00.000+08:00" ArrivalTime="2017-04-13T17:25:00.000+07:00" FlightTime="75" Distance="426" ETicketability="Yes" Equipment="738" ChangeOfPlane="false" ParticipantLevel="Secure Sell" LinkAvailability="true" PolledAvailabilityOption="Cache status used. No polled avail exists." OptionalServicesIndicator="false" AvailabilitySource="H" AvailabilityDisplayType="Fare Shop/Optimal Shop">
+					<air:AirAvailInfo ProviderCode="1G">
+						<air:BookingCodeInfo BookingCounts="J4|C4|D3|Z1|I1|U1|Y9|B6|H1|K1|M1|L1|V1|S1|N1|Q0|O0|X0|G0"/>
+					</air:AirAvailInfo>
+					<air:FlightDetailsRef Key="kFvB9rBAAA/B1hxjTFAAAA=="/>
+				</air:AirSegment>
+				<air:AirSegment Key="kFvB9rBAAA/B2hxjTFAAAA==" Group="0" Carrier="MH" FlightNumber="5806" Origin="HKT" Destination="BKK" DepartureTime="2017-04-14T10:20:00.000+07:00" ArrivalTime="2017-04-14T11:45:00.000+07:00" FlightTime="85" Distance="424" ETicketability="Yes" Equipment="320" ChangeOfPlane="false" ParticipantLevel="Secure Sell" LinkAvailability="true" PolledAvailabilityOption="Cache status used. No polled avail exists." OptionalServicesIndicator="false" AvailabilitySource="H" AvailabilityDisplayType="Fare Shop/Optimal Shop">
+					<air:CodeshareInfo OperatingCarrier="PG" OperatingFlightNumber="272">BANGKOK AIRWAYS COMPANY</air:CodeshareInfo>
+					<air:AirAvailInfo ProviderCode="1G">
+						<air:BookingCodeInfo BookingCounts="Y9|B9|H9|K9|M9|L0|V0|S0|N0|Q0|O0"/>
+					</air:AirAvailInfo>
+					<air:FlightDetailsRef Key="kFvB9rBAAA/B3hxjTFAAAA=="/>
+				</air:AirSegment>
+				<air:AirSegment Key="kFvB9rBAAA/B4hxjTFAAAA==" Group="0" Carrier="CA" FlightNumber="426" Origin="CMB" Destination="CTU" DepartureTime="2017-04-13T23:10:00.000+05:30" ArrivalTime="2017-04-14T06:45:00.000+08:00" FlightTime="305" Distance="2255" ETicketability="Yes" Equipment="330" ChangeOfPlane="false" ParticipantLevel="Secure Sell" LinkAvailability="true" PolledAvailabilityOption="Polled avail used" OptionalServicesIndicator="false" AvailabilitySource="S" AvailabilityDisplayType="Fare Shop/Optimal Shop">
+					<air:AirAvailInfo ProviderCode="1G">
+						<air:BookingCodeInfo BookingCounts="J0|C2|D2|Z2|R2|Y9|B9|M9|U9|H9|Q9|V9|W9|S9|T0|L0|N0|K0"/>
+					</air:AirAvailInfo>
+					<air:FlightDetailsRef Key="kFvB9rBAAA/B5hxjTFAAAA=="/>
+				</air:AirSegment>
+				<air:AirSegment Key="kFvB9rBAAA/B6hxjTFAAAA==" Group="0" Carrier="MU" FlightNumber="5035" Origin="CTU" Destination="BKK" DepartureTime="2017-04-14T16:40:00.000+08:00" ArrivalTime="2017-04-14T18:50:00.000+07:00" FlightTime="190" Distance="1186" ETicketability="Yes" Equipment="320" ChangeOfPlane="false" ParticipantLevel="Secure Sell" LinkAvailability="true" PolledAvailabilityOption="Cached status used. Polled avail exists" OptionalServicesIndicator="false" AvailabilitySource="H" AvailabilityDisplayType="Fare Shop/Optimal Shop">
+					<air:AirAvailInfo ProviderCode="1G">
+						<air:BookingCodeInfo BookingCounts="U0|F0|P0|J4|C4|D3|I2|W0|Y9|B9|M9|E9|H9|K9|L9|N9|R9|S9|V9|T0|G0|Z9|Q0"/>
+					</air:AirAvailInfo>
+					<air:FlightDetailsRef Key="kFvB9rBAAA/B7hxjTFAAAA=="/>
+				</air:AirSegment>
+				<air:AirSegment Key="kFvB9rBAAA/B8hxjTFAAAA==" Group="0" Carrier="3U" FlightNumber="8145" Origin="CTU" Destination="BKK" DepartureTime="2017-04-14T16:05:00.000+08:00" ArrivalTime="2017-04-14T17:25:00.000+07:00" FlightTime="140" Distance="1186" ETicketability="Yes" Equipment="321" ChangeOfPlane="false" ParticipantLevel="Secure Sell" LinkAvailability="true" PolledAvailabilityOption="No polled avail exists" OptionalServicesIndicator="false" AvailabilitySource="A" AvailabilityDisplayType="Fare Shop/Optimal Shop">
+					<air:AirAvailInfo ProviderCode="1G">
+						<air:BookingCodeInfo BookingCounts="C4|I2|J2|Y0|B4|T4|W4|H4|M4|G4|S0|L0|Q0|E0|V0|U0|R0|K0|N0|X0"/>
+					</air:AirAvailInfo>
+					<air:FlightDetailsRef Key="kFvB9rBAAA/B9hxjTFAAAA=="/>
+				</air:AirSegment>
+				<air:AirSegment Key="kFvB9rBAAA/B+hxjTFAAAA==" Group="0" Carrier="MU" FlightNumber="5438" Origin="KMG" Destination="PVG" DepartureTime="2017-04-13T15:40:00.000+08:00" ArrivalTime="2017-04-13T20:05:00.000+08:00" FlightTime="265" Distance="1208" ETicketability="Yes" Equipment="319" ChangeOfPlane="false" ParticipantLevel="Secure Sell" LinkAvailability="true" PolledAvailabilityOption="Cached status used. Polled avail exists" OptionalServicesIndicator="false" NumberOfStops="1" AvailabilitySource="H" AvailabilityDisplayType="Fare Shop/Optimal Shop">
+					<air:AirAvailInfo ProviderCode="1G">
+						<air:BookingCodeInfo BookingCounts="U0|F4|P4|J4|C2|D2|I2|W0|Y9|B9|M9|E9|H9|K9|L9|N9|R9|S9|V9|T9|G0|Z0|Q9"/>
+					</air:AirAvailInfo>
+					<air:FlightDetailsRef Key="kFvB9rBAAA/B/hxjTFAAAA=="/>
+					<air:FlightDetailsRef Key="kFvB9rBAAA/BAixjTFAAAA=="/>
+				</air:AirSegment>
+				<air:AirSegment Key="kFvB9rBAAA/BBixjTFAAAA==" Group="0" Carrier="MU" FlightNumber="9841" Origin="PVG" Destination="BKK" DepartureTime="2017-04-13T22:30:00.000+08:00" ArrivalTime="2017-04-14T01:55:00.000+07:00" FlightTime="265" Distance="1787" ETicketability="Yes" Equipment="73H" ChangeOfPlane="false" ParticipantLevel="Secure Sell" LinkAvailability="true" PolledAvailabilityOption="Cached status used. Polled avail exists" OptionalServicesIndicator="false" AvailabilitySource="H" AvailabilityDisplayType="Fare Shop/Optimal Shop">
+					<air:CodeshareInfo OperatingCarrier="FM" OperatingFlightNumber="841">SHANGHAI AIRLINES CO LTD</air:CodeshareInfo>
+					<air:AirAvailInfo ProviderCode="1G">
+						<air:BookingCodeInfo BookingCounts="U0|F0|P0|A0|J4|C2|D1|I0|O0|Y9|B9|M9|E9|H9|K9|L7|N0|R0|S0|V0|T0|G0|Z0|Q0|X4"/>
+					</air:AirAvailInfo>
+					<air:FlightDetailsRef Key="kFvB9rBAAA/BCixjTFAAAA=="/>
+				</air:AirSegment>
+				<air:AirSegment Key="kFvB9rBAAA/BDixjTFAAAA==" Group="0" Carrier="EK" FlightNumber="349" Origin="CMB" Destination="DXB" DepartureTime="2017-04-13T03:15:00.000+05:30" ArrivalTime="2017-04-13T06:00:00.000+04:00" FlightTime="255" Distance="2043" ETicketability="Yes" Equipment="77W" ChangeOfPlane="false" ParticipantLevel="Secure Sell" LinkAvailability="true" PolledAvailabilityOption="Polled avail used" OptionalServicesIndicator="false" AvailabilitySource="S" AvailabilityDisplayType="Fare Shop/Optimal Shop">
+					<air:AirAvailInfo ProviderCode="1G">
+						<air:BookingCodeInfo BookingCounts="F4|A4|J7|C7|I7|O0|P0|Y9|E9|R9|W9|M9|B9|U9|K0|H0|Q0|L0|T0|V0|X0"/>
+					</air:AirAvailInfo>
+					<air:FlightDetailsRef Key="kFvB9rBAAA/BEixjTFAAAA=="/>
+				</air:AirSegment>
+				<air:AirSegment Key="kFvB9rBAAA/BFixjTFAAAA==" Group="0" Carrier="EK" FlightNumber="418" Origin="DXB" Destination="BKK" DepartureTime="2017-04-13T08:45:00.000+04:00" ArrivalTime="2017-04-13T18:15:00.000+07:00" FlightTime="390" Distance="3046" ETicketability="Yes" Equipment="388" ChangeOfPlane="false" ParticipantLevel="Secure Sell" LinkAvailability="true" PolledAvailabilityOption="Polled avail used" OptionalServicesIndicator="false" AvailabilitySource="S" AvailabilityDisplayType="Fare Shop/Optimal Shop">
+					<air:AirAvailInfo ProviderCode="1G">
+						<air:BookingCodeInfo BookingCounts="F4|A4|J7|C7|I7|O0|P0|Y9|E9|R9|W9|M9|B9|U9|K0|H0|Q0|L0|T0|V0|X0"/>
+					</air:AirAvailInfo>
+					<air:FlightDetailsRef Key="kFvB9rBAAA/BGixjTFAAAA=="/>
+				</air:AirSegment>
+				<air:AirSegment Key="kFvB9rBAAA/BHixjTFAAAA==" Group="0" Carrier="TK" FlightNumber="731" Origin="CMB" Destination="IST" DepartureTime="2017-04-13T20:25:00.000+05:30" ArrivalTime="2017-04-14T05:05:00.000+03:00" FlightTime="670" Distance="3896" ETicketability="Yes" Equipment="333" ChangeOfPlane="false" ParticipantLevel="Secure Sell" LinkAvailability="true" PolledAvailabilityOption="Polled avail used" OptionalServicesIndicator="false" NumberOfStops="1" AvailabilitySource="S" AvailabilityDisplayType="Fare Shop/Optimal Shop">
+					<air:AirAvailInfo ProviderCode="1G">
+						<air:BookingCodeInfo BookingCounts="C3|D0|Z0|K0|J0|I0|R0|Y9|B9|M9|A9|H0|S0|O0|E0|Q0|T0|L0|V0|P0|W0|U0|X0|N0|G0"/>
+					</air:AirAvailInfo>
+					<air:FlightDetailsRef Key="kFvB9rBAAA/BIixjTFAAAA=="/>
+					<air:FlightDetailsRef Key="kFvB9rBAAA/BJixjTFAAAA=="/>
+				</air:AirSegment>
+				<air:AirSegment Key="kFvB9rBAAA/BKixjTFAAAA==" Group="0" Carrier="TK" FlightNumber="64" Origin="IST" Destination="BKK" DepartureTime="2017-04-14T20:10:00.000+03:00" ArrivalTime="2017-04-15T09:25:00.000+07:00" FlightTime="555" Distance="4644" ETicketability="Yes" Equipment="333" ChangeOfPlane="false" ParticipantLevel="Secure Sell" LinkAvailability="true" PolledAvailabilityOption="Polled avail used" OptionalServicesIndicator="false" AvailabilitySource="S" AvailabilityDisplayType="Fare Shop/Optimal Shop">
+					<air:AirAvailInfo ProviderCode="1G">
+						<air:BookingCodeInfo BookingCounts="C4|D4|Z4|K4|J4|I0|R0|Y9|B9|M9|A9|H9|S9|O9|E9|Q0|T0|L0|V0|P0|W0|U0|X0|N0|G0"/>
+					</air:AirAvailInfo>
+					<air:FlightDetailsRef Key="kFvB9rBAAA/BLixjTFAAAA=="/>
+				</air:AirSegment>
+				<air:AirSegment Key="kFvB9rBAAA/BMixjTFAAAA==" Group="0" Carrier="EY" FlightNumber="7153" Origin="CMB" Destination="AUH" DepartureTime="2017-04-13T18:50:00.000+05:30" ArrivalTime="2017-04-13T22:00:00.000+04:00" FlightTime="280" Distance="2061" ETicketability="Yes" Equipment="320" ChangeOfPlane="false" ParticipantLevel="Secure Sell" LinkAvailability="true" PolledAvailabilityOption="Polled avail used" OptionalServicesIndicator="false" AvailabilitySource="S" AvailabilityDisplayType="Fare Shop/Optimal Shop">
+					<air:CodeshareInfo OperatingCarrier="UL" OperatingFlightNumber="207">SRILANKAN AIRLINES</air:CodeshareInfo>
+					<air:AirAvailInfo ProviderCode="1G">
+						<air:BookingCodeInfo BookingCounts="J2|C2|D2|W2|Z2|Y4|B4|H4|K4|M4|Q4|L4|V4|U4|E4|T4"/>
+					</air:AirAvailInfo>
+					<air:FlightDetailsRef Key="kFvB9rBAAA/BNixjTFAAAA=="/>
+				</air:AirSegment>
+				<air:AirSegment Key="kFvB9rBAAA/BOixjTFAAAA==" Group="0" Carrier="EY" FlightNumber="7600" Origin="AUH" Destination="BOM" DepartureTime="2017-04-13T23:30:00.000+04:00" ArrivalTime="2017-04-14T04:15:00.000+05:30" FlightTime="195" Distance="1237" ETicketability="Yes" Equipment="73H" ChangeOfPlane="false" ParticipantLevel="Secure Sell" LinkAvailability="true" PolledAvailabilityOption="Polled avail used" OptionalServicesIndicator="false" AvailabilitySource="S" AvailabilityDisplayType="Fare Shop/Optimal Shop">
+					<air:CodeshareInfo OperatingCarrier="9W" OperatingFlightNumber="583">JET AIRWAYS  INDIA  LTD</air:CodeshareInfo>
+					<air:AirAvailInfo ProviderCode="1G">
+						<air:BookingCodeInfo BookingCounts="J2|C2|D2|W2|Z2|Y4|B4|H4|K4|M4|Q4|L4|V4|U4|E0|T0"/>
+					</air:AirAvailInfo>
+					<air:FlightDetailsRef Key="kFvB9rBAAA/BPixjTFAAAA=="/>
+				</air:AirSegment>
+				<air:AirSegment Key="kFvB9rBAAA/BQixjTFAAAA==" Group="0" Carrier="EY" FlightNumber="7586" Origin="BOM" Destination="BKK" DepartureTime="2017-04-14T08:10:00.000+05:30" ArrivalTime="2017-04-14T14:10:00.000+07:00" FlightTime="270" Distance="1878" ETicketability="Yes" Equipment="332" ChangeOfPlane="false" ParticipantLevel="Secure Sell" LinkAvailability="true" PolledAvailabilityOption="Polled avail used" OptionalServicesIndicator="false" AvailabilitySource="S" AvailabilityDisplayType="Fare Shop/Optimal Shop">
+					<air:CodeshareInfo OperatingCarrier="9W" OperatingFlightNumber="70">JET AIRWAYS  INDIA  LTD</air:CodeshareInfo>
+					<air:AirAvailInfo ProviderCode="1G">
+						<air:BookingCodeInfo BookingCounts="J2|C2|D0|W0|Z0|Y4|B4|H4|K4|M4|Q4|L4|V4|U0|E0|T0"/>
+					</air:AirAvailInfo>
+					<air:FlightDetailsRef Key="kFvB9rBAAA/BRixjTFAAAA=="/>
+				</air:AirSegment>
+			</air:AirSegmentList>
+			<air:FareInfoList>
+				<air:FareInfo Key="kFvB9rBAAA/BSixjTFAAAA==" FareBasis="QRHOWLK1" PassengerTypeCode="ADT" Origin="CMB" Destination="BKK" EffectiveDate="2017-03-27T23:56:00.000+05:30" DepartureDate="2017-04-13" Amount="LKR22500" NegotiatedFare="false" TourCode="IT6TG3CMB6S131" PrivateFare="AirlinePrivateFare" PseudoCityCode="3OS2">
+					<air:BaggageAllowance>
+						<air:MaxWeight Value="30" Unit="Kilograms"/>
+					</air:BaggageAllowance>
+					<air:FareRuleKey FareInfoRef="kFvB9rBAAA/BSixjTFAAAA==" ProviderCode="1G">gws-eJxNT9EOgjAM/Bhy7+2qbHtDQMSAIypK9uL/f4bdFiNdesl21+utaRpDbEmMbXZVYTuPiHruj3HZ5onR3dr5igDWJis6ZAFZngb5cadMF1UjnPr1LZ7NPDkiYkrgvXXG17U4BhWf4pJIVOsF4dUlS6PdThP4yHTIWyNIPP335OAHFiVCpgum9US99OqJwQ1UmFSIIcSQw/1sK3wqqBAJ9M/IsUtix6KhNiUsNNgX9OtCww==</air:FareRuleKey>
+				</air:FareInfo>
+				<air:FareInfo Key="kFvB9rBAAA/BaixjTFAAAA==" FareBasis="SOWLK" PassengerTypeCode="ADT" Origin="CMB" Destination="BKK" EffectiveDate="2017-03-27T23:56:00.000+05:30" DepartureDate="2017-04-13" Amount="LKR17200" NegotiatedFare="false" NotValidBefore="2017-04-13" NotValidAfter="2017-04-13">
+					<air:BaggageAllowance>
+						<air:MaxWeight Value="30" Unit="Kilograms"/>
+					</air:BaggageAllowance>
+					<air:FareRuleKey FareInfoRef="kFvB9rBAAA/BaixjTFAAAA==" ProviderCode="1G">gws-eJxNTkEOwjAMe8zku9MOyrFsZUJq6Q4woV34/zNwOwkRybESW3FijI4W6F2IfzXgM2wFdZuBCidMOcPsdB5hmnaQvOC5vktGPzCa17527WDrruSTA7FwsUNphb33+TH9brZEyIjWbndRvaZXyTQFCQyrhAB99QUpwid6</air:FareRuleKey>
+				</air:FareInfo>
+				<air:FareInfo Key="kFvB9rBAAA/BkixjTFAAAA==" FareBasis="K2OWLK" PassengerTypeCode="ADT" Origin="CMB" Destination="BKK" EffectiveDate="2017-03-27T23:56:00.000+05:30" DepartureDate="2017-04-13" Amount="LKR24700" NegotiatedFare="false" NotValidBefore="2017-04-13" NotValidAfter="2017-04-13">
+					<air:BaggageAllowance>
+						<air:MaxWeight Value="30" Unit="Kilograms"/>
+					</air:BaggageAllowance>
+					<air:FareRuleKey FareInfoRef="kFvB9rBAAA/BkixjTFAAAA==" ProviderCode="1G">gws-eJxNTkEKwzAMe0zR3XZKvN6yuisb2bIdVkov/f8z6qQwJrCEkZCdUhJipSCa/tBh74YVZTGgQHzGnMExkoJ920BEF2R5r8+M1tBzcKM081RuMQs2gDDLTKdTga2xvcZfaT0JD6LS7e5SrtPXHlIvkUbtP24o/K0DRJQnlQ==</air:FareRuleKey>
+				</air:FareInfo>
+				<air:FareInfo Key="kFvB9rBAAA/BtixjTFAAAA==" FareBasis="SOWLK" PassengerTypeCode="ADT" Origin="CMB" Destination="SIN" EffectiveDate="2017-03-27T23:56:00.000+05:30" DepartureDate="2017-04-13" Amount="LKR17300" NegotiatedFare="false" NotValidBefore="2017-04-13" NotValidAfter="2017-04-13">
+					<air:BaggageAllowance>
+						<air:MaxWeight Value="30" Unit="Kilograms"/>
+					</air:BaggageAllowance>
+					<air:FareRuleKey FareInfoRef="kFvB9rBAAA/BtixjTFAAAA==" ProviderCode="1G">gws-eJxNTkEKwzAMe0zRXXbGsmO2pqWlmXvoyuhl/3/GnBTGDLKwJSynlJQSGTSmv+rw6fYC23vAoI5tNohcg0J8OkDyhm19lwXtwEWC761pJ0tz5ZAVxMhRTqUWjtb75+N3sybCjahtmJzsnl9loXiQg3F1IcK/+gIwuieE</air:FareRuleKey>
+				</air:FareInfo>
+				<air:FareInfo Key="kFvB9rBAAA/BHjxjTFAAAA==" FareBasis="NLOW" PassengerTypeCode="ADT" Origin="SIN" Destination="BKK" EffectiveDate="2017-03-27T23:56:00.000+05:30" DepartureDate="2017-04-14" Amount="LKR16100" NegotiatedFare="false" NotValidBefore="2017-04-14" NotValidAfter="2017-04-14">
+					<air:BaggageAllowance>
+						<air:MaxWeight Value="30" Unit="Kilograms"/>
+					</air:BaggageAllowance>
+					<air:FareRuleKey FareInfoRef="kFvB9rBAAA/BHjxjTFAAAA==" ProviderCode="1G">gws-eJxNTssOgzAM+xjku1Oqld26ARVTp+wA08Rl//8ZpNkOWIqtxHnlnAMlsQ8pn9Dh2/UV+h4BRbC41wphutCzHSQH6PP1gc9HiVZWt34q3lRiIYhCE3casDuvD/2vFLSDsEY0mhcTvU1bZMNwNVg5wV46AJVCJmM=</air:FareRuleKey>
+				</air:FareInfo>
+				<air:FareInfo Key="kFvB9rBAAA/BSjxjTFAAAA==" FareBasis="L2OWLK" PassengerTypeCode="ADT" Origin="CMB" Destination="BKK" EffectiveDate="2017-03-27T23:56:00.000+05:30" DepartureDate="2017-04-13" Amount="LKR39000" NegotiatedFare="false" NotValidBefore="2017-04-13" NotValidAfter="2017-04-13">
+					<air:BaggageAllowance>
+						<air:MaxWeight Value="30" Unit="Kilograms"/>
+					</air:BaggageAllowance>
+					<air:FareRuleKey FareInfoRef="kFvB9rBAAA/BSjxjTFAAAA==" ProviderCode="1G">gws-eJxNjkEOg0AIRQ9j/p4BI3U3ldZotNMu2hg3vf8xhDFpSgI/8AifnDNTUhLW/BcNvk2/oXwMKGDPYVnAHTMjebeDiC5Y+bmtPo8LbRIHpcJTU10zsR6EUUY6SQT2Wu0x/I6GJXwRUe6TS7ne3jZLOJF22r4cKPytA0EzJ4w=</air:FareRuleKey>
+				</air:FareInfo>
+				<air:FareInfo Key="kFvB9rBAAA/B9ixjTFAAAA==" FareBasis="VOWLK" PassengerTypeCode="ADT" Origin="CMB" Destination="SIN" EffectiveDate="2017-03-27T23:56:00.000+05:30" DepartureDate="2017-04-13" Amount="LKR19900" NegotiatedFare="false" NotValidBefore="2017-04-13" NotValidAfter="2017-04-13">
+					<air:BaggageAllowance>
+						<air:MaxWeight Value="30" Unit="Kilograms"/>
+					</air:BaggageAllowance>
+					<air:FareRuleKey FareInfoRef="kFvB9rBAAA/B9ixjTFAAAA==" ProviderCode="1G">gws-eJxNTkEKwzAMe0zRXY4H6TFbs9LS1D1s3ehl/3/GnBTGDLKwJSynlAIlUkNMf9Xh0+0Ftg+AITges0FUe0J8OkCyx2t7lwXtwEXU99a0k6W5suYAYuQop1ILR+vDevvdrIlwI2q7T052zc+yUDzIwbi5EOFffQEziieL</air:FareRuleKey>
+				</air:FareInfo>
+				<air:FareInfo Key="kFvB9rBAAA/BxkxjTFAAAA==" FareBasis="OLOW" PassengerTypeCode="ADT" Origin="SIN" Destination="BKK" EffectiveDate="2017-03-27T23:56:00.000+05:30" DepartureDate="2017-04-14" Amount="LKR19200" NegotiatedFare="false" NotValidBefore="2017-04-14" NotValidAfter="2017-04-14">
+					<air:BaggageAllowance>
+						<air:MaxWeight Value="30" Unit="Kilograms"/>
+					</air:BaggageAllowance>
+					<air:FareRuleKey FareInfoRef="kFvB9rBAAA/BxkxjTFAAAA==" ProviderCode="1G">gws-eJxNTssOwjAM+5jJd6er1HIrA6pNRdlhQ9Mu/P9nkAYOWIqtxHmVUgIlcQyp/GHAexgb9HUDFMFiag0ScqJnJ0hmrM/1gM9HiVZWt74q3lRjJYhKE3c6cDpvi/5WCvpBWCM6PWYTvd73yI58MVg5wV76AJh7Jmw=</air:FareRuleKey>
+				</air:FareInfo>
+				<air:FareInfo Key="kFvB9rBAAA/BHlxjTFAAAA==" FareBasis="MOW2LK1" PassengerTypeCode="ADT" Origin="CMB" Destination="BKK" EffectiveDate="2017-03-27T23:56:00.000+05:30" DepartureDate="2017-04-13" Amount="LKR50100" NegotiatedFare="false">
+					<air:FareSurcharge Key="kFvB9rBAAA/BRlxjTFAAAA==" Type="Other" Amount="NUC24.93"/>
+					<air:BaggageAllowance>
+						<air:MaxWeight Value="30" Unit="Kilograms"/>
+					</air:BaggageAllowance>
+					<air:FareRuleKey FareInfoRef="kFvB9rBAAA/BHlxjTFAAAA==" ProviderCode="1G">gws-eJxNTkEOwjAMe8zku91MK8eylQmpW7mA0Djw/2eQdhcixVZiK05KKVCRFmL6qwHfYf2gvhagInjPpcCkKMinAyQv2B/vsBWhnxhlrtSunqzuW7kKRLYcTqUVjo7LPsNsmkb3tky4EQ1ud6d6zU9qKx5Fkb6O8K9+HuUnUA==</air:FareRuleKey>
+					<air:Brand Key="kFvB9rBAAA/BT1xjTFAAAA==" BrandFound="false"/>
+				</air:FareInfo>
+				<air:FareInfo Key="kFvB9rBAAA/BSlxjTFAAAA==" FareBasis="BFXOWLK" PassengerTypeCode="ADT" Origin="CMB" Destination="BKK" EffectiveDate="2017-03-27T23:56:00.000+05:30" DepartureDate="2017-04-13" Amount="LKR53900" NegotiatedFare="false">
+					<air:BaggageAllowance>
+						<air:MaxWeight Value="30" Unit="Kilograms"/>
+					</air:BaggageAllowance>
+					<air:FareRuleKey FareInfoRef="kFvB9rBAAA/BSlxjTFAAAA==" ProviderCode="1G">gws-eJxNTssKwzAM+5iiux9haW9ZmoVC2uywja2X/f9n1ElhTGAJIyE7hCDEnlR8+MOA77AtqK8ZqBCbWAr0Io7Btu0gohExf+7vtaBXOFZzandP5Z5LmgSE7DKdTgP2zvMWf63tJiyIRrfFpF7Tcy2unZqIvD7M8LC/DoC+KAI=</air:FareRuleKey>
+					<air:Brand Key="kFvB9rBAAA/BV1xjTFAAAA==" BrandID="60743"/>
+				</air:FareInfo>
+				<air:FareInfo Key="kFvB9rBAAA/BalxjTFAAAA==" FareBasis="RSRWSES" PassengerTypeCode="ADT" Origin="CMB" Destination="BKK" EffectiveDate="2017-03-27T23:56:00.000+05:30" DepartureDate="2017-04-13" Amount="LKR35600" NegotiatedFare="false" NotValidBefore="2017-04-13" NotValidAfter="2017-04-13">
+					<air:BaggageAllowance>
+						<air:NumberOfPieces>2</air:NumberOfPieces>
+						<air:MaxWeight/>
+					</air:BaggageAllowance>
+					<air:FareRuleKey FareInfoRef="kFvB9rBAAA/BalxjTFAAAA==" ProviderCode="1G">gws-eJxNTssKwzAM+5iiux9Zs92ypgmD0hyaldHL/v8z5qQwKrCMLSE7hCDEnlR8uGDAd1h3lD0CBWI1LQtEHzqCbTpARHdsdfvUVNEjHKsppatn5+6Lt+xAyJrpVBpwdI7r9E9tN2FGNEova+U5v5PTdopI2NYe9tUPR+8nmA==</air:FareRuleKey>
+					<air:Brand Key="kFvB9rBAAA/BX1xjTFAAAA==" BrandFound="false"/>
+				</air:FareInfo>
+				<air:FareInfo Key="kFvB9rBAAA/B1ixjTFAAAA==" FareBasis="YOXAS" PassengerTypeCode="ADT" Origin="SIN" Destination="BKK" EffectiveDate="2017-03-27T23:56:00.000+05:30" DepartureDate="2017-04-13" Amount="LKR36900" NegotiatedFare="false">
+					<air:FareSurcharge Key="kFvB9rBAAA/BCjxjTFAAAA==" Type="Other" Amount="NUC30.00"/>
+					<air:BaggageAllowance>
+						<air:MaxWeight Value="30" Unit="Kilograms"/>
+					</air:BaggageAllowance>
+					<air:FareRuleKey FareInfoRef="kFvB9rBAAA/B1ixjTFAAAA==" ProviderCode="1G">gws-eJxNTkEKwzAMe0zR3XIC6TFZ17JR8A5px3LZ/58xJ71MYBlbQnbOWYVJgqb8hwnf6W2wcwEM6nXbdyhnCWNqEJEZ7fUpFSMgMvjehnZ1DtfCVSHYZOOldKANrk/Pjj2T6BfhRnRaH96s3I9ShX4oJCqjCwn+1Q8wAyeA</air:FareRuleKey>
+					<air:Brand Key="kFvB9rBAAA/BZ1xjTFAAAA==" BrandFound="false"/>
+				</air:FareInfo>
+				<air:FareInfo Key="kFvB9rBAAA/BllxjTFAAAA==" FareBasis="MOWLK5" PassengerTypeCode="ADT" Origin="CMB" Destination="BKK" EffectiveDate="2017-03-27T23:56:00.000+05:30" DepartureDate="2017-04-13" Amount="LKR42000" NegotiatedFare="false" NotValidBefore="2017-04-13" NotValidAfter="2017-04-13">
+					<air:BaggageAllowance>
+						<air:MaxWeight Value="30" Unit="Kilograms"/>
+					</air:BaggageAllowance>
+					<air:FareRuleKey FareInfoRef="kFvB9rBAAA/BllxjTFAAAA==" ProviderCode="1G">gws-eJxNTkEKwzAMe0zRXXFa4mOWpmWQNmNsY/Sy/z9jTgpjAksYCdkxRqEL9BLiHwZ8hscd9TUDFWKTSoGojISz7QBJxX57b2VCbxidN6N281TXY9lnAbFy1dNpwNF53tOvtJ2EBdFouZrUS35uhWqXrH3SZEaAvfUFUYMnuA==</air:FareRuleKey>
+					<air:Brand Key="kFvB9rBAAA/Bb1xjTFAAAA==" BrandID="55106"/>
+				</air:FareInfo>
+				<air:FareInfo Key="kFvB9rBAAA/BwlxjTFAAAA==" FareBasis="NOWLK" PassengerTypeCode="ADT" Origin="CMB" Destination="KUL" EffectiveDate="2017-03-27T23:56:00.000+05:30" DepartureDate="2017-04-13" Amount="LKR13800" NegotiatedFare="false" NotValidBefore="2017-04-13" NotValidAfter="2017-04-13">
+					<air:BaggageAllowance>
+						<air:MaxWeight Value="30" Unit="Kilograms"/>
+					</air:BaggageAllowance>
+					<air:FareRuleKey FareInfoRef="kFvB9rBAAA/BwlxjTFAAAA==" ProviderCode="1G">gws-eJxNTkEKwzAMe0zR3XYGaW/ZmpZBMvfSMnrZ/58xJWUwgW1syZZTSiYaJVhMfxjwGY4KP2bAYYzCdrI4QtmcEJERvr1rQd+/aeDcO3dV7aocskGwyqoX04Cz5/n1+J1sfqAOLS1PFr/nvRZR+jAkbiQi+MQX7i0nOw==</air:FareRuleKey>
+				</air:FareInfo>
+				<air:FareInfo Key="kFvB9rBAAA/B8lxjTFAAAA==" FareBasis="Y" PassengerTypeCode="ADT" Origin="KUL" Destination="BKK" EffectiveDate="2017-03-27T23:56:00.000+05:30" DepartureDate="2017-04-13" Amount="LKR47000" NegotiatedFare="false">
+					<air:BaggageAllowance>
+						<air:MaxWeight Value="30" Unit="Kilograms"/>
+					</air:BaggageAllowance>
+					<air:FareRuleKey FareInfoRef="kFvB9rBAAA/B8lxjTFAAAA==" ProviderCode="1G">gws-eJxNTrsOwzAI/JjodrBJTDe3catIjj01g5f+/2eUkA49iffBkXMOxIliSPkPEz6TNvRjBTqC2aNWRJ518WqAiNSCLwtH63XvX5Gd8dIiIBRZ9ZqcwHBfj/13j3GqwYiGNAuemyXjXt7a2mYyJkW4kRjTfvoCsx0mvg==</air:FareRuleKey>
+					<air:Brand Key="kFvB9rBAAA/Bd1xjTFAAAA==" BrandID="62490"/>
+				</air:FareInfo>
+				<air:FareInfo Key="kFvB9rBAAA/BLmxjTFAAAA==" FareBasis="HOWLK" PassengerTypeCode="ADT" Origin="CMB" Destination="BKK" EffectiveDate="2017-03-27T23:56:00.000+05:30" DepartureDate="2017-04-13" Amount="LKR63600" NegotiatedFare="false" TourCode="CMB1169FF500" PrivateFare="AirlinePrivateFare" PseudoCityCode="3OS2">
+					<air:FareSurcharge Key="kFvB9rBAAA/BVmxjTFAAAA==" Type="Other" Amount="NUC5.80"/>
+					<air:BaggageAllowance>
+						<air:MaxWeight Value="30" Unit="Kilograms"/>
+					</air:BaggageAllowance>
+					<air:FareRuleKey FareInfoRef="kFvB9rBAAA/BLmxjTFAAAA==" ProviderCode="1G">gws-eJxNT0kOwyAMfEw0d4NBkBvNplRJidR049L/P6M2XGrksWSPx0NKyZIJxDakv+iAIg/jbdivyDCSFFiYAeDjtKhNYSgIC/kyPV4cozvvnokMSZi+B7W1tqQ9dOMH+TmqgpUctg3OGh/rkQLi4LAe731DdeYMSz/XWUM9STTbSdSx+IXbRAMl55KrIWcDq2aHr/yGAIV5laJWm8vovKgTAsTTD55LOjA=</air:FareRuleKey>
+					<air:Brand Key="kFvB9rBAAA/Bf1xjTFAAAA==" BrandID="48109"/>
+				</air:FareInfo>
+				<air:FareInfo Key="kFvB9rBAAA/B2lxjTFAAAA==" FareBasis="YIFMH" PassengerTypeCode="ADT" Origin="KUL" Destination="BKK" EffectiveDate="2017-03-27T23:56:00.000+05:30" DepartureDate="2017-04-13" Amount="LKR52700" NegotiatedFare="false">
+					<air:FareSurcharge Key="kFvB9rBAAA/B3lxjTFAAAA==" Type="Other" Amount="NUC37.90"/>
+					<air:BaggageAllowance>
+						<air:MaxWeight Value="30" Unit="Kilograms"/>
+					</air:BaggageAllowance>
+					<air:FareRuleKey FareInfoRef="kFvB9rBAAA/B2lxjTFAAAA==" ProviderCode="1G">gws-eJxNjTsOgzAQRA+Dpl//sNM5AUdGBleh2Cb3P0YG02Sk/T/t5JytmCjOxvynCd/pqOjnAnRYxqs1OBPSPCaFiCTo9iY1HnjjuO/jdlczqNUvCYKSSrovl6Ajt3OHCy7OZC9HEKRi8CiVTX+un6Oq0op2oniIJ0rLH6h8KII=</air:FareRuleKey>
+					<air:Brand Key="kFvB9rBAAA/Bh1xjTFAAAA==" BrandID="60743"/>
+				</air:FareInfo>
+				<air:FareInfo Key="kFvB9rBAAA/BWmxjTFAAAA==" FareBasis="SOWLK9" PassengerTypeCode="ADT" Origin="CMB" Destination="CTU" EffectiveDate="2017-03-27T23:56:00.000+05:30" DepartureDate="2017-04-13" Amount="LKR33000" NegotiatedFare="false" NotValidBefore="2017-04-13" NotValidAfter="2017-04-13">
+					<air:BaggageAllowance>
+						<air:NumberOfPieces>1</air:NumberOfPieces>
+						<air:MaxWeight/>
+					</air:BaggageAllowance>
+					<air:FareRuleKey FareInfoRef="kFvB9rBAAA/BWmxjTFAAAA==" ProviderCode="1G">gws-eJxNTkEKhDAMfIzMPUlX2r21RkVwt3tQES/+/xmbVhAHMkOYYZIYoxB7cuLjAw3ORhPypkCG2Oi6QYRDANt2gIgClt/+md+oDS92ZuRqXso1pjwICGM7yuUU4Kis3+4uLSdhQRQaJpOc+jUtrdgl59jLboaHvfUHUEInrA==</air:FareRuleKey>
+					<air:Brand Key="kFvB9rBAAA/Bj1xjTFAAAA==" BrandID="62510"/>
+				</air:FareInfo>
+				<air:FareInfo Key="kFvB9rBAAA/BimxjTFAAAA==" FareBasis="RLSRWCD" PassengerTypeCode="ADT" Origin="CTU" Destination="BKK" EffectiveDate="2017-03-27T23:56:00.000+05:30" DepartureDate="2017-04-14" Amount="LKR22300" NegotiatedFare="false" NotValidBefore="2017-04-14" NotValidAfter="2017-04-14">
+					<air:BaggageAllowance>
+						<air:NumberOfPieces>1</air:NumberOfPieces>
+						<air:MaxWeight/>
+					</air:BaggageAllowance>
+					<air:FareRuleKey FareInfoRef="kFvB9rBAAA/BimxjTFAAAA==" ProviderCode="1G">gws-eJxNTkEOgzAMewzyPemCCreOQjUJ1gOjQlz4/zNIA4dZiqPElpMQgiP29HI+/KHB2XwLcolAhtMa5hksfdvbdICIOqzLb93jCIsQFlWyqXdn88U2CQhJEt9KBQ7juJUnlVFvQo2oNH205fe4TSKsp8gR6dpDv7oAR4AnqQ==</air:FareRuleKey>
+					<air:Brand Key="kFvB9rBAAA/Bl1xjTFAAAA==" BrandFound="false"/>
+				</air:FareInfo>
+				<air:FareInfo Key="kFvB9rBAAA/BemxjTFAAAA==" FareBasis="GLOWCK" PassengerTypeCode="ADT" Origin="CTU" Destination="BKK" EffectiveDate="2017-03-27T23:56:00.000+05:30" DepartureDate="2017-04-14" Amount="LKR34800" NegotiatedFare="false">
+					<air:BaggageAllowance>
+						<air:NumberOfPieces>1</air:NumberOfPieces>
+						<air:MaxWeight/>
+					</air:BaggageAllowance>
+					<air:FareRuleKey FareInfoRef="kFvB9rBAAA/BemxjTFAAAA==" ProviderCode="1G">gws-eJxNTssOgzAM+xjkex6IdreyAkNjKpdWE5f9/2csLRywFEeJrTghBCF2pOLCDR1+nRakEoEEsXpuG0TVS5sOEJHH67N/o+3rhZ57E1ITz87NNmv0ICy0DKdSgaNxzOU6yqiRMCMqzau1NE45rzRYkqXx422Cg731B0zRJ68=</air:FareRuleKey>
+				</air:FareInfo>
+				<air:FareInfo Key="kFvB9rBAAA/BzmxjTFAAAA==" FareBasis="LSFWSES" PassengerTypeCode="ADT" Origin="CMB" Destination="BKK" EffectiveDate="2017-03-27T23:56:00.000+05:30" DepartureDate="2017-04-13" Amount="LKR57200" NegotiatedFare="false">
+					<air:BaggageAllowance>
+						<air:NumberOfPieces>2</air:NumberOfPieces>
+						<air:MaxWeight/>
+					</air:BaggageAllowance>
+					<air:FareRuleKey FareInfoRef="kFvB9rBAAA/BzmxjTFAAAA==" ProviderCode="1G">gws-eJxNTkEKwzAMe0zRXY6zpcesWcKgay5ZGb3s/8+Yk8KYwDK2hOwYo6MEqgvxDxM+07aj7gmocFbLukJnfyXEpgMkZzxbebfcMCK8qCl1qGeX4UuX4kEULTyVDhyD07b8UvtNmBGd8sNavd1f2Ws/RTqxdYB99QU+cyeC</air:FareRuleKey>
+					<air:Brand Key="kFvB9rBAAA/Bn1xjTFAAAA==" BrandFound="false"/>
+				</air:FareInfo>
+				<air:FareInfo Key="kFvB9rBAAA/B+mxjTFAAAA==" FareBasis="USSOSLK1" PassengerTypeCode="ADT" Origin="CMB" Destination="BKK" EffectiveDate="2017-03-27T23:56:00.000+05:30" DepartureDate="2017-04-13" Amount="LKR88200" NegotiatedFare="false" NotValidBefore="2017-04-13" NotValidAfter="2017-04-13">
+					<air:BaggageAllowance>
+						<air:MaxWeight Value="30" Unit="Kilograms"/>
+					</air:BaggageAllowance>
+					<air:FareRuleKey FareInfoRef="kFvB9rBAAA/B+mxjTFAAAA==" ProviderCode="1G">gws-eJxNTkEOgzAMewzyPUmZut0KFDSpW3coHLjw/2fgFgktUmwltpyEEEzUizMf/qrD0c0JeZuADGOPKeHxctJDOe0QkSe2Un7lkxQto1dHKTf5Ym3G6KJBsOgil1ILe8PpO96x9ShoRIX5TcpDXBlfbxmBaw++dQJewCew</air:FareRuleKey>
+					<air:Brand Key="kFvB9rBAAA/Bp1xjTFAAAA==" BrandID="55278"/>
+				</air:FareInfo>
+				<air:FareInfo Key="kFvB9rBAAA/BHnxjTFAAAA==" FareBasis="AF2XOX" PassengerTypeCode="ADT" Origin="CMB" Destination="BKK" EffectiveDate="2017-03-27T23:56:00.000+05:30" DepartureDate="2017-04-13" Amount="LKR100200" NegotiatedFare="false" NotValidBefore="2017-04-14" NotValidAfter="2017-04-14">
+					<air:BaggageAllowance>
+						<air:MaxWeight Value="30" Unit="Kilograms"/>
+					</air:BaggageAllowance>
+					<air:FareRuleKey FareInfoRef="kFvB9rBAAA/BHnxjTFAAAA==" ProviderCode="1G">gws-eJxNjsEKhDAMRD9G5p6m1ezeaqtFKFtBXNCL//8ZphWWDSRDeMMk3nsmI2RZ/F91uLo9o3wjUMDaIWcMYoVhdDtBRC+MiY/1QEtwxiooDT5qmi320xuERMk9pBbONuMn/ELrSagRdcyLShmnfd7I6SXSBzkoEOhbN1GxJ64=</air:FareRuleKey>
+					<air:Brand Key="kFvB9rBAAA/Br1xjTFAAAA==" BrandFound="false"/>
+				</air:FareInfo>
+				<air:FareInfo Key="kFvB9rBAAA/BRnxjTFAAAA==" FareBasis="LOWLK" PassengerTypeCode="ADT" Origin="CMB" Destination="BKK" EffectiveDate="2017-03-27T23:56:00.000+05:30" DepartureDate="2017-04-13" Amount="LKR156300" NegotiatedFare="false" NotValidBefore="2017-04-14" NotValidAfter="2017-04-14">
+					<air:FareTicketDesignator Value="YV"/>
+					<air:FareSurcharge Key="kFvB9rBAAA/BcnxjTFAAAA==" Type="Other" Amount="NUC175.00"/>
+					<air:FareSurcharge Key="kFvB9rBAAA/BdnxjTFAAAA==" Type="Other" Amount="NUC160.00"/>
+					<air:FareSurcharge Key="kFvB9rBAAA/BenxjTFAAAA==" Type="Other" Amount="NUC150.00"/>
+					<air:FareSurcharge Key="kFvB9rBAAA/BfnxjTFAAAA==" Type="Weekend Surcharge" Amount="NUC15.00"/>
+					<air:FareSurcharge Key="kFvB9rBAAA/BgnxjTFAAAA==" Type="Other" Amount="NUC2.50"/>
+					<air:FareSurcharge Key="kFvB9rBAAA/BhnxjTFAAAA==" Type="Other" Amount="NUC62.00"/>
+					<air:BaggageAllowance>
+						<air:NumberOfPieces>2</air:NumberOfPieces>
+						<air:MaxWeight/>
+					</air:BaggageAllowance>
+					<air:FareRuleKey FareInfoRef="kFvB9rBAAA/BRnxjTFAAAA==" ProviderCode="1G">gws-eJxNTkEOwyAMe0zluwMUemSFapNg7LJp4rL/P2OB9TBHcRTFshNjNJRAa0L8w4LPcnS0VwIajPZeCtzmxUJ06yC5oT7etWAaOL20Wf2cMlXZZgMiheR+lwH0yem+Q7jSD9MRCVVi0HHT0S75Wcs1axJF7YkAfeoLAfEnTA==</air:FareRuleKey>
+					<air:Brand Key="kFvB9rBAAA/Bt1xjTFAAAA==" BrandID="49612"/>
+				</air:FareInfo>
+			</air:FareInfoList>
+			<air:RouteList>
+				<air:Route Key="kFvB9rBAAA/BinxjTFAAAA==">
+					<air:Leg Key="kFvB9rBAAA/BZixjTFAAAA==" Group="0" Origin="CMB" Destination="BKK"/>
+				</air:Route>
+			</air:RouteList>
+			<air:AirPricePointList>
+				<air:AirPricePoint Key="kFvB9rBAAA/BjnxjTFAAAA==" TotalPrice="LKR29723" BasePrice="LKR22500" ApproximateTotalPrice="LKR29723" ApproximateBasePrice="LKR22500" Taxes="LKR7223" ApproximateTaxes="LKR7223" CompleteItinerary="true">
+					<air:AirPricingInfo Key="kFvB9rBAAA/BTixjTFAAAA==" TotalPrice="LKR29723" BasePrice="LKR22500" ApproximateTotalPrice="LKR29723" ApproximateBasePrice="LKR22500" Taxes="LKR7223" LatestTicketingTime="2017-04-13T23:59:00.000+05:30" PricingMethod="GuaranteedUsingAirlinePrivateFare" Refundable="true" ETicketability="Yes" PlatingCarrier="TG" ProviderCode="1G">
+						<air:FareInfoRef Key="kFvB9rBAAA/BSixjTFAAAA=="/>
+						<air:TaxInfo Category="LK" Amount="LKR7000"/>
+						<air:TaxInfo Category="E7" Amount="LKR156"/>
+						<air:TaxInfo Category="G8" Amount="LKR67"/>
+						<air:FareCalc>CMB TG BKK 151.04QRHOWLK1 NUC151.04END ROE148.725</air:FareCalc>
+						<air:PassengerType Code="ADT"/>
+						<air:FlightOptionsList>
+							<air:FlightOption LegRef="kFvB9rBAAA/BZixjTFAAAA==" Destination="BKK" Origin="CMB">
+								<air:Option Key="kFvB9rBAAA/BXixjTFAAAA==" TravelTime="P0DT3H25M0S">
+									<air:BookingInfo BookingCode="Q" CabinClass="Economy" FareInfoRef="kFvB9rBAAA/BSixjTFAAAA==" SegmentRef="kFvB9rBAAA/B2gxjTFAAAA=="/>
+								</air:Option>
+							</air:FlightOption>
+						</air:FlightOptionsList>
+					</air:AirPricingInfo>
+				</air:AirPricePoint>
+				<air:AirPricePoint Key="kFvB9rBAAA/BknxjTFAAAA==" TotalPrice="LKR29743" BasePrice="LKR17200" ApproximateTotalPrice="LKR29743" ApproximateBasePrice="LKR17200" Taxes="LKR12543" ApproximateTaxes="LKR12543" CompleteItinerary="true">
+					<air:AirPricingInfo Key="kFvB9rBAAA/BbixjTFAAAA==" TotalPrice="LKR29743" BasePrice="LKR17200" ApproximateTotalPrice="LKR29743" ApproximateBasePrice="LKR17200" Taxes="LKR12543" LatestTicketingTime="2017-04-13T23:59:00.000+05:30" PricingMethod="Guaranteed" Refundable="true" ETicketability="Yes" PlatingCarrier="UL" ProviderCode="1G">
+						<air:FareInfoRef Key="kFvB9rBAAA/BaixjTFAAAA=="/>
+						<air:TaxInfo Category="LK" Amount="LKR7000"/>
+						<air:TaxInfo Category="E7" Amount="LKR156"/>
+						<air:TaxInfo Category="G8" Amount="LKR67"/>
+						<air:TaxInfo Category="YQ" Amount="LKR5320"/>
+						<air:FareCalc>CMB UL BKK 115.64SOWLK NUC115.64END ROE148.725</air:FareCalc>
+						<air:PassengerType Code="ADT"/>
+						<air:ChangePenalty>
+							<air:Amount>LKR5500.0</air:Amount>
+						</air:ChangePenalty>
+						<air:CancelPenalty>
+							<air:Amount>LKR7500.0</air:Amount>
+						</air:CancelPenalty>
+						<air:FlightOptionsList>
+							<air:FlightOption LegRef="kFvB9rBAAA/BZixjTFAAAA==" Destination="BKK" Origin="CMB">
+								<air:Option Key="kFvB9rBAAA/BgixjTFAAAA==" TravelTime="P0DT3H30M0S">
+									<air:BookingInfo BookingCode="S" CabinClass="Economy" FareInfoRef="kFvB9rBAAA/BaixjTFAAAA==" SegmentRef="kFvB9rBAAA/B4gxjTFAAAA=="/>
+								</air:Option>
+								<air:Option Key="kFvB9rBAAA/BiixjTFAAAA==" TravelTime="P0DT3H30M0S">
+									<air:BookingInfo BookingCode="S" CabinClass="Economy" FareInfoRef="kFvB9rBAAA/BaixjTFAAAA==" SegmentRef="kFvB9rBAAA/B6gxjTFAAAA=="/>
+								</air:Option>
+							</air:FlightOption>
+						</air:FlightOptionsList>
+					</air:AirPricingInfo>
+				</air:AirPricePoint>
+				<air:AirPricePoint Key="kFvB9rBAAA/BlnxjTFAAAA==" TotalPrice="LKR32230" BasePrice="LKR24700" ApproximateTotalPrice="LKR32230" ApproximateBasePrice="LKR24700" Taxes="LKR7530" ApproximateTaxes="LKR7530" CompleteItinerary="true">
+					<air:AirPricingInfo Key="kFvB9rBAAA/BlixjTFAAAA==" TotalPrice="LKR32230" BasePrice="LKR24700" ApproximateTotalPrice="LKR32230" ApproximateBasePrice="LKR24700" Taxes="LKR7530" LatestTicketingTime="2017-04-13T23:59:00.000+05:30" PricingMethod="Guaranteed" Refundable="true" ETicketability="Yes" PlatingCarrier="9W" ProviderCode="1G">
+						<air:FareInfoRef Key="kFvB9rBAAA/BkixjTFAAAA=="/>
+						<air:TaxInfo Category="LK" Amount="LKR7000"/>
+						<air:TaxInfo Category="E7" Amount="LKR156"/>
+						<air:TaxInfo Category="G8" Amount="LKR67"/>
+						<air:TaxInfo Category="YR" Amount="LKR307"/>
+						<air:FareCalc>CMB 9W X/BOM 9W BKK 166.07K2OWLK NUC166.07END ROE148.725</air:FareCalc>
+						<air:PassengerType Code="ADT"/>
+						<air:ChangePenalty>
+							<air:Amount>LKR7000.0</air:Amount>
+						</air:ChangePenalty>
+						<air:FlightOptionsList>
+							<air:FlightOption LegRef="kFvB9rBAAA/BZixjTFAAAA==" Destination="BKK" Origin="CMB">
+								<air:Option Key="kFvB9rBAAA/BqixjTFAAAA==" TravelTime="P0DT11H40M0S">
+									<air:BookingInfo BookingCode="K" CabinClass="Economy" FareInfoRef="kFvB9rBAAA/BkixjTFAAAA==" SegmentRef="kFvB9rBAAA/B8gxjTFAAAA=="/>
+									<air:BookingInfo BookingCode="K" CabinClass="Economy" FareInfoRef="kFvB9rBAAA/BkixjTFAAAA==" SegmentRef="kFvB9rBAAA/B+gxjTFAAAA=="/>
+									<air:Connection SegmentIndex="0"/>
+								</air:Option>
+							</air:FlightOption>
+						</air:FlightOptionsList>
+					</air:AirPricingInfo>
+				</air:AirPricePoint>
+				<air:AirPricePoint Key="kFvB9rBAAA/BmnxjTFAAAA==" TotalPrice="LKR46601" BasePrice="LKR33400" ApproximateTotalPrice="LKR46601" ApproximateBasePrice="LKR33400" Taxes="LKR13201" ApproximateTaxes="LKR13201" CompleteItinerary="true">
+					<air:AirPricingInfo Key="kFvB9rBAAA/BIjxjTFAAAA==" TotalPrice="LKR46601" BasePrice="LKR33400" ApproximateTotalPrice="LKR46601" ApproximateBasePrice="LKR33400" Taxes="LKR13201" LatestTicketingTime="2017-04-12T23:59:00.000+05:30" PricingMethod="Guaranteed" ETicketability="Yes" PlatingCarrier="UL" ProviderCode="1G">
+						<air:FareInfoRef Key="kFvB9rBAAA/BtixjTFAAAA=="/>
+						<air:FareInfoRef Key="kFvB9rBAAA/BHjxjTFAAAA=="/>
+						<air:TaxInfo Category="LK" Amount="LKR7000"/>
+						<air:TaxInfo Category="OO" Amount="LKR329"/>
+						<air:TaxInfo Category="SG" Amount="LKR329"/>
+						<air:TaxInfo Category="E7" Amount="LKR156"/>
+						<air:TaxInfo Category="G8" Amount="LKR67"/>
+						<air:TaxInfo Category="YQ" Amount="LKR5320"/>
+						<air:FareCalc>CMB UL SIN 116.32SOWLK 3K BKK 107.60NLOW NUC223.92END ROE148.725</air:FareCalc>
+						<air:PassengerType Code="ADT"/>
+						<air:ChangePenalty>
+							<air:Amount>LKR5500.0</air:Amount>
+						</air:ChangePenalty>
+						<air:FlightOptionsList>
+							<air:FlightOption LegRef="kFvB9rBAAA/BZixjTFAAAA==" Destination="BKK" Origin="CMB">
+								<air:Option Key="kFvB9rBAAA/BPjxjTFAAAA==" TravelTime="P1DT5H20M0S">
+									<air:BookingInfo BookingCode="S" CabinClass="Economy" FareInfoRef="kFvB9rBAAA/BtixjTFAAAA==" SegmentRef="kFvB9rBAAA/BAhxjTFAAAA=="/>
+									<air:BookingInfo BookingCode="N" CabinClass="Economy" FareInfoRef="kFvB9rBAAA/BHjxjTFAAAA==" SegmentRef="kFvB9rBAAA/BChxjTFAAAA=="/>
+									<air:Connection SegmentIndex="0"/>
+								</air:Option>
+							</air:FlightOption>
+						</air:FlightOptionsList>
+					</air:AirPricingInfo>
+				</air:AirPricePoint>
+				<air:AirPricePoint Key="kFvB9rBAAA/BnnxjTFAAAA==" TotalPrice="LKR46530" BasePrice="LKR39000" ApproximateTotalPrice="LKR46530" ApproximateBasePrice="LKR39000" Taxes="LKR7530" ApproximateTaxes="LKR7530" CompleteItinerary="true">
+					<air:AirPricingInfo Key="kFvB9rBAAA/BpkxjTFAAAA==" TotalPrice="LKR46530" BasePrice="LKR39000" ApproximateTotalPrice="LKR46530" ApproximateBasePrice="LKR39000" Taxes="LKR7530" LatestTicketingTime="2017-04-13T23:59:00.000+05:30" PricingMethod="Guaranteed" Refundable="true" ETicketability="Yes" PlatingCarrier="9W" ProviderCode="1G">
+						<air:FareInfoRef Key="kFvB9rBAAA/BSjxjTFAAAA=="/>
+						<air:TaxInfo Category="LK" Amount="LKR7000"/>
+						<air:TaxInfo Category="E7" Amount="LKR156"/>
+						<air:TaxInfo Category="G8" Amount="LKR67"/>
+						<air:TaxInfo Category="YR" Amount="LKR307"/>
+						<air:FareCalc>CMB 9W X/BOM 9W BKK 262.22L2OWLK NUC262.22END ROE148.725</air:FareCalc>
+						<air:PassengerType Code="ADT"/>
+						<air:ChangePenalty>
+							<air:Amount>LKR6200.0</air:Amount>
+						</air:ChangePenalty>
+						<air:FlightOptionsList>
+							<air:FlightOption LegRef="kFvB9rBAAA/BZixjTFAAAA==" Destination="BKK" Origin="CMB">
+								<air:Option Key="kFvB9rBAAA/BukxjTFAAAA==" TravelTime="P0DT23H40M0S">
+									<air:BookingInfo BookingCode="L" CabinClass="Economy" FareInfoRef="kFvB9rBAAA/BSjxjTFAAAA==" SegmentRef="kFvB9rBAAA/B8gxjTFAAAA=="/>
+									<air:BookingInfo BookingCode="L" CabinClass="Economy" FareInfoRef="kFvB9rBAAA/BSjxjTFAAAA==" SegmentRef="kFvB9rBAAA/BEhxjTFAAAA=="/>
+									<air:Connection SegmentIndex="0"/>
+								</air:Option>
+							</air:FlightOption>
+						</air:FlightOptionsList>
+					</air:AirPricingInfo>
+				</air:AirPricePoint>
+				<air:AirPricePoint Key="kFvB9rBAAA/BonxjTFAAAA==" TotalPrice="LKR52301" BasePrice="LKR39100" ApproximateTotalPrice="LKR52301" ApproximateBasePrice="LKR39100" Taxes="LKR13201" ApproximateTaxes="LKR13201" CompleteItinerary="true">
+					<air:AirPricingInfo Key="kFvB9rBAAA/BykxjTFAAAA==" TotalPrice="LKR52301" BasePrice="LKR39100" ApproximateTotalPrice="LKR52301" ApproximateBasePrice="LKR39100" Taxes="LKR13201" LatestTicketingTime="2017-04-12T23:59:00.000+05:30" PricingMethod="Guaranteed" ETicketability="Yes" PlatingCarrier="UL" ProviderCode="1G">
+						<air:FareInfoRef Key="kFvB9rBAAA/B9ixjTFAAAA=="/>
+						<air:FareInfoRef Key="kFvB9rBAAA/BxkxjTFAAAA=="/>
+						<air:TaxInfo Category="LK" Amount="LKR7000"/>
+						<air:TaxInfo Category="OO" Amount="LKR329"/>
+						<air:TaxInfo Category="SG" Amount="LKR329"/>
+						<air:TaxInfo Category="E7" Amount="LKR156"/>
+						<air:TaxInfo Category="G8" Amount="LKR67"/>
+						<air:TaxInfo Category="YQ" Amount="LKR5320"/>
+						<air:FareCalc>CMB UL SIN 133.80VOWLK 3K BKK 128.70OLOW NUC262.50END ROE148.725</air:FareCalc>
+						<air:PassengerType Code="ADT"/>
+						<air:ChangePenalty>
+							<air:Amount>LKR5500.0</air:Amount>
+						</air:ChangePenalty>
+						<air:FlightOptionsList>
+							<air:FlightOption LegRef="kFvB9rBAAA/BZixjTFAAAA==" Destination="BKK" Origin="CMB">
+								<air:Option Key="kFvB9rBAAA/B+kxjTFAAAA==" TravelTime="P0DT8H45M0S">
+									<air:BookingInfo BookingCode="V" CabinClass="Economy" FareInfoRef="kFvB9rBAAA/B9ixjTFAAAA==" SegmentRef="kFvB9rBAAA/BGhxjTFAAAA=="/>
+									<air:BookingInfo BookingCode="O" CabinClass="Economy" FareInfoRef="kFvB9rBAAA/BxkxjTFAAAA==" SegmentRef="kFvB9rBAAA/BIhxjTFAAAA=="/>
+									<air:Connection SegmentIndex="0"/>
+								</air:Option>
+								<air:Option Key="kFvB9rBAAA/BElxjTFAAAA==" TravelTime="P0DT10H50M0S">
+									<air:BookingInfo BookingCode="V" CabinClass="Economy" FareInfoRef="kFvB9rBAAA/B9ixjTFAAAA==" SegmentRef="kFvB9rBAAA/BGhxjTFAAAA=="/>
+									<air:BookingInfo BookingCode="O" CabinClass="Economy" FareInfoRef="kFvB9rBAAA/BxkxjTFAAAA==" SegmentRef="kFvB9rBAAA/BKhxjTFAAAA=="/>
+									<air:Connection SegmentIndex="0"/>
+								</air:Option>
+							</air:FlightOption>
+						</air:FlightOptionsList>
+					</air:AirPricingInfo>
+				</air:AirPricePoint>
+				<air:AirPricePoint Key="kFvB9rBAAA/BpnxjTFAAAA==" TotalPrice="LKR59986" BasePrice="LKR50100" ApproximateTotalPrice="LKR59986" ApproximateBasePrice="LKR50100" Taxes="LKR9886" ApproximateTaxes="LKR9886" CompleteItinerary="true">
+					<air:AirPricingInfo Key="kFvB9rBAAA/BqnxjTFAAAA==" TotalPrice="LKR59986" BasePrice="LKR50100" ApproximateTotalPrice="LKR59986" ApproximateBasePrice="LKR50100" Taxes="LKR9886" LatestTicketingTime="2017-04-13T23:59:00.000+05:30" PricingMethod="Guaranteed" Refundable="true" ETicketability="Yes" PlatingCarrier="HR" ProviderCode="1G">
+						<air:FareInfoRef Key="kFvB9rBAAA/BHlxjTFAAAA=="/>
+						<air:TaxInfo Category="LK" Amount="LKR7000"/>
+						<air:TaxInfo Category="F6" Amount="LKR1463"/>
+						<air:TaxInfo Category="E7" Amount="LKR156"/>
+						<air:TaxInfo Category="G8" Amount="LKR67"/>
+						<air:TaxInfo Category="YR" Amount="LKR1200"/>
+						<air:FareCalc>CMB FZ X/DXB FZ BKK 311.71MOW2LK1 Q CMBBKK24.93NUC336.64END ROE148.725</air:FareCalc>
+						<air:PassengerType Code="ADT"/>
+						<air:CancelPenalty>
+							<air:Amount>LKR13300</air:Amount>
+						</air:CancelPenalty>
+						<air:FlightOptionsList>
+							<air:FlightOption LegRef="kFvB9rBAAA/BZixjTFAAAA==" Destination="BKK" Origin="CMB">
+								<air:Option Key="kFvB9rBAAA/BwnxjTFAAAA==" TravelTime="P0DT12H35M0S">
+									<air:BookingInfo BookingCode="M" CabinClass="Economy" FareInfoRef="kFvB9rBAAA/BHlxjTFAAAA==" SegmentRef="kFvB9rBAAA/BMhxjTFAAAA=="/>
+									<air:BookingInfo BookingCode="M" CabinClass="Economy" FareInfoRef="kFvB9rBAAA/BHlxjTFAAAA==" SegmentRef="kFvB9rBAAA/BOhxjTFAAAA=="/>
+									<air:Connection SegmentIndex="0"/>
+								</air:Option>
+							</air:FlightOption>
+						</air:FlightOptionsList>
+					</air:AirPricingInfo>
+				</air:AirPricePoint>
+				<air:AirPricePoint Key="kFvB9rBAAA/BznxjTFAAAA==" TotalPrice="LKR59986" BasePrice="LKR50100" ApproximateTotalPrice="LKR59986" ApproximateBasePrice="LKR50100" Taxes="LKR9886" ApproximateTaxes="LKR9886" CompleteItinerary="true">
+					<air:AirPricingInfo Key="kFvB9rBAAA/BIlxjTFAAAA==" TotalPrice="LKR59986" BasePrice="LKR50100" ApproximateTotalPrice="LKR59986" ApproximateBasePrice="LKR50100" Taxes="LKR9886" LatestTicketingTime="2017-04-13T23:59:00.000+05:30" PricingMethod="Guaranteed" Refundable="true" ETicketability="Yes" PlatingCarrier="HR" ProviderCode="1G">
+						<air:FareInfoRef Key="kFvB9rBAAA/BHlxjTFAAAA=="/>
+						<air:TaxInfo Category="LK" Amount="LKR7000"/>
+						<air:TaxInfo Category="F6" Amount="LKR1463"/>
+						<air:TaxInfo Category="E7" Amount="LKR156"/>
+						<air:TaxInfo Category="G8" Amount="LKR67"/>
+						<air:TaxInfo Category="YR" Amount="LKR1200"/>
+						<air:FareCalc>CMB FZ X/DXB FZ BKK 311.71MOW2LK1 Q CMBBKK24.93NUC336.64END ROE148.725</air:FareCalc>
+						<air:PassengerType Code="ADT"/>
+						<air:CancelPenalty>
+							<air:Amount>LKR13300</air:Amount>
+						</air:CancelPenalty>
+						<air:FlightOptionsList>
+							<air:FlightOption LegRef="kFvB9rBAAA/BZixjTFAAAA==" Destination="BKK" Origin="CMB">
+								<air:Option Key="kFvB9rBAAA/BOlxjTFAAAA==" TravelTime="P0DT17H50M0S">
+									<air:BookingInfo BookingCode="M" CabinClass="Economy" FareInfoRef="kFvB9rBAAA/BHlxjTFAAAA==" SegmentRef="kFvB9rBAAA/BQhxjTFAAAA=="/>
+									<air:BookingInfo BookingCode="M" CabinClass="Economy" FareInfoRef="kFvB9rBAAA/BHlxjTFAAAA==" SegmentRef="kFvB9rBAAA/BOhxjTFAAAA=="/>
+									<air:Connection SegmentIndex="0"/>
+								</air:Option>
+							</air:FlightOption>
+						</air:FlightOptionsList>
+					</air:AirPricingInfo>
+				</air:AirPricePoint>
+				<air:AirPricePoint Key="kFvB9rBAAA/B0nxjTFAAAA==" TotalPrice="LKR61123" BasePrice="LKR53900" ApproximateTotalPrice="LKR61123" ApproximateBasePrice="LKR53900" Taxes="LKR7223" ApproximateTaxes="LKR7223" CompleteItinerary="true">
+					<air:AirPricingInfo Key="kFvB9rBAAA/BTlxjTFAAAA==" TotalPrice="LKR61123" BasePrice="LKR53900" ApproximateTotalPrice="LKR61123" ApproximateBasePrice="LKR53900" Taxes="LKR7223" LatestTicketingTime="2017-04-13T23:59:00.000+05:30" PricingMethod="Guaranteed" Refundable="true" ETicketability="Yes" PlatingCarrier="MH" ProviderCode="1G">
+						<air:FareInfoRef Key="kFvB9rBAAA/BSlxjTFAAAA=="/>
+						<air:TaxInfo Category="LK" Amount="LKR7000"/>
+						<air:TaxInfo Category="E7" Amount="LKR156"/>
+						<air:TaxInfo Category="G8" Amount="LKR67"/>
+						<air:FareCalc>CMB MH X/KUL MH BKK 362.41BFXOWLK NUC362.41END ROE148.725</air:FareCalc>
+						<air:PassengerType Code="ADT"/>
+						<air:CancelPenalty>
+							<air:Amount>LKR6300.0</air:Amount>
+						</air:CancelPenalty>
+						<air:FlightOptionsList>
+							<air:FlightOption LegRef="kFvB9rBAAA/BZixjTFAAAA==" Destination="BKK" Origin="CMB">
+								<air:Option Key="kFvB9rBAAA/BXlxjTFAAAA==" TravelTime="P0DT8H20M0S">
+									<air:BookingInfo BookingCode="B" CabinClass="Economy" FareInfoRef="kFvB9rBAAA/BSlxjTFAAAA==" SegmentRef="kFvB9rBAAA/BThxjTFAAAA=="/>
+									<air:BookingInfo BookingCode="B" CabinClass="Economy" FareInfoRef="kFvB9rBAAA/BSlxjTFAAAA==" SegmentRef="kFvB9rBAAA/BVhxjTFAAAA=="/>
+									<air:Connection SegmentIndex="0"/>
+								</air:Option>
+							</air:FlightOption>
+						</air:FlightOptionsList>
+					</air:AirPricingInfo>
+				</air:AirPricePoint>
+				<air:AirPricePoint Key="kFvB9rBAAA/B1nxjTFAAAA==" TotalPrice="LKR66119" BasePrice="LKR35600" ApproximateTotalPrice="LKR66119" ApproximateBasePrice="LKR35600" Taxes="LKR30519" ApproximateTaxes="LKR30519" CompleteItinerary="true">
+					<air:AirPricingInfo Key="kFvB9rBAAA/B2nxjTFAAAA==" TotalPrice="LKR66119" BasePrice="LKR35600" ApproximateTotalPrice="LKR66119" ApproximateBasePrice="LKR35600" Taxes="LKR30519" LatestTicketingTime="2017-04-13T23:59:00.000+05:30" PricingMethod="Guaranteed" ETicketability="Yes" PlatingCarrier="MU" ProviderCode="1G">
+						<air:FareInfoRef Key="kFvB9rBAAA/BalxjTFAAAA=="/>
+						<air:TaxInfo Category="LK" Amount="LKR7000"/>
+						<air:TaxInfo Category="CN" Amount="LKR2006"/>
+						<air:TaxInfo Category="E7" Amount="LKR156"/>
+						<air:TaxInfo Category="G8" Amount="LKR67"/>
+						<air:TaxInfo Category="YQ" Amount="LKR21290"/>
+						<air:FareCalc>CMB MU X/KMG MU BKK 239.36RSRWSES NUC239.36END ROE148.725</air:FareCalc>
+						<air:PassengerType Code="ADT"/>
+						<air:ChangePenalty>
+							<air:Amount>LKR6500.0</air:Amount>
+						</air:ChangePenalty>
+						<air:FlightOptionsList>
+							<air:FlightOption LegRef="kFvB9rBAAA/BZixjTFAAAA==" Destination="BKK" Origin="CMB">
+								<air:Option Key="kFvB9rBAAA/B8nxjTFAAAA==" TravelTime="P0DT12H20M0S">
+									<air:BookingInfo BookingCode="R" CabinClass="Economy" FareInfoRef="kFvB9rBAAA/BalxjTFAAAA==" SegmentRef="kFvB9rBAAA/BXhxjTFAAAA=="/>
+									<air:BookingInfo BookingCode="R" CabinClass="Economy" FareInfoRef="kFvB9rBAAA/BalxjTFAAAA==" SegmentRef="kFvB9rBAAA/BZhxjTFAAAA=="/>
+									<air:Connection SegmentIndex="0"/>
+								</air:Option>
+							</air:FlightOption>
+						</air:FlightOptionsList>
+					</air:AirPricingInfo>
+				</air:AirPricePoint>
+				<air:AirPricePoint Key="kFvB9rBAAA/B/nxjTFAAAA==" TotalPrice="LKR67234" BasePrice="LKR35600" ApproximateTotalPrice="LKR67234" ApproximateBasePrice="LKR35600" Taxes="LKR31634" ApproximateTaxes="LKR31634" CompleteItinerary="true">
+					<air:AirPricingInfo Key="kFvB9rBAAA/BblxjTFAAAA==" TotalPrice="LKR67234" BasePrice="LKR35600" ApproximateTotalPrice="LKR67234" ApproximateBasePrice="LKR35600" Taxes="LKR31634" LatestTicketingTime="2017-04-13T23:59:00.000+05:30" PricingMethod="Guaranteed" ETicketability="Yes" PlatingCarrier="MU" ProviderCode="1G">
+						<air:FareInfoRef Key="kFvB9rBAAA/BalxjTFAAAA=="/>
+						<air:TaxInfo Category="LK" Amount="LKR7000"/>
+						<air:TaxInfo Category="CN" Amount="LKR3121"/>
+						<air:TaxInfo Category="E7" Amount="LKR156"/>
+						<air:TaxInfo Category="G8" Amount="LKR67"/>
+						<air:TaxInfo Category="YQ" Amount="LKR21290"/>
+						<air:FareCalc>CMB MU X/KMG MU X/CTU MU BKK 239.36RSRWSES NUC239.36END ROE148.725</air:FareCalc>
+						<air:PassengerType Code="ADT"/>
+						<air:ChangePenalty>
+							<air:Amount>LKR6500.0</air:Amount>
+						</air:ChangePenalty>
+						<air:FlightOptionsList>
+							<air:FlightOption LegRef="kFvB9rBAAA/BZixjTFAAAA==" Destination="BKK" Origin="CMB">
+								<air:Option Key="kFvB9rBAAA/BhlxjTFAAAA==" TravelTime="P0DT16H35M0S">
+									<air:BookingInfo BookingCode="R" CabinClass="Economy" FareInfoRef="kFvB9rBAAA/BalxjTFAAAA==" SegmentRef="kFvB9rBAAA/BXhxjTFAAAA=="/>
+									<air:BookingInfo BookingCode="B" CabinClass="Economy" FareInfoRef="kFvB9rBAAA/BalxjTFAAAA==" SegmentRef="kFvB9rBAAA/BbhxjTFAAAA=="/>
+									<air:BookingInfo BookingCode="R" CabinClass="Economy" FareInfoRef="kFvB9rBAAA/BalxjTFAAAA==" SegmentRef="kFvB9rBAAA/BdhxjTFAAAA=="/>
+									<air:Connection SegmentIndex="0"/>
+									<air:Connection SegmentIndex="1"/>
+								</air:Option>
+							</air:FlightOption>
+						</air:FlightOptionsList>
+					</air:AirPricingInfo>
+				</air:AirPricePoint>
+				<air:AirPricePoint Key="kFvB9rBAAA/BAoxjTFAAAA==" TotalPrice="LKR67401" BasePrice="LKR54200" ApproximateTotalPrice="LKR67401" ApproximateBasePrice="LKR54200" Taxes="LKR13201" ApproximateTaxes="LKR13201" CompleteItinerary="true">
+					<air:AirPricingInfo Key="kFvB9rBAAA/BuixjTFAAAA==" TotalPrice="LKR67401" BasePrice="LKR54200" ApproximateTotalPrice="LKR67401" ApproximateBasePrice="LKR54200" Taxes="LKR13201" LatestTicketingTime="2017-03-31T23:59:00.000+05:30" PricingMethod="Guaranteed" Refundable="true" ETicketability="Yes" PlatingCarrier="UL" ProviderCode="1G">
+						<air:FareInfoRef Key="kFvB9rBAAA/BtixjTFAAAA=="/>
+						<air:FareInfoRef Key="kFvB9rBAAA/B1ixjTFAAAA=="/>
+						<air:TaxInfo Category="LK" Amount="LKR7000"/>
+						<air:TaxInfo Category="OO" Amount="LKR329"/>
+						<air:TaxInfo Category="SG" Amount="LKR329"/>
+						<air:TaxInfo Category="E7" Amount="LKR156"/>
+						<air:TaxInfo Category="G8" Amount="LKR67"/>
+						<air:TaxInfo Category="YQ" Amount="LKR5320"/>
+						<air:FareCalc>CMB UL SIN 116.32SOWLK VN X/SGN VN BKK Q SINBKK30.00 218.03YOXAS NUC364.35END ROE148.725</air:FareCalc>
+						<air:PassengerType Code="ADT"/>
+						<air:ChangePenalty>
+							<air:Amount>LKR5500.0</air:Amount>
+						</air:ChangePenalty>
+						<air:CancelPenalty>
+							<air:Amount>LKR7500.0</air:Amount>
+						</air:CancelPenalty>
+						<air:FlightOptionsList>
+							<air:FlightOption LegRef="kFvB9rBAAA/BZixjTFAAAA==" Destination="BKK" Origin="CMB">
+								<air:Option Key="kFvB9rBAAA/BDjxjTFAAAA==" TravelTime="P1DT1H25M0S">
+									<air:BookingInfo BookingCode="S" CabinClass="Economy" FareInfoRef="kFvB9rBAAA/BtixjTFAAAA==" SegmentRef="kFvB9rBAAA/BAhxjTFAAAA=="/>
+									<air:BookingInfo BookingCode="Y" CabinClass="Economy" FareInfoRef="kFvB9rBAAA/B1ixjTFAAAA==" SegmentRef="kFvB9rBAAA/BfhxjTFAAAA=="/>
+									<air:BookingInfo BookingCode="Y" CabinClass="Economy" FareInfoRef="kFvB9rBAAA/B1ixjTFAAAA==" SegmentRef="kFvB9rBAAA/BhhxjTFAAAA=="/>
+									<air:Connection SegmentIndex="0"/>
+									<air:Connection SegmentIndex="1"/>
+								</air:Option>
+							</air:FlightOption>
+						</air:FlightOptionsList>
+					</air:AirPricingInfo>
+				</air:AirPricePoint>
+				<air:AirPricePoint Key="kFvB9rBAAA/BBoxjTFAAAA==" TotalPrice="LKR70001" BasePrice="LKR56800" ApproximateTotalPrice="LKR70001" ApproximateBasePrice="LKR56800" Taxes="LKR13201" ApproximateTaxes="LKR13201" CompleteItinerary="true">
+					<air:AirPricingInfo Key="kFvB9rBAAA/B2ixjTFAAAA==" TotalPrice="LKR70001" BasePrice="LKR56800" ApproximateTotalPrice="LKR70001" ApproximateBasePrice="LKR56800" Taxes="LKR13201" LatestTicketingTime="2017-03-31T23:59:00.000+05:30" PricingMethod="Guaranteed" Refundable="true" ETicketability="Yes" PlatingCarrier="UL" ProviderCode="1G">
+						<air:FareInfoRef Key="kFvB9rBAAA/B9ixjTFAAAA=="/>
+						<air:FareInfoRef Key="kFvB9rBAAA/B1ixjTFAAAA=="/>
+						<air:TaxInfo Category="LK" Amount="LKR7000"/>
+						<air:TaxInfo Category="OO" Amount="LKR329"/>
+						<air:TaxInfo Category="SG" Amount="LKR329"/>
+						<air:TaxInfo Category="E7" Amount="LKR156"/>
+						<air:TaxInfo Category="G8" Amount="LKR67"/>
+						<air:TaxInfo Category="YQ" Amount="LKR5320"/>
+						<air:FareCalc>CMB UL SIN 133.80VOWLK VN X/SGN VN BKK Q SINBKK30.00 218.03YOXAS NUC381.83END ROE148.725</air:FareCalc>
+						<air:PassengerType Code="ADT"/>
+						<air:ChangePenalty>
+							<air:Amount>LKR5500.0</air:Amount>
+						</air:ChangePenalty>
+						<air:CancelPenalty>
+							<air:Amount>LKR7500.0</air:Amount>
+						</air:CancelPenalty>
+						<air:FlightOptionsList>
+							<air:FlightOption LegRef="kFvB9rBAAA/BZixjTFAAAA==" Destination="BKK" Origin="CMB">
+								<air:Option Key="kFvB9rBAAA/B+ixjTFAAAA==" TravelTime="P0DT15H5M0S">
+									<air:BookingInfo BookingCode="V" CabinClass="Economy" FareInfoRef="kFvB9rBAAA/B9ixjTFAAAA==" SegmentRef="kFvB9rBAAA/BGhxjTFAAAA=="/>
+									<air:BookingInfo BookingCode="Y" CabinClass="Economy" FareInfoRef="kFvB9rBAAA/B1ixjTFAAAA==" SegmentRef="kFvB9rBAAA/BjhxjTFAAAA=="/>
+									<air:BookingInfo BookingCode="Y" CabinClass="Economy" FareInfoRef="kFvB9rBAAA/B1ixjTFAAAA==" SegmentRef="kFvB9rBAAA/BlhxjTFAAAA=="/>
+									<air:Connection SegmentIndex="0"/>
+									<air:Connection SegmentIndex="1"/>
+								</air:Option>
+							</air:FlightOption>
+						</air:FlightOptionsList>
+					</air:AirPricingInfo>
+				</air:AirPricePoint>
+				<air:AirPricePoint Key="kFvB9rBAAA/BCoxjTFAAAA==" TotalPrice="LKR71984" BasePrice="LKR42000" ApproximateTotalPrice="LKR71984" ApproximateBasePrice="LKR42000" Taxes="LKR29984" ApproximateTaxes="LKR29984" CompleteItinerary="true">
+					<air:AirPricingInfo Key="kFvB9rBAAA/BmlxjTFAAAA==" TotalPrice="LKR71984" BasePrice="LKR42000" ApproximateTotalPrice="LKR71984" ApproximateBasePrice="LKR42000" Taxes="LKR29984" LatestTicketingTime="2017-04-13T23:59:00.000+05:30" PricingMethod="Guaranteed" ETicketability="Yes" PlatingCarrier="SQ" ProviderCode="1G">
+						<air:FareInfoRef Key="kFvB9rBAAA/BllxjTFAAAA=="/>
+						<air:TaxInfo Category="LK" Amount="LKR7000"/>
+						<air:TaxInfo Category="OO" Amount="LKR329"/>
+						<air:TaxInfo Category="SG" Amount="LKR329"/>
+						<air:TaxInfo Category="E7" Amount="LKR156"/>
+						<air:TaxInfo Category="G8" Amount="LKR67"/>
+						<air:TaxInfo Category="YQ" Amount="LKR22103"/>
+						<air:FareCalc>CMB SQ X/SIN SQ BKK 282.40MOWLK5 NUC282.40END ROE148.725</air:FareCalc>
+						<air:PassengerType Code="ADT"/>
+						<air:ChangePenalty>
+							<air:Amount>LKR3100.0</air:Amount>
+						</air:ChangePenalty>
+						<air:FlightOptionsList>
+							<air:FlightOption LegRef="kFvB9rBAAA/BZixjTFAAAA==" Destination="BKK" Origin="CMB">
+								<air:Option Key="kFvB9rBAAA/BtlxjTFAAAA==" TravelTime="P0DT8H25M0S">
+									<air:BookingInfo BookingCode="M" CabinClass="Economy" FareInfoRef="kFvB9rBAAA/BllxjTFAAAA==" SegmentRef="kFvB9rBAAA/BnhxjTFAAAA=="/>
+									<air:BookingInfo BookingCode="M" CabinClass="Economy" FareInfoRef="kFvB9rBAAA/BllxjTFAAAA==" SegmentRef="kFvB9rBAAA/BphxjTFAAAA=="/>
+									<air:Connection SegmentIndex="0"/>
+								</air:Option>
+							</air:FlightOption>
+						</air:FlightOptionsList>
+					</air:AirPricingInfo>
+				</air:AirPricePoint>
+				<air:AirPricePoint Key="kFvB9rBAAA/BDoxjTFAAAA==" TotalPrice="LKR73343" BasePrice="LKR60800" ApproximateTotalPrice="LKR73343" ApproximateBasePrice="LKR60800" Taxes="LKR12543" ApproximateTaxes="LKR12543" CompleteItinerary="true">
+					<air:AirPricingInfo Key="kFvB9rBAAA/B+lxjTFAAAA==" TotalPrice="LKR73343" BasePrice="LKR60800" ApproximateTotalPrice="LKR73343" ApproximateBasePrice="LKR60800" Taxes="LKR12543" LatestTicketingTime="2017-04-13T23:59:00.000+05:30" PricingMethod="Guaranteed" Refundable="true" ETicketability="Yes" PlatingCarrier="UL" ProviderCode="1G">
+						<air:FareInfoRef Key="kFvB9rBAAA/BwlxjTFAAAA=="/>
+						<air:FareInfoRef Key="kFvB9rBAAA/B8lxjTFAAAA=="/>
+						<air:TaxInfo Category="LK" Amount="LKR7000"/>
+						<air:TaxInfo Category="E7" Amount="LKR156"/>
+						<air:TaxInfo Category="G8" Amount="LKR67"/>
+						<air:TaxInfo Category="YQ" Amount="LKR5320"/>
+						<air:FareCalc>CMB UL KUL 92.78NOWLK 8M BKK 315.86Y NUC408.64END ROE148.725</air:FareCalc>
+						<air:PassengerType Code="ADT"/>
+						<air:ChangePenalty>
+							<air:Amount>LKR7500.0</air:Amount>
+						</air:ChangePenalty>
+						<air:CancelPenalty>
+							<air:Amount>LKR10000</air:Amount>
+						</air:CancelPenalty>
+						<air:FlightOptionsList>
+							<air:FlightOption LegRef="kFvB9rBAAA/BZixjTFAAAA==" Destination="BKK" Origin="CMB">
+								<air:Option Key="kFvB9rBAAA/BImxjTFAAAA==" TravelTime="P0DT7H5M0S">
+									<air:BookingInfo BookingCode="N" CabinClass="Economy" FareInfoRef="kFvB9rBAAA/BwlxjTFAAAA==" SegmentRef="kFvB9rBAAA/BrhxjTFAAAA=="/>
+									<air:BookingInfo BookingCode="Y" CabinClass="Economy" FareInfoRef="kFvB9rBAAA/B8lxjTFAAAA==" SegmentRef="kFvB9rBAAA/BthxjTFAAAA=="/>
+									<air:Connection SegmentIndex="0"/>
+								</air:Option>
+							</air:FlightOption>
+						</air:FlightOptionsList>
+					</air:AirPricingInfo>
+				</air:AirPricePoint>
+				<air:AirPricePoint Key="kFvB9rBAAA/BEoxjTFAAAA==" TotalPrice="LKR78101" BasePrice="LKR63600" ApproximateTotalPrice="LKR78101" ApproximateBasePrice="LKR63600" Taxes="LKR14501" ApproximateTaxes="LKR14501" CompleteItinerary="true">
+					<air:AirPricingInfo Key="kFvB9rBAAA/BMmxjTFAAAA==" TotalPrice="LKR78101" BasePrice="LKR63600" ApproximateTotalPrice="LKR78101" ApproximateBasePrice="LKR63600" Taxes="LKR14501" LatestTicketingTime="2017-04-13T23:59:00.000+05:30" PricingMethod="GuaranteedUsingAirlinePrivateFare" ETicketability="Yes" PlatingCarrier="CX" ProviderCode="1G">
+						<air:FareInfoRef Key="kFvB9rBAAA/BLmxjTFAAAA=="/>
+						<air:TaxInfo Category="LK" Amount="LKR7000"/>
+						<air:TaxInfo Category="G3" Amount="LKR1384"/>
+						<air:TaxInfo Category="E7" Amount="LKR156"/>
+						<air:TaxInfo Category="G8" Amount="LKR67"/>
+						<air:TaxInfo Category="YR" Amount="LKR5894"/>
+						<air:FareCalc>CMB CX X/HKG CX BKK Q5.80 421.58HOWLK NUC427.38END ROE148.725</air:FareCalc>
+						<air:PassengerType Code="ADT"/>
+						<air:FlightOptionsList>
+							<air:FlightOption LegRef="kFvB9rBAAA/BZixjTFAAAA==" Destination="BKK" Origin="CMB">
+								<air:Option Key="kFvB9rBAAA/BSmxjTFAAAA==" TravelTime="P0DT9H30M0S">
+									<air:BookingInfo BookingCode="H" CabinClass="Economy" FareInfoRef="kFvB9rBAAA/BLmxjTFAAAA==" SegmentRef="kFvB9rBAAA/BwhxjTFAAAA=="/>
+									<air:BookingInfo BookingCode="H" CabinClass="Economy" FareInfoRef="kFvB9rBAAA/BLmxjTFAAAA==" SegmentRef="kFvB9rBAAA/ByhxjTFAAAA=="/>
+									<air:Connection SegmentIndex="0"/>
+								</air:Option>
+							</air:FlightOption>
+						</air:FlightOptionsList>
+					</air:AirPricingInfo>
+				</air:AirPricePoint>
+				<air:AirPricePoint Key="kFvB9rBAAA/BFoxjTFAAAA==" TotalPrice="LKR79043" BasePrice="LKR66500" ApproximateTotalPrice="LKR79043" ApproximateBasePrice="LKR66500" Taxes="LKR12543" ApproximateTaxes="LKR12543" CompleteItinerary="true">
+					<air:AirPricingInfo Key="kFvB9rBAAA/BGoxjTFAAAA==" TotalPrice="LKR79043" BasePrice="LKR66500" ApproximateTotalPrice="LKR79043" ApproximateBasePrice="LKR66500" Taxes="LKR12543" LatestTicketingTime="2017-04-13T23:59:00.000+05:30" PricingMethod="Guaranteed" Refundable="true" ETicketability="Yes" PlatingCarrier="UL" ProviderCode="1G">
+						<air:FareInfoRef Key="kFvB9rBAAA/BwlxjTFAAAA=="/>
+						<air:FareInfoRef Key="kFvB9rBAAA/B2lxjTFAAAA=="/>
+						<air:TaxInfo Category="LK" Amount="LKR7000"/>
+						<air:TaxInfo Category="E7" Amount="LKR156"/>
+						<air:TaxInfo Category="G8" Amount="LKR67"/>
+						<air:TaxInfo Category="YQ" Amount="LKR5320"/>
+						<air:FareCalc>CMB UL KUL 92.78NOWLK MH BKK Q37.90 315.86YIFMH NUC446.54END ROE148.725</air:FareCalc>
+						<air:PassengerType Code="ADT"/>
+						<air:ChangePenalty>
+							<air:Amount>LKR7500.0</air:Amount>
+						</air:ChangePenalty>
+						<air:CancelPenalty>
+							<air:Amount>LKR10000</air:Amount>
+						</air:CancelPenalty>
+						<air:FlightOptionsList>
+							<air:FlightOption LegRef="kFvB9rBAAA/BZixjTFAAAA==" Destination="BKK" Origin="CMB">
+								<air:Option Key="kFvB9rBAAA/BLoxjTFAAAA==" TravelTime="P0DT7H5M0S">
+									<air:BookingInfo BookingCode="N" CabinClass="Economy" FareInfoRef="kFvB9rBAAA/BwlxjTFAAAA==" SegmentRef="kFvB9rBAAA/BrhxjTFAAAA=="/>
+									<air:BookingInfo BookingCode="Y" CabinClass="Economy" FareInfoRef="kFvB9rBAAA/B2lxjTFAAAA==" SegmentRef="kFvB9rBAAA/BvhxjTFAAAA=="/>
+									<air:Connection SegmentIndex="0"/>
+								</air:Option>
+							</air:FlightOption>
+						</air:FlightOptionsList>
+					</air:AirPricingInfo>
+				</air:AirPricePoint>
+				<air:AirPricePoint Key="kFvB9rBAAA/BOoxjTFAAAA==" TotalPrice="LKR79043" BasePrice="LKR66500" ApproximateTotalPrice="LKR79043" ApproximateBasePrice="LKR66500" Taxes="LKR12543" ApproximateTaxes="LKR12543" CompleteItinerary="true">
+					<air:AirPricingInfo Key="kFvB9rBAAA/BxlxjTFAAAA==" TotalPrice="LKR79043" BasePrice="LKR66500" ApproximateTotalPrice="LKR79043" ApproximateBasePrice="LKR66500" Taxes="LKR12543" LatestTicketingTime="2017-04-13T23:59:00.000+05:30" PricingMethod="Guaranteed" Refundable="true" ETicketability="Yes" PlatingCarrier="UL" ProviderCode="1G">
+						<air:FareInfoRef Key="kFvB9rBAAA/BwlxjTFAAAA=="/>
+						<air:FareInfoRef Key="kFvB9rBAAA/B2lxjTFAAAA=="/>
+						<air:TaxInfo Category="LK" Amount="LKR7000"/>
+						<air:TaxInfo Category="E7" Amount="LKR156"/>
+						<air:TaxInfo Category="G8" Amount="LKR67"/>
+						<air:TaxInfo Category="YQ" Amount="LKR5320"/>
+						<air:FareCalc>CMB UL KUL 92.78NOWLK MH X/HKT MH BKK Q KULBKK37.90M315.86YIFMH NUC446.54END ROE148.725</air:FareCalc>
+						<air:PassengerType Code="ADT"/>
+						<air:ChangePenalty>
+							<air:Amount>LKR7500.0</air:Amount>
+						</air:ChangePenalty>
+						<air:CancelPenalty>
+							<air:Amount>LKR10000</air:Amount>
+						</air:CancelPenalty>
+						<air:FlightOptionsList>
+							<air:FlightOption LegRef="kFvB9rBAAA/BZixjTFAAAA==" Destination="BKK" Origin="CMB">
+								<air:Option Key="kFvB9rBAAA/B4lxjTFAAAA==" TravelTime="P1DT2H30M0S">
+									<air:BookingInfo BookingCode="N" CabinClass="Economy" FareInfoRef="kFvB9rBAAA/BwlxjTFAAAA==" SegmentRef="kFvB9rBAAA/BrhxjTFAAAA=="/>
+									<air:BookingInfo BookingCode="Y" CabinClass="Economy" FareInfoRef="kFvB9rBAAA/B2lxjTFAAAA==" SegmentRef="kFvB9rBAAA/B0hxjTFAAAA=="/>
+									<air:BookingInfo BookingCode="Y" CabinClass="Economy" FareInfoRef="kFvB9rBAAA/B2lxjTFAAAA==" SegmentRef="kFvB9rBAAA/B2hxjTFAAAA=="/>
+									<air:Connection SegmentIndex="0"/>
+									<air:Connection SegmentIndex="1"/>
+								</air:Option>
+							</air:FlightOption>
+						</air:FlightOptionsList>
+					</air:AirPricingInfo>
+				</air:AirPricePoint>
+				<air:AirPricePoint Key="kFvB9rBAAA/BPoxjTFAAAA==" TotalPrice="LKR85819" BasePrice="LKR55300" ApproximateTotalPrice="LKR85819" ApproximateBasePrice="LKR55300" Taxes="LKR30519" ApproximateTaxes="LKR30519" CompleteItinerary="true">
+					<air:AirPricingInfo Key="kFvB9rBAAA/BjmxjTFAAAA==" TotalPrice="LKR85819" BasePrice="LKR55300" ApproximateTotalPrice="LKR85819" ApproximateBasePrice="LKR55300" Taxes="LKR30519" LatestTicketingTime="2017-04-13T23:59:00.000+05:30" PricingMethod="Guaranteed" Refundable="true" ETicketability="Yes" PlatingCarrier="CA" ProviderCode="1G">
+						<air:FareInfoRef Key="kFvB9rBAAA/BWmxjTFAAAA=="/>
+						<air:FareInfoRef Key="kFvB9rBAAA/BimxjTFAAAA=="/>
+						<air:TaxInfo Category="LK" Amount="LKR7000"/>
+						<air:TaxInfo Category="CN" Amount="LKR2006"/>
+						<air:TaxInfo Category="E7" Amount="LKR156"/>
+						<air:TaxInfo Category="G8" Amount="LKR67"/>
+						<air:TaxInfo Category="YQ" Amount="LKR11259"/>
+						<air:TaxInfo Category="YR" Amount="LKR10031"/>
+						<air:FareCalc>CMB CA CTU 221.88SOWLK9 MU BKK 149.59RLSRWCD NUC371.47END ROE148.725</air:FareCalc>
+						<air:PassengerType Code="ADT"/>
+						<air:ChangePenalty>
+							<air:Amount>LKR12300</air:Amount>
+						</air:ChangePenalty>
+						<air:CancelPenalty>
+							<air:Amount>LKR12300</air:Amount>
+						</air:CancelPenalty>
+						<air:FlightOptionsList>
+							<air:FlightOption LegRef="kFvB9rBAAA/BZixjTFAAAA==" Destination="BKK" Origin="CMB">
+								<air:Option Key="kFvB9rBAAA/BwmxjTFAAAA==" TravelTime="P0DT18H10M0S">
+									<air:BookingInfo BookingCode="S" CabinClass="Economy" FareInfoRef="kFvB9rBAAA/BWmxjTFAAAA==" SegmentRef="kFvB9rBAAA/B4hxjTFAAAA=="/>
+									<air:BookingInfo BookingCode="R" CabinClass="Economy" FareInfoRef="kFvB9rBAAA/BimxjTFAAAA==" SegmentRef="kFvB9rBAAA/B6hxjTFAAAA=="/>
+									<air:Connection SegmentIndex="0"/>
+								</air:Option>
+							</air:FlightOption>
+						</air:FlightOptionsList>
+					</air:AirPricingInfo>
+				</air:AirPricePoint>
+				<air:AirPricePoint Key="kFvB9rBAAA/BQoxjTFAAAA==" TotalPrice="LKR88288" BasePrice="LKR67800" ApproximateTotalPrice="LKR88288" ApproximateBasePrice="LKR67800" Taxes="LKR20488" ApproximateTaxes="LKR20488" CompleteItinerary="true">
+					<air:AirPricingInfo Key="kFvB9rBAAA/BXmxjTFAAAA==" TotalPrice="LKR88288" BasePrice="LKR67800" ApproximateTotalPrice="LKR88288" ApproximateBasePrice="LKR67800" Taxes="LKR20488" LatestTicketingTime="2017-04-13T23:59:00.000+05:30" PricingMethod="Guaranteed" Refundable="true" ETicketability="Yes" PlatingCarrier="CA" ProviderCode="1G">
+						<air:FareInfoRef Key="kFvB9rBAAA/BWmxjTFAAAA=="/>
+						<air:FareInfoRef Key="kFvB9rBAAA/BemxjTFAAAA=="/>
+						<air:TaxInfo Category="LK" Amount="LKR7000"/>
+						<air:TaxInfo Category="CN" Amount="LKR2006"/>
+						<air:TaxInfo Category="E7" Amount="LKR156"/>
+						<air:TaxInfo Category="G8" Amount="LKR67"/>
+						<air:TaxInfo Category="YQ" Amount="LKR1228"/>
+						<air:TaxInfo Category="YR" Amount="LKR10031"/>
+						<air:FareCalc>CMB CA CTU 221.88SOWLK9 3U BKK 233.82GLOWCK NUC455.70END ROE148.725</air:FareCalc>
+						<air:PassengerType Code="ADT"/>
+						<air:ChangePenalty>
+							<air:Amount>LKR12300</air:Amount>
+						</air:ChangePenalty>
+						<air:CancelPenalty>
+							<air:Amount>LKR12300</air:Amount>
+						</air:CancelPenalty>
+						<air:FlightOptionsList>
+							<air:FlightOption LegRef="kFvB9rBAAA/BZixjTFAAAA==" Destination="BKK" Origin="CMB">
+								<air:Option Key="kFvB9rBAAA/BfmxjTFAAAA==" TravelTime="P0DT16H45M0S">
+									<air:BookingInfo BookingCode="S" CabinClass="Economy" FareInfoRef="kFvB9rBAAA/BWmxjTFAAAA==" SegmentRef="kFvB9rBAAA/B4hxjTFAAAA=="/>
+									<air:BookingInfo BookingCode="G" CabinClass="Economy" FareInfoRef="kFvB9rBAAA/BemxjTFAAAA==" SegmentRef="kFvB9rBAAA/B8hxjTFAAAA=="/>
+									<air:Connection SegmentIndex="0"/>
+								</air:Option>
+							</air:FlightOption>
+						</air:FlightOptionsList>
+					</air:AirPricingInfo>
+				</air:AirPricePoint>
+				<air:AirPricePoint Key="kFvB9rBAAA/BRoxjTFAAAA==" TotalPrice="LKR88834" BasePrice="LKR57200" ApproximateTotalPrice="LKR88834" ApproximateBasePrice="LKR57200" Taxes="LKR31634" ApproximateTaxes="LKR31634" CompleteItinerary="true">
+					<air:AirPricingInfo Key="kFvB9rBAAA/B0mxjTFAAAA==" TotalPrice="LKR88834" BasePrice="LKR57200" ApproximateTotalPrice="LKR88834" ApproximateBasePrice="LKR57200" Taxes="LKR31634" LatestTicketingTime="2017-04-13T23:59:00.000+05:30" PricingMethod="Guaranteed" ETicketability="Yes" PlatingCarrier="MU" ProviderCode="1G">
+						<air:FareInfoRef Key="kFvB9rBAAA/BzmxjTFAAAA=="/>
+						<air:TaxInfo Category="LK" Amount="LKR7000"/>
+						<air:TaxInfo Category="CN" Amount="LKR3121"/>
+						<air:TaxInfo Category="E7" Amount="LKR156"/>
+						<air:TaxInfo Category="G8" Amount="LKR67"/>
+						<air:TaxInfo Category="YQ" Amount="LKR21290"/>
+						<air:FareCalc>CMB MU X/KMG MU X/SHA MU BKK 384.60LSFWSES NUC384.60END ROE148.725</air:FareCalc>
+						<air:PassengerType Code="ADT"/>
+						<air:FlightOptionsList>
+							<air:FlightOption LegRef="kFvB9rBAAA/BZixjTFAAAA==" Destination="BKK" Origin="CMB">
+								<air:Option Key="kFvB9rBAAA/B6mxjTFAAAA==" TravelTime="P0DT23H40M0S">
+									<air:BookingInfo BookingCode="L" CabinClass="Economy" FareInfoRef="kFvB9rBAAA/BzmxjTFAAAA==" SegmentRef="kFvB9rBAAA/BXhxjTFAAAA=="/>
+									<air:BookingInfo BookingCode="B" CabinClass="Economy" FareInfoRef="kFvB9rBAAA/BzmxjTFAAAA==" SegmentRef="kFvB9rBAAA/B+hxjTFAAAA=="/>
+									<air:BookingInfo BookingCode="L" CabinClass="Economy" FareInfoRef="kFvB9rBAAA/BzmxjTFAAAA==" SegmentRef="kFvB9rBAAA/BBixjTFAAAA=="/>
+									<air:Connection SegmentIndex="0"/>
+									<air:Connection SegmentIndex="1"/>
+								</air:Option>
+							</air:FlightOption>
+						</air:FlightOptionsList>
+					</air:AirPricingInfo>
+				</air:AirPricePoint>
+				<air:AirPricePoint Key="kFvB9rBAAA/BSoxjTFAAAA==" TotalPrice="LKR96886" BasePrice="LKR88200" ApproximateTotalPrice="LKR96886" ApproximateBasePrice="LKR88200" Taxes="LKR8686" ApproximateTaxes="LKR8686" CompleteItinerary="true">
+					<air:AirPricingInfo Key="kFvB9rBAAA/B/mxjTFAAAA==" TotalPrice="LKR96886" BasePrice="LKR88200" ApproximateTotalPrice="LKR96886" ApproximateBasePrice="LKR88200" Taxes="LKR8686" LatestTicketingTime="2017-03-30T23:59:00.000+05:30" PricingMethod="Guaranteed" ETicketability="Yes" PlatingCarrier="EK" ProviderCode="1G">
+						<air:FareInfoRef Key="kFvB9rBAAA/B+mxjTFAAAA=="/>
+						<air:TaxInfo Category="LK" Amount="LKR7000"/>
+						<air:TaxInfo Category="F6" Amount="LKR1463"/>
+						<air:TaxInfo Category="E7" Amount="LKR156"/>
+						<air:TaxInfo Category="G8" Amount="LKR67"/>
+						<air:FareCalc>CMB EK X/DXB EK BKK 593.04USSOSLK1 NUC593.04END ROE148.725</air:FareCalc>
+						<air:PassengerType Code="ADT"/>
+						<air:ChangePenalty>
+							<air:Amount>LKR4000.0</air:Amount>
+						</air:ChangePenalty>
+						<air:FlightOptionsList>
+							<air:FlightOption LegRef="kFvB9rBAAA/BZixjTFAAAA==" Destination="BKK" Origin="CMB">
+								<air:Option Key="kFvB9rBAAA/BEnxjTFAAAA==" TravelTime="P0DT13H30M0S">
+									<air:BookingInfo BookingCode="U" CabinClass="Economy" FareInfoRef="kFvB9rBAAA/B+mxjTFAAAA==" SegmentRef="kFvB9rBAAA/BDixjTFAAAA=="/>
+									<air:BookingInfo BookingCode="U" CabinClass="Economy" FareInfoRef="kFvB9rBAAA/B+mxjTFAAAA==" SegmentRef="kFvB9rBAAA/BFixjTFAAAA=="/>
+									<air:Connection SegmentIndex="0"/>
+								</air:Option>
+							</air:FlightOption>
+						</air:FlightOptionsList>
+					</air:AirPricingInfo>
+				</air:AirPricePoint>
+				<air:AirPricePoint Key="kFvB9rBAAA/BToxjTFAAAA==" TotalPrice="LKR150306" BasePrice="LKR100200" ApproximateTotalPrice="LKR150306" ApproximateBasePrice="LKR100200" Taxes="LKR50106" ApproximateTaxes="LKR50106" CompleteItinerary="true">
+					<air:AirPricingInfo Key="kFvB9rBAAA/BInxjTFAAAA==" TotalPrice="LKR150306" BasePrice="LKR100200" ApproximateTotalPrice="LKR150306" ApproximateBasePrice="LKR100200" Taxes="LKR50106" LatestTicketingTime="2017-04-13T23:59:00.000+05:30" PricingMethod="Guaranteed" ETicketability="Yes" PlatingCarrier="TK" ProviderCode="1G">
+						<air:FareInfoRef Key="kFvB9rBAAA/BHnxjTFAAAA=="/>
+						<air:TaxInfo Category="LK" Amount="LKR7000"/>
+						<air:TaxInfo Category="TR" Amount="LKR828"/>
+						<air:TaxInfo Category="E7" Amount="LKR156"/>
+						<air:TaxInfo Category="G8" Amount="LKR67"/>
+						<air:TaxInfo Category="YR" Amount="LKR42055"/>
+						<air:FareCalc>CMB TK X/IST TK BKK 673.72AF2XOX NUC673.72END ROE148.725</air:FareCalc>
+						<air:PassengerType Code="ADT"/>
+						<air:FlightOptionsList>
+							<air:FlightOption LegRef="kFvB9rBAAA/BZixjTFAAAA==" Destination="BKK" Origin="CMB">
+								<air:Option Key="kFvB9rBAAA/BOnxjTFAAAA==" TravelTime="P1DT11H30M0S">
+									<air:BookingInfo BookingCode="A" CabinClass="Economy" FareInfoRef="kFvB9rBAAA/BHnxjTFAAAA==" SegmentRef="kFvB9rBAAA/BHixjTFAAAA=="/>
+									<air:BookingInfo BookingCode="A" CabinClass="Economy" FareInfoRef="kFvB9rBAAA/BHnxjTFAAAA==" SegmentRef="kFvB9rBAAA/BKixjTFAAAA=="/>
+									<air:Connection SegmentIndex="0"/>
+								</air:Option>
+							</air:FlightOption>
+						</air:FlightOptionsList>
+					</air:AirPricingInfo>
+				</air:AirPricePoint>
+				<air:AirPricePoint Key="kFvB9rBAAA/BUoxjTFAAAA==" TotalPrice="LKR165154" BasePrice="LKR156300" ApproximateTotalPrice="LKR165154" ApproximateBasePrice="LKR156300" Taxes="LKR8854" ApproximateTaxes="LKR8854" CompleteItinerary="true">
+					<air:AirPricingInfo Key="kFvB9rBAAA/BSnxjTFAAAA==" TotalPrice="LKR165154" BasePrice="LKR156300" ApproximateTotalPrice="LKR165154" ApproximateBasePrice="LKR156300" Taxes="LKR8854" LatestTicketingTime="2017-04-13T23:59:00.000+05:30" PricingMethod="Guaranteed" Refundable="true" ETicketability="Yes" PlatingCarrier="EY" ProviderCode="1G">
+						<air:FareInfoRef Key="kFvB9rBAAA/BRnxjTFAAAA=="/>
+						<air:TaxInfo Category="LK" Amount="LKR7000"/>
+						<air:TaxInfo Category="F6" Amount="LKR1463"/>
+						<air:TaxInfo Category="E7" Amount="LKR156"/>
+						<air:TaxInfo Category="G8" Amount="LKR67"/>
+						<air:TaxInfo Category="YR" Amount="LKR168"/>
+						<air:FareCalc>CMB EY X/AUH EY X/BOM EY BKK Q15.00Q CMBBKK2.50Q CMBAUH175.00Q CMBAUH160.00Q CMBAUH150.00Q CMBBKK62.00 486.13LOWLK/YV NUC1050.63END ROE148.725</air:FareCalc>
+						<air:PassengerType Code="ADT"/>
+						<air:ChangePenalty>
+							<air:Amount>LKR4700.0</air:Amount>
+						</air:ChangePenalty>
+						<air:CancelPenalty>
+							<air:Amount>LKR7700.0</air:Amount>
+						</air:CancelPenalty>
+						<air:FlightOptionsList>
+							<air:FlightOption LegRef="kFvB9rBAAA/BZixjTFAAAA==" Destination="BKK" Origin="CMB">
+								<air:Option Key="kFvB9rBAAA/BYnxjTFAAAA==" TravelTime="P0DT17H50M0S">
+									<air:BookingInfo BookingCode="L" CabinClass="Economy" FareInfoRef="kFvB9rBAAA/BRnxjTFAAAA==" SegmentRef="kFvB9rBAAA/BMixjTFAAAA=="/>
+									<air:BookingInfo BookingCode="L" CabinClass="Economy" FareInfoRef="kFvB9rBAAA/BRnxjTFAAAA==" SegmentRef="kFvB9rBAAA/BOixjTFAAAA=="/>
+									<air:BookingInfo BookingCode="L" CabinClass="Economy" FareInfoRef="kFvB9rBAAA/BRnxjTFAAAA==" SegmentRef="kFvB9rBAAA/BQixjTFAAAA=="/>
+									<air:Connection SegmentIndex="0"/>
+									<air:Connection SegmentIndex="1"/>
+								</air:Option>
+							</air:FlightOption>
+						</air:FlightOptionsList>
+					</air:AirPricingInfo>
+				</air:AirPricePoint>
+			</air:AirPricePointList>
+			<air:BrandList>
+				<air:Brand Key="kFvB9rBAAA/Bv1xjTFAAAA==" BrandID="60743" Name="Economy Class" BrandedDetailsAvailable="true" Carrier="MH">
+					<air:Title Type="External">Economy</air:Title>
+					<air:Title Type="Short">Econ</air:Title>
+					<air:Text Type="Upsell">Enjoy more flexibility. Flight change allowed without additional fee.</air:Text>
+					<air:Text Type="MarketingAgent">Enjoy more flexibility. Flight change allowed without additional fee. 
+
+Kick back and relax in the cosiest Economy Class seats. Be served by an award-winning cabin crew that is the epitome of Malaysian Hospitality</air:Text>
+					<air:Text Type="Strapline">Home Away From Home</air:Text>
+					<air:ImageLocation Type="Agent" ImageWidth="150" ImageHeight="150">https://cdn.travelport.com/malaysia/MH_general_medium_890.jpg</air:ImageLocation>
+					<air:ImageLocation Type="Consumer" ImageWidth="150" ImageHeight="150">https://cdn.travelport.com/malaysia/MH_general_medium_890.jpg</air:ImageLocation>
+				</air:Brand>
+				<air:Brand Key="kFvB9rBAAA/Bx1xjTFAAAA==" BrandID="48109" Name="ECONOMY CLASS - SH" BrandedDetailsAvailable="true" Carrier="CX">
+					<air:Title Type="External">ECONOMY CLASS</air:Title>
+					<air:Title Type="Short">ECO CLS SH</air:Title>
+					<air:Text Type="MarketingAgent">Cathay Pacific Makes your Economy Class Experience Better than Ever
+
+ &#8226; A cradle mechanism in the seat back allows for 6 inches recline
+ &#8226; Headrest with side wings adjusts four ways to provide maximum head and neck support
+ &#8226; Signature Chinese dishes alongside wide range of cuisines from around the world
+ &#8226; 9-inch touch-screen personal TV with hundreds of Audio and Video on Demand selections
+ &#8226; On-board Power Supply for laptop or other device, and a USB port
+
+
+* If the flight will be operated by another airline or due to operational requirements, the inflight product and service may be different.</air:Text>
+					<air:Text Type="Strapline">Makes your Economy Class experience better than ever, beginning with your seat.</air:Text>
+					<air:ImageLocation Type="Upsell" ImageWidth="150" ImageHeight="150">https://cdn.travelport.com/cathaypacific/CX_general_medium_525.jpg</air:ImageLocation>
+					<air:ImageLocation Type="Agent" ImageWidth="150" ImageHeight="150">https://cdn.travelport.com/cathaypacific/CX_general_medium_525.jpg</air:ImageLocation>
+				</air:Brand>
+				<air:Brand Key="kFvB9rBAAA/Bz1xjTFAAAA==" BrandID="55278" Name="Economy Flex" BrandedDetailsAvailable="true" Carrier="EK">
+					<air:Title Type="External">Economy Flex</air:Title>
+					<air:Title Type="Short">EF</air:Title>
+					<air:Text Type="Upsell">Economy Flex offers FREE SEATING, additional flexibility and mileage accrual.</air:Text>
+					<air:Text Type="MarketingAgent">EMIRATES PAID SEATS NOW BOOKABLE IN GALILEO
+Worldspan and Apollo paid seating launch dates to be announced shortly.
+
+Economy Flex includes:
+
+&#8226; Free seat assignment
+&#8226; Changes permitted at a fee 
+&#8226; Refunds permitted at a fee
+&#8226; 70% flown miles earned
+&#8226; Mileage upgrade eligibility
+&#8226; Checked baggage included *
+&#8226; Hand luggage x 1 bag 7 KG
+&#8226; Complimentary Wi-Fi
+&#8226; Soft and Alcoholic refreshments
+&#8226; ICE entertainment
+
+* Please refer to fare rules for full conditions</air:Text>
+					<air:Text Type="Strapline">Welcome to Emirates Economy Class</air:Text>
+					<air:ImageLocation Type="Agent" ImageWidth="150" ImageHeight="150">https://cdn.travelport.com/emirates/EK_general_medium_249.jpg</air:ImageLocation>
+					<air:ImageLocation Type="Consumer" ImageWidth="150" ImageHeight="150">https://cdn.travelport.com/emirates/EK_general_medium_249.jpg</air:ImageLocation>
+				</air:Brand>
+				<air:Brand Key="kFvB9rBAAA/B11xjTFAAAA==" BrandID="49612" Name="Economy Value" BrandedDetailsAvailable="true" Carrier="EY">
+					<air:Title Type="External">Economy Classic</air:Title>
+					<air:Title Type="Short">EV</air:Title>
+					<air:Text Type="Upsell">Upgrade to Economy Classic for a refund for a fee</air:Text>
+					<air:Text Type="MarketingAgent">The best inflight entertainment, selection of fine international cuisine, and warm Arabian hospitality. Welcome to Etihad Economy Class.
+
+&#8226; 75% of Etihad Guest miles
+&#8226; Refer to fare rules for Refunds/Changes 
+&#8226; Hand baggage x 1 bag at 7kgs
+&#8226; Upgrade eligibility
+&#8226; Neck pillows and soft fleece blankets
+&#8226; Tasty hot meals with a choice of three main courses, with vegetarian as standard
+&#8226; On board Cafe offering light snacks and a choice of teas, coffees and hot chocolate
+&#8226; Flying Nanny on board offering parents a helping hand on long-haul
+&#8226; Hundreds of hours of on-demand entertainment, on 10.6" screen with noise reduction headsets
+&#8226; Connectivity on board: Wi-Fi and mobile services 
+&#8226; A range of connection ports at each seat, including USB and laptop power supply
+&#8226; Amenity kits with socks, eyeshades, earplugs, toothbrush and toothpaste on all long-haul and overnight flights.
+&#8226; Complimentary luxury coach services between Dubai / Al Ain and Abu Dhabi International Airport.
+&#8226; US Preclearance facility at Abu Dhabi Airport to pre clear US Immigration before guests board their flight to the US</air:Text>
+					<air:Text Type="Strapline">Economy Classic</air:Text>
+					<air:ImageLocation Type="Agent" ImageWidth="150" ImageHeight="150">https://cdn.travelport.com/etihad/EY_general_medium_320.jpg</air:ImageLocation>
+					<air:ImageLocation Type="Consumer" ImageWidth="150" ImageHeight="150">https://cdn.travelport.com/etihad/EY_general_medium_320.jpg</air:ImageLocation>
+				</air:Brand>
+				<air:Brand Key="kFvB9rBAAA/B31xjTFAAAA==" BrandID="55106" Name="Economy Flexi Saver" BrandedDetailsAvailable="true" Carrier="SQ">
+					<air:Title Type="External">Economy Flexi Saver</air:Title>
+					<air:Title Type="Short">FlexiSaver</air:Title>
+					<air:Text Type="Upsell">Enjoying the ability to change your flight dates for free, the option to cancel and refund your ticket and upgrade your flight with miles to Business Class when you book on Economy Flexi today.</air:Text>
+					<air:Text Type="MarketingAgent">Our Economy Class innovative design minimizes intrusion into your personal space even as the passenger in front reclines; while ergonomic styling of the seat further maximizes knee and legroom. It also features a headrest that can be adjusted as desired for greater support.
+
+An easily accessible seatback-mounted handset, personal and non-intrusive reading light and in-seat power supply, are just some of the many intelligent touches designed with you in mind. (Applicable to most aircraft types)</air:Text>
+					<air:Text Type="Strapline">Flexibility with amazing value</air:Text>
+					<air:ImageLocation Type="Agent" ImageWidth="150" ImageHeight="150">https://cdn.travelport.com/singaporeairlinesltd/SQ_general_medium_1797.jpg</air:ImageLocation>
+					<air:ImageLocation Type="Consumer" ImageWidth="150" ImageHeight="150">https://cdn.travelport.com/singaporeairlinesltd/SQ_general_medium_1799.jpg</air:ImageLocation>
+				</air:Brand>
+			</air:BrandList>
+		</air:LowFareSearchRsp>
+	</SOAP:Body>
+</SOAP:Envelope>

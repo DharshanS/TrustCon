@@ -1,0 +1,12 @@
+#adminmenu #menu-posts-wp3s_pvslider:hover div.wp-menu-image,
+#adminmenu #menu-posts-wp3s_pvslider.wp-has-current-submenu div.wp-menu-image, 
+#adminmenu #menu-posts-wp3s_pvslider.current div.wp-menu-image,
+#adminmenu #menu-posts-wp3s_pvslider div.wp-menu-image,
+#adminmenu #menu-posts-wp3s_pvquote:hover div.wp-menu-image,
+#adminmenu #menu-posts-wp3s_pvquote.wp-has-current-submenu div.wp-menu-image, 
+#adminmenu #menu-posts-wp3s_pvquote.current div.wp-menu-image { background-position: 5px 6px !important; }
+#adminmenu #menu-posts-wp3s_pvslider div.wp-menu-image,
+#adminmenu #menu-posts-wp3s_pvquote div.wp-menu-image {
+	background: transparent!important;
+	background: url(../images/admin_icon_pv.png) no-repeat 5px -18px!important;
+}

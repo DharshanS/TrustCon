@@ -1,0 +1,62 @@
+/*Place here styles for additional classes and/or IDs*/
+
+.livicon {
+  display: inline-block;
+  line-height: inherit;
+  vertical-align: middle;
+}
+.livicon.morph {
+  position: relative;
+}
+.livicon.in-morph {
+  position: absolute;
+  top: 16px;   /*correct value for your icon size*/
+  left: 16px;  /*correct value for your icon size*/
+}
+.livicon.metro-bg {
+  padding: 16px; /*correct value here*/
+  overflow: hidden;
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.livicon.circle-bg {
+  padding: 16px 15px 16px 17px; /*correct value here*/
+  overflow: hidden;
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap;
+  width: auto;
+  height: auto;
+  -webkit-border-radius: 50%; 
+  -moz-border-radius: 50%; 
+  border-radius: 50%;
+  -webkit-background-clip: padding-box; 
+  -moz-background-clip:    padding; 
+  background-clip:         padding-box; 
+}
+.livicon.rounded-bg {
+  padding: 16px; /*correct value here*/
+  overflow: hidden;
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap;
+  -webkit-border-radius: 6px; /*correct value here*/
+  -moz-border-radius: 6px; /*correct value here*/
+  border-radius: 6px; /*correct value here*/
+  -webkit-background-clip: padding-box; 
+  -moz-background-clip:    padding; 
+  background-clip:         padding-box;
+}
+.livicon.pull-right {
+  float: right;
+  margin-left: 0.3em;
+}
+.livicon.pull-left {
+  float: left;
+  margin-right: 0.3em;
+}
+.livicon.shadowed {
+  -webkit-filter: drop-shadow(0 -1px 0 rgba(0,0,0,0.25)); /*correct value here*/
+  filter: drop-shadow(0 -1px 0 rgba(0,0,0,0.25)); /*for future standards*/
+}

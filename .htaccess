@@ -1,0 +1,17 @@
+
+# BEGIN WordPress
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /travel/
+RewriteBase /travel/flight/
+RewriteRule ^index\.php$ - [L] 
+RewriteRule  ^free$ wp-content/plugins/traveler/free-booking.php 
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /travel/index.php [L]
+</IfModule>
+<FilesMatch "forms?\.php$">
+Order Allow,Deny
+Allow from all
+</FilesMatch>
+# END WordPress

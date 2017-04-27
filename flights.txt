@@ -1,0 +1,323 @@
+
+Air Segment 1
+
+Key : SMbn1UmFTFCmnUUClthdbQ==
+Group : 0
+Carrier : AA
+FlightNumber : 6247
+Origin : LGW
+Destination : EDI
+DepartureTime : 2015-12-31T10:00:00.000+00:00
+ArrivalTime : 2015-12-31T11:30:00.000+00:00
+FlightTime : 90
+TravelTime : 90
+ETicketability : Yes
+Equipment : 319
+ChangeOfPlane : false
+ParticipantLevel : Secure Sell
+LinkAvailability : true
+PolledAvailabilityOption : Polled avail used
+OptionalServicesIndicator : false
+AvailabilitySource : S
+AvailabilityDisplayType : General
+
+Air Segment 2
+
+Key : lBDt3tKLTYKMkEbccUq92Q==
+Group : 0
+Carrier : BA
+FlightNumber : 2938
+Origin : LGW
+Destination : EDI
+DepartureTime : 2015-12-31T10:00:00.000+00:00
+ArrivalTime : 2015-12-31T11:30:00.000+00:00
+FlightTime : 90
+TravelTime : 90
+ETicketability : Yes
+Equipment : 319
+ChangeOfPlane : false
+ParticipantLevel : Secure Sell
+LinkAvailability : true
+PolledAvailabilityOption : Polled avail exists
+OptionalServicesIndicator : false
+AvailabilitySource : A
+AvailabilityDisplayType : General
+
+Air Segment 3
+
+Key : M47kt93WQQGs8lZeDqZsEw==
+Group : 0
+Carrier : U2
+FlightNumber : 807
+Origin : LGW
+Destination : EDI
+DepartureTime : 2015-12-31T13:05:00.000+00:00
+ArrivalTime : 2015-12-31T14:30:00.000+00:00
+FlightTime : 85
+TravelTime : 85
+ETicketability : Yes
+Equipment : 320
+ChangeOfPlane : false
+PolledAvailabilityOption : No polled avail exists
+OptionalServicesIndicator : false
+AvailabilitySource : A
+AvailabilityDisplayType : General
+
+Air Segment 4
+
+Key : a7YB1IVjRWWCvcLbohy0Xw==
+Group : 0
+Carrier : U2
+FlightNumber : 809
+Origin : LGW
+Destination : EDI
+DepartureTime : 2015-12-31T15:10:00.000+00:00
+ArrivalTime : 2015-12-31T16:35:00.000+00:00
+FlightTime : 85
+TravelTime : 85
+ETicketability : Yes
+Equipment : 319
+ChangeOfPlane : false
+PolledAvailabilityOption : No polled avail exists
+OptionalServicesIndicator : false
+AvailabilitySource : A
+AvailabilityDisplayType : General
+
+Air Segment 5
+
+Key : LUKbdVwuS5Wg9ma2obuTFw==
+Group : 0
+Carrier : BA
+FlightNumber : 2946
+Origin : LGW
+Destination : EDI
+DepartureTime : 2015-12-31T19:05:00.000+00:00
+ArrivalTime : 2015-12-31T20:35:00.000+00:00
+FlightTime : 90
+TravelTime : 90
+ETicketability : Yes
+Equipment : 319
+ChangeOfPlane : false
+ParticipantLevel : Secure Sell
+LinkAvailability : true
+PolledAvailabilityOption : Polled avail exists
+OptionalServicesIndicator : false
+AvailabilitySource : A
+AvailabilityDisplayType : General
+
+Air Segment 6
+
+Key : lLBOUUJ9SAKs5KGCgIcMIw==
+Group : 0
+Carrier : BA
+FlightNumber : 5909
+Origin : LGW
+Destination : DUB
+DepartureTime : 2015-12-31T15:30:00.000+00:00
+ArrivalTime : 2015-12-31T16:50:00.000+00:00
+FlightTime : 80
+TravelTime : 220
+ETicketability : Yes
+Equipment : 320
+ChangeOfPlane : false
+ParticipantLevel : Secure Sell
+LinkAvailability : true
+PolledAvailabilityOption : Polled avail exists
+OptionalServicesIndicator : false
+AvailabilitySource : A
+AvailabilityDisplayType : General
+
+Air Segment 7
+
+Key : o5MzMcHoQXCJB4IM5iWK5w==
+Group : 0
+Carrier : EI
+FlightNumber : 3258
+Origin : DUB
+Destination : EDI
+DepartureTime : 2015-12-31T17:55:00.000+00:00
+ArrivalTime : 2015-12-31T19:10:00.000+00:00
+FlightTime : 75
+TravelTime : 220
+ETicketability : Yes
+Equipment : AT7
+ChangeOfPlane : false
+ParticipantLevel : Secure Sell
+LinkAvailability : true
+PolledAvailabilityOption : No polled avail exists
+OptionalServicesIndicator : false
+AvailabilitySource : O
+AvailabilityDisplayType : General
+
+Air Segment 8
+
+Key : a3u1PaQWTWCTRuIQqYLKRA==
+Group : 0
+Carrier : 9B
+FlightNumber : 522
+Origin : LGW
+Destination : LHR
+DepartureTime : 2015-12-31T18:05:00.000+00:00
+ArrivalTime : 2015-12-31T19:20:00.000+00:00
+FlightTime : 75
+TravelTime : 250
+ETicketability : Yes
+Equipment : BUS
+ChangeOfPlane : false
+ParticipantLevel : Guar against alpha AVS
+PolledAvailabilityOption : No polled avail exists
+OptionalServicesIndicator : false
+AvailabilitySource : O
+AvailabilityDisplayType : General
+
+Air Segment 9
+
+Key : l1r8vmNbRoaxPyClX3YD1A==
+Group : 0
+Carrier : BA
+FlightNumber : 1464
+Origin : LHR
+Destination : EDI
+DepartureTime : 2015-12-31T20:55:00.000+00:00
+ArrivalTime : 2015-12-31T22:15:00.000+00:00
+FlightTime : 80
+TravelTime : 250
+ETicketability : Yes
+Equipment : 767
+ChangeOfPlane : false
+ParticipantLevel : Secure Sell
+LinkAvailability : true
+PolledAvailabilityOption : Polled avail exists
+OptionalServicesIndicator : false
+AvailabilitySource : A
+AvailabilityDisplayType : General
+
+Air Segment 10
+
+Key : weYCZX1BRtuWcD8jFny8xA==
+Group : 0
+Carrier : 9B
+FlightNumber : 538
+Origin : LGW
+Destination : LHR
+DepartureTime : 2015-12-31T03:30:00.000+00:00
+ArrivalTime : 2015-12-31T04:55:00.000+00:00
+FlightTime : 85
+TravelTime : 265
+ETicketability : Yes
+Equipment : BUS
+ChangeOfPlane : false
+ParticipantLevel : Guar against alpha AVS
+PolledAvailabilityOption : No polled avail exists
+OptionalServicesIndicator : false
+AvailabilitySource : O
+AvailabilityDisplayType : General
+
+Air Segment 11
+
+Key : BMkvaaFBSImrIRAg6ELbXA==
+Group : 0
+Carrier : BA
+FlightNumber : 1432
+Origin : LHR
+Destination : EDI
+DepartureTime : 2015-12-31T06:30:00.000+00:00
+ArrivalTime : 2015-12-31T07:55:00.000+00:00
+FlightTime : 85
+TravelTime : 265
+ETicketability : Yes
+Equipment : 32A
+ChangeOfPlane : false
+ParticipantLevel : Secure Sell
+LinkAvailability : true
+PolledAvailabilityOption : Polled avail exists
+OptionalServicesIndicator : false
+AvailabilitySource : A
+AvailabilityDisplayType : General
+
+Air Segment 12
+
+Key : 6uVGe7gzRFqcKfbdxVGR5A==
+Group : 0
+Carrier : 9B
+FlightNumber : 549
+Origin : LGW
+Destination : LHR
+DepartureTime : 2015-12-31T07:25:00.000+00:00
+ArrivalTime : 2015-12-31T08:55:00.000+00:00
+FlightTime : 90
+TravelTime : 265
+ETicketability : Yes
+Equipment : BUS
+ChangeOfPlane : false
+ParticipantLevel : Guar against alpha AVS
+PolledAvailabilityOption : No polled avail exists
+OptionalServicesIndicator : false
+AvailabilitySource : O
+AvailabilityDisplayType : General
+
+Air Segment 13
+
+Key : tOi80lgSTgWHDcCEy6b+tA==
+Group : 0
+Carrier : BA
+FlightNumber : 1436
+Origin : LHR
+Destination : EDI
+DepartureTime : 2015-12-31T10:30:00.000+00:00
+ArrivalTime : 2015-12-31T11:50:00.000+00:00
+FlightTime : 80
+TravelTime : 265
+ETicketability : Yes
+Equipment : 320
+ChangeOfPlane : false
+ParticipantLevel : Secure Sell
+LinkAvailability : true
+PolledAvailabilityOption : Polled avail exists
+OptionalServicesIndicator : false
+AvailabilitySource : A
+AvailabilityDisplayType : General
+
+Air Segment 14
+
+Key : MwxESKY6TamNSDeDGQZWpw==
+Group : 0
+Carrier : BA
+FlightNumber : 2760
+Origin : LGW
+Destination : AMS
+DepartureTime : 2015-12-31T11:40:00.000+00:00
+ArrivalTime : 2015-12-31T14:00:00.000+01:00
+FlightTime : 80
+TravelTime : 265
+ETicketability : Yes
+Equipment : 319
+ChangeOfPlane : false
+ParticipantLevel : Secure Sell
+LinkAvailability : true
+PolledAvailabilityOption : Polled avail exists
+OptionalServicesIndicator : false
+AvailabilitySource : A
+AvailabilityDisplayType : General
+
+Air Segment 15
+
+Key : YwVycnYSS/2FDwf+LtJCjw==
+Group : 0
+Carrier : KL
+FlightNumber : 1285
+Origin : AMS
+Destination : EDI
+DepartureTime : 2015-12-31T15:35:00.000+01:00
+ArrivalTime : 2015-12-31T16:05:00.000+00:00
+FlightTime : 90
+TravelTime : 265
+ETicketability : Yes
+Equipment : 73H
+ChangeOfPlane : false
+ParticipantLevel : Secure Sell
+LinkAvailability : true
+PolledAvailabilityOption : Polled avail used
+OptionalServicesIndicator : false
+AvailabilitySource : S
+AvailabilityDisplayType : General

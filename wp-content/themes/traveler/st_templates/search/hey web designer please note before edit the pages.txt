@@ -1,0 +1,24 @@
+
+Hey web designer ,
+
+This template is not a travel port template . we integrated this to a ticketing template.
+
+please note : 
+
+front search form :) 
+
+
+Activities.php = flights search 
+cars.php = flights + Hotels search 
+Hotels.php = Hotels search 
+tours.php + flight status search 
+
+
+
+If there is any problem contact me : 
+
+I'm Hamdaan Hassan (developer of this website)
+
+Website : www.hplusplusdesigns.com
+email: designs_lk@yahoo.co.uk
+tel : +94 77 1865252

@@ -1,0 +1,48 @@
+@charset "utf-8";
+/* CSS Document */
+
+.tbl-des {
+	width:100%;
+	overflow-x:auto;
+}
+.tbl-des-tbl {
+	width:1140px;
+}
+.tbl-des-tbl tr:nth-child(odd) {
+	background:#f1f1f1;
+}
+.tbl-des-tbl tr {
+	width:100%;
+}
+.tbl-des-tbl tr th {
+    background: #2eade2;
+    color: #fff;
+	font-size:13px;
+    padding: 10px 5px;
+	text-align:center;
+	text-transform:uppercase;
+}
+.tbl-des-tbl tr td {
+	text-align:center;
+}
+.sub-tbl-des-tbl, .sub-tbl-des-tbl tr {
+	width:100%;
+	float:left;
+}
+.sub-tbl-des-tbl tr td {
+	/*width:50%;*/
+	width:100%;
+	float:left;
+	padding:5px;
+}
+.sub-tbl-des-tbl .flexslider {
+	border:none;
+}
+#datepicker {
+	width:100%;
+	float:left;
+}
+.tbl-des-tbl p {
+	text-align:center;
+	padding:5px;
+}

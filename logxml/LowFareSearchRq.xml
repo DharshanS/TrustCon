@@ -1,0 +1,29 @@
+
+	<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+	   <soapenv:Header/>
+	   <soapenv:Body>
+		<LowFareSearchReq xmlns="http://www.travelport.com/schema/air_v32_0" AuthorizedBy="User" TraceId="trace" TargetBranch="P2721018" >
+			  <BillingPointOfSaleInfo xmlns="http://www.travelport.com/schema/common_v32_0" OriginApplication="UAPI" />
+			  <SearchAirLeg>
+				<SearchOrigin>
+				  <CityOrAirport xmlns="http://www.travelport.com/schema/common_v32_0" Code="CMB"  />
+				</SearchOrigin>
+				<SearchDestination>
+				  <CityOrAirport xmlns="http://www.travelport.com/schema/common_v32_0" Code=""  />
+				</SearchDestination>
+				<SearchDepTime PreferredTime="2017-03-30" />
+				<AirLegModifiers>
+				  <PreferredCabins>
+					<CabinClass Type="Economy"  xmlns="http://www.travelport.com/schema/common_v32_0"/>
+				  </PreferredCabins>
+				</AirLegModifiers>
+			  </SearchAirLeg>
+			  <AirSearchModifiers >
+				<PreferredProviders>
+				  <Provider xmlns="http://www.travelport.com/schema/common_v32_0" Code="1G" />
+				</PreferredProviders>
+			  </AirSearchModifiers><SearchPassenger BookingTravelerRef= "c4ca4238a0b923820dcc509a6f75849b" xmlns="http://www.travelport.com/schema/common_v32_0" Code="ADT"/><AirPricingModifiers FaresIndicator="PublicAndPrivateFares" ETicketability="Yes" />
+	</LowFareSearchReq>
+	   </soapenv:Body>
+	</soapenv:Envelope>
+	

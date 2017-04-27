@@ -1,0 +1,301 @@
+<script type="application/javascript" src='http://localhost:8080/travel/wp-content/plugins/traveler/js/tr-roundtrip.js'/>
+<?php
+require_once(PLUG_DIR . 'models/RoundTrip.php');
+include_once (PLUG_DIR . 'utility/FlightUtility.php');
+$test = "WellCome";
+
+function roundTripView($response) {
+    error_log("ROUND TRIP VIEW");
+    $flightUtility = new FlightUtility();
+    error_log(print_r($response, true));
+    ?>
+    <div id="resultloader">
+        <div class="sky-bg">
+            <div class="container">
+                <div class="row">
+
+                    <?php
+                    foreach ($response as $Key => $index) {
+                        $outBoundBestFlight = $index->bastOptionOut;
+                        $outBoundBestFlightCount = count($outBoundBestFlight) - 1;
+                        $outBoundBestFirstFlight = $outBoundBestFlight[0]['@attributes'];
+                        $outBoundBestLastFlight = $outBoundBestFlight[$outBoundBestFlightCount]['@attributes'];
+
+
+                        $inBoundBestFlight = $index->bastOptionIn;
+                        $inBoundBestFlightCount = count($inBoundBestFlight) - 1;
+                        $inBoundBestFirstFlight = $inBoundBestFlight[0]['@attributes'];
+                        $inBoundBestLastFlight = $inBoundBestFlight[$inBoundBestFlightCount]['@attributes'];
+                        ?>           
+                        <div class="col-sm-12">
+                            <div class="show-flight">                    
+                                <div class="col-sm-9">
+                                    <div class="visl">
+
+                                        <div class="row brd-btm "><!--Added CSS-->
+                                            <div class="col-sm-12">
+
+                                                <div class="col-sm-1 flt flySeg"> 
+                                                    <label><input type="radio" class="radio-small" name="selectFlight"  mode="outBound_<?php echo $Key ?>"
+                                                                  value="<?php echo base64_encode(json_encode($outBoundBestFlight)); ?>" ></label> 
+                                                </div>
+                                                <div class="col-sm-3 flt arw flySeg">
+                                                    <p> <?php echo $outBoundBestFirstFlight['Origin'] ?>   <br>
+                                                        <?php echo date("h:i a", strtotime($outBoundBestFirstFlight['DepartureTime'])) ?> <br>
+                                                        <?php echo date("D, d M Y", strtotime($outBoundBestFirstFlight['DepartureTime'])) ?></p>
+                                                </div>
+
+                                                <div class="col-sm-3  flt flySeg">
+                                                    <p><?php echo $outBoundBestLastFlight['Destination'] ?>  <br>
+                                                        <?php echo date("h:i a", strtotime($outBoundBestLastFlight['ArrivalTime'])) ?> <br>
+                                                        <?php echo date("D, d M Y", strtotime($outBoundBestLastFlight['ArrivalTime'])) ?></p>
+                                                </div>
+
+                                                <div class="col-sm-3 flt drsn flySeg">
+                                                    <img src="../airimages/<?php echo $outBoundBestLastFlight['Carrier'] ?>.GIF">
+                                                    <?php echo $flightUtility->getAirLineName($outBoundBestLastFlight['Carrier']) ?>      
+                                                </div>
+
+                                                <div class="col-sm-1  flt flySeg"><a>1 Stop</a></div>
+                                                <div class="col-sm-2  flt flySeg">
+                                                    <?php echo $flightUtility->getTimeDiff(date("h:i a", strtotime($outBoundBestFirstFlight['DepartureTime'])), date("h:i a", strtotime($outBoundBestLastFlight['ArrivalTime']))) ?>
+                                                </div>
+                                            </div>
+
+                                            <div class="row">
+                                                 <div class="more">
+                                                    <!--  ************************************************************MoreFlights*******************************************************************************  -->                                          
+                                                    <?php
+                                                    $moreOut = $index->outBound;
+                                                    $moreOutCount = count($moreOut);
+                                                    if ($moreOutCount >= 1) {
+                                                        ?>
+                                                        <div class="row">
+                                                            <a role="button" data-toggle="collapse" href="#moreFlights_<?php echo $Key; ?>" aria-expanded="false" 
+                                                               accesskey="    "aria-controls="moreFlights_<?php echo $Key; ?>">view more flights</a>
+                                                        </div> 
+
+                                                        <div class="collapse" id="moreFlights_<?php echo $Key; ?>" aria-hidden="true" >
+
+                                                            <!--   *************************************************************** -->
+
+                                                            <?php
+                                                            foreach ($moreOut as $mIndex)
+                                                                {
+                                                                $outBoundFirstFlight = $mIndex[0]['@attributes'];
+                                                                $outBoundLast = count($mIndex) - 1;
+                                                                $outBoundLastFlight = $mIndex[$outBoundLast]['@attributes'];
+                                                                ?>
+
+                                                                <div class="row col-sm-12">
+
+
+
+                                                                    <div class="col-sm-1 flt flySeg">
+                                                                        <label><input type="radio" class="radio-stroke"  name="selectFlight" mode="outBound_<?php echo $Key ?>" value="<?php echo base64_encode(json_encode($mIndex)); ?>"></label> 
+                                                                    </div>
+
+                                                                    <div class="col-sm-2 col-xs-6 flt arw flySeg">
+                                                                        <p> <?php echo $outBoundFirstFlight['Origin'] ?>   <br>
+                                                                            <?php echo date("h:i a", strtotime($outBoundFirstFlight['DepartureTime'])) ?> <br>
+                                                                            <?php echo date("D, d M Y", strtotime($outBoundFirstFlight['DepartureTime'])) ?></p>
+                                                                    </div>
+
+                                                                    <div class="col-sm-2 col-xs-6 flt flySeg">
+                                                                        <p><?php echo $outBoundLastFlight['Destination'] ?>  <br>
+                                                                            <?php echo date("h:i a", strtotime($outBoundLastFlight['ArrivalTime'])) ?> <br>
+                                                                            <?php echo date("D, d M Y", strtotime($outBoundLastFlight['ArrivalTime'])) ?></p>
+                                                                    </div>
+
+                                                                    <div class="col-sm-2 col-xs-4 flt drsn flySeg">
+                                                                        <img src="../airimages/<?php echo $outBoundLastFlight['Carrier'] ?>.GIF"></br>
+                                                                        <?php echo $flightUtility->getAirLineName($outBoundLastFlight['Carrier']) ?>      
+                                                                    </div>
+
+                                                                    <div class="col-sm-1 col-xs-4 flt flySeg"><a>1 Stop</a></div>
+                                                                    <div class="col-sm-2 col-xs-4 flt flySeg">
+
+                                                                        <?php echo $flightUtility->getTimeDiff(date("h:i a", strtotime($outBoundFirstFlight['DepartureTime'])), date("h:i a", strtotime($outBoundLastFlight['ArrivalTime']))) ?>
+
+                                                                    </div>
+
+                                                                </div>
+                                                            <?php } ?>
+                                                </div>
+                                            <?php } ?>
+                                                    
+                                                        </div>
+                                                    </div>
+                                            <!--******************************************************************************************************************************************* -->  
+                                       
+
+
+
+                                        <div class="row">
+                                            <div class="col-sm-3 col-xs-6 flt arw">
+                                                <p><?php echo $inBoundBestFirstFlight['Origin'] ?>  <br>
+                                                    <?php echo date("h:i a", strtotime($inBoundBestFirstFlight['DepartureTime'])) ?> <br>
+                                                    <?php echo date("D, d M Y", strtotime($inBoundBestFirstFlight['DepartureTime'])) ?></p>
+                                            </div>
+
+                                            <div class="col-sm-3 col-xs-6 flt">
+                                                <p><?php echo $inBoundBestLastFlight['Destination'] ?> <br>
+                                                    <?php echo date("h:i a", strtotime($inBoundBestLastFlight['ArrivalTime'])) ?> <br>
+                                                    <?php echo date("D, d M Y", strtotime($inBoundBestLastFlight['ArrivalTime'])) ?></p>
+                                            </div>
+
+                                            <div class="col-sm-3 col-xs-4 flt drsn">
+                                                <img src="../airimages/<?php echo $inBoundBestLastFlight['Carrier'] ?>.GIF"> 
+                                                <?php echo $flightUtility->getAirLineName($inBoundBestLastFlight['Carrier']) ?>                
+                                            </div>
+
+                                            <div class="col-sm-1 col-xs-4 flt"><a>1 Stop</a></div>
+                                            <div class="col-sm-2 col-xs-4 flt">
+                                                <?php echo $flightUtility->getTimeDiff(date("h:i a", strtotime($inBoundBestFirstFlight['DepartureTime'])), date("h:i a", strtotime($inBoundBestLastFlight['ArrivalTime']))) ?>
+                                            </div>
+                                        </div>
+
+
+
+                                    </div>
+
+
+                                    <div class="edit-visl">
+                                        <div class="head"><i class="fa fa-plane"></i> Depart</div>
+                                        <!-- ***************************************************************outBound******************************************************************************--> 
+                                        <?php
+                                        foreach ($outBoundBestFlight as $outindex) {
+                                            $temp = $outindex['@attributes'];
+                                            ?>
+                                            <div class="row flt-dtl <?php echo "outBound_" . $Key ?>">
+                                                <div class="col-sm-4 col-xs-6 arw">
+                                                    <p><?php echo $flightUtility->getCityName($temp['Origin']) ?><br>
+                                                        <?php echo $temp['Origin'] ?><br>
+                                                        <?php echo $flightUtility->getAirLineName($temp['Carrier']) ?><br>
+                                                        <?php echo date("h:i a", strtotime($temp['DepartureTime'])) ?> <br>
+                                                        <?php echo date("D, d M Y", strtotime($temp['DepartureTime'])) ?></p>
+                                                </div>
+                                                <div class="col-sm-4 col-xs-6">
+                                                    <p><?php echo $flightUtility->getCityName($temp['Destination']) ?><br>
+                                                        <?php echo $temp['Destination'] ?><br>
+                                                        <?php echo $flightUtility->getAirLineName($temp['Carrier']) ?><br>
+                                                        <?php echo date("h:i a", strtotime($temp['ArrivalTime'])) ?> <br>
+                                                        <?php echo date("D, d M Y", strtotime($temp['ArrivalTime'])) ?></p>
+                                                </div>
+
+                                                <div class="col-sm-4">
+                                                    <p><i class="fa fa-clock-o"></i> 
+                                                        <?php echo $flightUtility->getTimeDiff(date("h:i a", strtotime($temp['DepartureTime'])), date("h:i a", strtotime($temp['ArrivalTime']))) ?></p>
+                                                </div>
+
+                                            </div>
+
+                                            <div class="vgn"><p><img src="../airimages/<?php echo $flightUtility->getAirLineName($temp['Carrier']) ?>.GIF"> 
+                                                    <?php echo $flightUtility->getAirLineName($temp['Carrier']) ?> -
+                                                    <?php echo $temp['Carrier'] . $temp['Equipment'] ?> <a> 
+                                                        <?php echo $temp[0]['CabinClass'] . ' ' . $temp[0]['BookingCode'] ?></a> - Aircraft  <?php echo $outBoundBestFirstFlight['FlightNumber'] ?></p>
+                                            </div>
+
+
+                                            <?php
+                                        }
+                                        $totaltime = $flightUtility->getTimeDiff(date("h:i a", strtotime($outBoundBestFirstFlight['DepartureTime'])), date("h:i a", strtotime($outBoundBestLastFlight['ArrivalTime'])))
+                                        ?>
+
+                                        <div class="btm"><i class="fa fa-clock-o"></i> <strong>TOTAL DURATION</strong> <?php echo $totaltime ?></div>
+
+                                        <!-- ****************************************************************InBound*****************************************************************************-->                   
+
+                                        <div class="head"><i class="fa fa-plane"></i> Return</div>
+                                        <?php
+                                        foreach ($inBoundBestFlight as $jindex) {
+                                            $temp = $jindex['@attributes'];
+                                            ?>
+                                            <div class="row flt-dtl">
+                                                <div class="col-sm-4 col-xs-6 arw">
+                                                    <p><?php echo $flightUtility->getCityName($temp['Origin']) ?><br>
+                                                        <?php echo $temp['Origin'] ?><br>
+                                                        <?php echo $flightUtility->getAirLineName($temp['Carrier']) ?><br>
+                                                        <?php echo date("h:i a", strtotime($temp['DepartureTime'])) ?> <br>
+                                                        <?php echo date("D, d M Y", strtotime($temp['DepartureTime'])) ?></p>
+                                                </div>
+                                                <div class="col-sm-4 col-xs-6">
+                                                    <p><?php echo $flightUtility->getCityName($temp['Destination']) ?><br>
+                                                        <?php echo $temp['Destination'] ?><br>
+                                                        <?php echo $flightUtility->getAirLineName($temp['Carrier']) ?><br>
+                                                        <?php echo date("h:i a", strtotime($temp['ArrivalTime'])) ?> <br>
+                                                        <?php echo date("D, d M Y", strtotime($temp['ArrivalTime'])) ?></p>
+                                                </div>
+                                                <div class="col-sm-4">
+                                                    <p><i class="fa fa-clock-o"></i> 
+                                                        <?php echo $flightUtility->getTimeDiff(date("h:i a", strtotime($temp['DepartureTime'])), date("h:i a", strtotime($temp['ArrivalTime']))) ?></p>
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                            <div class="vgn"><p><img src="../airimages/<?php echo $flightUtility->getAirLineName($temp['Carrier']) ?>.GIF"> 
+                                                    <?php echo $flightUtility->getAirLineName($temp['Carrier']) ?> -
+                                                    <?php echo $temp['Carrier'] . $temp['Equipment'] ?> <a> 
+                                                        <?php echo $temp[0]['CabinClass'] . ' ' . $temp[0]['BookingCode'] ?></a> - Aircraft  <?php echo $inBoundBestLastFlight['FlightNumber'] ?></p>
+                                            </div>
+
+
+                                        <?php } $totaltime = $flightUtility->getTimeDiff(date("h:i a", strtotime($inBoundBestFirstFlight['DepartureTime'])), date("h:i a", strtotime($inBoundBestLastFlight['ArrivalTime']))) ?>
+
+                                        <div class="btm"><i class="fa fa-clock-o"></i> <strong>TOTAL DURATION</strong><?php echo $totaltime ?></div>
+                                        <!-- **************************************************************************InBoundEnd*******************************************************************--> 
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+
+                                <div class="col-sm-3 show-flight-prize">
+                                    <div class="flt-prz">
+                                        <label>Per Adult Return</label>
+                                        <input type="text" name="flight-person-prize" class="cls-flight-prz" 
+                                               id="id-flight-prz" value="<?php echo $index->basePrice['TotalPrice'] ?>" readonly="">
+                                        <form name="frmAvail" action="../free-booking" method="post">
+                                            <input type="hidden" name="bookingdata" value="YTo1OntzOjExOiJzZWdtZW50ZHRscyI7YTo0OntpOjA7YToyMjp7czozOiJLZXkiO3M6MjQ6IlM2WW82c0JBQUEvQngvZ1FNTUFBQUE9PSI7czo1OiJHcm91cCI7czoxOiIwIjtzOjc6IkNhcnJpZXIiO3M6MjoiOVciO3M6MTI6IkZsaWdodE51bWJlciI7czozOiIyNTUiO3M6NjoiT3JpZ2luIjtzOjM6IkNNQiI7czoxMToiRGVzdGluYXRpb24iO3M6MzoiQk9NIjtzOjEzOiJEZXBhcnR1cmVUaW1lIjtzOjI5OiIyMDE3LTA1LTE5VDA1OjQwOjAwLjAwMCswNTozMCI7czoxMToiQXJyaXZhbFRpbWUiO3M6Mjk6IjIwMTctMDUtMTlUMDg6MTU6MDAuMDAwKzA1OjMwIjtzOjEwOiJGbGlnaHRUaW1lIjtzOjM6IjE1NSI7czo4OiJEaXN0YW5jZSI7czozOiI5NDgiO3M6MTQ6IkVUaWNrZXRhYmlsaXR5IjtzOjM6IlllcyI7czo5OiJFcXVpcG1lbnQiO3M6MzoiNzNIIjtzOjEzOiJDaGFuZ2VPZlBsYW5lIjtzOjU6ImZhbHNlIjtzOjE2OiJQYXJ0aWNpcGFudExldmVsIjtzOjExOiJTZWN1cmUgU2VsbCI7czoxNjoiTGlua0F2YWlsYWJpbGl0eSI7czo0OiJ0cnVlIjtzOjI0OiJQb2xsZWRBdmFpbGFiaWxpdHlPcHRpb24iO3M6MTc6IlBvbGxlZCBhdmFpbCB1c2VkIjtzOjI1OiJPcHRpb25hbFNlcnZpY2VzSW5kaWNhdG9yIjtzOjU6ImZhbHNlIjtzOjE4OiJBdmFpbGFiaWxpdHlTb3VyY2UiO3M6MToiUyI7czoyMzoiQXZhaWxhYmlsaXR5RGlzcGxheVR5cGUiO3M6MjI6IkZhcmUgU2hvcC9PcHRpbWFsIFNob3AiO3M6MTY6ImFpckNvZGVzaGFyZUluZm8iO3M6MDoiIjtzOjEzOiJCb29raW5nQ291bnRzIjtzOjgwOiJDN3xKN3xaN3xJN3xQN3xZN3xNN3xUN3xVN3xON3xMN3xRN3xTN3xLN3xIN3xWN3xPN3xXN3xCMHxLMHxWMHxXMHxJM3xQMXxPMHxIMHxaNSI7czoxOToiYWlyRmxpZ2h0RGV0YWlsc1JlZiI7czoyNDoiUzZZbzZzQkFBQS9CeS9nUU1NQUFBQT09Ijt9aToxO2E6MjI6e3M6MzoiS2V5IjtzOjI0OiJTNllvNnNCQUFBL0J6L2dRTU1BQUFBPT0iO3M6NToiR3JvdXAiO3M6MToiMCI7czo3OiJDYXJyaWVyIjtzOjI6IjlXIjtzOjEyOiJGbGlnaHROdW1iZXIiO3M6MjoiNjAiO3M6NjoiT3JpZ2luIjtzOjM6IkJPTSI7czoxMToiRGVzdGluYXRpb24iO3M6MzoiQktLIjtzOjEzOiJEZXBhcnR1cmVUaW1lIjtzOjI5OiIyMDE3LTA1LTE5VDEyOjUwOjAwLjAwMCswNTozMCI7czoxMToiQXJyaXZhbFRpbWUiO3M6Mjk6IjIwMTctMDUtMTlUMTg6NTA6MDAuMDAwKzA3OjAwIjtzOjEwOiJGbGlnaHRUaW1lIjtzOjM6IjI3MCI7czo4OiJEaXN0YW5jZSI7czo0OiIxODc4IjtzOjE0OiJFVGlja2V0YWJpbGl0eSI7czozOiJZZXMiO3M6OToiRXF1aXBtZW50IjtzOjM6IjczSCI7czoxMzoiQ2hhbmdlT2ZQbGFuZSI7czo1OiJmYWxzZSI7czoxNjoiUGFydGljaXBhbnRMZXZlbCI7czoxMToiU2VjdXJlIFNlbGwiO3M6MTY6IkxpbmtBdmFpbGFiaWxpdHkiO3M6NDoidHJ1ZSI7czoyNDoiUG9sbGVkQXZhaWxhYmlsaXR5T3B0aW9uIjtzOjE3OiJQb2xsZWQgYXZhaWwgdXNlZCI7czoyNToiT3B0aW9uYWxTZXJ2aWNlc0luZGljYXRvciI7czo1OiJmYWxzZSI7czoxODoiQXZhaWxhYmlsaXR5U291cmNlIjtzOjE6IlMiO3M6MjM6IkF2YWlsYWJpbGl0eURpc3BsYXlUeXBlIjtzOjIyOiJGYXJlIFNob3AvT3B0aW1hbCBTaG9wIjtzOjE2OiJhaXJDb2Rlc2hhcmVJbmZvIjtzOjA6IiI7czoxMzoiQm9va2luZ0NvdW50cyI7czo1NjoiQzd8Sjd8Wjd8STd8UDd8WTd8TTd8VDd8VTd8Tjd8TDd8UTd8Uzd8Szd8SDd8Vjd8Tzd8Vzd8QjAiO3M6MTk6ImFpckZsaWdodERldGFpbHNSZWYiO3M6MjQ6IlM2WW82c0JBQUEvQjAvZ1FNTUFBQUE9PSI7fWk6MjthOjIyOntzOjM6IktleSI7czoyNDoiUzZZbzZzQkFBQS9CMS9nUU1NQUFBQT09IjtzOjU6Ikdyb3VwIjtzOjE6IjEiO3M6NzoiQ2FycmllciI7czoyOiI5VyI7czoxMjoiRmxpZ2h0TnVtYmVyIjtzOjI6IjYxIjtzOjY6Ik9yaWdpbiI7czozOiJCS0siO3M6MTE6IkRlc3RpbmF0aW9uIjtzOjM6IkJPTSI7czoxMzoiRGVwYXJ0dXJlVGltZSI7czoyOToiMjAxNy0wNS0zMFQwNTo1NTowMC4wMDArMDc6MDAiO3M6MTE6IkFycml2YWxUaW1lIjtzOjI5OiIyMDE3LTA1LTMwVDA4OjUwOjAwLjAwMCswNTozMCI7czoxMDoiRmxpZ2h0VGltZSI7czozOiIyNjUiO3M6ODoiRGlzdGFuY2UiO3M6NDoiMTg3OCI7czoxNDoiRVRpY2tldGFiaWxpdHkiO3M6MzoiWWVzIjtzOjk6IkVxdWlwbWVudCI7czozOiI3M0giO3M6MTM6IkNoYW5nZU9mUGxhbmUiO3M6NToiZmFsc2UiO3M6MTY6IlBhcnRpY2lwYW50TGV2ZWwiO3M6MTE6IlNlY3VyZSBTZWxsIjtzOjE2OiJMaW5rQXZhaWxhYmlsaXR5IjtzOjQ6InRydWUiO3M6MjQ6IlBvbGxlZEF2YWlsYWJpbGl0eU9wdGlvbiI7czoxNzoiUG9sbGVkIGF2YWlsIHVzZWQiO3M6MjU6Ik9wdGlvbmFsU2VydmljZXNJbmRpY2F0b3IiO3M6NToiZmFsc2UiO3M6MTg6IkF2YWlsYWJpbGl0eVNvdXJjZSI7czoxOiJTIjtzOjIzOiJBdmFpbGFiaWxpdHlEaXNwbGF5VHlwZSI7czoyMjoiRmFyZSBTaG9wL09wdGltYWwgU2hvcCI7czoxNjoiYWlyQ29kZXNoYXJlSW5mbyI7czowOiIiO3M6MTM6IkJvb2tpbmdDb3VudHMiO3M6NTY6IkM3fEo3fFo3fEk3fFA2fFk3fE03fFQ3fFU3fE43fEw3fFE3fFM3fEs3fEg3fFY3fE83fFc3fEIwIjtzOjE5OiJhaXJGbGlnaHREZXRhaWxzUmVmIjtzOjI0OiJTNllvNnNCQUFBL0IyL2dRTU1BQUFBPT0iO31pOjM7YToyMjp7czozOiJLZXkiO3M6MjQ6IlM2WW82c0JBQUEvQjUvZ1FNTUFBQUE9PSI7czo1OiJHcm91cCI7czoxOiIxIjtzOjc6IkNhcnJpZXIiO3M6MjoiOVciO3M6MTI6IkZsaWdodE51bWJlciI7czozOiIyNTYiO3M6NjoiT3JpZ2luIjtzOjM6IkJPTSI7czoxMToiRGVzdGluYXRpb24iO3M6MzoiQ01CIjtzOjEzOiJEZXBhcnR1cmVUaW1lIjtzOjI5OiIyMDE3LTA1LTMxVDAyOjEwOjAwLjAwMCswNTozMCI7czoxMToiQXJyaXZhbFRpbWUiO3M6Mjk6IjIwMTctMDUtMzFUMDQ6MzU6MDAuMDAwKzA1OjMwIjtzOjEwOiJGbGlnaHRUaW1lIjtzOjM6IjE0NSI7czo4OiJEaXN0YW5jZSI7czozOiI5NDgiO3M6MTQ6IkVUaWNrZXRhYmlsaXR5IjtzOjM6IlllcyI7czo5OiJFcXVpcG1lbnQiO3M6MzoiNzNIIjtzOjEzOiJDaGFuZ2VPZlBsYW5lIjtzOjU6ImZhbHNlIjtzOjE2OiJQYXJ0aWNpcGFudExldmVsIjtzOjExOiJTZWN1cmUgU2VsbCI7czoxNjoiTGlua0F2YWlsYWJpbGl0eSI7czo0OiJ0cnVlIjtzOjI0OiJQb2xsZWRBdmFpbGFiaWxpdHlPcHRpb24iO3M6MTc6IlBvbGxlZCBhdmFpbCB1c2VkIjtzOjI1OiJPcHRpb25hbFNlcnZpY2VzSW5kaWNhdG9yIjtzOjU6ImZhbHNlIjtzOjE4OiJBdmFpbGFiaWxpdHlTb3VyY2UiO3M6MToiUyI7czoyMzoiQXZhaWxhYmlsaXR5RGlzcGxheVR5cGUiO3M6MjI6IkZhcmUgU2hvcC9PcHRpbWFsIFNob3AiO3M6MTY6ImFpckNvZGVzaGFyZUluZm8iO3M6MDoiIjtzOjEzOiJCb29raW5nQ291bnRzIjtzOjU2OiJDN3xKN3xaN3xJN3xQN3xZN3xNN3xUN3xVN3xON3xMN3xRN3xTN3xLN3xIN3xWN3xPN3xXN3xCMCI7czoxOToiYWlyRmxpZ2h0RGV0YWlsc1JlZiI7czoyNDoiUzZZbzZzQkFBQS9CNi9nUU1NQUFBQT09Ijt9fXM6MTA6IkNvbm5lY3Rpb24iO2E6NDp7aTowO2E6MTp7aTowO2E6MTp7czoxMjoiU2VnbWVudEluZGV4IjtzOjE6IjAiO319aToxO2E6MTp7aTowO2E6MTp7czoxMjoiU2VnbWVudEluZGV4IjtzOjE6IjAiO319aToyO2E6MTp7aTowO2E6MTp7czoxMjoiU2VnbWVudEluZGV4IjtzOjE6IjAiO319aTozO2E6MTp7aTowO2E6MTp7czoxMjoiU2VnbWVudEluZGV4IjtzOjE6IjAiO319fXM6MTA6IkNhYmluQ2xhc3MiO2E6NDp7aTowO3M6NzoiRWNvbm9teSI7aToxO3M6NzoiRWNvbm9teSI7aToyO3M6NzoiRWNvbm9teSI7aTozO3M6NzoiRWNvbm9teSI7fXM6MTE6IkJvb2tpbmdDb2RlIjthOjQ6e2k6MDtzOjE6Ik8iO2k6MTtzOjE6Ik8iO2k6MjtzOjE6Ik8iO2k6MztzOjE6Ik8iO31zOjEwOiJwYXNzZW5nZXJzIjthOjQ6e2k6MDthOjE6e2k6MDtzOjM6IkFEVCI7fWk6MTthOjE6e2k6MDtzOjM6IkFEVCI7fWk6MjthOjE6e2k6MDtzOjM6IkFEVCI7fWk6MzthOjE6e2k6MDtzOjM6IkFEVCI7fX19">
+                                            <input type="hidden" name="searchdata" value="YToxNDp7czoxMjoiZnJvbV9haXJwb3J0IjtzOjM6IkNNQiI7czo5OiJmcm9tX2NpdHkiO3M6NzoiQ29sb21ibyI7czoxMDoidG9fYWlycG9ydCI7czozOiJCS0siO3M6NzoidG9fY2l0eSI7czo3OiJCYW5na29rIjtzOjEwOiJzdGFydF9kYXRlIjtzOjEwOiIyMDE3LTA1LTE5IjtzOjg6ImVuZF9kYXRlIjtzOjEwOiIyMDE3LTA1LTMwIjtzOjEwOiJwYXNzZW5nZXJzIjthOjE6e2k6MDtzOjM6IkFEVCI7fXM6MTA6ImNhYmluY2xhc3MiO3M6NzoiRWNvbm9teSI7czo1OiJhZHVsdCI7czoxOiIxIjtzOjU6ImNoaWxkIjtzOjE6IjAiO3M6NjoiaW5mYW50IjtzOjE6IjAiO3M6MTA6ImRhdGVfZmxleGkiO3M6MToiMCI7czo0OiJtb2RlIjtzOjk6InJvdW5kdHJpcCI7czo0OiJpYXRhIjtzOjA6IiI7fQ==">
+                                            <input type="hidden" name="searchmode" value="roundtrip">
+                                            <button type="submit">Make Free Booking</button>
+                                        </form>
+
+                                        <form name="frmAvail" action="../booking" method="post">
+                                            <!-- Rajib added -->
+                                            <input type="hidden" name="connectiondata" value="Tjs=">
+                                            <!-- Rajib added -->
+                                            <input type="hidden" name="bookingdata" value="YTo1OntzOjExOiJzZWdtZW50ZHRscyI7YTo0OntpOjA7YToyMjp7czozOiJLZXkiO3M6MjQ6IlM2WW82c0JBQUEvQngvZ1FNTUFBQUE9PSI7czo1OiJHcm91cCI7czoxOiIwIjtzOjc6IkNhcnJpZXIiO3M6MjoiOVciO3M6MTI6IkZsaWdodE51bWJlciI7czozOiIyNTUiO3M6NjoiT3JpZ2luIjtzOjM6IkNNQiI7czoxMToiRGVzdGluYXRpb24iO3M6MzoiQk9NIjtzOjEzOiJEZXBhcnR1cmVUaW1lIjtzOjI5OiIyMDE3LTA1LTE5VDA1OjQwOjAwLjAwMCswNTozMCI7czoxMToiQXJyaXZhbFRpbWUiO3M6Mjk6IjIwMTctMDUtMTlUMDg6MTU6MDAuMDAwKzA1OjMwIjtzOjEwOiJGbGlnaHRUaW1lIjtzOjM6IjE1NSI7czo4OiJEaXN0YW5jZSI7czozOiI5NDgiO3M6MTQ6IkVUaWNrZXRhYmlsaXR5IjtzOjM6IlllcyI7czo5OiJFcXVpcG1lbnQiO3M6MzoiNzNIIjtzOjEzOiJDaGFuZ2VPZlBsYW5lIjtzOjU6ImZhbHNlIjtzOjE2OiJQYXJ0aWNpcGFudExldmVsIjtzOjExOiJTZWN1cmUgU2VsbCI7czoxNjoiTGlua0F2YWlsYWJpbGl0eSI7czo0OiJ0cnVlIjtzOjI0OiJQb2xsZWRBdmFpbGFiaWxpdHlPcHRpb24iO3M6MTc6IlBvbGxlZCBhdmFpbCB1c2VkIjtzOjI1OiJPcHRpb25hbFNlcnZpY2VzSW5kaWNhdG9yIjtzOjU6ImZhbHNlIjtzOjE4OiJBdmFpbGFiaWxpdHlTb3VyY2UiO3M6MToiUyI7czoyMzoiQXZhaWxhYmlsaXR5RGlzcGxheVR5cGUiO3M6MjI6IkZhcmUgU2hvcC9PcHRpbWFsIFNob3AiO3M6MTY6ImFpckNvZGVzaGFyZUluZm8iO3M6MDoiIjtzOjEzOiJCb29raW5nQ291bnRzIjtzOjgwOiJDN3xKN3xaN3xJN3xQN3xZN3xNN3xUN3xVN3xON3xMN3xRN3xTN3xLN3xIN3xWN3xPN3xXN3xCMHxLMHxWMHxXMHxJM3xQMXxPMHxIMHxaNSI7czoxOToiYWlyRmxpZ2h0RGV0YWlsc1JlZiI7czoyNDoiUzZZbzZzQkFBQS9CeS9nUU1NQUFBQT09Ijt9aToxO2E6MjI6e3M6MzoiS2V5IjtzOjI0OiJTNllvNnNCQUFBL0J6L2dRTU1BQUFBPT0iO3M6NToiR3JvdXAiO3M6MToiMCI7czo3OiJDYXJyaWVyIjtzOjI6IjlXIjtzOjEyOiJGbGlnaHROdW1iZXIiO3M6MjoiNjAiO3M6NjoiT3JpZ2luIjtzOjM6IkJPTSI7czoxMToiRGVzdGluYXRpb24iO3M6MzoiQktLIjtzOjEzOiJEZXBhcnR1cmVUaW1lIjtzOjI5OiIyMDE3LTA1LTE5VDEyOjUwOjAwLjAwMCswNTozMCI7czoxMToiQXJyaXZhbFRpbWUiO3M6Mjk6IjIwMTctMDUtMTlUMTg6NTA6MDAuMDAwKzA3OjAwIjtzOjEwOiJGbGlnaHRUaW1lIjtzOjM6IjI3MCI7czo4OiJEaXN0YW5jZSI7czo0OiIxODc4IjtzOjE0OiJFVGlja2V0YWJpbGl0eSI7czozOiJZZXMiO3M6OToiRXF1aXBtZW50IjtzOjM6IjczSCI7czoxMzoiQ2hhbmdlT2ZQbGFuZSI7czo1OiJmYWxzZSI7czoxNjoiUGFydGljaXBhbnRMZXZlbCI7czoxMToiU2VjdXJlIFNlbGwiO3M6MTY6IkxpbmtBdmFpbGFiaWxpdHkiO3M6NDoidHJ1ZSI7czoyNDoiUG9sbGVkQXZhaWxhYmlsaXR5T3B0aW9uIjtzOjE3OiJQb2xsZWQgYXZhaWwgdXNlZCI7czoyNToiT3B0aW9uYWxTZXJ2aWNlc0luZGljYXRvciI7czo1OiJmYWxzZSI7czoxODoiQXZhaWxhYmlsaXR5U291cmNlIjtzOjE6IlMiO3M6MjM6IkF2YWlsYWJpbGl0eURpc3BsYXlUeXBlIjtzOjIyOiJGYXJlIFNob3AvT3B0aW1hbCBTaG9wIjtzOjE2OiJhaXJDb2Rlc2hhcmVJbmZvIjtzOjA6IiI7czoxMzoiQm9va2luZ0NvdW50cyI7czo1NjoiQzd8Sjd8Wjd8STd8UDd8WTd8TTd8VDd8VTd8Tjd8TDd8UTd8Uzd8Szd8SDd8Vjd8Tzd8Vzd8QjAiO3M6MTk6ImFpckZsaWdodERldGFpbHNSZWYiO3M6MjQ6IlM2WW82c0JBQUEvQjAvZ1FNTUFBQUE9PSI7fWk6MjthOjIyOntzOjM6IktleSI7czoyNDoiUzZZbzZzQkFBQS9CMS9nUU1NQUFBQT09IjtzOjU6Ikdyb3VwIjtzOjE6IjEiO3M6NzoiQ2FycmllciI7czoyOiI5VyI7czoxMjoiRmxpZ2h0TnVtYmVyIjtzOjI6IjYxIjtzOjY6Ik9yaWdpbiI7czozOiJCS0siO3M6MTE6IkRlc3RpbmF0aW9uIjtzOjM6IkJPTSI7czoxMzoiRGVwYXJ0dXJlVGltZSI7czoyOToiMjAxNy0wNS0zMFQwNTo1NTowMC4wMDArMDc6MDAiO3M6MTE6IkFycml2YWxUaW1lIjtzOjI5OiIyMDE3LTA1LTMwVDA4OjUwOjAwLjAwMCswNTozMCI7czoxMDoiRmxpZ2h0VGltZSI7czozOiIyNjUiO3M6ODoiRGlzdGFuY2UiO3M6NDoiMTg3OCI7czoxNDoiRVRpY2tldGFiaWxpdHkiO3M6MzoiWWVzIjtzOjk6IkVxdWlwbWVudCI7czozOiI3M0giO3M6MTM6IkNoYW5nZU9mUGxhbmUiO3M6NToiZmFsc2UiO3M6MTY6IlBhcnRpY2lwYW50TGV2ZWwiO3M6MTE6IlNlY3VyZSBTZWxsIjtzOjE2OiJMaW5rQXZhaWxhYmlsaXR5IjtzOjQ6InRydWUiO3M6MjQ6IlBvbGxlZEF2YWlsYWJpbGl0eU9wdGlvbiI7czoxNzoiUG9sbGVkIGF2YWlsIHVzZWQiO3M6MjU6Ik9wdGlvbmFsU2VydmljZXNJbmRpY2F0b3IiO3M6NToiZmFsc2UiO3M6MTg6IkF2YWlsYWJpbGl0eVNvdXJjZSI7czoxOiJTIjtzOjIzOiJBdmFpbGFiaWxpdHlEaXNwbGF5VHlwZSI7czoyMjoiRmFyZSBTaG9wL09wdGltYWwgU2hvcCI7czoxNjoiYWlyQ29kZXNoYXJlSW5mbyI7czowOiIiO3M6MTM6IkJvb2tpbmdDb3VudHMiO3M6NTY6IkM3fEo3fFo3fEk3fFA2fFk3fE03fFQ3fFU3fE43fEw3fFE3fFM3fEs3fEg3fFY3fE83fFc3fEIwIjtzOjE5OiJhaXJGbGlnaHREZXRhaWxzUmVmIjtzOjI0OiJTNllvNnNCQUFBL0IyL2dRTU1BQUFBPT0iO31pOjM7YToyMjp7czozOiJLZXkiO3M6MjQ6IlM2WW82c0JBQUEvQjUvZ1FNTUFBQUE9PSI7czo1OiJHcm91cCI7czoxOiIxIjtzOjc6IkNhcnJpZXIiO3M6MjoiOVciO3M6MTI6IkZsaWdodE51bWJlciI7czozOiIyNTYiO3M6NjoiT3JpZ2luIjtzOjM6IkJPTSI7czoxMToiRGVzdGluYXRpb24iO3M6MzoiQ01CIjtzOjEzOiJEZXBhcnR1cmVUaW1lIjtzOjI5OiIyMDE3LTA1LTMxVDAyOjEwOjAwLjAwMCswNTozMCI7czoxMToiQXJyaXZhbFRpbWUiO3M6Mjk6IjIwMTctMDUtMzFUMDQ6MzU6MDAuMDAwKzA1OjMwIjtzOjEwOiJGbGlnaHRUaW1lIjtzOjM6IjE0NSI7czo4OiJEaXN0YW5jZSI7czozOiI5NDgiO3M6MTQ6IkVUaWNrZXRhYmlsaXR5IjtzOjM6IlllcyI7czo5OiJFcXVpcG1lbnQiO3M6MzoiNzNIIjtzOjEzOiJDaGFuZ2VPZlBsYW5lIjtzOjU6ImZhbHNlIjtzOjE2OiJQYXJ0aWNpcGFudExldmVsIjtzOjExOiJTZWN1cmUgU2VsbCI7czoxNjoiTGlua0F2YWlsYWJpbGl0eSI7czo0OiJ0cnVlIjtzOjI0OiJQb2xsZWRBdmFpbGFiaWxpdHlPcHRpb24iO3M6MTc6IlBvbGxlZCBhdmFpbCB1c2VkIjtzOjI1OiJPcHRpb25hbFNlcnZpY2VzSW5kaWNhdG9yIjtzOjU6ImZhbHNlIjtzOjE4OiJBdmFpbGFiaWxpdHlTb3VyY2UiO3M6MToiUyI7czoyMzoiQXZhaWxhYmlsaXR5RGlzcGxheVR5cGUiO3M6MjI6IkZhcmUgU2hvcC9PcHRpbWFsIFNob3AiO3M6MTY6ImFpckNvZGVzaGFyZUluZm8iO3M6MDoiIjtzOjEzOiJCb29raW5nQ291bnRzIjtzOjU2OiJDN3xKN3xaN3xJN3xQN3xZN3xNN3xUN3xVN3xON3xMN3xRN3xTN3xLN3xIN3xWN3xPN3xXN3xCMCI7czoxOToiYWlyRmxpZ2h0RGV0YWlsc1JlZiI7czoyNDoiUzZZbzZzQkFBQS9CNi9nUU1NQUFBQT09Ijt9fXM6MTA6IkNvbm5lY3Rpb24iO2E6NDp7aTowO2E6MTp7aTowO2E6MTp7czoxMjoiU2VnbWVudEluZGV4IjtzOjE6IjAiO319aToxO2E6MTp7aTowO2E6MTp7czoxMjoiU2VnbWVudEluZGV4IjtzOjE6IjAiO319aToyO2E6MTp7aTowO2E6MTp7czoxMjoiU2VnbWVudEluZGV4IjtzOjE6IjAiO319aTozO2E6MTp7aTowO2E6MTp7czoxMjoiU2VnbWVudEluZGV4IjtzOjE6IjAiO319fXM6MTA6IkNhYmluQ2xhc3MiO2E6NDp7aTowO3M6NzoiRWNvbm9teSI7aToxO3M6NzoiRWNvbm9teSI7aToyO3M6NzoiRWNvbm9teSI7aTozO3M6NzoiRWNvbm9teSI7fXM6MTE6IkJvb2tpbmdDb2RlIjthOjQ6e2k6MDtzOjE6Ik8iO2k6MTtzOjE6Ik8iO2k6MjtzOjE6Ik8iO2k6MztzOjE6Ik8iO31zOjEwOiJwYXNzZW5nZXJzIjthOjQ6e2k6MDthOjE6e2k6MDtzOjM6IkFEVCI7fWk6MTthOjE6e2k6MDtzOjM6IkFEVCI7fWk6MjthOjE6e2k6MDtzOjM6IkFEVCI7fWk6MzthOjE6e2k6MDtzOjM6IkFEVCI7fX19">
+                                            <input type="hidden" name="searchdata" value="YToxNDp7czoxMjoiZnJvbV9haXJwb3J0IjtzOjM6IkNNQiI7czo5OiJmcm9tX2NpdHkiO3M6NzoiQ29sb21ibyI7czoxMDoidG9fYWlycG9ydCI7czozOiJCS0siO3M6NzoidG9fY2l0eSI7czo3OiJCYW5na29rIjtzOjEwOiJzdGFydF9kYXRlIjtzOjEwOiIyMDE3LTA1LTE5IjtzOjg6ImVuZF9kYXRlIjtzOjEwOiIyMDE3LTA1LTMwIjtzOjEwOiJwYXNzZW5nZXJzIjthOjE6e2k6MDtzOjM6IkFEVCI7fXM6MTA6ImNhYmluY2xhc3MiO3M6NzoiRWNvbm9teSI7czo1OiJhZHVsdCI7czoxOiIxIjtzOjU6ImNoaWxkIjtzOjE6IjAiO3M6NjoiaW5mYW50IjtzOjE6IjAiO3M6MTA6ImRhdGVfZmxleGkiO3M6MToiMCI7czo0OiJtb2RlIjtzOjk6InJvdW5kdHJpcCI7czo0OiJpYXRhIjtzOjA6IiI7fQ==">
+                                            <input type="hidden" name="searchmode" value="roundtrip">
+                                            <button type="submit">Book Now</button>
+
+                                        </form>
+
+                                        <form name="frmFL" id="frmFL8" method="post" action="../farerule.php" target="_blank">
+                                            <input type="hidden" name="k" value="gws-eJxNTtEKwkAM+5iR97SnzHs7Vx3KuVNQkb3s/z9jvRvCAk0oCWlTSkrpeZCQduiwdPGH8jWgQH2GnBE1KMSXGSRPeOr7JdMjo1UcJbpVmr2ptKAFiyBGHbk5FZgb2zT8W+tJeA6VrjeXcr587K71lFA00I0e/tYKS/onfg==">
+                                            <input type="hidden" name="ref" value="S6Yo6sBAAA/BKChQMMAAAA==">
+                                            <p><a class="shw2" onclick="jQuery('#frmFL8').submit();"><span><i class="fa fa-plus"></i> Fare Rules</span></a></p>
+                                        </form>
+                                        <p><a class="shw"><span><i class="fa fa-plus"></i> Show Flight Details</span></a></p>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+
+
+                        <!---************************More Flights ********************  --->
+
+
+
+
+
+                    <?php } ?> 
+
+                </div>
+            </div>
+        </div>
+    </div>
+<?php } ?>
+

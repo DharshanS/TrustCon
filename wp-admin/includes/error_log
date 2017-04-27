@@ -1,0 +1,2 @@
+[19-Aug-2016 02:33:34 UTC] PHP Fatal error:  Class 'WP_Filesystem_Base' not found in /home/clickmybooking/public_html/wp-admin/includes/class-wp-filesystem-ftpext.php on line 17
+[31-Dec-2016 18:00:08 UTC] PHP Fatal error:  Class 'WP_Filesystem_Base' not found in /home/clickmybooking/public_html/wp-admin/includes/class-wp-filesystem-ftpext.php on line 17

@@ -1,0 +1,11 @@
+.bar-percent {
+  padding-left: 15px;
+}
+.bar-label {
+display: inline-block;
+margin: 0 auto;
+overflow: hidden;
+padding-left: 10px;
+padding-right: 9px;
+width: 80px;
+}

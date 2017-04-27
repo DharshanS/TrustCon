@@ -1,0 +1,35 @@
+ <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+	<soapenv:Header/>
+	<soapenv:Body>
+		<air:AirPriceReq TargetBranch="P2721018"  xmlns:air="http://www.travelport.com/schema/air_v32_0" xmlns:com="http://www.travelport.com/schema/common_v32_0" CheckOBFees="true" AuthorizedBy="User" TraceId="trace" >
+			<BillingPointOfSaleInfo OriginApplication="UAPI" xmlns="http://www.travelport.com/schema/common_v32_0"/>
+			<air:AirItinerary>
+				<air:AirSegment  Key="e2I78rBAAA/BwhAbyDAAAA==" CabinClass="" Group="0" Carrier="9W" FlightNumber="255" Origin="CMB" Destination="BOM" DepartureTime="2017-04-13T05:40:00.000+05:30" ArrivalTime="2017-04-13T08:15:00.000+05:30" FlightTime="155" Distance="948"  ETicketability="Yes" Equipment="73H" ChangeOfPlane="false" ParticipantLevel="Secure Sell" LinkAvailability="true" PolledAvailabilityOption="Cached status used. Polled avail exists" OptionalServicesIndicator="false" AvailabilitySource=""  AvailabilityDisplayType="Fare Shop/Optimal Shop" ProviderCode="1G" >
+					<air:FlightDetails Key="e2I78rBAAA/BxhAbyDAAAA==" Origin="CMB" Destination="BOM" DepartureTime="2017-04-13T05:40:00.000+05:30" ArrivalTime="2017-04-13T08:15:00.000+05:30" FlightTime="155" Equipment="73H"/>
+				</air:AirSegment>
+				<air:AirSegment  Key="e2I78rBAAA/ByhAbyDAAAA==" CabinClass="" Group="0" Carrier="9W" FlightNumber="60" Origin="BOM" Destination="BKK" DepartureTime="2017-04-13T12:50:00.000+05:30" ArrivalTime="2017-04-13T18:50:00.000+07:00" FlightTime="270" Distance="1878"  ETicketability="Yes" Equipment="73H" ChangeOfPlane="false" ParticipantLevel="Secure Sell" LinkAvailability="true" PolledAvailabilityOption="Cached status used. Polled avail exists" OptionalServicesIndicator="false" AvailabilitySource=""  AvailabilityDisplayType="Fare Shop/Optimal Shop" ProviderCode="1G" >
+					<air:FlightDetails Key="e2I78rBAAA/BzhAbyDAAAA==" Origin="BOM" Destination="BKK" DepartureTime="2017-04-13T12:50:00.000+05:30" ArrivalTime="2017-04-13T18:50:00.000+07:00" FlightTime="270" Equipment="73H"/>
+				</air:AirSegment>
+			</air:AirItinerary>
+			<air:AirPricingModifiers FaresIndicator="PublicAndPrivateFares" />
+			<com:SearchPassenger  BookingTravelerRef= "c4ca4238a0b923820dcc509a6f75849b" Code="ADT" Key="1"  />
+			<com:SearchPassenger  BookingTravelerRef= "c81e728d9d4c2f636f067f89cc14862c" Code="ADT" Key="1"  />
+			<com:SearchPassenger  BookingTravelerRef= "eccbc87e4b5ce2fe28308fd9f2a7baf3" Code="ADT" Key="1"  />
+			<com:SearchPassenger  BookingTravelerRef= "a87ff679a2f3e71d9181a67b7542122c" Code="ADT" Key="1"  />
+			<com:SearchPassenger  BookingTravelerRef= "e4da3b7fbbce2345d7772b0674a318d5" Code="CNN" Key="2"  Age="8" />
+			<com:SearchPassenger  BookingTravelerRef= "1679091c5a880faf6fb5e6087eb1b2dc" Code="CNN" Key="2"  Age="8" />
+			<air:AirPricingCommand>
+				<air:AirSegmentPricingModifiers AirSegmentRef="e2I78rBAAA/BwhAbyDAAAA==">
+					<air:PermittedBookingCodes>
+						<air:BookingCode Code="K" />
+					</air:PermittedBookingCodes>
+				</air:AirSegmentPricingModifiers>
+				<air:AirSegmentPricingModifiers AirSegmentRef="e2I78rBAAA/ByhAbyDAAAA==">
+					<air:PermittedBookingCodes>
+						<air:BookingCode Code="K" />
+					</air:PermittedBookingCodes>
+				</air:AirSegmentPricingModifiers>
+			</air:AirPricingCommand>
+		</air:AirPriceReq>
+	</soapenv:Body>
+</soapenv:Envelope>

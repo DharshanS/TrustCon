@@ -1,0 +1,37 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Mar 23, 2017, 11:21:48 AM
+    Author     : Dharshan
+*/
+/*
+.show-flight
+{
+    background-color: green;
+    box-shadow: 0 0 5px #4b4b4b;
+    background: #fff;
+    box-shadow: 0 0 5px #4b4b4b;
+    font-family: "Roboto", sans-serif;
+    margin: 25px 0;
+    width: 100%;
+    border:solid;
+    border-color: black;
+    display: none;
+}*/
+
+.payOptions h2
+{
+  font-family: "sans-serif!important";  
+  font-size: 20px;
+  color: black;
+
+}
+.payOptions
+{
+    /*Segoe,"Segoe UI","Open Sans","DejaVu Sans","Trebuchet MS",Verdana,sans-serif!important*/
+ font-family: "Segoe UI";    
+font-weight: normal; 
+}

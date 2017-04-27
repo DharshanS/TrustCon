@@ -1,0 +1,11 @@
+[26-Dec-2016 11:47:10 UTC] PHP Parse error:  syntax error, unexpected '{' in /home/clickmybooking/public_html/wp-content/themes/traveler/st_templates/user/user-print-e-ticket-print.php on line 98
+[27-Dec-2016 09:18:07 UTC] PHP Parse error:  syntax error, unexpected '"' in /home/clickmybooking/public_html/wp-content/themes/traveler/st_templates/user/user-hotel-booking.php on line 71
+[29-Dec-2016 07:24:40 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/clickmybooking/public_html/wp-content/themes/traveler/template-booking-free.php on line 2128
+[10-Jan-2017 15:36:41 Asia/Colombo] PHP Warning:  Invalid argument supplied for foreach() in /home/clickmybooking/public_html/wp-content/themes/traveler/template-booking.php on line 3819
+[11-Jan-2017 20:48:53 Asia/Colombo] PHP Warning:  Invalid argument supplied for foreach() in /home/clickmybooking/public_html/wp-content/themes/traveler/template-booking.php on line 3819
+[13-Jan-2017 09:09:39 UTC] PHP Warning:  Illegal string offset 'segmentdtls' in /home/clickmybooking/public_html/wp-content/themes/traveler/template-booking-free.php on line 131
+[13-Jan-2017 09:09:39 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/clickmybooking/public_html/wp-content/themes/traveler/template-booking-free.php on line 131
+[13-Jan-2017 09:09:39 UTC] PHP Warning:  Illegal string offset 'passengers' in /home/clickmybooking/public_html/wp-content/themes/traveler/template-booking-free.php on line 184
+[13-Jan-2017 09:09:39 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/clickmybooking/public_html/wp-content/themes/traveler/template-booking-free.php on line 184
+[13-Jan-2017 09:09:39 UTC] PHP Warning:  Illegal string offset 'segmentdtls' in /home/clickmybooking/public_html/wp-content/themes/traveler/template-booking-free.php on line 205
+[13-Jan-2017 09:09:39 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/clickmybooking/public_html/wp-content/themes/traveler/template-booking-free.php on line 205

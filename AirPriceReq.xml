@@ -1,0 +1,9 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <air:AirPriceReq TargetBranch="P2721018"  xmlns:air="http://www.travelport.com/schema/air_v32_0" xmlns:com="http://www.travelport.com/schema/common_v32_0" CheckOBFees="true" AuthorizedBy="User" TraceId="trace" >
+  <BillingPointOfSaleInfo OriginApplication="UAPI" xmlns="http://www.travelport.com/schema/common_v32_0"/>
+  <air:AirItinerary></air:AirItinerary>
+  		   <air:AirPricingModifiers FaresIndicator="PublicAndPrivateFares" /><air:AirPricingCommand></air:AirPricingCommand></air:AirPriceReq>
+   </soapenv:Body>
+</soapenv:Envelope>

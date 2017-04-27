@@ -1,0 +1,198 @@
+<SOAP:Envelope xmlns:SOAP="http://schemas.xmlsoap.org/soap/envelope/">
+	<SOAP:Body>
+	<air:AirPriceRsp TraceId="trace" TransactionId="A90D15D10A0759D0561CDB5C1267BC17" ResponseTime="1238" xmlns:air="http://www.travelport.com/schema/air_v32_0" xmlns:common_v32_0="http://www.travelport.com/schema/common_v32_0">
+  <common_v32_0:ResponseMessage Code="4400" Type="Warning" ProviderCode="1G">No Merchandising optional services returned for Flight(s) [MH][184]</common_v32_0:ResponseMessage>
+  <common_v32_0:ResponseMessage Code="4400" Type="Warning" ProviderCode="1G">No Merchandising optional services returned for Flight(s) [MH][784]</common_v32_0:ResponseMessage>
+  <common_v32_0:ResponseMessage Code="4400" Type="Warning" ProviderCode="1G">No Merchandising optional services returned for Flight(s) [MH][783]</common_v32_0:ResponseMessage>
+  <common_v32_0:ResponseMessage Code="4400" Type="Warning" ProviderCode="1G">No Merchandising optional services returned for Flight(s) [MH][179]</common_v32_0:ResponseMessage>
+  <common_v32_0:ResponseMessage Code="0" Type="Warning">No Request to retrieve Brand Details sent. Duplicate entries of PTC keys</common_v32_0:ResponseMessage>
+  <air:AirItinerary>
+    <air:AirSegment Key="xLUjNuBAAA/BNhyM1HAAAA==" Group="0" Carrier="MH" FlightNumber="184" ProviderCode="1G" Origin="CMB" Destination="KUL" DepartureTime="2017-05-11T00:55:00.000+05:30" ArrivalTime="2017-05-11T07:05:00.000+08:00" FlightTime="220" TravelTime="220" Distance="1526" ClassOfService="Q" Equipment="738" ChangeOfPlane="false" OptionalServicesIndicator="false" ParticipantLevel="Secure Sell" LinkAvailability="true" AvailabilityDisplayType="Fare Specific Fare Quote Unbooked">
+      <air:CodeshareInfo OperatingCarrier="MH">Malaysia Airlines Berhad</air:CodeshareInfo>
+      <air:FlightDetails Key="xLUjNuBAAA/BOhyM1HAAAA==" Origin="CMB" Destination="KUL" DepartureTime="2017-05-11T00:55:00.000+05:30" ArrivalTime="2017-05-11T07:05:00.000+08:00" FlightTime="220" TravelTime="220" Distance="1526" />
+    </air:AirSegment>
+    <air:AirSegment Key="xLUjNuBAAA/BPhyM1HAAAA==" Group="0" Carrier="MH" FlightNumber="784" ProviderCode="1G" Origin="KUL" Destination="BKK" DepartureTime="2017-05-11T09:05:00.000+08:00" ArrivalTime="2017-05-11T10:15:00.000+07:00" FlightTime="130" TravelTime="130" Distance="754" ClassOfService="V" Equipment="738" ChangeOfPlane="false" OptionalServicesIndicator="false" ParticipantLevel="Secure Sell" LinkAvailability="true" AvailabilityDisplayType="Fare Specific Fare Quote Unbooked">
+      <air:CodeshareInfo OperatingCarrier="MH">Malaysia Airlines Berhad</air:CodeshareInfo>
+      <air:FlightDetails Key="xLUjNuBAAA/BQhyM1HAAAA==" Origin="KUL" Destination="BKK" DepartureTime="2017-05-11T09:05:00.000+08:00" ArrivalTime="2017-05-11T10:15:00.000+07:00" FlightTime="130" TravelTime="130" Distance="754" />
+    </air:AirSegment>
+    <air:AirSegment Key="xLUjNuBAAA/BRhyM1HAAAA==" Group="1" Carrier="MH" FlightNumber="783" ProviderCode="1G" Origin="BKK" Destination="KUL" DepartureTime="2017-05-23T17:05:00.000+07:00" ArrivalTime="2017-05-23T20:15:00.000+08:00" FlightTime="130" TravelTime="130" Distance="754" ClassOfService="L" Equipment="738" ChangeOfPlane="false" OptionalServicesIndicator="false" ParticipantLevel="Secure Sell" LinkAvailability="true" AvailabilityDisplayType="Fare Specific Fare Quote Unbooked">
+      <air:CodeshareInfo OperatingCarrier="MH">Malaysia Airlines Berhad</air:CodeshareInfo>
+      <air:FlightDetails Key="xLUjNuBAAA/BShyM1HAAAA==" Origin="BKK" Destination="KUL" DepartureTime="2017-05-23T17:05:00.000+07:00" ArrivalTime="2017-05-23T20:15:00.000+08:00" FlightTime="130" TravelTime="130" Distance="754" />
+    </air:AirSegment>
+    <air:AirSegment Key="xLUjNuBAAA/BThyM1HAAAA==" Group="1" Carrier="MH" FlightNumber="179" ProviderCode="1G" Origin="KUL" Destination="CMB" DepartureTime="2017-05-23T22:05:00.000+08:00" ArrivalTime="2017-05-23T22:55:00.000+05:30" FlightTime="200" TravelTime="200" Distance="1526" ClassOfService="S" Equipment="738" ChangeOfPlane="false" OptionalServicesIndicator="false" ParticipantLevel="Secure Sell" LinkAvailability="true" AvailabilityDisplayType="Fare Specific Fare Quote Unbooked">
+      <air:CodeshareInfo OperatingCarrier="MH">Malaysia Airlines Berhad</air:CodeshareInfo>
+      <air:FlightDetails Key="xLUjNuBAAA/BUhyM1HAAAA==" Origin="KUL" Destination="CMB" DepartureTime="2017-05-23T22:05:00.000+08:00" ArrivalTime="2017-05-23T22:55:00.000+05:30" FlightTime="200" TravelTime="200" Distance="1526" />
+    </air:AirSegment>
+  </air:AirItinerary>
+  <air:AirPriceResult>
+    <air:AirPricingSolution Key="xLUjNuBAAA/BVhyM1HAAAA==" TotalPrice="LKR895083" BasePrice="LKR705900" ApproximateTotalPrice="LKR895083" ApproximateBasePrice="LKR705900" Taxes="LKR189183" Fees="LKR0" ApproximateTaxes="LKR189183" QuoteDate="2017-04-26">
+      <air:AirSegmentRef Key="xLUjNuBAAA/BNhyM1HAAAA==" />
+      <air:AirSegmentRef Key="xLUjNuBAAA/BPhyM1HAAAA==" />
+      <air:AirSegmentRef Key="xLUjNuBAAA/BRhyM1HAAAA==" />
+      <air:AirSegmentRef Key="xLUjNuBAAA/BThyM1HAAAA==" />
+      <air:AirPricingInfo Key="xLUjNuBAAA/BWhyM1HAAAA==" TotalPrice="LKR298361" BasePrice="LKR235300" ApproximateTotalPrice="LKR298361" ApproximateBasePrice="LKR235300" ApproximateTaxes="LKR63061" Taxes="LKR63061" LatestTicketingTime="2017-05-11T23:59:00.000+05:30" PricingMethod="Guaranteed" Refundable="true" IncludesVAT="false" ETicketability="Yes" PlatingCarrier="MH" ProviderCode="1G">
+        <air:FareInfo Key="xLUjNuBAAA/BdhyM1HAAAA==" FareBasis="YIF" PassengerTypeCode="ADT" Origin="CMB" Destination="KUL" EffectiveDate="2017-04-26T12:27:00.000+05:30" DepartureDate="2017-05-11" Amount="LKR77600">
+          <air:FareRuleKey FareInfoRef="xLUjNuBAAA/BdhyM1HAAAA==" ProviderCode="1G">6UUVoSldxwi/jr44kdcUTMbKj3F8T9EyxsqPcXxP0TIjSPOlaHfQe5cuasWd6i8Dly5qxZ3qLwOXLmrFneovA5cuasWd6i8Dly5qxZ3qLwOXLmrFneovA9QRndLAN+3+M3ExqSoG051bRiEEv1xWFRddSJfu6E8dQu0ZscBMSQ7/yqZm8ZlXA9CrcWHdgTmW3a3mSBfGieJi4BZ9wfbD3UlPIHnH21hJzFOd+W7w/UwmubSBno2btWkBVB1X8o8dKxTaudMNlTFDxXO2ZkIT/pqQR/cHoRjBA0OltkOQBzExBX8FE/juXb+F729rtUMfv4Xvb2u1Qx+/he9va7VDH7+F729rtUMfv4Xvb2u1Qx80GqQ2wgDK/01BlpTwyo+rtt5pNpc8G9nAQJCzzE4cyZ0VKrKSxZOhBTz7w6si2IkkjExZj2xf9wotURoO3XBy5W4bRuwrrPA=</air:FareRuleKey>
+          <air:Brand Key="xLUjNuBAAA/BdhyM1HAAAA==" BrandID="60739" UpSellBrandFound="false" />
+        </air:FareInfo>
+        <air:FareInfo Key="xLUjNuBAAA/BehyM1HAAAA==" FareBasis="YIF" PassengerTypeCode="ADT" Origin="KUL" Destination="BKK" EffectiveDate="2017-04-26T12:27:00.000+05:30" DepartureDate="2017-05-11" Amount="LKR40100">
+          <air:FareRuleKey FareInfoRef="xLUjNuBAAA/BehyM1HAAAA==" ProviderCode="1G">6UUVoSldxwi/jr44kdcUTMbKj3F8T9EyxsqPcXxP0TIjSPOlaHfQe5cuasWd6i8Dly5qxZ3qLwOXLmrFneovA5cuasWd6i8Dly5qxZ3qLwOXLmrFneovA9QRndLAN+3+M3ExqSoG053p4wIkM7kbXwBsz5rPfbwc83f1UwCbb2X/yqZm8ZlXA9CrcWHdgTmW3a3mSBfGieJi4BZ9wfbD3UlPIHnH21hJzFOd+W7w/UwmubSBno2btWkBVB1X8o8dKxTaudMNlTFDxXO2ZkIT/pqQR/cHoRjBo55Ved63u/5KOaNaLQjCGb+F729rtUMfv4Xvb2u1Qx+/he9va7VDH7+F729rtUMfv4Xvb2u1Qx80GqQ2wgDK/01BlpTwyo+r7g4Z0cAw7yP2lVAJ3nO/PxakIufmNh/x5KS1K1CmldAZMOPiAiQSmhbYOLwrIvRh5GwF8kqQiiA=</air:FareRuleKey>
+          <air:Brand Key="xLUjNuBAAA/BehyM1HAAAA==" BrandID="60739" UpSellBrandFound="false" />
+        </air:FareInfo>
+        <air:FareInfo Key="xLUjNuBAAA/BfhyM1HAAAA==" FareBasis="YIF" PassengerTypeCode="ADT" Origin="BKK" Destination="KUL" EffectiveDate="2017-04-26T12:27:00.000+05:30" DepartureDate="2017-05-23" Amount="LKR40100">
+          <air:FareRuleKey FareInfoRef="xLUjNuBAAA/BfhyM1HAAAA==" ProviderCode="1G">6UUVoSldxwi/jr44kdcUTMbKj3F8T9EyxsqPcXxP0TIjSPOlaHfQe5cuasWd6i8Dly5qxZ3qLwOXLmrFneovA5cuasWd6i8Dly5qxZ3qLwOXLmrFneovA9QRndLAN+3+M3ExqSoG051bRiEEv1xWFRpWPFh0LbvfabvfXqtwnkT/yqZm8ZlXA9CrcWHdgTmWP5VVIDQKTCli4BZ9wfbD3UlPIHnH21hJzFOd+W7w/UwmubSBno2btWkBVB1X8o8dKxTaudMNlTFOJym9huZjhZqQR/cHoRjBVGp8hhwIa+RKOaNaLQjCGb+F729rtUMfv4Xvb2u1Qx+/he9va7VDH7+F729rtUMfv4Xvb2u1Qx80GqQ2wgDK/01BlpTwyo+r7g4Z0cAw7yP2lVAJ3nO/PxakIufmNh/x5KS1K1CmldAZMOPiAiQSmhbYOLwrIvRh5GwF8kqQiiA=</air:FareRuleKey>
+          <air:Brand Key="xLUjNuBAAA/BfhyM1HAAAA==" BrandID="60742" UpSellBrandFound="false" />
+        </air:FareInfo>
+        <air:FareInfo Key="xLUjNuBAAA/BghyM1HAAAA==" FareBasis="YIF" PassengerTypeCode="ADT" Origin="KUL" Destination="CMB" EffectiveDate="2017-04-26T12:27:00.000+05:30" DepartureDate="2017-05-23" Amount="LKR77500">
+          <air:FareRuleKey FareInfoRef="xLUjNuBAAA/BghyM1HAAAA==" ProviderCode="1G">6UUVoSldxwi/jr44kdcUTMbKj3F8T9EyxsqPcXxP0TIjSPOlaHfQe5cuasWd6i8Dly5qxZ3qLwOXLmrFneovA5cuasWd6i8Dly5qxZ3qLwOXLmrFneovA9QRndLAN+3+M3ExqSoG052ZyxcGCDDyTycNPNzvFJUWbMwTTa/a8U7/yqZm8ZlXA9CrcWHdgTmWP5VVIDQKTCli4BZ9wfbD3UlPIHnH21hJzFOd+W7w/UwmubSBno2btWkBVB1X8o8dKxTaudMNlTFOJym9huZjhZqQR/cHoRjB4RStk9w5GMcxBX8FE/juXb+F729rtUMfv4Xvb2u1Qx+/he9va7VDH7+F729rtUMfv4Xvb2u1Qx80GqQ2wgDK/01BlpTwyo+rtt5pNpc8G9nAQJCzzE4cyZ0VKrKSxZOhBTz7w6si2IkkjExZj2xf9wotURoO3XBy5W4bRuwrrPA=</air:FareRuleKey>
+          <air:Brand Key="xLUjNuBAAA/BghyM1HAAAA==" BrandID="60739" UpSellBrandFound="false" />
+        </air:FareInfo>
+        <air:BookingInfo BookingCode="Q" CabinClass="Economy" FareInfoRef="xLUjNuBAAA/BdhyM1HAAAA==" SegmentRef="xLUjNuBAAA/BNhyM1HAAAA==" />
+        <air:BookingInfo BookingCode="V" CabinClass="Economy" FareInfoRef="xLUjNuBAAA/BehyM1HAAAA==" SegmentRef="xLUjNuBAAA/BPhyM1HAAAA==" />
+        <air:BookingInfo BookingCode="L" CabinClass="Economy" FareInfoRef="xLUjNuBAAA/BfhyM1HAAAA==" SegmentRef="xLUjNuBAAA/BRhyM1HAAAA==" />
+        <air:BookingInfo BookingCode="S" CabinClass="Economy" FareInfoRef="xLUjNuBAAA/BghyM1HAAAA==" SegmentRef="xLUjNuBAAA/BThyM1HAAAA==" />
+        <air:TaxInfo Category="LK" Amount="LKR7000" Key="xLUjNuBAAA/BXhyM1HAAAA==" />
+        <air:TaxInfo Category="E7" Amount="LKR312" Key="xLUjNuBAAA/BYhyM1HAAAA==" />
+        <air:TaxInfo Category="G8" Amount="LKR134" Key="xLUjNuBAAA/BZhyM1HAAAA==" />
+        <air:TaxInfo Category="TS" Amount="LKR3115" Key="xLUjNuBAAA/BahyM1HAAAA==" />
+        <air:TaxInfo Category="YQ" Amount="LKR51276" Key="xLUjNuBAAA/BbhyM1HAAAA==" />
+        <air:TaxInfo Category="YR" Amount="LKR1224" Key="xLUjNuBAAA/BchyM1HAAAA==" />
+        <air:FareCalc>CMB MH KUL 511.40YIF MH BKK 264.16YIF MH KUL 264.17YIF MH CMB 511.40YIF NUC1551.13END ROE151.642</air:FareCalc>
+        <air:PassengerType Code="ADT" />
+        <air:PassengerType Code="ADT" />
+        <air:PassengerType Code="ADT" />
+        <air:BaggageAllowances>
+          <air:BaggageAllowanceInfo TravelerType="ADT" Origin="CMB" Destination="BKK" Carrier="MH">
+            <air:URLInfo>
+              <air:URL>MYTRIPANDMORE.COM/BAGGAGEDETAILSMH.BAGG</air:URL>
+            </air:URLInfo>
+            <air:TextInfo>
+              <air:Text>30K</air:Text>
+              <air:Text>BAGGAGE DISCOUNTS MAY APPLY BASED ON FREQUENT FLYER STATUS/ ONLINE CHECKIN/FORM OF PAYMENT/MILITARY/ETC.</air:Text>
+            </air:TextInfo>
+            <air:BagDetails ApplicableBags="1stChecked">
+              <air:BaggageRestriction>
+                <air:TextInfo>
+                  <air:Text>CHGS MAY APPLY IF BAGS EXCEED TTL WT ALLOWANCE</air:Text>
+                </air:TextInfo>
+              </air:BaggageRestriction>
+            </air:BagDetails>
+            <air:BagDetails ApplicableBags="2ndChecked">
+              <air:BaggageRestriction>
+                <air:TextInfo>
+                  <air:Text>CHGS MAY APPLY IF BAGS EXCEED TTL WT ALLOWANCE</air:Text>
+                </air:TextInfo>
+              </air:BaggageRestriction>
+            </air:BagDetails>
+          </air:BaggageAllowanceInfo>
+          <air:BaggageAllowanceInfo TravelerType="ADT" Origin="BKK" Destination="CMB" Carrier="MH">
+            <air:URLInfo>
+              <air:URL>MYTRIPANDMORE.COM/BAGGAGEDETAILSMH.BAGG</air:URL>
+            </air:URLInfo>
+            <air:TextInfo>
+              <air:Text>30K</air:Text>
+              <air:Text>BAGGAGE DISCOUNTS MAY APPLY BASED ON FREQUENT FLYER STATUS/ ONLINE CHECKIN/FORM OF PAYMENT/MILITARY/ETC.</air:Text>
+            </air:TextInfo>
+            <air:BagDetails ApplicableBags="1stChecked">
+              <air:BaggageRestriction>
+                <air:TextInfo>
+                  <air:Text>CHGS MAY APPLY IF BAGS EXCEED TTL WT ALLOWANCE</air:Text>
+                </air:TextInfo>
+              </air:BaggageRestriction>
+            </air:BagDetails>
+            <air:BagDetails ApplicableBags="2ndChecked">
+              <air:BaggageRestriction>
+                <air:TextInfo>
+                  <air:Text>CHGS MAY APPLY IF BAGS EXCEED TTL WT ALLOWANCE</air:Text>
+                </air:TextInfo>
+              </air:BaggageRestriction>
+            </air:BagDetails>
+          </air:BaggageAllowanceInfo>
+          <air:CarryOnAllowanceInfo Origin="CMB" Destination="KUL" Carrier="MH">
+            <air:TextInfo>
+              <air:Text>7K</air:Text>
+            </air:TextInfo>
+            <air:CarryOnDetails ApplicableCarryOnBags="1">
+              <air:BaggageRestriction>
+                <air:TextInfo>
+                  <air:Text>CHGS MAY APPLY IF BAGS EXCEED TTL WT ALLOWANCE</air:Text>
+                </air:TextInfo>
+              </air:BaggageRestriction>
+            </air:CarryOnDetails>
+            <air:CarryOnDetails ApplicableCarryOnBags="2">
+              <air:BaggageRestriction>
+                <air:TextInfo>
+                  <air:Text>CHGS MAY APPLY IF BAGS EXCEED TTL WT ALLOWANCE</air:Text>
+                </air:TextInfo>
+              </air:BaggageRestriction>
+            </air:CarryOnDetails>
+          </air:CarryOnAllowanceInfo>
+          <air:CarryOnAllowanceInfo Origin="KUL" Destination="BKK" Carrier="MH">
+            <air:TextInfo>
+              <air:Text>7K</air:Text>
+            </air:TextInfo>
+            <air:CarryOnDetails ApplicableCarryOnBags="1">
+              <air:BaggageRestriction>
+                <air:TextInfo>
+                  <air:Text>CHGS MAY APPLY IF BAGS EXCEED TTL WT ALLOWANCE</air:Text>
+                </air:TextInfo>
+              </air:BaggageRestriction>
+            </air:CarryOnDetails>
+            <air:CarryOnDetails ApplicableCarryOnBags="2">
+              <air:BaggageRestriction>
+                <air:TextInfo>
+                  <air:Text>CHGS MAY APPLY IF BAGS EXCEED TTL WT ALLOWANCE</air:Text>
+                </air:TextInfo>
+              </air:BaggageRestriction>
+            </air:CarryOnDetails>
+          </air:CarryOnAllowanceInfo>
+          <air:CarryOnAllowanceInfo Origin="BKK" Destination="KUL" Carrier="MH">
+            <air:TextInfo>
+              <air:Text>7K</air:Text>
+            </air:TextInfo>
+            <air:CarryOnDetails ApplicableCarryOnBags="1">
+              <air:BaggageRestriction>
+                <air:TextInfo>
+                  <air:Text>CHGS MAY APPLY IF BAGS EXCEED TTL WT ALLOWANCE</air:Text>
+                </air:TextInfo>
+              </air:BaggageRestriction>
+            </air:CarryOnDetails>
+            <air:CarryOnDetails ApplicableCarryOnBags="2">
+              <air:BaggageRestriction>
+                <air:TextInfo>
+                  <air:Text>CHGS MAY APPLY IF BAGS EXCEED TTL WT ALLOWANCE</air:Text>
+                </air:TextInfo>
+              </air:BaggageRestriction>
+            </air:CarryOnDetails>
+          </air:CarryOnAllowanceInfo>
+          <air:CarryOnAllowanceInfo Origin="KUL" Destination="CMB" Carrier="MH">
+            <air:TextInfo>
+              <air:Text>7K</air:Text>
+            </air:TextInfo>
+            <air:CarryOnDetails ApplicableCarryOnBags="1">
+              <air:BaggageRestriction>
+                <air:TextInfo>
+                  <air:Text>CHGS MAY APPLY IF BAGS EXCEED TTL WT ALLOWANCE</air:Text>
+                </air:TextInfo>
+              </air:BaggageRestriction>
+            </air:CarryOnDetails>
+            <air:CarryOnDetails ApplicableCarryOnBags="2">
+              <air:BaggageRestriction>
+                <air:TextInfo>
+                  <air:Text>CHGS MAY APPLY IF BAGS EXCEED TTL WT ALLOWANCE</air:Text>
+                </air:TextInfo>
+              </air:BaggageRestriction>
+            </air:CarryOnDetails>
+          </air:CarryOnAllowanceInfo>
+        </air:BaggageAllowances>
+      </air:AirPricingInfo>
+      <air:FareNote Key="xLUjNuBAAA/BlhyM1HAAAA==">LAST DATE TO PURCHASE TICKET: 11MAY17</air:FareNote>
+      <air:FareNote Key="xLUjNuBAAA/BmhyM1HAAAA==">TICKETING AGENCY 3OS2</air:FareNote>
+      <air:FareNote Key="xLUjNuBAAA/BnhyM1HAAAA==">DEFAULT PLATING CARRIER MH</air:FareNote>
+      <air:FareNote Key="xLUjNuBAAA/BohyM1HAAAA==">E-TKT REQUIRED</air:FareNote>
+      <air:FareNote Key="xLUjNuBAAA/BphyM1HAAAA==">TICKETING FEES MAY APPLY</air:FareNote>
+    </air:AirPricingSolution>
+  </air:AirPriceResult>
+</air:AirPriceRsp>
+	</SOAP:Body>
+</SOAP:Envelope>

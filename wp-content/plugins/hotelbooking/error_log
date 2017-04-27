@@ -1,0 +1,2 @@
+[22-Dec-2015 09:29:07 UTC] PHP Fatal error:  Call to undefined function plugins_url() in /home/clickmybooking/public_html/wp-content/plugins/hotelbooking/create_csv.php on line 2
+[22-Dec-2015 09:32:08 UTC] PHP Fatal error:  Call to a member function get_results() on a non-object in /home/clickmybooking/public_html/wp-content/plugins/hotelbooking/create_csv.php on line 16
