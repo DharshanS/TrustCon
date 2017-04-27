@@ -1,25 +1,20 @@
 <?php
 
 
-error_log(" ------------------- > Flight search v1 ". get_home_path());
+error_log(" INIT");
 set_time_limit(0);
 date_default_timezone_set('Asia/Colombo');
-# SET END POINT
-//$endpoint='https://apac.universal-api.pp.travelport.com/B2BGateway/connect/uAPI/AirService'; // Production end point
-//$endpoint='https://twsprofiler.travelport.com/Service/Default.ashx/AirService'; // Profiler end point
-
-$endpoint='https://apac.universal-api.travelport.com/B2BGateway/connect/uAPI/AirService'; // LIVE end point
-
-$GENERATELOG=0; // 1 OR 0
-
-$xmlLogPath=get_home_path().'/logxml';
-require_once(plugin_dir_path( __FILE__ ) . 'search_thread_v1.php');
 
 
+
+require_once(plugin_dir_path( __FILE__ ) . 'service/LowFareSearchRequest.php');
+require_once(plugin_dir_path( __FILE__ ) . 'utility/FlightUtility.php');
+require_once(plugin_dir_path( __FILE__ ) .'utility/CacheUtility.php');
 require_once(get_home_path().'/library/cache.php');
 require_once(get_home_path().'/travelportsettings.php');
 require_once(get_home_path().'/tconnect.php');
 
+$fly =new FlightUtility();
 $perpageList = 10;
 $jsondata=array();
 $carriers=array();
@@ -33,11 +28,8 @@ if(is_array($dt)){
 		$_POST[$k]=$v;
 	}
 }
-//require_once("wp-config.php");
-//$alink = mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
-$alink = mysqli_connect('localhost', 'root','', 'v1');
 
-//$alink = mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
+$alink = mysqli_connect(DB_HOST, DB_USER,'', DB_NAME);
 
 $countries=array();
 if(isset($_SESSION['countries'])){
@@ -81,28 +73,16 @@ $_SESSION['airlines']=$airlines;
 $_SESSION['countries']=$countries;
 }
 
-/*$TARGETBRANCH = 'P7040105'; 
-$CREDENTIALS = 'Universal API/uAPI6986631472-c8b85ad8:P+t2rJ7&M6';
-$PCC='3OS2';
-$Provider = '1G'; // Any provider you want to use like 1G/1P/1V/ACH*/
-
-
-/*--------LIVE CREDENTIAL ------*/
-$TARGETBRANCH = 'P2721018'; 
-$CREDENTIALS = 'Universal API/uAPI4655248065-02590718:nA?9{c3YC8';
-$PCC='3OS2';
-$Provider = '1G'; 
-/*--------------*/
 
 
 
-//$cache=new Cache;
+$cache=new Cache;
 
-/*if(isset($_SESSION['baseresponse']) && is_array($_SESSION['baseresponse']) && 1==2){
+if(isset($_SESSION['baseresponse']) && is_array($_SESSION['baseresponse']) && 1==2){
 //if(isset($_SESSION['baseresponse']) && is_array($_SESSION['baseresponse'])){ // test mode
 	$responseArray=$_SESSION['baseresponse'];
 	$searchdata=$_SESSION['searchdata'];
-}else */
+}else 
 
 if(isset($_POST['mode']) && ($_POST['mode']=='roundtrip' || $_POST['mode']=='oneway'))
     {
@@ -193,9 +173,9 @@ $searchdata['iata']=$iata;
 $_SESSION['searchdata']=$searchdata;
 
 // generate cache key
-//$cachekey=getCacheKey($searchdata);
-// set cache expire time
-//$cache->expire=getExpiretime($searchdata['start_date']);
+$cachekey=getCacheKey($searchdata);
+ //set cache expire time
+$cache->expire=getExpiretime($searchdata['start_date']);
 
 
 }
@@ -205,9 +185,16 @@ if(isset($_POST['mode']) && ($_POST['mode']=='roundtrip' || $_POST['mode']=='one
     {
     if($_POST['mode']=='roundtrip')
     {
-       
-require_once(plugin_dir_path( __FILE__ ).'service/RoundTripResponse.php');
+    require_once(plugin_dir_path( __FILE__ ).'service/RoundTripResponse.php');
     error_log("ROUND TRIP SELECT")  ; 
     roundTrip();
+    }
+    else if($_POST['mode']=='oneway')
+    {
+         error_log("ONE WAY FLIGHT SEARCHING......")  ; 
+        // error_log(LowFareSearchRequest($searchdata));
+         $fly->sendPost(SEARCHEP, LowFareSearchRequest($searchdata));
+         
+         die;
     }
     }

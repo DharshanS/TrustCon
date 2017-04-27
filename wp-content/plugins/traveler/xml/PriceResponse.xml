@@ -1,198 +1,1002 @@
 <SOAP:Envelope xmlns:SOAP="http://schemas.xmlsoap.org/soap/envelope/">
 	<SOAP:Body>
-	<air:AirPriceRsp TraceId="trace" TransactionId="A90D15D10A0759D0561CDB5C1267BC17" ResponseTime="1238" xmlns:air="http://www.travelport.com/schema/air_v32_0" xmlns:common_v32_0="http://www.travelport.com/schema/common_v32_0">
-  <common_v32_0:ResponseMessage Code="4400" Type="Warning" ProviderCode="1G">No Merchandising optional services returned for Flight(s) [MH][184]</common_v32_0:ResponseMessage>
-  <common_v32_0:ResponseMessage Code="4400" Type="Warning" ProviderCode="1G">No Merchandising optional services returned for Flight(s) [MH][784]</common_v32_0:ResponseMessage>
-  <common_v32_0:ResponseMessage Code="4400" Type="Warning" ProviderCode="1G">No Merchandising optional services returned for Flight(s) [MH][783]</common_v32_0:ResponseMessage>
-  <common_v32_0:ResponseMessage Code="4400" Type="Warning" ProviderCode="1G">No Merchandising optional services returned for Flight(s) [MH][179]</common_v32_0:ResponseMessage>
-  <common_v32_0:ResponseMessage Code="0" Type="Warning">No Request to retrieve Brand Details sent. Duplicate entries of PTC keys</common_v32_0:ResponseMessage>
-  <air:AirItinerary>
-    <air:AirSegment Key="xLUjNuBAAA/BNhyM1HAAAA==" Group="0" Carrier="MH" FlightNumber="184" ProviderCode="1G" Origin="CMB" Destination="KUL" DepartureTime="2017-05-11T00:55:00.000+05:30" ArrivalTime="2017-05-11T07:05:00.000+08:00" FlightTime="220" TravelTime="220" Distance="1526" ClassOfService="Q" Equipment="738" ChangeOfPlane="false" OptionalServicesIndicator="false" ParticipantLevel="Secure Sell" LinkAvailability="true" AvailabilityDisplayType="Fare Specific Fare Quote Unbooked">
-      <air:CodeshareInfo OperatingCarrier="MH">Malaysia Airlines Berhad</air:CodeshareInfo>
-      <air:FlightDetails Key="xLUjNuBAAA/BOhyM1HAAAA==" Origin="CMB" Destination="KUL" DepartureTime="2017-05-11T00:55:00.000+05:30" ArrivalTime="2017-05-11T07:05:00.000+08:00" FlightTime="220" TravelTime="220" Distance="1526" />
-    </air:AirSegment>
-    <air:AirSegment Key="xLUjNuBAAA/BPhyM1HAAAA==" Group="0" Carrier="MH" FlightNumber="784" ProviderCode="1G" Origin="KUL" Destination="BKK" DepartureTime="2017-05-11T09:05:00.000+08:00" ArrivalTime="2017-05-11T10:15:00.000+07:00" FlightTime="130" TravelTime="130" Distance="754" ClassOfService="V" Equipment="738" ChangeOfPlane="false" OptionalServicesIndicator="false" ParticipantLevel="Secure Sell" LinkAvailability="true" AvailabilityDisplayType="Fare Specific Fare Quote Unbooked">
-      <air:CodeshareInfo OperatingCarrier="MH">Malaysia Airlines Berhad</air:CodeshareInfo>
-      <air:FlightDetails Key="xLUjNuBAAA/BQhyM1HAAAA==" Origin="KUL" Destination="BKK" DepartureTime="2017-05-11T09:05:00.000+08:00" ArrivalTime="2017-05-11T10:15:00.000+07:00" FlightTime="130" TravelTime="130" Distance="754" />
-    </air:AirSegment>
-    <air:AirSegment Key="xLUjNuBAAA/BRhyM1HAAAA==" Group="1" Carrier="MH" FlightNumber="783" ProviderCode="1G" Origin="BKK" Destination="KUL" DepartureTime="2017-05-23T17:05:00.000+07:00" ArrivalTime="2017-05-23T20:15:00.000+08:00" FlightTime="130" TravelTime="130" Distance="754" ClassOfService="L" Equipment="738" ChangeOfPlane="false" OptionalServicesIndicator="false" ParticipantLevel="Secure Sell" LinkAvailability="true" AvailabilityDisplayType="Fare Specific Fare Quote Unbooked">
-      <air:CodeshareInfo OperatingCarrier="MH">Malaysia Airlines Berhad</air:CodeshareInfo>
-      <air:FlightDetails Key="xLUjNuBAAA/BShyM1HAAAA==" Origin="BKK" Destination="KUL" DepartureTime="2017-05-23T17:05:00.000+07:00" ArrivalTime="2017-05-23T20:15:00.000+08:00" FlightTime="130" TravelTime="130" Distance="754" />
-    </air:AirSegment>
-    <air:AirSegment Key="xLUjNuBAAA/BThyM1HAAAA==" Group="1" Carrier="MH" FlightNumber="179" ProviderCode="1G" Origin="KUL" Destination="CMB" DepartureTime="2017-05-23T22:05:00.000+08:00" ArrivalTime="2017-05-23T22:55:00.000+05:30" FlightTime="200" TravelTime="200" Distance="1526" ClassOfService="S" Equipment="738" ChangeOfPlane="false" OptionalServicesIndicator="false" ParticipantLevel="Secure Sell" LinkAvailability="true" AvailabilityDisplayType="Fare Specific Fare Quote Unbooked">
-      <air:CodeshareInfo OperatingCarrier="MH">Malaysia Airlines Berhad</air:CodeshareInfo>
-      <air:FlightDetails Key="xLUjNuBAAA/BUhyM1HAAAA==" Origin="KUL" Destination="CMB" DepartureTime="2017-05-23T22:05:00.000+08:00" ArrivalTime="2017-05-23T22:55:00.000+05:30" FlightTime="200" TravelTime="200" Distance="1526" />
-    </air:AirSegment>
-  </air:AirItinerary>
-  <air:AirPriceResult>
-    <air:AirPricingSolution Key="xLUjNuBAAA/BVhyM1HAAAA==" TotalPrice="LKR895083" BasePrice="LKR705900" ApproximateTotalPrice="LKR895083" ApproximateBasePrice="LKR705900" Taxes="LKR189183" Fees="LKR0" ApproximateTaxes="LKR189183" QuoteDate="2017-04-26">
-      <air:AirSegmentRef Key="xLUjNuBAAA/BNhyM1HAAAA==" />
-      <air:AirSegmentRef Key="xLUjNuBAAA/BPhyM1HAAAA==" />
-      <air:AirSegmentRef Key="xLUjNuBAAA/BRhyM1HAAAA==" />
-      <air:AirSegmentRef Key="xLUjNuBAAA/BThyM1HAAAA==" />
-      <air:AirPricingInfo Key="xLUjNuBAAA/BWhyM1HAAAA==" TotalPrice="LKR298361" BasePrice="LKR235300" ApproximateTotalPrice="LKR298361" ApproximateBasePrice="LKR235300" ApproximateTaxes="LKR63061" Taxes="LKR63061" LatestTicketingTime="2017-05-11T23:59:00.000+05:30" PricingMethod="Guaranteed" Refundable="true" IncludesVAT="false" ETicketability="Yes" PlatingCarrier="MH" ProviderCode="1G">
-        <air:FareInfo Key="xLUjNuBAAA/BdhyM1HAAAA==" FareBasis="YIF" PassengerTypeCode="ADT" Origin="CMB" Destination="KUL" EffectiveDate="2017-04-26T12:27:00.000+05:30" DepartureDate="2017-05-11" Amount="LKR77600">
-          <air:FareRuleKey FareInfoRef="xLUjNuBAAA/BdhyM1HAAAA==" ProviderCode="1G">6UUVoSldxwi/jr44kdcUTMbKj3F8T9EyxsqPcXxP0TIjSPOlaHfQe5cuasWd6i8Dly5qxZ3qLwOXLmrFneovA5cuasWd6i8Dly5qxZ3qLwOXLmrFneovA9QRndLAN+3+M3ExqSoG051bRiEEv1xWFRddSJfu6E8dQu0ZscBMSQ7/yqZm8ZlXA9CrcWHdgTmW3a3mSBfGieJi4BZ9wfbD3UlPIHnH21hJzFOd+W7w/UwmubSBno2btWkBVB1X8o8dKxTaudMNlTFDxXO2ZkIT/pqQR/cHoRjBA0OltkOQBzExBX8FE/juXb+F729rtUMfv4Xvb2u1Qx+/he9va7VDH7+F729rtUMfv4Xvb2u1Qx80GqQ2wgDK/01BlpTwyo+rtt5pNpc8G9nAQJCzzE4cyZ0VKrKSxZOhBTz7w6si2IkkjExZj2xf9wotURoO3XBy5W4bRuwrrPA=</air:FareRuleKey>
-          <air:Brand Key="xLUjNuBAAA/BdhyM1HAAAA==" BrandID="60739" UpSellBrandFound="false" />
-        </air:FareInfo>
-        <air:FareInfo Key="xLUjNuBAAA/BehyM1HAAAA==" FareBasis="YIF" PassengerTypeCode="ADT" Origin="KUL" Destination="BKK" EffectiveDate="2017-04-26T12:27:00.000+05:30" DepartureDate="2017-05-11" Amount="LKR40100">
-          <air:FareRuleKey FareInfoRef="xLUjNuBAAA/BehyM1HAAAA==" ProviderCode="1G">6UUVoSldxwi/jr44kdcUTMbKj3F8T9EyxsqPcXxP0TIjSPOlaHfQe5cuasWd6i8Dly5qxZ3qLwOXLmrFneovA5cuasWd6i8Dly5qxZ3qLwOXLmrFneovA9QRndLAN+3+M3ExqSoG053p4wIkM7kbXwBsz5rPfbwc83f1UwCbb2X/yqZm8ZlXA9CrcWHdgTmW3a3mSBfGieJi4BZ9wfbD3UlPIHnH21hJzFOd+W7w/UwmubSBno2btWkBVB1X8o8dKxTaudMNlTFDxXO2ZkIT/pqQR/cHoRjBo55Ved63u/5KOaNaLQjCGb+F729rtUMfv4Xvb2u1Qx+/he9va7VDH7+F729rtUMfv4Xvb2u1Qx80GqQ2wgDK/01BlpTwyo+r7g4Z0cAw7yP2lVAJ3nO/PxakIufmNh/x5KS1K1CmldAZMOPiAiQSmhbYOLwrIvRh5GwF8kqQiiA=</air:FareRuleKey>
-          <air:Brand Key="xLUjNuBAAA/BehyM1HAAAA==" BrandID="60739" UpSellBrandFound="false" />
-        </air:FareInfo>
-        <air:FareInfo Key="xLUjNuBAAA/BfhyM1HAAAA==" FareBasis="YIF" PassengerTypeCode="ADT" Origin="BKK" Destination="KUL" EffectiveDate="2017-04-26T12:27:00.000+05:30" DepartureDate="2017-05-23" Amount="LKR40100">
-          <air:FareRuleKey FareInfoRef="xLUjNuBAAA/BfhyM1HAAAA==" ProviderCode="1G">6UUVoSldxwi/jr44kdcUTMbKj3F8T9EyxsqPcXxP0TIjSPOlaHfQe5cuasWd6i8Dly5qxZ3qLwOXLmrFneovA5cuasWd6i8Dly5qxZ3qLwOXLmrFneovA9QRndLAN+3+M3ExqSoG051bRiEEv1xWFRpWPFh0LbvfabvfXqtwnkT/yqZm8ZlXA9CrcWHdgTmWP5VVIDQKTCli4BZ9wfbD3UlPIHnH21hJzFOd+W7w/UwmubSBno2btWkBVB1X8o8dKxTaudMNlTFOJym9huZjhZqQR/cHoRjBVGp8hhwIa+RKOaNaLQjCGb+F729rtUMfv4Xvb2u1Qx+/he9va7VDH7+F729rtUMfv4Xvb2u1Qx80GqQ2wgDK/01BlpTwyo+r7g4Z0cAw7yP2lVAJ3nO/PxakIufmNh/x5KS1K1CmldAZMOPiAiQSmhbYOLwrIvRh5GwF8kqQiiA=</air:FareRuleKey>
-          <air:Brand Key="xLUjNuBAAA/BfhyM1HAAAA==" BrandID="60742" UpSellBrandFound="false" />
-        </air:FareInfo>
-        <air:FareInfo Key="xLUjNuBAAA/BghyM1HAAAA==" FareBasis="YIF" PassengerTypeCode="ADT" Origin="KUL" Destination="CMB" EffectiveDate="2017-04-26T12:27:00.000+05:30" DepartureDate="2017-05-23" Amount="LKR77500">
-          <air:FareRuleKey FareInfoRef="xLUjNuBAAA/BghyM1HAAAA==" ProviderCode="1G">6UUVoSldxwi/jr44kdcUTMbKj3F8T9EyxsqPcXxP0TIjSPOlaHfQe5cuasWd6i8Dly5qxZ3qLwOXLmrFneovA5cuasWd6i8Dly5qxZ3qLwOXLmrFneovA9QRndLAN+3+M3ExqSoG052ZyxcGCDDyTycNPNzvFJUWbMwTTa/a8U7/yqZm8ZlXA9CrcWHdgTmWP5VVIDQKTCli4BZ9wfbD3UlPIHnH21hJzFOd+W7w/UwmubSBno2btWkBVB1X8o8dKxTaudMNlTFOJym9huZjhZqQR/cHoRjB4RStk9w5GMcxBX8FE/juXb+F729rtUMfv4Xvb2u1Qx+/he9va7VDH7+F729rtUMfv4Xvb2u1Qx80GqQ2wgDK/01BlpTwyo+rtt5pNpc8G9nAQJCzzE4cyZ0VKrKSxZOhBTz7w6si2IkkjExZj2xf9wotURoO3XBy5W4bRuwrrPA=</air:FareRuleKey>
-          <air:Brand Key="xLUjNuBAAA/BghyM1HAAAA==" BrandID="60739" UpSellBrandFound="false" />
-        </air:FareInfo>
-        <air:BookingInfo BookingCode="Q" CabinClass="Economy" FareInfoRef="xLUjNuBAAA/BdhyM1HAAAA==" SegmentRef="xLUjNuBAAA/BNhyM1HAAAA==" />
-        <air:BookingInfo BookingCode="V" CabinClass="Economy" FareInfoRef="xLUjNuBAAA/BehyM1HAAAA==" SegmentRef="xLUjNuBAAA/BPhyM1HAAAA==" />
-        <air:BookingInfo BookingCode="L" CabinClass="Economy" FareInfoRef="xLUjNuBAAA/BfhyM1HAAAA==" SegmentRef="xLUjNuBAAA/BRhyM1HAAAA==" />
-        <air:BookingInfo BookingCode="S" CabinClass="Economy" FareInfoRef="xLUjNuBAAA/BghyM1HAAAA==" SegmentRef="xLUjNuBAAA/BThyM1HAAAA==" />
-        <air:TaxInfo Category="LK" Amount="LKR7000" Key="xLUjNuBAAA/BXhyM1HAAAA==" />
-        <air:TaxInfo Category="E7" Amount="LKR312" Key="xLUjNuBAAA/BYhyM1HAAAA==" />
-        <air:TaxInfo Category="G8" Amount="LKR134" Key="xLUjNuBAAA/BZhyM1HAAAA==" />
-        <air:TaxInfo Category="TS" Amount="LKR3115" Key="xLUjNuBAAA/BahyM1HAAAA==" />
-        <air:TaxInfo Category="YQ" Amount="LKR51276" Key="xLUjNuBAAA/BbhyM1HAAAA==" />
-        <air:TaxInfo Category="YR" Amount="LKR1224" Key="xLUjNuBAAA/BchyM1HAAAA==" />
-        <air:FareCalc>CMB MH KUL 511.40YIF MH BKK 264.16YIF MH KUL 264.17YIF MH CMB 511.40YIF NUC1551.13END ROE151.642</air:FareCalc>
-        <air:PassengerType Code="ADT" />
-        <air:PassengerType Code="ADT" />
-        <air:PassengerType Code="ADT" />
-        <air:BaggageAllowances>
-          <air:BaggageAllowanceInfo TravelerType="ADT" Origin="CMB" Destination="BKK" Carrier="MH">
-            <air:URLInfo>
-              <air:URL>MYTRIPANDMORE.COM/BAGGAGEDETAILSMH.BAGG</air:URL>
-            </air:URLInfo>
-            <air:TextInfo>
-              <air:Text>30K</air:Text>
-              <air:Text>BAGGAGE DISCOUNTS MAY APPLY BASED ON FREQUENT FLYER STATUS/ ONLINE CHECKIN/FORM OF PAYMENT/MILITARY/ETC.</air:Text>
-            </air:TextInfo>
-            <air:BagDetails ApplicableBags="1stChecked">
-              <air:BaggageRestriction>
-                <air:TextInfo>
-                  <air:Text>CHGS MAY APPLY IF BAGS EXCEED TTL WT ALLOWANCE</air:Text>
-                </air:TextInfo>
-              </air:BaggageRestriction>
-            </air:BagDetails>
-            <air:BagDetails ApplicableBags="2ndChecked">
-              <air:BaggageRestriction>
-                <air:TextInfo>
-                  <air:Text>CHGS MAY APPLY IF BAGS EXCEED TTL WT ALLOWANCE</air:Text>
-                </air:TextInfo>
-              </air:BaggageRestriction>
-            </air:BagDetails>
-          </air:BaggageAllowanceInfo>
-          <air:BaggageAllowanceInfo TravelerType="ADT" Origin="BKK" Destination="CMB" Carrier="MH">
-            <air:URLInfo>
-              <air:URL>MYTRIPANDMORE.COM/BAGGAGEDETAILSMH.BAGG</air:URL>
-            </air:URLInfo>
-            <air:TextInfo>
-              <air:Text>30K</air:Text>
-              <air:Text>BAGGAGE DISCOUNTS MAY APPLY BASED ON FREQUENT FLYER STATUS/ ONLINE CHECKIN/FORM OF PAYMENT/MILITARY/ETC.</air:Text>
-            </air:TextInfo>
-            <air:BagDetails ApplicableBags="1stChecked">
-              <air:BaggageRestriction>
-                <air:TextInfo>
-                  <air:Text>CHGS MAY APPLY IF BAGS EXCEED TTL WT ALLOWANCE</air:Text>
-                </air:TextInfo>
-              </air:BaggageRestriction>
-            </air:BagDetails>
-            <air:BagDetails ApplicableBags="2ndChecked">
-              <air:BaggageRestriction>
-                <air:TextInfo>
-                  <air:Text>CHGS MAY APPLY IF BAGS EXCEED TTL WT ALLOWANCE</air:Text>
-                </air:TextInfo>
-              </air:BaggageRestriction>
-            </air:BagDetails>
-          </air:BaggageAllowanceInfo>
-          <air:CarryOnAllowanceInfo Origin="CMB" Destination="KUL" Carrier="MH">
-            <air:TextInfo>
-              <air:Text>7K</air:Text>
-            </air:TextInfo>
-            <air:CarryOnDetails ApplicableCarryOnBags="1">
-              <air:BaggageRestriction>
-                <air:TextInfo>
-                  <air:Text>CHGS MAY APPLY IF BAGS EXCEED TTL WT ALLOWANCE</air:Text>
-                </air:TextInfo>
-              </air:BaggageRestriction>
-            </air:CarryOnDetails>
-            <air:CarryOnDetails ApplicableCarryOnBags="2">
-              <air:BaggageRestriction>
-                <air:TextInfo>
-                  <air:Text>CHGS MAY APPLY IF BAGS EXCEED TTL WT ALLOWANCE</air:Text>
-                </air:TextInfo>
-              </air:BaggageRestriction>
-            </air:CarryOnDetails>
-          </air:CarryOnAllowanceInfo>
-          <air:CarryOnAllowanceInfo Origin="KUL" Destination="BKK" Carrier="MH">
-            <air:TextInfo>
-              <air:Text>7K</air:Text>
-            </air:TextInfo>
-            <air:CarryOnDetails ApplicableCarryOnBags="1">
-              <air:BaggageRestriction>
-                <air:TextInfo>
-                  <air:Text>CHGS MAY APPLY IF BAGS EXCEED TTL WT ALLOWANCE</air:Text>
-                </air:TextInfo>
-              </air:BaggageRestriction>
-            </air:CarryOnDetails>
-            <air:CarryOnDetails ApplicableCarryOnBags="2">
-              <air:BaggageRestriction>
-                <air:TextInfo>
-                  <air:Text>CHGS MAY APPLY IF BAGS EXCEED TTL WT ALLOWANCE</air:Text>
-                </air:TextInfo>
-              </air:BaggageRestriction>
-            </air:CarryOnDetails>
-          </air:CarryOnAllowanceInfo>
-          <air:CarryOnAllowanceInfo Origin="BKK" Destination="KUL" Carrier="MH">
-            <air:TextInfo>
-              <air:Text>7K</air:Text>
-            </air:TextInfo>
-            <air:CarryOnDetails ApplicableCarryOnBags="1">
-              <air:BaggageRestriction>
-                <air:TextInfo>
-                  <air:Text>CHGS MAY APPLY IF BAGS EXCEED TTL WT ALLOWANCE</air:Text>
-                </air:TextInfo>
-              </air:BaggageRestriction>
-            </air:CarryOnDetails>
-            <air:CarryOnDetails ApplicableCarryOnBags="2">
-              <air:BaggageRestriction>
-                <air:TextInfo>
-                  <air:Text>CHGS MAY APPLY IF BAGS EXCEED TTL WT ALLOWANCE</air:Text>
-                </air:TextInfo>
-              </air:BaggageRestriction>
-            </air:CarryOnDetails>
-          </air:CarryOnAllowanceInfo>
-          <air:CarryOnAllowanceInfo Origin="KUL" Destination="CMB" Carrier="MH">
-            <air:TextInfo>
-              <air:Text>7K</air:Text>
-            </air:TextInfo>
-            <air:CarryOnDetails ApplicableCarryOnBags="1">
-              <air:BaggageRestriction>
-                <air:TextInfo>
-                  <air:Text>CHGS MAY APPLY IF BAGS EXCEED TTL WT ALLOWANCE</air:Text>
-                </air:TextInfo>
-              </air:BaggageRestriction>
-            </air:CarryOnDetails>
-            <air:CarryOnDetails ApplicableCarryOnBags="2">
-              <air:BaggageRestriction>
-                <air:TextInfo>
-                  <air:Text>CHGS MAY APPLY IF BAGS EXCEED TTL WT ALLOWANCE</air:Text>
-                </air:TextInfo>
-              </air:BaggageRestriction>
-            </air:CarryOnDetails>
-          </air:CarryOnAllowanceInfo>
-        </air:BaggageAllowances>
-      </air:AirPricingInfo>
-      <air:FareNote Key="xLUjNuBAAA/BlhyM1HAAAA==">LAST DATE TO PURCHASE TICKET: 11MAY17</air:FareNote>
-      <air:FareNote Key="xLUjNuBAAA/BmhyM1HAAAA==">TICKETING AGENCY 3OS2</air:FareNote>
-      <air:FareNote Key="xLUjNuBAAA/BnhyM1HAAAA==">DEFAULT PLATING CARRIER MH</air:FareNote>
-      <air:FareNote Key="xLUjNuBAAA/BohyM1HAAAA==">E-TKT REQUIRED</air:FareNote>
-      <air:FareNote Key="xLUjNuBAAA/BphyM1HAAAA==">TICKETING FEES MAY APPLY</air:FareNote>
-    </air:AirPricingSolution>
-  </air:AirPriceResult>
-</air:AirPriceRsp>
+		<air:AirPriceRsp TraceId="trace" TransactionId="A2F2B1B60A0759D3F073B42AC78921DA" ResponseTime="761" xmlns:air="http://www.travelport.com/schema/air_v32_0" xmlns:common_v32_0="http://www.travelport.com/schema/common_v32_0">
+			<common_v32_0:ResponseMessage Code="4400" Type="Warning" ProviderCode="1G">No Merchandising optional services returned for Flight(s) [MH][184]</common_v32_0:ResponseMessage>
+			<common_v32_0:ResponseMessage Code="4400" Type="Warning" ProviderCode="1G">No Merchandising optional services returned for Flight(s) [MH][784]</common_v32_0:ResponseMessage>
+			<common_v32_0:ResponseMessage Code="4400" Type="Warning" ProviderCode="1G">No Merchandising optional services returned for Flight(s) [MH][775]</common_v32_0:ResponseMessage>
+			<common_v32_0:ResponseMessage Code="4400" Type="Warning" ProviderCode="1G">No Merchandising optional services returned for Flight(s) [MH][185]</common_v32_0:ResponseMessage>
+			<air:AirItinerary>
+				<air:AirSegment Key="1vWjNuBAAA/BaGuNAGAAAA==" Group="0" Carrier="MH" FlightNumber="184" ProviderCode="1G" Origin="CMB" Destination="KUL" DepartureTime="2017-05-11T00:55:00.000+05:30" ArrivalTime="2017-05-11T07:05:00.000+08:00" FlightTime="220" TravelTime="220" Distance="1526" ClassOfService="N" Equipment="738" ChangeOfPlane="false" OptionalServicesIndicator="false" ParticipantLevel="Secure Sell" LinkAvailability="true" AvailabilityDisplayType="Fare Specific Fare Quote Unbooked">
+					<air:CodeshareInfo OperatingCarrier="MH">Malaysia Airlines Berhad</air:CodeshareInfo>
+					<air:FlightDetails Key="1vWjNuBAAA/BbGuNAGAAAA==" Origin="CMB" Destination="KUL" DepartureTime="2017-05-11T00:55:00.000+05:30" ArrivalTime="2017-05-11T07:05:00.000+08:00" FlightTime="220" TravelTime="220" Distance="1526"/>
+					<air:Connection/>
+				</air:AirSegment>
+				<air:AirSegment Key="1vWjNuBAAA/BcGuNAGAAAA==" Group="0" Carrier="MH" FlightNumber="784" ProviderCode="1G" Origin="KUL" Destination="BKK" DepartureTime="2017-05-11T09:05:00.000+08:00" ArrivalTime="2017-05-11T10:15:00.000+07:00" FlightTime="130" TravelTime="130" Distance="754" ClassOfService="L" Equipment="738" ChangeOfPlane="false" OptionalServicesIndicator="false" ParticipantLevel="Secure Sell" LinkAvailability="true" AvailabilityDisplayType="Fare Specific Fare Quote Unbooked">
+					<air:CodeshareInfo OperatingCarrier="MH">Malaysia Airlines Berhad</air:CodeshareInfo>
+					<air:FlightDetails Key="1vWjNuBAAA/BdGuNAGAAAA==" Origin="KUL" Destination="BKK" DepartureTime="2017-05-11T09:05:00.000+08:00" ArrivalTime="2017-05-11T10:15:00.000+07:00" FlightTime="130" TravelTime="130" Distance="754"/>
+				</air:AirSegment>
+				<air:AirSegment Key="1vWjNuBAAA/BeGuNAGAAAA==" Group="1" Carrier="MH" FlightNumber="775" ProviderCode="1G" Origin="BKK" Destination="KUL" DepartureTime="2017-07-12T18:40:00.000+07:00" ArrivalTime="2017-07-12T21:55:00.000+08:00" FlightTime="135" TravelTime="135" Distance="754" ClassOfService="L" Equipment="738" ChangeOfPlane="false" OptionalServicesIndicator="false" ParticipantLevel="Secure Sell" LinkAvailability="true" AvailabilityDisplayType="Fare Specific Fare Quote Unbooked">
+					<air:CodeshareInfo OperatingCarrier="MH">Malaysia Airlines Berhad</air:CodeshareInfo>
+					<air:FlightDetails Key="1vWjNuBAAA/BfGuNAGAAAA==" Origin="BKK" Destination="KUL" DepartureTime="2017-07-12T18:40:00.000+07:00" ArrivalTime="2017-07-12T21:55:00.000+08:00" FlightTime="135" TravelTime="135" Distance="754"/>
+					<air:Connection/>
+				</air:AirSegment>
+				<air:AirSegment Key="1vWjNuBAAA/BgGuNAGAAAA==" Group="1" Carrier="MH" FlightNumber="185" ProviderCode="1G" Origin="KUL" Destination="CMB" DepartureTime="2017-07-12T23:05:00.000+08:00" ArrivalTime="2017-07-12T23:55:00.000+05:30" FlightTime="200" TravelTime="200" Distance="1526" ClassOfService="N" Equipment="738" ChangeOfPlane="false" OptionalServicesIndicator="false" ParticipantLevel="Secure Sell" LinkAvailability="true" AvailabilityDisplayType="Fare Specific Fare Quote Unbooked">
+					<air:CodeshareInfo OperatingCarrier="MH">Malaysia Airlines Berhad</air:CodeshareInfo>
+					<air:FlightDetails Key="1vWjNuBAAA/BhGuNAGAAAA==" Origin="KUL" Destination="CMB" DepartureTime="2017-07-12T23:05:00.000+08:00" ArrivalTime="2017-07-12T23:55:00.000+05:30" FlightTime="200" TravelTime="200" Distance="1526"/>
+				</air:AirSegment>
+			</air:AirItinerary>
+			<air:AirPriceResult>
+				<air:AirPricingSolution Key="1vWjNuBAAA/BiGuNAGAAAA==" TotalPrice="LKR36626" BasePrice="LKR26000" ApproximateTotalPrice="LKR36626" ApproximateBasePrice="LKR26000" Taxes="LKR10626" Fees="LKR0" ApproximateTaxes="LKR10626" QuoteDate="2017-04-25">
+					<air:AirSegmentRef Key="1vWjNuBAAA/BaGuNAGAAAA=="/>
+					<air:AirSegmentRef Key="1vWjNuBAAA/BcGuNAGAAAA=="/>
+					<air:AirSegmentRef Key="1vWjNuBAAA/BeGuNAGAAAA=="/>
+					<air:AirSegmentRef Key="1vWjNuBAAA/BgGuNAGAAAA=="/>
+					<air:AirPricingInfo Key="1vWjNuBAAA/BjGuNAGAAAA==" TotalPrice="LKR36626" BasePrice="LKR26000" ApproximateTotalPrice="LKR36626" ApproximateBasePrice="LKR26000" ApproximateTaxes="LKR10626" Taxes="LKR10626" LatestTicketingTime="2017-05-11T23:59:00.000+05:30" PricingMethod="Guaranteed" IncludesVAT="false" ETicketability="Yes" PlatingCarrier="MH" ProviderCode="1G">
+						<air:FareInfo Key="1vWjNuBAAA/BoGuNAGAAAA==" FareBasis="NBC6M2LK" PassengerTypeCode="ADT" Origin="CMB" Destination="BKK" EffectiveDate="2017-04-25T08:01:00.000+05:30" DepartureDate="2017-05-11" Amount="LKR13000" NotValidBefore="2017-05-11" NotValidAfter="2017-05-11">
+							<common_v32_0:Endorsement Value="NONEND-CHECK-IN 2 PCS MAX"/>
+							<common_v32_0:Endorsement Value="CHARGES APPLY"/>
+							<air:FareRuleKey FareInfoRef="1vWjNuBAAA/BoGuNAGAAAA==" ProviderCode="1G">6UUVoSldxwixXG63Cx8PYMbKj3F8T9EyxsqPcXxP0TIjSPOlaHfQe5cuasWd6i8Dly5qxZ3qLwOXLmrFneovA5cuasWd6i8Dly5qxZ3qLwOXLmrFneovA/YV25EgQdfMM3ExqSoG053p4wIkM7kbX5Xos7JdHl4eVCulqMwbpNYRHrzWZukgtm3M9DJiQiuN7CtyNzwnH5pSY1yGCHxykRll6FxyIC6cYuAWfcH2w92IEQfz1U0L7/jxCH9Ebg402b5gFXuB5Ejqkp0FEw0raOCbZ1nsUQQBQszG+BQIvDdaX22zJAKXc4q+cJFUBzrily5qxZ3qLwOXLmrFneovA5cuasWd6i8Dly5qxZ3qLwOXLmrFneovA3N5jV9Rrzq8txHW6jzw2UbAQJCzzE4cybO2DFxnAQHFzeq6MOhiE5l3NXb/yonkWZVpp9MEvLFx</air:FareRuleKey>
+							<air:Brand Key="1vWjNuBAAA/BoGuNAGAAAA==" BrandID="60739" UpSellBrandID="60742" Name="Economy Basic" Carrier="MH">
+								<air:Title Type="External">Economy Basic</air:Title>
+								<air:Title Type="Short">Econ Basic</air:Title>
+								<air:Text Type="MarketingConsumer">Kick back and relax in the cosiest Economy Class seats. Be served by an award-winning cabin crew that is the epitome of Malaysian Hospitality</air:Text>
+								<air:Text Type="MarketingAgent">Kick back and relax in the cosiest Economy Class seats. Be served by an award-winning cabin crew that is the epitome of Malaysian Hospitality</air:Text>
+								<air:Text Type="Strapline">Home Away From Home</air:Text>
+								<air:ImageLocation Type="Agent" ImageWidth="150" ImageHeight="150">https://cdn.travelport.com/malaysia/MH_general_medium_885.jpg</air:ImageLocation>
+								<air:ImageLocation Type="Consumer" ImageWidth="150" ImageHeight="150">https://cdn.travelport.com/malaysia/MH_general_medium_885.jpg</air:ImageLocation>
+								<air:OptionalServices>
+									<air:OptionalService Type="Baggage" CreateDate="2017-04-25T02:31:06.669+00:00" Key="1vWjNuBAAA/BrGuNAGAAAA==" Chargeable="Included in the brand">
+										<common_v32_0:ServiceData AirSegmentRef="1vWjNuBAAA/BaGuNAGAAAA=="/>
+										<common_v32_0:ServiceData AirSegmentRef="1vWjNuBAAA/BcGuNAGAAAA=="/>
+										<common_v32_0:ServiceInfo>
+											<common_v32_0:Description>Checked in Baggage</common_v32_0:Description>
+											<common_v32_0:MediaItem caption="Agent" height="60" width="60" url="https://cdn.travelport.com/malaysia/MH_general_medium_880.jpg"/>
+											<common_v32_0:MediaItem caption="Consumer" height="60" width="60" url="https://cdn.travelport.com/malaysia/MH_general_medium_880.jpg"/>
+										</common_v32_0:ServiceInfo>
+										<air:EMD AssociatedItem="Flight"/>
+										<air:Text Type="Strapline">Checked in Baggage</air:Text>
+										<air:Text Type="MarketingAgent">Free baggage allowance and allowed dimension
+
+First Class - 2 pieces weighing 50 kg (110 lbs) / Not exceeding 158 cm (62 inch)
+Business Class - 2 pieces weighing 40 kg (88 lbs) / Not exceeding 158 cm (62 inch)
+Economy Class - 2 pieces weighing 30 kg (66 lbs) / Not exceeding 158 cm (62 inch)
+
+All sports equipment, including golfing equipment, will be carried as part of the free checked baggage allowance, and will be subject to excess baggage charges if overweight.</air:Text>
+										<air:Text Type="MarketingConsumer">Free baggage allowance and allowed dimension
+
+First Class - 2 pieces weighing 50 kg (110 lbs) / Not exceeding 158 cm (62 inch)
+Business Class - 2 pieces weighing 40 kg (88 lbs) / Not exceeding 158 cm (62 inch)
+Economy Class - 2 pieces weighing 30 kg (66 lbs) / Not exceeding 158 cm (62 inch)
+
+All sports equipment, including golfing equipment, will be carried as part of the free checked baggage allowance, and will be subject to excess baggage charges if overweight.</air:Text>
+									</air:OptionalService>
+									<air:OptionalService Type="Baggage" CreateDate="2017-04-25T02:31:06.670+00:00" ServiceSubCode="0LN" Key="1vWjNuBAAA/BsGuNAGAAAA==" SecondaryType="CY" Chargeable="Included in the brand">
+										<common_v32_0:ServiceData AirSegmentRef="1vWjNuBAAA/BaGuNAGAAAA=="/>
+										<common_v32_0:ServiceData AirSegmentRef="1vWjNuBAAA/BcGuNAGAAAA=="/>
+										<common_v32_0:ServiceInfo>
+											<common_v32_0:Description>Cabin Baggage</common_v32_0:Description>
+											<common_v32_0:MediaItem caption="Agent" height="60" width="60" url="https://cdn.travelport.com/malaysia/MH_general_medium_4562.jpg"/>
+											<common_v32_0:MediaItem caption="Consumer" height="60" width="60" url="https://cdn.travelport.com/malaysia/MH_general_medium_4562.jpg"/>
+										</common_v32_0:ServiceInfo>
+										<air:EMD AssociatedItem="Carry On Baggage Allowance"/>
+										<air:Text Type="Strapline">Cabin Baggage Allowance</air:Text>
+										<air:Text Type="MarketingAgent">To ensure that the cabin overhead compartments are not excessively full and for the safety, comfort and convenience of everyone on board, please ensure that you comply with our cabin baggage set of rules and allowances.
+
+Number of pieces allowed
+
+Maximum Weight
+
+Economy Class
+One piece 7 kg (15 lb)
+
+Business Class
+Two pieces 14 kg (31 lb) - in total
+
+First Class 
+Two pieces 14 kg (31 lb) - in total
+
+Remarks:-
+The cabin baggage allowance for Enrich Platinum and Gold / oneworld Emerald and Sapphire members remains as per their ticketed class of travel.</air:Text>
+										<air:Text Type="MarketingConsumer">To ensure that the cabin overhead compartments are not excessively full and for the safety, comfort and convenience of everyone on board, please ensure that you comply with our cabin baggage set of rules and allowances.
+
+Number of pieces allowed
+
+Maximum Weight
+
+Economy Class
+One piece 7 kg (15 lb)
+
+Business Class
+Two pieces 14 kg (31 lb) - in total
+
+First Class 
+Two pieces 14 kg (31 lb) - in total
+
+Remarks:-
+The cabin baggage allowance for Enrich Platinum and Gold / oneworld Emerald and Sapphire members remains as per their ticketed class of travel.</air:Text>
+									</air:OptionalService>
+									<air:OptionalService Type="InFlightEntertainment" CreateDate="2017-04-25T02:31:06.670+00:00" Key="1vWjNuBAAA/BtGuNAGAAAA==" Chargeable="Included in the brand">
+										<common_v32_0:ServiceData AirSegmentRef="1vWjNuBAAA/BaGuNAGAAAA=="/>
+										<common_v32_0:ServiceData AirSegmentRef="1vWjNuBAAA/BcGuNAGAAAA=="/>
+										<common_v32_0:ServiceInfo>
+											<common_v32_0:Description>Inflight Entertainment</common_v32_0:Description>
+											<common_v32_0:MediaItem caption="Agent" height="60" width="60" url="https://cdn.travelport.com/malaysia/MH_general_medium_875.jpg"/>
+											<common_v32_0:MediaItem caption="Consumer" height="60" width="60" url="https://cdn.travelport.com/malaysia/MH_general_medium_875.jpg"/>
+										</common_v32_0:ServiceInfo>
+										<air:EMD AssociatedItem="Flight"/>
+										<air:Text Type="Strapline">Catch All The New Releases</air:Text>
+										<air:Text Type="MarketingAgent">All the Hollywood Blockbusters in one easy bundle. You can also have your pick of the latest on TV, sports, music and news.</air:Text>
+										<air:Text Type="MarketingConsumer">All the Hollywood Blockbusters in one easy bundle. You can also have your pick of the latest on TV, sports, music and news.</air:Text>
+									</air:OptionalService>
+									<air:OptionalService Type="MealOrBeverage" CreateDate="2017-04-25T02:31:06.670+00:00" Key="1vWjNuBAAA/BuGuNAGAAAA==" Chargeable="Included in the brand">
+										<common_v32_0:ServiceData AirSegmentRef="1vWjNuBAAA/BaGuNAGAAAA=="/>
+										<common_v32_0:ServiceData AirSegmentRef="1vWjNuBAAA/BcGuNAGAAAA=="/>
+										<common_v32_0:ServiceInfo>
+											<common_v32_0:Description>Special Meal Service</common_v32_0:Description>
+											<common_v32_0:MediaItem caption="Agent" height="60" width="60" url="https://cdn.travelport.com/malaysia/MH_general_medium_878.jpg"/>
+											<common_v32_0:MediaItem caption="Consumer" height="60" width="60" url="https://cdn.travelport.com/malaysia/MH_general_medium_878.jpg"/>
+										</common_v32_0:ServiceInfo>
+										<air:EMD AssociatedItem="Flight"/>
+										<air:Text Type="Strapline">Special Meal Service</air:Text>
+										<air:Text Type="MarketingAgent">Malaysia Airlines o&#64256;ers up to 20 Special Meals to suit your religious, medical and dietary requirements. Furthermore, all meals served on Malaysia Airlines are halal and prepared in strict compliance to halal requirements.</air:Text>
+										<air:Text Type="MarketingConsumer">Malaysia Airlines o&#64256;ers up to 20 Special Meals to suit your religious, medical and dietary requirements. Furthermore, all meals served on Malaysia Airlines are halal and prepared in strict compliance to halal requirements.</air:Text>
+									</air:OptionalService>
+									<air:OptionalService Type="MealOrBeverage" CreateDate="2017-04-25T02:31:06.670+00:00" Key="1vWjNuBAAA/BvGuNAGAAAA==" Chargeable="Not offered">
+										<common_v32_0:ServiceData AirSegmentRef="1vWjNuBAAA/BaGuNAGAAAA=="/>
+										<common_v32_0:ServiceData AirSegmentRef="1vWjNuBAAA/BcGuNAGAAAA=="/>
+										<common_v32_0:ServiceInfo>
+											<common_v32_0:Description>Chef on Call</common_v32_0:Description>
+											<common_v32_0:MediaItem caption="Agent" height="60" width="60" url="https://cdn.travelport.com/malaysia/MH_general_medium_873.jpg"/>
+											<common_v32_0:MediaItem caption="Consumer" height="60" width="60" url="https://cdn.travelport.com/malaysia/MH_general_medium_873.jpg"/>
+										</common_v32_0:ServiceInfo>
+										<air:EMD AssociatedItem="Flight"/>
+										<air:Text Type="Strapline">Meals to your liking</air:Text>
+										<air:Text Type="MarketingAgent">Chef-on-Call is exclusively for passengers travelling in First Class and Business Class. Tantalise your taste buds with our Chef-On-Call menu, featuring 20 meal options that consist of Malaysian Favourites, Chef&#8217;s Recommendations, Light Choice and Healthy Choice.</air:Text>
+										<air:Text Type="MarketingConsumer">Chef-on-Call is exclusively for passengers travelling in First Class and Business Class. Tantalise your taste buds with our Chef-On-Call menu, featuring 20 meal options that consist of Malaysian Favourites, Chef&#8217;s Recommendations, Light Choice and Healthy Choice.</air:Text>
+									</air:OptionalService>
+									<air:OptionalService Type="RuleOverride" CreateDate="2017-04-25T02:31:06.670+00:00" Key="1vWjNuBAAA/BwGuNAGAAAA==" SecondaryType="31" Chargeable="Available for a charge">
+										<common_v32_0:ServiceData AirSegmentRef="1vWjNuBAAA/BaGuNAGAAAA=="/>
+										<common_v32_0:ServiceData AirSegmentRef="1vWjNuBAAA/BcGuNAGAAAA=="/>
+										<common_v32_0:ServiceInfo>
+											<common_v32_0:Description>Rebooking</common_v32_0:Description>
+											<common_v32_0:MediaItem caption="Agent" height="60" width="60" url="https://cdn.travelport.com/malaysia/MH_general_medium_4563.JPG"/>
+											<common_v32_0:MediaItem caption="Consumer" height="60" width="60" url="https://cdn.travelport.com/malaysia/MH_general_medium_4563.JPG"/>
+										</common_v32_0:ServiceInfo>
+										<air:EMD AssociatedItem="Flight"/>
+										<air:Text Type="Strapline">Rebooking</air:Text>
+										<air:Text Type="MarketingAgent">Rebooking
+Please refer to ticketing terms and conditions</air:Text>
+										<air:Text Type="MarketingConsumer">Rebooking
+Please refer to ticket agent</air:Text>
+									</air:OptionalService>
+									<air:OptionalService Type="RuleOverride" CreateDate="2017-04-25T02:31:06.670+00:00" Key="1vWjNuBAAA/BxGuNAGAAAA==" SecondaryType="33" Chargeable="Available for a charge">
+										<common_v32_0:ServiceData AirSegmentRef="1vWjNuBAAA/BaGuNAGAAAA=="/>
+										<common_v32_0:ServiceData AirSegmentRef="1vWjNuBAAA/BcGuNAGAAAA=="/>
+										<common_v32_0:ServiceInfo>
+											<common_v32_0:Description>Refund</common_v32_0:Description>
+											<common_v32_0:MediaItem caption="Consumer" height="60" width="60" url="https://cdn.travelport.com/malaysia/MH_general_medium_4564.JPG"/>
+											<common_v32_0:MediaItem caption="Agent" height="60" width="60" url="https://cdn.travelport.com/malaysia/MH_general_medium_4564.JPG"/>
+										</common_v32_0:ServiceInfo>
+										<air:EMD AssociatedItem="Flight"/>
+										<air:Text Type="Strapline">Refund</air:Text>
+										<air:Text Type="MarketingAgent">Refund
+Please refer to ticketing terms and conditions</air:Text>
+										<air:Text Type="MarketingConsumer">Refund
+Please refer to ticketing agent</air:Text>
+									</air:OptionalService>
+									<air:OptionalService Type="PreReservedSeatAssignment" CreateDate="2017-04-25T02:31:06.670+00:00" ServiceSubCode="0B5" Key="1vWjNuBAAA/ByGuNAGAAAA==" Chargeable="Included in the brand">
+										<common_v32_0:ServiceData AirSegmentRef="1vWjNuBAAA/BaGuNAGAAAA=="/>
+										<common_v32_0:ServiceData AirSegmentRef="1vWjNuBAAA/BcGuNAGAAAA=="/>
+										<common_v32_0:ServiceInfo>
+											<common_v32_0:Description>Prereserved Seat Assignment</common_v32_0:Description>
+											<common_v32_0:MediaItem caption="Agent" height="60" width="60" url="https://cdn.travelport.com/malaysia/MH_general_medium_879.jpg"/>
+											<common_v32_0:MediaItem caption="Consumer" height="60" width="60" url="https://cdn.travelport.com/malaysia/MH_general_medium_879.jpg"/>
+										</common_v32_0:ServiceInfo>
+										<air:EMD AssociatedItem="Flight"/>
+										<air:Text Type="Strapline">GRAB YOUR FAVOURITE SPOT</air:Text>
+										<air:Text Type="MarketingAgent">Front, middle, window or aisle? Free seat selection when your passenger check in online. Better yet, secure the preferred seats for free when they book.</air:Text>
+										<air:Text Type="MarketingConsumer">Front, middle, window or aisle? Free seat selection when you check in online. Better yet, secure the preferred seats for free when you book.</air:Text>
+									</air:OptionalService>
+								</air:OptionalServices>
+							</air:Brand>
+						</air:FareInfo>
+						<air:FareInfo Key="1vWjNuBAAA/BzGuNAGAAAA==" FareBasis="NBC6M2LK" PassengerTypeCode="ADT" Origin="BKK" Destination="CMB" EffectiveDate="2017-04-25T08:01:00.000+05:30" DepartureDate="2017-07-12" Amount="LKR13000" NotValidBefore="2017-07-12" NotValidAfter="2017-07-12">
+							<common_v32_0:Endorsement Value="NONEND-CHECK-IN 2 PCS MAX"/>
+							<common_v32_0:Endorsement Value="CHARGES APPLY"/>
+							<air:FareRuleKey FareInfoRef="1vWjNuBAAA/BzGuNAGAAAA==" ProviderCode="1G">6UUVoSldxwixXG63Cx8PYMbKj3F8T9EyxsqPcXxP0TIjSPOlaHfQe5cuasWd6i8Dly5qxZ3qLwOXLmrFneovA5cuasWd6i8Dly5qxZ3qLwOXLmrFneovA/YV25EgQdfMM3ExqSoG052ZyxcGCDDyTxtULnbNDk45ffAIozri2AARHrzWZukgtm3M9DJiQiuNGtr93vHn2HesnDhjAGY7khll6FxyIC6cYuAWfcH2w92IEQfz1U0L7/jxCH9Ebg402b5gFXuB5EjvWpSmZkrE0eCbZ1nsUQQBl0r5bQpBwzJaX22zJAKXc4q+cJFUBzrily5qxZ3qLwOXLmrFneovA5cuasWd6i8Dly5qxZ3qLwOXLmrFneovA3N5jV9Rrzq8txHW6jzw2UbAQJCzzE4cybO2DFxnAQHFzeq6MOhiE5l3NXb/yonkWZVpp9MEvLFx</air:FareRuleKey>
+							<air:Brand Key="1vWjNuBAAA/BzGuNAGAAAA==" BrandID="60739" UpSellBrandID="60742" Name="Economy Basic" Carrier="MH">
+								<air:Title Type="External">Economy Basic</air:Title>
+								<air:Title Type="Short">Econ Basic</air:Title>
+								<air:Text Type="MarketingConsumer">Kick back and relax in the cosiest Economy Class seats. Be served by an award-winning cabin crew that is the epitome of Malaysian Hospitality</air:Text>
+								<air:Text Type="MarketingAgent">Kick back and relax in the cosiest Economy Class seats. Be served by an award-winning cabin crew that is the epitome of Malaysian Hospitality</air:Text>
+								<air:Text Type="Strapline">Home Away From Home</air:Text>
+								<air:ImageLocation Type="Agent" ImageWidth="150" ImageHeight="150">https://cdn.travelport.com/malaysia/MH_general_medium_885.jpg</air:ImageLocation>
+								<air:ImageLocation Type="Consumer" ImageWidth="150" ImageHeight="150">https://cdn.travelport.com/malaysia/MH_general_medium_885.jpg</air:ImageLocation>
+								<air:OptionalServices>
+									<air:OptionalService Type="Baggage" CreateDate="2017-04-25T02:31:06.670+00:00" Key="1vWjNuBAAA/B2GuNAGAAAA==" Chargeable="Included in the brand">
+										<common_v32_0:ServiceData AirSegmentRef="1vWjNuBAAA/BeGuNAGAAAA=="/>
+										<common_v32_0:ServiceData AirSegmentRef="1vWjNuBAAA/BgGuNAGAAAA=="/>
+										<common_v32_0:ServiceInfo>
+											<common_v32_0:Description>Checked in Baggage</common_v32_0:Description>
+											<common_v32_0:MediaItem caption="Agent" height="60" width="60" url="https://cdn.travelport.com/malaysia/MH_general_medium_880.jpg"/>
+											<common_v32_0:MediaItem caption="Consumer" height="60" width="60" url="https://cdn.travelport.com/malaysia/MH_general_medium_880.jpg"/>
+										</common_v32_0:ServiceInfo>
+										<air:EMD AssociatedItem="Flight"/>
+										<air:Text Type="Strapline">Checked in Baggage</air:Text>
+										<air:Text Type="MarketingAgent">Free baggage allowance and allowed dimension
+
+First Class - 2 pieces weighing 50 kg (110 lbs) / Not exceeding 158 cm (62 inch)
+Business Class - 2 pieces weighing 40 kg (88 lbs) / Not exceeding 158 cm (62 inch)
+Economy Class - 2 pieces weighing 30 kg (66 lbs) / Not exceeding 158 cm (62 inch)
+
+All sports equipment, including golfing equipment, will be carried as part of the free checked baggage allowance, and will be subject to excess baggage charges if overweight.</air:Text>
+										<air:Text Type="MarketingConsumer">Free baggage allowance and allowed dimension
+
+First Class - 2 pieces weighing 50 kg (110 lbs) / Not exceeding 158 cm (62 inch)
+Business Class - 2 pieces weighing 40 kg (88 lbs) / Not exceeding 158 cm (62 inch)
+Economy Class - 2 pieces weighing 30 kg (66 lbs) / Not exceeding 158 cm (62 inch)
+
+All sports equipment, including golfing equipment, will be carried as part of the free checked baggage allowance, and will be subject to excess baggage charges if overweight.</air:Text>
+									</air:OptionalService>
+									<air:OptionalService Type="Baggage" CreateDate="2017-04-25T02:31:06.670+00:00" ServiceSubCode="0LN" Key="1vWjNuBAAA/B3GuNAGAAAA==" SecondaryType="CY" Chargeable="Included in the brand">
+										<common_v32_0:ServiceData AirSegmentRef="1vWjNuBAAA/BeGuNAGAAAA=="/>
+										<common_v32_0:ServiceData AirSegmentRef="1vWjNuBAAA/BgGuNAGAAAA=="/>
+										<common_v32_0:ServiceInfo>
+											<common_v32_0:Description>Cabin Baggage</common_v32_0:Description>
+											<common_v32_0:MediaItem caption="Agent" height="60" width="60" url="https://cdn.travelport.com/malaysia/MH_general_medium_4562.jpg"/>
+											<common_v32_0:MediaItem caption="Consumer" height="60" width="60" url="https://cdn.travelport.com/malaysia/MH_general_medium_4562.jpg"/>
+										</common_v32_0:ServiceInfo>
+										<air:EMD AssociatedItem="Carry On Baggage Allowance"/>
+										<air:Text Type="Strapline">Cabin Baggage Allowance</air:Text>
+										<air:Text Type="MarketingAgent">To ensure that the cabin overhead compartments are not excessively full and for the safety, comfort and convenience of everyone on board, please ensure that you comply with our cabin baggage set of rules and allowances.
+
+Number of pieces allowed
+
+Maximum Weight
+
+Economy Class
+One piece 7 kg (15 lb)
+
+Business Class
+Two pieces 14 kg (31 lb) - in total
+
+First Class 
+Two pieces 14 kg (31 lb) - in total
+
+Remarks:-
+The cabin baggage allowance for Enrich Platinum and Gold / oneworld Emerald and Sapphire members remains as per their ticketed class of travel.</air:Text>
+										<air:Text Type="MarketingConsumer">To ensure that the cabin overhead compartments are not excessively full and for the safety, comfort and convenience of everyone on board, please ensure that you comply with our cabin baggage set of rules and allowances.
+
+Number of pieces allowed
+
+Maximum Weight
+
+Economy Class
+One piece 7 kg (15 lb)
+
+Business Class
+Two pieces 14 kg (31 lb) - in total
+
+First Class 
+Two pieces 14 kg (31 lb) - in total
+
+Remarks:-
+The cabin baggage allowance for Enrich Platinum and Gold / oneworld Emerald and Sapphire members remains as per their ticketed class of travel.</air:Text>
+									</air:OptionalService>
+									<air:OptionalService Type="InFlightEntertainment" CreateDate="2017-04-25T02:31:06.670+00:00" Key="1vWjNuBAAA/B4GuNAGAAAA==" Chargeable="Included in the brand">
+										<common_v32_0:ServiceData AirSegmentRef="1vWjNuBAAA/BeGuNAGAAAA=="/>
+										<common_v32_0:ServiceData AirSegmentRef="1vWjNuBAAA/BgGuNAGAAAA=="/>
+										<common_v32_0:ServiceInfo>
+											<common_v32_0:Description>Inflight Entertainment</common_v32_0:Description>
+											<common_v32_0:MediaItem caption="Agent" height="60" width="60" url="https://cdn.travelport.com/malaysia/MH_general_medium_875.jpg"/>
+											<common_v32_0:MediaItem caption="Consumer" height="60" width="60" url="https://cdn.travelport.com/malaysia/MH_general_medium_875.jpg"/>
+										</common_v32_0:ServiceInfo>
+										<air:EMD AssociatedItem="Flight"/>
+										<air:Text Type="Strapline">Catch All The New Releases</air:Text>
+										<air:Text Type="MarketingAgent">All the Hollywood Blockbusters in one easy bundle. You can also have your pick of the latest on TV, sports, music and news.</air:Text>
+										<air:Text Type="MarketingConsumer">All the Hollywood Blockbusters in one easy bundle. You can also have your pick of the latest on TV, sports, music and news.</air:Text>
+									</air:OptionalService>
+									<air:OptionalService Type="MealOrBeverage" CreateDate="2017-04-25T02:31:06.670+00:00" Key="1vWjNuBAAA/B5GuNAGAAAA==" Chargeable="Included in the brand">
+										<common_v32_0:ServiceData AirSegmentRef="1vWjNuBAAA/BeGuNAGAAAA=="/>
+										<common_v32_0:ServiceData AirSegmentRef="1vWjNuBAAA/BgGuNAGAAAA=="/>
+										<common_v32_0:ServiceInfo>
+											<common_v32_0:Description>Special Meal Service</common_v32_0:Description>
+											<common_v32_0:MediaItem caption="Agent" height="60" width="60" url="https://cdn.travelport.com/malaysia/MH_general_medium_878.jpg"/>
+											<common_v32_0:MediaItem caption="Consumer" height="60" width="60" url="https://cdn.travelport.com/malaysia/MH_general_medium_878.jpg"/>
+										</common_v32_0:ServiceInfo>
+										<air:EMD AssociatedItem="Flight"/>
+										<air:Text Type="Strapline">Special Meal Service</air:Text>
+										<air:Text Type="MarketingAgent">Malaysia Airlines o&#64256;ers up to 20 Special Meals to suit your religious, medical and dietary requirements. Furthermore, all meals served on Malaysia Airlines are halal and prepared in strict compliance to halal requirements.</air:Text>
+										<air:Text Type="MarketingConsumer">Malaysia Airlines o&#64256;ers up to 20 Special Meals to suit your religious, medical and dietary requirements. Furthermore, all meals served on Malaysia Airlines are halal and prepared in strict compliance to halal requirements.</air:Text>
+									</air:OptionalService>
+									<air:OptionalService Type="MealOrBeverage" CreateDate="2017-04-25T02:31:06.670+00:00" Key="1vWjNuBAAA/B6GuNAGAAAA==" Chargeable="Not offered">
+										<common_v32_0:ServiceData AirSegmentRef="1vWjNuBAAA/BeGuNAGAAAA=="/>
+										<common_v32_0:ServiceData AirSegmentRef="1vWjNuBAAA/BgGuNAGAAAA=="/>
+										<common_v32_0:ServiceInfo>
+											<common_v32_0:Description>Chef on Call</common_v32_0:Description>
+											<common_v32_0:MediaItem caption="Agent" height="60" width="60" url="https://cdn.travelport.com/malaysia/MH_general_medium_873.jpg"/>
+											<common_v32_0:MediaItem caption="Consumer" height="60" width="60" url="https://cdn.travelport.com/malaysia/MH_general_medium_873.jpg"/>
+										</common_v32_0:ServiceInfo>
+										<air:EMD AssociatedItem="Flight"/>
+										<air:Text Type="Strapline">Meals to your liking</air:Text>
+										<air:Text Type="MarketingAgent">Chef-on-Call is exclusively for passengers travelling in First Class and Business Class. Tantalise your taste buds with our Chef-On-Call menu, featuring 20 meal options that consist of Malaysian Favourites, Chef&#8217;s Recommendations, Light Choice and Healthy Choice.</air:Text>
+										<air:Text Type="MarketingConsumer">Chef-on-Call is exclusively for passengers travelling in First Class and Business Class. Tantalise your taste buds with our Chef-On-Call menu, featuring 20 meal options that consist of Malaysian Favourites, Chef&#8217;s Recommendations, Light Choice and Healthy Choice.</air:Text>
+									</air:OptionalService>
+									<air:OptionalService Type="RuleOverride" CreateDate="2017-04-25T02:31:06.670+00:00" Key="1vWjNuBAAA/B7GuNAGAAAA==" SecondaryType="31" Chargeable="Available for a charge">
+										<common_v32_0:ServiceData AirSegmentRef="1vWjNuBAAA/BeGuNAGAAAA=="/>
+										<common_v32_0:ServiceData AirSegmentRef="1vWjNuBAAA/BgGuNAGAAAA=="/>
+										<common_v32_0:ServiceInfo>
+											<common_v32_0:Description>Rebooking</common_v32_0:Description>
+											<common_v32_0:MediaItem caption="Agent" height="60" width="60" url="https://cdn.travelport.com/malaysia/MH_general_medium_4563.JPG"/>
+											<common_v32_0:MediaItem caption="Consumer" height="60" width="60" url="https://cdn.travelport.com/malaysia/MH_general_medium_4563.JPG"/>
+										</common_v32_0:ServiceInfo>
+										<air:EMD AssociatedItem="Flight"/>
+										<air:Text Type="Strapline">Rebooking</air:Text>
+										<air:Text Type="MarketingAgent">Rebooking
+Please refer to ticketing terms and conditions</air:Text>
+										<air:Text Type="MarketingConsumer">Rebooking
+Please refer to ticket agent</air:Text>
+									</air:OptionalService>
+									<air:OptionalService Type="RuleOverride" CreateDate="2017-04-25T02:31:06.670+00:00" Key="1vWjNuBAAA/B8GuNAGAAAA==" SecondaryType="33" Chargeable="Available for a charge">
+										<common_v32_0:ServiceData AirSegmentRef="1vWjNuBAAA/BeGuNAGAAAA=="/>
+										<common_v32_0:ServiceData AirSegmentRef="1vWjNuBAAA/BgGuNAGAAAA=="/>
+										<common_v32_0:ServiceInfo>
+											<common_v32_0:Description>Refund</common_v32_0:Description>
+											<common_v32_0:MediaItem caption="Consumer" height="60" width="60" url="https://cdn.travelport.com/malaysia/MH_general_medium_4564.JPG"/>
+											<common_v32_0:MediaItem caption="Agent" height="60" width="60" url="https://cdn.travelport.com/malaysia/MH_general_medium_4564.JPG"/>
+										</common_v32_0:ServiceInfo>
+										<air:EMD AssociatedItem="Flight"/>
+										<air:Text Type="Strapline">Refund</air:Text>
+										<air:Text Type="MarketingAgent">Refund
+Please refer to ticketing terms and conditions</air:Text>
+										<air:Text Type="MarketingConsumer">Refund
+Please refer to ticketing agent</air:Text>
+									</air:OptionalService>
+									<air:OptionalService Type="PreReservedSeatAssignment" CreateDate="2017-04-25T02:31:06.670+00:00" ServiceSubCode="0B5" Key="1vWjNuBAAA/B9GuNAGAAAA==" Chargeable="Included in the brand">
+										<common_v32_0:ServiceData AirSegmentRef="1vWjNuBAAA/BeGuNAGAAAA=="/>
+										<common_v32_0:ServiceData AirSegmentRef="1vWjNuBAAA/BgGuNAGAAAA=="/>
+										<common_v32_0:ServiceInfo>
+											<common_v32_0:Description>Prereserved Seat Assignment</common_v32_0:Description>
+											<common_v32_0:MediaItem caption="Agent" height="60" width="60" url="https://cdn.travelport.com/malaysia/MH_general_medium_879.jpg"/>
+											<common_v32_0:MediaItem caption="Consumer" height="60" width="60" url="https://cdn.travelport.com/malaysia/MH_general_medium_879.jpg"/>
+										</common_v32_0:ServiceInfo>
+										<air:EMD AssociatedItem="Flight"/>
+										<air:Text Type="Strapline">GRAB YOUR FAVOURITE SPOT</air:Text>
+										<air:Text Type="MarketingAgent">Front, middle, window or aisle? Free seat selection when your passenger check in online. Better yet, secure the preferred seats for free when they book.</air:Text>
+										<air:Text Type="MarketingConsumer">Front, middle, window or aisle? Free seat selection when you check in online. Better yet, secure the preferred seats for free when you book.</air:Text>
+									</air:OptionalService>
+								</air:OptionalServices>
+							</air:Brand>
+						</air:FareInfo>
+						<air:BookingInfo BookingCode="N" CabinClass="Economy" FareInfoRef="1vWjNuBAAA/BoGuNAGAAAA==" SegmentRef="1vWjNuBAAA/BaGuNAGAAAA=="/>
+						<air:BookingInfo BookingCode="L" CabinClass="Economy" FareInfoRef="1vWjNuBAAA/BoGuNAGAAAA==" SegmentRef="1vWjNuBAAA/BcGuNAGAAAA=="/>
+						<air:BookingInfo BookingCode="L" CabinClass="Economy" FareInfoRef="1vWjNuBAAA/BzGuNAGAAAA==" SegmentRef="1vWjNuBAAA/BeGuNAGAAAA=="/>
+						<air:BookingInfo BookingCode="N" CabinClass="Economy" FareInfoRef="1vWjNuBAAA/BzGuNAGAAAA==" SegmentRef="1vWjNuBAAA/BgGuNAGAAAA=="/>
+						<air:TaxInfo Category="LK" Amount="LKR7000" Key="1vWjNuBAAA/BkGuNAGAAAA=="/>
+						<air:TaxInfo Category="E7" Amount="LKR318" Key="1vWjNuBAAA/BlGuNAGAAAA=="/>
+						<air:TaxInfo Category="G8" Amount="LKR136" Key="1vWjNuBAAA/BmGuNAGAAAA=="/>
+						<air:TaxInfo Category="TS" Amount="LKR3172" Key="1vWjNuBAAA/BnGuNAGAAAA=="/>
+						<air:FareCalc>CMB MH X/KUL MH BKK 85.72NBC6M2LK MH X/KUL MH CMB 85.73NBC6M2LK NUC171.45END ROE151.642</air:FareCalc>
+						<air:PassengerType Code="ADT"/>
+						<air:ChangePenalty>
+							<air:Amount>LKR6000.0</air:Amount>
+						</air:ChangePenalty>
+						<air:BaggageAllowances>
+							<air:BaggageAllowanceInfo TravelerType="ADT" Origin="CMB" Destination="BKK" Carrier="MH">
+								<air:URLInfo>
+									<air:URL>MYTRIPANDMORE.COM/BAGGAGEDETAILSMH.BAGG</air:URL>
+								</air:URLInfo>
+								<air:TextInfo>
+									<air:Text>30K</air:Text>
+									<air:Text>BAGGAGE DISCOUNTS MAY APPLY BASED ON FREQUENT FLYER STATUS/ ONLINE CHECKIN/FORM OF PAYMENT/MILITARY/ETC.</air:Text>
+								</air:TextInfo>
+								<air:BagDetails ApplicableBags="1stChecked">
+									<air:BaggageRestriction>
+										<air:TextInfo>
+											<air:Text>CHGS MAY APPLY IF BAGS EXCEED TTL WT ALLOWANCE</air:Text>
+										</air:TextInfo>
+									</air:BaggageRestriction>
+								</air:BagDetails>
+								<air:BagDetails ApplicableBags="2ndChecked">
+									<air:BaggageRestriction>
+										<air:TextInfo>
+											<air:Text>CHGS MAY APPLY IF BAGS EXCEED TTL WT ALLOWANCE</air:Text>
+										</air:TextInfo>
+									</air:BaggageRestriction>
+								</air:BagDetails>
+							</air:BaggageAllowanceInfo>
+							<air:BaggageAllowanceInfo TravelerType="ADT" Origin="BKK" Destination="CMB" Carrier="MH">
+								<air:URLInfo>
+									<air:URL>MYTRIPANDMORE.COM/BAGGAGEDETAILSMH.BAGG</air:URL>
+								</air:URLInfo>
+								<air:TextInfo>
+									<air:Text>30K</air:Text>
+									<air:Text>BAGGAGE DISCOUNTS MAY APPLY BASED ON FREQUENT FLYER STATUS/ ONLINE CHECKIN/FORM OF PAYMENT/MILITARY/ETC.</air:Text>
+								</air:TextInfo>
+								<air:BagDetails ApplicableBags="1stChecked">
+									<air:BaggageRestriction>
+										<air:TextInfo>
+											<air:Text>CHGS MAY APPLY IF BAGS EXCEED TTL WT ALLOWANCE</air:Text>
+										</air:TextInfo>
+									</air:BaggageRestriction>
+								</air:BagDetails>
+								<air:BagDetails ApplicableBags="2ndChecked">
+									<air:BaggageRestriction>
+										<air:TextInfo>
+											<air:Text>CHGS MAY APPLY IF BAGS EXCEED TTL WT ALLOWANCE</air:Text>
+										</air:TextInfo>
+									</air:BaggageRestriction>
+								</air:BagDetails>
+							</air:BaggageAllowanceInfo>
+							<air:CarryOnAllowanceInfo Origin="CMB" Destination="KUL" Carrier="MH">
+								<air:TextInfo>
+									<air:Text>7K</air:Text>
+								</air:TextInfo>
+								<air:CarryOnDetails ApplicableCarryOnBags="1">
+									<air:BaggageRestriction>
+										<air:TextInfo>
+											<air:Text>CHGS MAY APPLY IF BAGS EXCEED TTL WT ALLOWANCE</air:Text>
+										</air:TextInfo>
+									</air:BaggageRestriction>
+								</air:CarryOnDetails>
+								<air:CarryOnDetails ApplicableCarryOnBags="2">
+									<air:BaggageRestriction>
+										<air:TextInfo>
+											<air:Text>CHGS MAY APPLY IF BAGS EXCEED TTL WT ALLOWANCE</air:Text>
+										</air:TextInfo>
+									</air:BaggageRestriction>
+								</air:CarryOnDetails>
+							</air:CarryOnAllowanceInfo>
+							<air:CarryOnAllowanceInfo Origin="KUL" Destination="BKK" Carrier="MH">
+								<air:TextInfo>
+									<air:Text>7K</air:Text>
+								</air:TextInfo>
+								<air:CarryOnDetails ApplicableCarryOnBags="1">
+									<air:BaggageRestriction>
+										<air:TextInfo>
+											<air:Text>CHGS MAY APPLY IF BAGS EXCEED TTL WT ALLOWANCE</air:Text>
+										</air:TextInfo>
+									</air:BaggageRestriction>
+								</air:CarryOnDetails>
+								<air:CarryOnDetails ApplicableCarryOnBags="2">
+									<air:BaggageRestriction>
+										<air:TextInfo>
+											<air:Text>CHGS MAY APPLY IF BAGS EXCEED TTL WT ALLOWANCE</air:Text>
+										</air:TextInfo>
+									</air:BaggageRestriction>
+								</air:CarryOnDetails>
+							</air:CarryOnAllowanceInfo>
+							<air:CarryOnAllowanceInfo Origin="BKK" Destination="KUL" Carrier="MH">
+								<air:TextInfo>
+									<air:Text>7K</air:Text>
+								</air:TextInfo>
+								<air:CarryOnDetails ApplicableCarryOnBags="1">
+									<air:BaggageRestriction>
+										<air:TextInfo>
+											<air:Text>CHGS MAY APPLY IF BAGS EXCEED TTL WT ALLOWANCE</air:Text>
+										</air:TextInfo>
+									</air:BaggageRestriction>
+								</air:CarryOnDetails>
+								<air:CarryOnDetails ApplicableCarryOnBags="2">
+									<air:BaggageRestriction>
+										<air:TextInfo>
+											<air:Text>CHGS MAY APPLY IF BAGS EXCEED TTL WT ALLOWANCE</air:Text>
+										</air:TextInfo>
+									</air:BaggageRestriction>
+								</air:CarryOnDetails>
+							</air:CarryOnAllowanceInfo>
+							<air:CarryOnAllowanceInfo Origin="KUL" Destination="CMB" Carrier="MH">
+								<air:TextInfo>
+									<air:Text>7K</air:Text>
+								</air:TextInfo>
+								<air:CarryOnDetails ApplicableCarryOnBags="1">
+									<air:BaggageRestriction>
+										<air:TextInfo>
+											<air:Text>CHGS MAY APPLY IF BAGS EXCEED TTL WT ALLOWANCE</air:Text>
+										</air:TextInfo>
+									</air:BaggageRestriction>
+								</air:CarryOnDetails>
+								<air:CarryOnDetails ApplicableCarryOnBags="2">
+									<air:BaggageRestriction>
+										<air:TextInfo>
+											<air:Text>CHGS MAY APPLY IF BAGS EXCEED TTL WT ALLOWANCE</air:Text>
+										</air:TextInfo>
+									</air:BaggageRestriction>
+								</air:CarryOnDetails>
+							</air:CarryOnAllowanceInfo>
+						</air:BaggageAllowances>
+					</air:AirPricingInfo>
+					<air:FareNote Key="1vWjNuBAAA/BCHuNAGAAAA==">LAST DATE TO PURCHASE TICKET: 11MAY17</air:FareNote>
+					<air:FareNote Key="1vWjNuBAAA/BDHuNAGAAAA==">TICKETING AGENCY 3OS2</air:FareNote>
+					<air:FareNote Key="1vWjNuBAAA/BEHuNAGAAAA==">DEFAULT PLATING CARRIER MH</air:FareNote>
+					<air:FareNote Key="1vWjNuBAAA/BFHuNAGAAAA==">FARE HAS A PLATING CARRIER RESTRICTION</air:FareNote>
+					<air:FareNote Key="1vWjNuBAAA/BGHuNAGAAAA==">E-TKT REQUIRED</air:FareNote>
+					<air:FareNote Key="1vWjNuBAAA/BHHuNAGAAAA==">TICKETING FEES MAY APPLY</air:FareNote>
+				</air:AirPricingSolution>
+				<air:AirPricingSolution Key="1vWjNuBAAA/BIHuNAGAAAA==" TotalPrice="LKR53626" BasePrice="LKR43000" ApproximateTotalPrice="LKR53626" ApproximateBasePrice="LKR43000" Taxes="LKR10626" Fees="LKR0" ApproximateTaxes="LKR10626" QuoteDate="2017-04-25">
+					<air:AirSegmentRef Key="1vWjNuBAAA/BaGuNAGAAAA=="/>
+					<air:AirSegmentRef Key="1vWjNuBAAA/BcGuNAGAAAA=="/>
+					<air:AirSegmentRef Key="1vWjNuBAAA/BeGuNAGAAAA=="/>
+					<air:AirSegmentRef Key="1vWjNuBAAA/BgGuNAGAAAA=="/>
+					<air:AirPricingInfo Key="1vWjNuBAAA/BJHuNAGAAAA==" TotalPrice="LKR53626" BasePrice="LKR43000" ApproximateTotalPrice="LKR53626" ApproximateBasePrice="LKR43000" ApproximateTaxes="LKR10626" Taxes="LKR10626" LatestTicketingTime="2017-05-11T23:59:00.000+05:30" PricingMethod="Guaranteed" IncludesVAT="false" ProviderCode="1G">
+						<air:FareInfo Key="1vWjNuBAAA/BOHuNAGAAAA==" FareBasis="LST1YLK" PassengerTypeCode="ADT" Origin="CMB" Destination="BKK" EffectiveDate="2017-04-25T08:01:00.000+05:30" DepartureDate="2017-05-11" Amount="LKR21500" NotValidBefore="2017-05-11" NotValidAfter="2017-05-11">
+							<air:FareRuleKey FareInfoRef="1vWjNuBAAA/BOHuNAGAAAA==" ProviderCode="1G">6UUVoSldxwixXG63Cx8PYMbKj3F8T9EyxsqPcXxP0TIjSPOlaHfQe5cuasWd6i8Dly5qxZ3qLwOXLmrFneovA5cuasWd6i8Dly5qxZ3qLwOXLmrFneovA/YV25EgQdfMM3ExqSoG053p4wIkM7kbX0gqu9B8w2wvQu0ZscBMSQ7/yqZm8ZlXAySCE/JUUwYn7CtyNzwnH5pSY1yGCHxykRll6FxyIC6cYuAWfcH2w92IEQfz1U0L7/jxCH9Ebg407Ly5FC7Xoh/qkp0FEw0raOCbZ1nsUQQBQszG+BQIvDehsWSR4dPD3+aeJIc23zoev4Xvb2u1Qx+/he9va7VDH7+F729rtUMfv4Xvb2u1Qx+/he9va7VDH8ONhV50oNexly5qxZ3qLwMUu+QC5Q/Q9kWeIAdiTsm/n1PVV9I9St4RBx60dqtdq8nxbkwlguBx5GwF8kqQiiA=</air:FareRuleKey>
+							<air:Brand Key="1vWjNuBAAA/BOHuNAGAAAA==" BrandID="60742" Name="Economy Smart" UpSellBrandFound="false" Carrier="MH">
+								<air:Title Type="External">Economy Smart</air:Title>
+								<air:Title Type="Short">Econ Smart</air:Title>
+								<air:Text Type="MarketingConsumer">Enjoy more services and added legroom space with Economy Smart
+
+Kick back and relax in the cosiest Economy Class seats. Be served by an award-winning cabin crew that is the epitome of Malaysian Hospitality</air:Text>
+								<air:Text Type="Upsell">Enjoy more services and added legroom space with Economy Smart</air:Text>
+								<air:Text Type="MarketingAgent">Enjoy more services and added legroom space with Economy Smart
+
+Kick back and relax in the cosiest Economy Class seats. Be served by an award-winning cabin crew that is the epitome of Malaysian Hospitality</air:Text>
+								<air:Text Type="Strapline">Home Away From Home</air:Text>
+								<air:ImageLocation Type="Agent" ImageWidth="150" ImageHeight="150">https://cdn.travelport.com/malaysia/MH_general_medium_889.jpg</air:ImageLocation>
+								<air:ImageLocation Type="Consumer" ImageWidth="150" ImageHeight="150">https://cdn.travelport.com/malaysia/MH_general_medium_889.jpg</air:ImageLocation>
+								<air:OptionalServices>
+									<air:OptionalService Type="Baggage" CreateDate="2017-04-25T02:31:06.670+00:00" Key="1vWjNuBAAA/BPHuNAGAAAA==" Chargeable="Included in the brand">
+										<common_v32_0:ServiceData AirSegmentRef="1vWjNuBAAA/BaGuNAGAAAA=="/>
+										<common_v32_0:ServiceData AirSegmentRef="1vWjNuBAAA/BcGuNAGAAAA=="/>
+										<common_v32_0:ServiceInfo>
+											<common_v32_0:Description>Checked in Baggage</common_v32_0:Description>
+											<common_v32_0:MediaItem caption="Agent" height="60" width="60" url="https://cdn.travelport.com/malaysia/MH_general_medium_880.jpg"/>
+											<common_v32_0:MediaItem caption="Consumer" height="60" width="60" url="https://cdn.travelport.com/malaysia/MH_general_medium_880.jpg"/>
+										</common_v32_0:ServiceInfo>
+										<air:EMD AssociatedItem="Flight"/>
+										<air:Text Type="Strapline">Checked in Baggage</air:Text>
+										<air:Text Type="MarketingAgent">Free baggage allowance and allowed dimension
+
+First Class - 2 pieces weighing 50 kg (110 lbs) / Not exceeding 158 cm (62 inch)
+Business Class - 2 pieces weighing 40 kg (88 lbs) / Not exceeding 158 cm (62 inch)
+Economy Class - 2 pieces weighing 30 kg (66 lbs) / Not exceeding 158 cm (62 inch)
+
+All sports equipment, including golfing equipment, will be carried as part of the free checked baggage allowance, and will be subject to excess baggage charges if overweight.</air:Text>
+										<air:Text Type="MarketingConsumer">Free baggage allowance and allowed dimension
+
+First Class - 2 pieces weighing 50 kg (110 lbs) / Not exceeding 158 cm (62 inch)
+Business Class - 2 pieces weighing 40 kg (88 lbs) / Not exceeding 158 cm (62 inch)
+Economy Class - 2 pieces weighing 30 kg (66 lbs) / Not exceeding 158 cm (62 inch)
+
+All sports equipment, including golfing equipment, will be carried as part of the free checked baggage allowance, and will be subject to excess baggage charges if overweight.</air:Text>
+									</air:OptionalService>
+									<air:OptionalService Type="Baggage" CreateDate="2017-04-25T02:31:06.670+00:00" ServiceSubCode="0LN" Key="1vWjNuBAAA/BQHuNAGAAAA==" SecondaryType="CY" Chargeable="Included in the brand">
+										<common_v32_0:ServiceData AirSegmentRef="1vWjNuBAAA/BaGuNAGAAAA=="/>
+										<common_v32_0:ServiceData AirSegmentRef="1vWjNuBAAA/BcGuNAGAAAA=="/>
+										<common_v32_0:ServiceInfo>
+											<common_v32_0:Description>Cabin Baggage</common_v32_0:Description>
+											<common_v32_0:MediaItem caption="Agent" height="60" width="60" url="https://cdn.travelport.com/malaysia/MH_general_medium_4562.jpg"/>
+											<common_v32_0:MediaItem caption="Consumer" height="60" width="60" url="https://cdn.travelport.com/malaysia/MH_general_medium_4562.jpg"/>
+										</common_v32_0:ServiceInfo>
+										<air:EMD AssociatedItem="Carry On Baggage Allowance"/>
+										<air:Text Type="Strapline">Cabin Baggage Allowance</air:Text>
+										<air:Text Type="MarketingAgent">To ensure that the cabin overhead compartments are not excessively full and for the safety, comfort and convenience of everyone on board, please ensure that you comply with our cabin baggage set of rules and allowances.
+
+Number of pieces allowed
+
+Maximum Weight
+
+Economy Class
+One piece 7 kg (15 lb)
+
+Business Class
+Two pieces 14 kg (31 lb) - in total
+
+First Class 
+Two pieces 14 kg (31 lb) - in total
+
+Remarks:-
+The cabin baggage allowance for Enrich Platinum and Gold / oneworld Emerald and Sapphire members remains as per their ticketed class of travel.</air:Text>
+										<air:Text Type="MarketingConsumer">To ensure that the cabin overhead compartments are not excessively full and for the safety, comfort and convenience of everyone on board, please ensure that you comply with our cabin baggage set of rules and allowances.
+
+Number of pieces allowed
+
+Maximum Weight
+
+Economy Class
+One piece 7 kg (15 lb)
+
+Business Class
+Two pieces 14 kg (31 lb) - in total
+
+First Class 
+Two pieces 14 kg (31 lb) - in total
+
+Remarks:-
+The cabin baggage allowance for Enrich Platinum and Gold / oneworld Emerald and Sapphire members remains as per their ticketed class of travel.</air:Text>
+									</air:OptionalService>
+									<air:OptionalService Type="InFlightEntertainment" CreateDate="2017-04-25T02:31:06.670+00:00" Key="1vWjNuBAAA/BRHuNAGAAAA==" Chargeable="Included in the brand">
+										<common_v32_0:ServiceData AirSegmentRef="1vWjNuBAAA/BaGuNAGAAAA=="/>
+										<common_v32_0:ServiceData AirSegmentRef="1vWjNuBAAA/BcGuNAGAAAA=="/>
+										<common_v32_0:ServiceInfo>
+											<common_v32_0:Description>Inflight Entertainment</common_v32_0:Description>
+											<common_v32_0:MediaItem caption="Agent" height="60" width="60" url="https://cdn.travelport.com/malaysia/MH_general_medium_875.jpg"/>
+											<common_v32_0:MediaItem caption="Consumer" height="60" width="60" url="https://cdn.travelport.com/malaysia/MH_general_medium_875.jpg"/>
+										</common_v32_0:ServiceInfo>
+										<air:EMD AssociatedItem="Flight"/>
+										<air:Text Type="Strapline">Catch All The New Releases</air:Text>
+										<air:Text Type="MarketingAgent">All the Hollywood Blockbusters in one easy bundle. You can also have your pick of the latest on TV, sports, music and news.</air:Text>
+										<air:Text Type="MarketingConsumer">All the Hollywood Blockbusters in one easy bundle. You can also have your pick of the latest on TV, sports, music and news.</air:Text>
+									</air:OptionalService>
+									<air:OptionalService Type="MealOrBeverage" CreateDate="2017-04-25T02:31:06.670+00:00" Key="1vWjNuBAAA/BSHuNAGAAAA==" Chargeable="Included in the brand">
+										<common_v32_0:ServiceData AirSegmentRef="1vWjNuBAAA/BaGuNAGAAAA=="/>
+										<common_v32_0:ServiceData AirSegmentRef="1vWjNuBAAA/BcGuNAGAAAA=="/>
+										<common_v32_0:ServiceInfo>
+											<common_v32_0:Description>Special Meal Service</common_v32_0:Description>
+											<common_v32_0:MediaItem caption="Agent" height="60" width="60" url="https://cdn.travelport.com/malaysia/MH_general_medium_878.jpg"/>
+											<common_v32_0:MediaItem caption="Consumer" height="60" width="60" url="https://cdn.travelport.com/malaysia/MH_general_medium_878.jpg"/>
+										</common_v32_0:ServiceInfo>
+										<air:EMD AssociatedItem="Flight"/>
+										<air:Text Type="Strapline">Special Meal Service</air:Text>
+										<air:Text Type="MarketingAgent">Malaysia Airlines o&#64256;ers up to 20 Special Meals to suit your religious, medical and dietary requirements. Furthermore, all meals served on Malaysia Airlines are halal and prepared in strict compliance to halal requirements.</air:Text>
+										<air:Text Type="MarketingConsumer">Malaysia Airlines o&#64256;ers up to 20 Special Meals to suit your religious, medical and dietary requirements. Furthermore, all meals served on Malaysia Airlines are halal and prepared in strict compliance to halal requirements.</air:Text>
+									</air:OptionalService>
+									<air:OptionalService Type="MealOrBeverage" CreateDate="2017-04-25T02:31:06.670+00:00" Key="1vWjNuBAAA/BTHuNAGAAAA==" Chargeable="Not offered">
+										<common_v32_0:ServiceData AirSegmentRef="1vWjNuBAAA/BaGuNAGAAAA=="/>
+										<common_v32_0:ServiceData AirSegmentRef="1vWjNuBAAA/BcGuNAGAAAA=="/>
+										<common_v32_0:ServiceInfo>
+											<common_v32_0:Description>Chef on Call</common_v32_0:Description>
+											<common_v32_0:MediaItem caption="Agent" height="60" width="60" url="https://cdn.travelport.com/malaysia/MH_general_medium_873.jpg"/>
+											<common_v32_0:MediaItem caption="Consumer" height="60" width="60" url="https://cdn.travelport.com/malaysia/MH_general_medium_873.jpg"/>
+										</common_v32_0:ServiceInfo>
+										<air:EMD AssociatedItem="Flight"/>
+										<air:Text Type="Strapline">Meals to your liking</air:Text>
+										<air:Text Type="MarketingAgent">Chef-on-Call is exclusively for passengers travelling in First Class and Business Class. Tantalise your taste buds with our Chef-On-Call menu, featuring 20 meal options that consist of Malaysian Favourites, Chef&#8217;s Recommendations, Light Choice and Healthy Choice.</air:Text>
+										<air:Text Type="MarketingConsumer">Chef-on-Call is exclusively for passengers travelling in First Class and Business Class. Tantalise your taste buds with our Chef-On-Call menu, featuring 20 meal options that consist of Malaysian Favourites, Chef&#8217;s Recommendations, Light Choice and Healthy Choice.</air:Text>
+									</air:OptionalService>
+									<air:OptionalService Type="RuleOverride" CreateDate="2017-04-25T02:31:06.670+00:00" Key="1vWjNuBAAA/BUHuNAGAAAA==" SecondaryType="31" Chargeable="Available for a charge">
+										<common_v32_0:ServiceData AirSegmentRef="1vWjNuBAAA/BaGuNAGAAAA=="/>
+										<common_v32_0:ServiceData AirSegmentRef="1vWjNuBAAA/BcGuNAGAAAA=="/>
+										<common_v32_0:ServiceInfo>
+											<common_v32_0:Description>Rebooking</common_v32_0:Description>
+											<common_v32_0:MediaItem caption="Agent" height="60" width="60" url="https://cdn.travelport.com/malaysia/MH_general_medium_4563.JPG"/>
+											<common_v32_0:MediaItem caption="Consumer" height="60" width="60" url="https://cdn.travelport.com/malaysia/MH_general_medium_4563.JPG"/>
+										</common_v32_0:ServiceInfo>
+										<air:EMD AssociatedItem="Flight"/>
+										<air:Text Type="Strapline">Rebooking</air:Text>
+										<air:Text Type="MarketingAgent">Rebooking
+Please refer to ticketing terms and conditions</air:Text>
+										<air:Text Type="MarketingConsumer">Rebooking
+Please refer to ticket agent</air:Text>
+									</air:OptionalService>
+									<air:OptionalService Type="RuleOverride" CreateDate="2017-04-25T02:31:06.670+00:00" Key="1vWjNuBAAA/BVHuNAGAAAA==" SecondaryType="33" Chargeable="Available for a charge">
+										<common_v32_0:ServiceData AirSegmentRef="1vWjNuBAAA/BaGuNAGAAAA=="/>
+										<common_v32_0:ServiceData AirSegmentRef="1vWjNuBAAA/BcGuNAGAAAA=="/>
+										<common_v32_0:ServiceInfo>
+											<common_v32_0:Description>Refund</common_v32_0:Description>
+											<common_v32_0:MediaItem caption="Consumer" height="60" width="60" url="https://cdn.travelport.com/malaysia/MH_general_medium_4564.JPG"/>
+											<common_v32_0:MediaItem caption="Agent" height="60" width="60" url="https://cdn.travelport.com/malaysia/MH_general_medium_4564.JPG"/>
+										</common_v32_0:ServiceInfo>
+										<air:EMD AssociatedItem="Flight"/>
+										<air:Text Type="Strapline">Refund</air:Text>
+										<air:Text Type="MarketingAgent">Refund
+Please refer to ticketing terms and conditions</air:Text>
+										<air:Text Type="MarketingConsumer">Refund
+Please refer to ticketing agent</air:Text>
+									</air:OptionalService>
+									<air:OptionalService Type="PreReservedSeatAssignment" CreateDate="2017-04-25T02:31:06.670+00:00" ServiceSubCode="0B5" Key="1vWjNuBAAA/BWHuNAGAAAA==" Chargeable="Included in the brand">
+										<common_v32_0:ServiceData AirSegmentRef="1vWjNuBAAA/BaGuNAGAAAA=="/>
+										<common_v32_0:ServiceData AirSegmentRef="1vWjNuBAAA/BcGuNAGAAAA=="/>
+										<common_v32_0:ServiceInfo>
+											<common_v32_0:Description>Prereserved Seat Assignment</common_v32_0:Description>
+											<common_v32_0:MediaItem caption="Agent" height="60" width="60" url="https://cdn.travelport.com/malaysia/MH_general_medium_879.jpg"/>
+											<common_v32_0:MediaItem caption="Consumer" height="60" width="60" url="https://cdn.travelport.com/malaysia/MH_general_medium_879.jpg"/>
+										</common_v32_0:ServiceInfo>
+										<air:EMD AssociatedItem="Flight"/>
+										<air:Text Type="Strapline">GRAB YOUR FAVOURITE SPOT</air:Text>
+										<air:Text Type="MarketingAgent">Front, middle, window or aisle? Free seat selection when your passenger check in online. Better yet, secure the preferred seats for free when they book.</air:Text>
+										<air:Text Type="MarketingConsumer">Front, middle, window or aisle? Free seat selection when you check in online. Better yet, secure the preferred seats for free when you book.</air:Text>
+									</air:OptionalService>
+								</air:OptionalServices>
+							</air:Brand>
+						</air:FareInfo>
+						<air:FareInfo Key="1vWjNuBAAA/BXHuNAGAAAA==" FareBasis="LST1YLK" PassengerTypeCode="ADT" Origin="BKK" Destination="CMB" EffectiveDate="2017-04-25T08:01:00.000+05:30" DepartureDate="2017-07-12" Amount="LKR21500" NotValidBefore="2017-07-12" NotValidAfter="2017-07-12">
+							<air:FareRuleKey FareInfoRef="1vWjNuBAAA/BXHuNAGAAAA==" ProviderCode="1G">6UUVoSldxwixXG63Cx8PYMbKj3F8T9EyxsqPcXxP0TIjSPOlaHfQe5cuasWd6i8Dly5qxZ3qLwOXLmrFneovA5cuasWd6i8Dly5qxZ3qLwOXLmrFneovA/YV25EgQdfMM3ExqSoG052ZyxcGCDDyT3sQ6CsYvDsK83f1UwCbb2X/yqZm8ZlXAySCE/JUUwYnGtr93vHn2HesnDhjAGY7khll6FxyIC6cYuAWfcH2w92IEQfz1U0L7/jxCH9Ebg407Ly5FC7Xoh/vWpSmZkrE0eCbZ1nsUQQBl0r5bQpBwzKhsWSR4dPD3+aeJIc23zoev4Xvb2u1Qx+/he9va7VDH7+F729rtUMfv4Xvb2u1Qx+/he9va7VDH8ONhV50oNexly5qxZ3qLwMUu+QC5Q/Q9kWeIAdiTsm/n1PVV9I9St4RBx60dqtdq8nxbkwlguBx5GwF8kqQiiA=</air:FareRuleKey>
+							<air:Brand Key="1vWjNuBAAA/BXHuNAGAAAA==" BrandID="60742" Name="Economy Smart" UpSellBrandFound="false" Carrier="MH">
+								<air:Title Type="External">Economy Smart</air:Title>
+								<air:Title Type="Short">Econ Smart</air:Title>
+								<air:Text Type="MarketingConsumer">Enjoy more services and added legroom space with Economy Smart
+
+Kick back and relax in the cosiest Economy Class seats. Be served by an award-winning cabin crew that is the epitome of Malaysian Hospitality</air:Text>
+								<air:Text Type="Upsell">Enjoy more services and added legroom space with Economy Smart</air:Text>
+								<air:Text Type="MarketingAgent">Enjoy more services and added legroom space with Economy Smart
+
+Kick back and relax in the cosiest Economy Class seats. Be served by an award-winning cabin crew that is the epitome of Malaysian Hospitality</air:Text>
+								<air:Text Type="Strapline">Home Away From Home</air:Text>
+								<air:ImageLocation Type="Agent" ImageWidth="150" ImageHeight="150">https://cdn.travelport.com/malaysia/MH_general_medium_889.jpg</air:ImageLocation>
+								<air:ImageLocation Type="Consumer" ImageWidth="150" ImageHeight="150">https://cdn.travelport.com/malaysia/MH_general_medium_889.jpg</air:ImageLocation>
+								<air:OptionalServices>
+									<air:OptionalService Type="Baggage" CreateDate="2017-04-25T02:31:06.670+00:00" Key="1vWjNuBAAA/BYHuNAGAAAA==" Chargeable="Included in the brand">
+										<common_v32_0:ServiceData AirSegmentRef="1vWjNuBAAA/BeGuNAGAAAA=="/>
+										<common_v32_0:ServiceData AirSegmentRef="1vWjNuBAAA/BgGuNAGAAAA=="/>
+										<common_v32_0:ServiceInfo>
+											<common_v32_0:Description>Checked in Baggage</common_v32_0:Description>
+											<common_v32_0:MediaItem caption="Agent" height="60" width="60" url="https://cdn.travelport.com/malaysia/MH_general_medium_880.jpg"/>
+											<common_v32_0:MediaItem caption="Consumer" height="60" width="60" url="https://cdn.travelport.com/malaysia/MH_general_medium_880.jpg"/>
+										</common_v32_0:ServiceInfo>
+										<air:EMD AssociatedItem="Flight"/>
+										<air:Text Type="Strapline">Checked in Baggage</air:Text>
+										<air:Text Type="MarketingAgent">Free baggage allowance and allowed dimension
+
+First Class - 2 pieces weighing 50 kg (110 lbs) / Not exceeding 158 cm (62 inch)
+Business Class - 2 pieces weighing 40 kg (88 lbs) / Not exceeding 158 cm (62 inch)
+Economy Class - 2 pieces weighing 30 kg (66 lbs) / Not exceeding 158 cm (62 inch)
+
+All sports equipment, including golfing equipment, will be carried as part of the free checked baggage allowance, and will be subject to excess baggage charges if overweight.</air:Text>
+										<air:Text Type="MarketingConsumer">Free baggage allowance and allowed dimension
+
+First Class - 2 pieces weighing 50 kg (110 lbs) / Not exceeding 158 cm (62 inch)
+Business Class - 2 pieces weighing 40 kg (88 lbs) / Not exceeding 158 cm (62 inch)
+Economy Class - 2 pieces weighing 30 kg (66 lbs) / Not exceeding 158 cm (62 inch)
+
+All sports equipment, including golfing equipment, will be carried as part of the free checked baggage allowance, and will be subject to excess baggage charges if overweight.</air:Text>
+									</air:OptionalService>
+									<air:OptionalService Type="Baggage" CreateDate="2017-04-25T02:31:06.670+00:00" ServiceSubCode="0LN" Key="1vWjNuBAAA/BZHuNAGAAAA==" SecondaryType="CY" Chargeable="Included in the brand">
+										<common_v32_0:ServiceData AirSegmentRef="1vWjNuBAAA/BeGuNAGAAAA=="/>
+										<common_v32_0:ServiceData AirSegmentRef="1vWjNuBAAA/BgGuNAGAAAA=="/>
+										<common_v32_0:ServiceInfo>
+											<common_v32_0:Description>Cabin Baggage</common_v32_0:Description>
+											<common_v32_0:MediaItem caption="Agent" height="60" width="60" url="https://cdn.travelport.com/malaysia/MH_general_medium_4562.jpg"/>
+											<common_v32_0:MediaItem caption="Consumer" height="60" width="60" url="https://cdn.travelport.com/malaysia/MH_general_medium_4562.jpg"/>
+										</common_v32_0:ServiceInfo>
+										<air:EMD AssociatedItem="Carry On Baggage Allowance"/>
+										<air:Text Type="Strapline">Cabin Baggage Allowance</air:Text>
+										<air:Text Type="MarketingAgent">To ensure that the cabin overhead compartments are not excessively full and for the safety, comfort and convenience of everyone on board, please ensure that you comply with our cabin baggage set of rules and allowances.
+
+Number of pieces allowed
+
+Maximum Weight
+
+Economy Class
+One piece 7 kg (15 lb)
+
+Business Class
+Two pieces 14 kg (31 lb) - in total
+
+First Class 
+Two pieces 14 kg (31 lb) - in total
+
+Remarks:-
+The cabin baggage allowance for Enrich Platinum and Gold / oneworld Emerald and Sapphire members remains as per their ticketed class of travel.</air:Text>
+										<air:Text Type="MarketingConsumer">To ensure that the cabin overhead compartments are not excessively full and for the safety, comfort and convenience of everyone on board, please ensure that you comply with our cabin baggage set of rules and allowances.
+
+Number of pieces allowed
+
+Maximum Weight
+
+Economy Class
+One piece 7 kg (15 lb)
+
+Business Class
+Two pieces 14 kg (31 lb) - in total
+
+First Class 
+Two pieces 14 kg (31 lb) - in total
+
+Remarks:-
+The cabin baggage allowance for Enrich Platinum and Gold / oneworld Emerald and Sapphire members remains as per their ticketed class of travel.</air:Text>
+									</air:OptionalService>
+									<air:OptionalService Type="InFlightEntertainment" CreateDate="2017-04-25T02:31:06.670+00:00" Key="1vWjNuBAAA/BaHuNAGAAAA==" Chargeable="Included in the brand">
+										<common_v32_0:ServiceData AirSegmentRef="1vWjNuBAAA/BeGuNAGAAAA=="/>
+										<common_v32_0:ServiceData AirSegmentRef="1vWjNuBAAA/BgGuNAGAAAA=="/>
+										<common_v32_0:ServiceInfo>
+											<common_v32_0:Description>Inflight Entertainment</common_v32_0:Description>
+											<common_v32_0:MediaItem caption="Agent" height="60" width="60" url="https://cdn.travelport.com/malaysia/MH_general_medium_875.jpg"/>
+											<common_v32_0:MediaItem caption="Consumer" height="60" width="60" url="https://cdn.travelport.com/malaysia/MH_general_medium_875.jpg"/>
+										</common_v32_0:ServiceInfo>
+										<air:EMD AssociatedItem="Flight"/>
+										<air:Text Type="Strapline">Catch All The New Releases</air:Text>
+										<air:Text Type="MarketingAgent">All the Hollywood Blockbusters in one easy bundle. You can also have your pick of the latest on TV, sports, music and news.</air:Text>
+										<air:Text Type="MarketingConsumer">All the Hollywood Blockbusters in one easy bundle. You can also have your pick of the latest on TV, sports, music and news.</air:Text>
+									</air:OptionalService>
+									<air:OptionalService Type="MealOrBeverage" CreateDate="2017-04-25T02:31:06.670+00:00" Key="1vWjNuBAAA/BbHuNAGAAAA==" Chargeable="Included in the brand">
+										<common_v32_0:ServiceData AirSegmentRef="1vWjNuBAAA/BeGuNAGAAAA=="/>
+										<common_v32_0:ServiceData AirSegmentRef="1vWjNuBAAA/BgGuNAGAAAA=="/>
+										<common_v32_0:ServiceInfo>
+											<common_v32_0:Description>Special Meal Service</common_v32_0:Description>
+											<common_v32_0:MediaItem caption="Agent" height="60" width="60" url="https://cdn.travelport.com/malaysia/MH_general_medium_878.jpg"/>
+											<common_v32_0:MediaItem caption="Consumer" height="60" width="60" url="https://cdn.travelport.com/malaysia/MH_general_medium_878.jpg"/>
+										</common_v32_0:ServiceInfo>
+										<air:EMD AssociatedItem="Flight"/>
+										<air:Text Type="Strapline">Special Meal Service</air:Text>
+										<air:Text Type="MarketingAgent">Malaysia Airlines o&#64256;ers up to 20 Special Meals to suit your religious, medical and dietary requirements. Furthermore, all meals served on Malaysia Airlines are halal and prepared in strict compliance to halal requirements.</air:Text>
+										<air:Text Type="MarketingConsumer">Malaysia Airlines o&#64256;ers up to 20 Special Meals to suit your religious, medical and dietary requirements. Furthermore, all meals served on Malaysia Airlines are halal and prepared in strict compliance to halal requirements.</air:Text>
+									</air:OptionalService>
+									<air:OptionalService Type="MealOrBeverage" CreateDate="2017-04-25T02:31:06.670+00:00" Key="1vWjNuBAAA/BcHuNAGAAAA==" Chargeable="Not offered">
+										<common_v32_0:ServiceData AirSegmentRef="1vWjNuBAAA/BeGuNAGAAAA=="/>
+										<common_v32_0:ServiceData AirSegmentRef="1vWjNuBAAA/BgGuNAGAAAA=="/>
+										<common_v32_0:ServiceInfo>
+											<common_v32_0:Description>Chef on Call</common_v32_0:Description>
+											<common_v32_0:MediaItem caption="Agent" height="60" width="60" url="https://cdn.travelport.com/malaysia/MH_general_medium_873.jpg"/>
+											<common_v32_0:MediaItem caption="Consumer" height="60" width="60" url="https://cdn.travelport.com/malaysia/MH_general_medium_873.jpg"/>
+										</common_v32_0:ServiceInfo>
+										<air:EMD AssociatedItem="Flight"/>
+										<air:Text Type="Strapline">Meals to your liking</air:Text>
+										<air:Text Type="MarketingAgent">Chef-on-Call is exclusively for passengers travelling in First Class and Business Class. Tantalise your taste buds with our Chef-On-Call menu, featuring 20 meal options that consist of Malaysian Favourites, Chef&#8217;s Recommendations, Light Choice and Healthy Choice.</air:Text>
+										<air:Text Type="MarketingConsumer">Chef-on-Call is exclusively for passengers travelling in First Class and Business Class. Tantalise your taste buds with our Chef-On-Call menu, featuring 20 meal options that consist of Malaysian Favourites, Chef&#8217;s Recommendations, Light Choice and Healthy Choice.</air:Text>
+									</air:OptionalService>
+									<air:OptionalService Type="RuleOverride" CreateDate="2017-04-25T02:31:06.670+00:00" Key="1vWjNuBAAA/BdHuNAGAAAA==" SecondaryType="31" Chargeable="Available for a charge">
+										<common_v32_0:ServiceData AirSegmentRef="1vWjNuBAAA/BeGuNAGAAAA=="/>
+										<common_v32_0:ServiceData AirSegmentRef="1vWjNuBAAA/BgGuNAGAAAA=="/>
+										<common_v32_0:ServiceInfo>
+											<common_v32_0:Description>Rebooking</common_v32_0:Description>
+											<common_v32_0:MediaItem caption="Agent" height="60" width="60" url="https://cdn.travelport.com/malaysia/MH_general_medium_4563.JPG"/>
+											<common_v32_0:MediaItem caption="Consumer" height="60" width="60" url="https://cdn.travelport.com/malaysia/MH_general_medium_4563.JPG"/>
+										</common_v32_0:ServiceInfo>
+										<air:EMD AssociatedItem="Flight"/>
+										<air:Text Type="Strapline">Rebooking</air:Text>
+										<air:Text Type="MarketingAgent">Rebooking
+Please refer to ticketing terms and conditions</air:Text>
+										<air:Text Type="MarketingConsumer">Rebooking
+Please refer to ticket agent</air:Text>
+									</air:OptionalService>
+									<air:OptionalService Type="RuleOverride" CreateDate="2017-04-25T02:31:06.670+00:00" Key="1vWjNuBAAA/BeHuNAGAAAA==" SecondaryType="33" Chargeable="Available for a charge">
+										<common_v32_0:ServiceData AirSegmentRef="1vWjNuBAAA/BeGuNAGAAAA=="/>
+										<common_v32_0:ServiceData AirSegmentRef="1vWjNuBAAA/BgGuNAGAAAA=="/>
+										<common_v32_0:ServiceInfo>
+											<common_v32_0:Description>Refund</common_v32_0:Description>
+											<common_v32_0:MediaItem caption="Consumer" height="60" width="60" url="https://cdn.travelport.com/malaysia/MH_general_medium_4564.JPG"/>
+											<common_v32_0:MediaItem caption="Agent" height="60" width="60" url="https://cdn.travelport.com/malaysia/MH_general_medium_4564.JPG"/>
+										</common_v32_0:ServiceInfo>
+										<air:EMD AssociatedItem="Flight"/>
+										<air:Text Type="Strapline">Refund</air:Text>
+										<air:Text Type="MarketingAgent">Refund
+Please refer to ticketing terms and conditions</air:Text>
+										<air:Text Type="MarketingConsumer">Refund
+Please refer to ticketing agent</air:Text>
+									</air:OptionalService>
+									<air:OptionalService Type="PreReservedSeatAssignment" CreateDate="2017-04-25T02:31:06.670+00:00" ServiceSubCode="0B5" Key="1vWjNuBAAA/BfHuNAGAAAA==" Chargeable="Included in the brand">
+										<common_v32_0:ServiceData AirSegmentRef="1vWjNuBAAA/BeGuNAGAAAA=="/>
+										<common_v32_0:ServiceData AirSegmentRef="1vWjNuBAAA/BgGuNAGAAAA=="/>
+										<common_v32_0:ServiceInfo>
+											<common_v32_0:Description>Prereserved Seat Assignment</common_v32_0:Description>
+											<common_v32_0:MediaItem caption="Agent" height="60" width="60" url="https://cdn.travelport.com/malaysia/MH_general_medium_879.jpg"/>
+											<common_v32_0:MediaItem caption="Consumer" height="60" width="60" url="https://cdn.travelport.com/malaysia/MH_general_medium_879.jpg"/>
+										</common_v32_0:ServiceInfo>
+										<air:EMD AssociatedItem="Flight"/>
+										<air:Text Type="Strapline">GRAB YOUR FAVOURITE SPOT</air:Text>
+										<air:Text Type="MarketingAgent">Front, middle, window or aisle? Free seat selection when your passenger check in online. Better yet, secure the preferred seats for free when they book.</air:Text>
+										<air:Text Type="MarketingConsumer">Front, middle, window or aisle? Free seat selection when you check in online. Better yet, secure the preferred seats for free when you book.</air:Text>
+									</air:OptionalService>
+								</air:OptionalServices>
+							</air:Brand>
+						</air:FareInfo>
+						<air:BookingInfo BookingCode="L" CabinClass="Economy" FareInfoRef="1vWjNuBAAA/BOHuNAGAAAA==" SegmentRef="1vWjNuBAAA/BaGuNAGAAAA=="/>
+						<air:BookingInfo BookingCode="L" CabinClass="Economy" FareInfoRef="1vWjNuBAAA/BOHuNAGAAAA==" SegmentRef="1vWjNuBAAA/BcGuNAGAAAA=="/>
+						<air:BookingInfo BookingCode="L" CabinClass="Economy" FareInfoRef="1vWjNuBAAA/BXHuNAGAAAA==" SegmentRef="1vWjNuBAAA/BeGuNAGAAAA=="/>
+						<air:BookingInfo BookingCode="L" CabinClass="Economy" FareInfoRef="1vWjNuBAAA/BXHuNAGAAAA==" SegmentRef="1vWjNuBAAA/BgGuNAGAAAA=="/>
+						<air:TaxInfo Category="LK" Amount="LKR7000" Key="1vWjNuBAAA/BKHuNAGAAAA=="/>
+						<air:TaxInfo Category="E7" Amount="LKR318" Key="1vWjNuBAAA/BLHuNAGAAAA=="/>
+						<air:TaxInfo Category="G8" Amount="LKR136" Key="1vWjNuBAAA/BMHuNAGAAAA=="/>
+						<air:TaxInfo Category="TS" Amount="LKR3172" Key="1vWjNuBAAA/BNHuNAGAAAA=="/>
+						<air:PassengerType Code="ADT"/>
+						<air:BaggageAllowances>
+							<air:BaggageAllowanceInfo TravelerType="ADT" Origin="CMB" Destination="BKK" Carrier="MH">
+								<air:URLInfo>
+									<air:URL>MYTRIPANDMORE.COM/BAGGAGEDETAILSMH.BAGG</air:URL>
+								</air:URLInfo>
+								<air:TextInfo>
+									<air:Text>30K</air:Text>
+									<air:Text>BAGGAGE DISCOUNTS MAY APPLY BASED ON FREQUENT FLYER STATUS/ ONLINE CHECKIN/FORM OF PAYMENT/MILITARY/ETC.</air:Text>
+								</air:TextInfo>
+								<air:BagDetails ApplicableBags="1stChecked">
+									<air:BaggageRestriction>
+										<air:TextInfo>
+											<air:Text>CHGS MAY APPLY IF BAGS EXCEED TTL WT ALLOWANCE</air:Text>
+										</air:TextInfo>
+									</air:BaggageRestriction>
+								</air:BagDetails>
+								<air:BagDetails ApplicableBags="2ndChecked">
+									<air:BaggageRestriction>
+										<air:TextInfo>
+											<air:Text>CHGS MAY APPLY IF BAGS EXCEED TTL WT ALLOWANCE</air:Text>
+										</air:TextInfo>
+									</air:BaggageRestriction>
+								</air:BagDetails>
+							</air:BaggageAllowanceInfo>
+							<air:BaggageAllowanceInfo TravelerType="ADT" Origin="BKK" Destination="CMB" Carrier="MH">
+								<air:URLInfo>
+									<air:URL>MYTRIPANDMORE.COM/BAGGAGEDETAILSMH.BAGG</air:URL>
+								</air:URLInfo>
+								<air:TextInfo>
+									<air:Text>30K</air:Text>
+									<air:Text>BAGGAGE DISCOUNTS MAY APPLY BASED ON FREQUENT FLYER STATUS/ ONLINE CHECKIN/FORM OF PAYMENT/MILITARY/ETC.</air:Text>
+								</air:TextInfo>
+								<air:BagDetails ApplicableBags="1stChecked">
+									<air:BaggageRestriction>
+										<air:TextInfo>
+											<air:Text>CHGS MAY APPLY IF BAGS EXCEED TTL WT ALLOWANCE</air:Text>
+										</air:TextInfo>
+									</air:BaggageRestriction>
+								</air:BagDetails>
+								<air:BagDetails ApplicableBags="2ndChecked">
+									<air:BaggageRestriction>
+										<air:TextInfo>
+											<air:Text>CHGS MAY APPLY IF BAGS EXCEED TTL WT ALLOWANCE</air:Text>
+										</air:TextInfo>
+									</air:BaggageRestriction>
+								</air:BagDetails>
+							</air:BaggageAllowanceInfo>
+							<air:CarryOnAllowanceInfo Origin="CMB" Destination="KUL" Carrier="MH">
+								<air:TextInfo>
+									<air:Text>7K</air:Text>
+								</air:TextInfo>
+								<air:CarryOnDetails ApplicableCarryOnBags="1">
+									<air:BaggageRestriction>
+										<air:TextInfo>
+											<air:Text>CHGS MAY APPLY IF BAGS EXCEED TTL WT ALLOWANCE</air:Text>
+										</air:TextInfo>
+									</air:BaggageRestriction>
+								</air:CarryOnDetails>
+								<air:CarryOnDetails ApplicableCarryOnBags="2">
+									<air:BaggageRestriction>
+										<air:TextInfo>
+											<air:Text>CHGS MAY APPLY IF BAGS EXCEED TTL WT ALLOWANCE</air:Text>
+										</air:TextInfo>
+									</air:BaggageRestriction>
+								</air:CarryOnDetails>
+							</air:CarryOnAllowanceInfo>
+							<air:CarryOnAllowanceInfo Origin="KUL" Destination="BKK" Carrier="MH">
+								<air:TextInfo>
+									<air:Text>7K</air:Text>
+								</air:TextInfo>
+								<air:CarryOnDetails ApplicableCarryOnBags="1">
+									<air:BaggageRestriction>
+										<air:TextInfo>
+											<air:Text>CHGS MAY APPLY IF BAGS EXCEED TTL WT ALLOWANCE</air:Text>
+										</air:TextInfo>
+									</air:BaggageRestriction>
+								</air:CarryOnDetails>
+								<air:CarryOnDetails ApplicableCarryOnBags="2">
+									<air:BaggageRestriction>
+										<air:TextInfo>
+											<air:Text>CHGS MAY APPLY IF BAGS EXCEED TTL WT ALLOWANCE</air:Text>
+										</air:TextInfo>
+									</air:BaggageRestriction>
+								</air:CarryOnDetails>
+							</air:CarryOnAllowanceInfo>
+							<air:CarryOnAllowanceInfo Origin="BKK" Destination="KUL" Carrier="MH">
+								<air:TextInfo>
+									<air:Text>7K</air:Text>
+								</air:TextInfo>
+								<air:CarryOnDetails ApplicableCarryOnBags="1">
+									<air:BaggageRestriction>
+										<air:TextInfo>
+											<air:Text>CHGS MAY APPLY IF BAGS EXCEED TTL WT ALLOWANCE</air:Text>
+										</air:TextInfo>
+									</air:BaggageRestriction>
+								</air:CarryOnDetails>
+								<air:CarryOnDetails ApplicableCarryOnBags="2">
+									<air:BaggageRestriction>
+										<air:TextInfo>
+											<air:Text>CHGS MAY APPLY IF BAGS EXCEED TTL WT ALLOWANCE</air:Text>
+										</air:TextInfo>
+									</air:BaggageRestriction>
+								</air:CarryOnDetails>
+							</air:CarryOnAllowanceInfo>
+							<air:CarryOnAllowanceInfo Origin="KUL" Destination="CMB" Carrier="MH">
+								<air:TextInfo>
+									<air:Text>7K</air:Text>
+								</air:TextInfo>
+								<air:CarryOnDetails ApplicableCarryOnBags="1">
+									<air:BaggageRestriction>
+										<air:TextInfo>
+											<air:Text>CHGS MAY APPLY IF BAGS EXCEED TTL WT ALLOWANCE</air:Text>
+										</air:TextInfo>
+									</air:BaggageRestriction>
+								</air:CarryOnDetails>
+								<air:CarryOnDetails ApplicableCarryOnBags="2">
+									<air:BaggageRestriction>
+										<air:TextInfo>
+											<air:Text>CHGS MAY APPLY IF BAGS EXCEED TTL WT ALLOWANCE</air:Text>
+										</air:TextInfo>
+									</air:BaggageRestriction>
+								</air:CarryOnDetails>
+							</air:CarryOnAllowanceInfo>
+						</air:BaggageAllowances>
+					</air:AirPricingInfo>
+				</air:AirPricingSolution>
+			</air:AirPriceResult>
+		</air:AirPriceRsp>
 	</SOAP:Body>
 </SOAP:Envelope>

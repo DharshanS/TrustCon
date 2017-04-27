@@ -12,7 +12,7 @@ include_once  PLUG_DIR.'/models/PricingFly.php';
 
 $reReq=$_POST['reservationRequest'];
 $pricingData=unserialize($_SESSION['pricingData']);
-$searchData=$_SESSION['searchData'];
+$searchData=$_SESSION['searchdata'];
 $passMap=array("ADT"=>"1","CNN"=>"2","INF"=>"3");
 $passangers=$searchData['passengers'];
 $basepare=$pricingData->priceDetails->baseFare;
@@ -156,11 +156,12 @@ $fullTxt = substr($inf_dob,0,2).$upTxt.substr($inf_dob,5,2);
                 $soapRequest.='<air:FareInfo Amount="'.$fareInfp['Amount'].'" DepartureDate="'.$fareInfp['DepartureDate'].'"'
 				   .' Destination="'.$fareInfp['Destination'].'" EffectiveDate="'.$fareInfp['EffectiveDate'].'"' 
 				   .' FareBasis="'.$fareInfp['FareBasis'].'" Key="'.$fareInfp['Key'].'"';
-                        if(isset($fareInfp['NotValidAfter']))
+                $NotValidAfter;       
+                if(isset($fareInfp['NotValidAfter']))
                         {
-                            $NotValidAfter=$fareInfp['NotValidAfter'];
+                        $NotValidAfter=$fareInfp['NotValidAfter'];
                         }
-                     
+                     $NotValidBefore;
                         if(isset($fareInfp['NotValidBefore']))
                         {
                             $NotValidBefore=$fareInfp['NotValidBefore'];

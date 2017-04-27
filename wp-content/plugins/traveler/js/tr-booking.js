@@ -242,7 +242,7 @@ return bookRequest;
 
 function makeReservationAjax(request,mode)
 {
-    alert('makeReservation called'+ request);
+    alert('makeReservation called'+ request.email);
        jQuery.ajax({
  	type: 'post', 
         data:{action:'makeReservation',reservationRequest:request,paymode:mode},

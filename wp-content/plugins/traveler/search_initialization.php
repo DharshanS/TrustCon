@@ -27,7 +27,7 @@ function search_flights() {
 add_action("wp_ajax_makeReservation", "makeReservation");
 add_action("wp_ajax_nopriv_makeReservation", "makeReservation");
 function makeReservation() {
-    return require(plugin_dir_path(__FILE__) . '/service/MakeReservation.php' );
+    return require(plugin_dir_path(__FILE__) . '/service/ReservationRequest.php' );
 }
 
 
