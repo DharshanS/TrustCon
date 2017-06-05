@@ -6,7 +6,8 @@ class PaymentInitJsonHelper implements IJsonHelper {
         
     }
 
-    public function fromJson($responseData) {
+    public function fromJson($responseData)
+    {
         $paymentInitResponse = new PaymentInitResponse();
         $paymentInitResponse->setReqid($responseData["responseData"]["reqid"]);
         $paymentInitResponse->setExpireAt($responseData["responseData"]["expireAt"]);

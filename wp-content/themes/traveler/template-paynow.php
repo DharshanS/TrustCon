@@ -55,12 +55,11 @@ if($r!=''){
 	//$wpdb->get_results("SELECT * FROM wp_postmeta WHERE post_id='".$r."'");
 	//error_log(print_r($wpdb,true));
 	$sql= 'SELECT * FROM wp_postmeta WHERE post_id="'.$r.'"';
-	error_log($sql);
+	
 	$result = $mysqli->query($sql);
-	//$result = $mysqli->query($SQL);
-	//$result = mysqli_query($mysqli, $SQL);
+	;
 	foreach($result as $rt){
-		error_log("db data -- >". print_r($rt,true));
+		
 		$metavalues[$rt['meta_key']]=$rt['meta_value'];
 		$post_id=$rt['post_id'];
 	}
@@ -73,7 +72,7 @@ $TRIPID=isset($metavalues['TRIPID'])?$metavalues['TRIPID']:'';
 //if(strlen($cost)>3)$cost=substr($cost,3);
 //$cost=str_replace(",","",str_replace("","",$cost));
 
-$pay_amount=$cost;
+$pay_amount=$cost*100;
 
 /*------------------------------------------------------------------------------
 STEP1: Build ClientConfig object
@@ -102,10 +101,10 @@ $initRequest->setExtraData(array("post_id" => $post_id,"booking_type"=>''));
 $transactionAmount = new TransactionAmount();
 $transactionAmount->setTotalAmount(0);
 $transactionAmount->setServiceFeeAmount(0);
-$transactionAmount->setPaymentAmount($pay_amount);
+$transactionAmount->setPaymentAmount($pay_amount);//$pay_amount
 //$transactionAmount->setCurrency("AUD");
 $transactionAmount->setCurrency("LKR");
-$initRequest->setTransactionAmount($transactionAmount);
+$initRequest->setTransactionAmount($transactionAmount);//
 // sets redirect settings
 $redirect = new Redirect();
 //$redirect->setReturnUrl("http://localhost:8080/travel/wp-content/plugins/traveler/paycorp-client-php/au.com.gateway.IT/pcw_payment-complete_paynow_UT.php");
@@ -118,7 +117,7 @@ STEP4: Process PaymentInitRequest object
 ------------------------------------------------------------------------------*/
 $initResponse = $Client->payment()->init($initRequest);
 
-error_log("PaymentUrl--->".$initResponse->getPaymentPageUrl());
+//error_log("PaymentUrl--->".$initResponse->getPaymentPageUrl());
 
 /*------------------------------------------------------------------------------
 STEP5: Extract PaymentInitResponse object

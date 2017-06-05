@@ -83,7 +83,8 @@ $data=$responseArray['SOAPBody']['universalAirCreateReservationRsp']['universalU
 	{
 		$tripId=$util->tripIdGenerator();
 	}
-insert_resertvation($reservationRsp,$data,$tripId,$resReq);
+	
+	update_reservation($reservationRsp,$data,$tripId,$resReq);
 //email_send($resReq,$tripId);
 	
 }

@@ -2,7 +2,6 @@
 
 
 $path=PLUG_DIR.'paycorp-client-php';
-echo($path);
 include  $path.'/au.com.gateway.client/GatewayClient.php';
 include $path.'/au.com.gateway.client.config/ClientConfig.php';
 include $path.'/au.com.gateway.client.component/RequestHeader.php';
@@ -59,8 +58,8 @@ $completeRequest->setReqid($_GET['reqid']);
 STEP4: Process PaymentCompleteRequest object
 ------------------------------------------------------------------------------*/
 
-error_log(" PayNow Request --->". print_r($completeRequest,true));
-sendPost();
+//error_log(" PayNow Request --->". print_r($completeRequest,true));
+$response=init_reservation();
 
 $completeResponse = $Client->payment()->complete($completeRequest);
 
@@ -78,47 +77,22 @@ STEP5: Process PaymentCompleteResponse object
 //echo '<br>----------------------------------------------------------------------';
 // Code below by Abdul Manashi @lozingle.com
 $extradata=$completeResponse->getExtraData();
-error_log("Extra Data --->".print_r($extradata,true));
+//error_log("Extra Data --->".print_r($extradata,true));
 $post_id=$extradata[0]['post_id'];
 
 if($post_id=='' || $post_id<1){
 	die('<div align="center" style="padding: 10% 0;">Your session has expired, please start with a new search!!!!!</div>');
 }
 
-init_reservation();
-//after_reservation();
+
+
 
 
 $txnReference=$completeResponse->getTxnReference();
 $responseCode=$completeResponse->getResponseCode();
 $responseText=$completeResponse->getResponseText();
 
-require_once('../../PHPMailer/PHPMailerAutoload.php'); 
-require_once("../../mailsettings.php");
-$adminmail=$mailsetters['adminmail'];
-$mailsubject="PCW Payment-Complete Respopnse:";
 
-$mailhtml='Txn Reference : ' . $completeResponse->getTxnReference().'';
-$mailhtml.='<br>Response Code : ' . $completeResponse->getResponseCode().'';
-$mailhtml.='<br>Response Text : ' . $completeResponse->getResponseText().'';
-$mailhtml.='<br>Settlement Date : ' . $completeResponse->getSettlementDate().'';
-$mailhtml.='<br>Auth Code : ' . $completeResponse->getAuthCode().'';
-$mailhtml.='<br>Token : ' . $completeResponse->getToken().'';
-$mailhtml.='<br>Token Response Text: ' . $completeResponse->getTokenResponseText().'';
-
-$mail = new PHPMailer;
-$mail->isSMTP(); 
-$mail->Host = $mailsetters['host']; 
-$mail->SMTPAuth = $mailsetters['smtpauth'];    
-$mail->SMTPDebug  =$mailsetters['smtpdebug'];
-$mail->Port =$mailsetters['port'];   
-$mail->Username = $mailsetters['username'];                
-$mail->Password = $mailsetters['password'];                         
-$mail->SMTPSecure = $mailsetters['smtpsecure'];                            
-$mail->From = $mailsetters['from'];
-$mail->FromName = $mailsetters['fromname'];
-
-require_once("../../travelportsettings.php");
 
 
 $db = new DBconnet();
@@ -140,21 +114,10 @@ echo '<div align="center" style="padding: 10% 0;">Transaction was processed succ
 }else if($responseCode=='91' || $responseCode=='92' || $responseCode=='A4' || $responseCode=='C5' || $responseCode=='T3' || $responseCode=='T4' || $responseCode=='U9' || $responseCode=='X1' || $responseCode=='X3' || $responseCode=='-1' || $responseCode=='C0' || $responseCode=='A6'){
 echo '<div align="center" style="padding: 10% 0;">Banking Network Temporarily Unavailable -Please try again later.</div>';
 }else{
- //echo '<div align="center" style="padding: 10% 0;">Payment Declined - Please try an alternative card.</div>';
+// echo '<div align="center" style="padding: 10% 0;">$responseText</div>';
  echo '<div align="center" style="padding: 10% 0;">'.$responsindb.'</div>';
 }
-$mail->addAddress($adminmail); 
-$mail->addReplyTo($mailsetters['from']);
-$mail->isHTML(true);
-$mail->Subject = $mailsubject;
-$mail->Body    = $mailhtml;
-$mail->send();
-
-
-function sendPost()
-{
-    init_reservation();
-}
+email_send_after_reservation_to_admin($completeResponse);
 
 
 

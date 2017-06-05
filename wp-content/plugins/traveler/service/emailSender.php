@@ -6,15 +6,13 @@
  * and open the template in the editor.
  */
 
-require_once("../../../../wp-load.php");
 
-include(get_home_path()."mpdf60/mpdf.php");
 
 
 require_once(get_home_path().'PHPMailer/PHPMailerAutoload.php');
 require_once(PLUG_DIR."/core/MailSettings.php");
 require_once(PLUG_DIR.'/utility/FlightUtility.php');
-session_start();
+//session_start();
 set_time_limit(0);
 date_default_timezone_set('Asia/Colombo');
 function email_send($resReq,$tripId)
@@ -240,4 +238,38 @@ function get_passanger_details($resReq)
 	}
 	$mailhtml .= '</table>';
 	return $mailhtml;
+}
+
+function email_send_after_reservation_to_admin($completeResponse)
+{
+	$mailsetters=$GLOBALS['mailsetters'];
+	$adminmail=$mailsetters['adminmail'];
+	$mailsubject="PCW Payment-Complete Respopnse:";
+
+	$mailhtml='Txn Reference : ' . $completeResponse->getTxnReference().'';
+	$mailhtml.='<br>Response Code : ' . $completeResponse->getResponseCode().'';
+	$mailhtml.='<br>Response Text : ' . $completeResponse->getResponseText().'';
+	$mailhtml.='<br>Settlement Date : ' . $completeResponse->getSettlementDate().'';
+	$mailhtml.='<br>Auth Code : ' . $completeResponse->getAuthCode().'';
+	$mailhtml.='<br>Token : ' . $completeResponse->getToken().'';
+	$mailhtml.='<br>Token Response Text: ' . $completeResponse->getTokenResponseText().'';
+
+	$mail = new PHPMailer;
+	$mail->isSMTP();
+	$mail->Host = $mailsetters['host'];
+	$mail->SMTPAuth = $mailsetters['smtpauth'];
+	$mail->SMTPDebug  =$mailsetters['smtpdebug'];
+	$mail->Port =$mailsetters['port'];
+	$mail->Username = $mailsetters['username'];
+	$mail->Password = $mailsetters['password'];
+	$mail->SMTPSecure = $mailsetters['smtpsecure'];
+	$mail->From = $mailsetters['from'];
+	$mail->FromName = $mailsetters['fromname'];
+
+	$mail->addAddress($adminmail);
+	$mail->addReplyTo($mailsetters['from']);
+	$mail->isHTML(true);
+	$mail->Subject = $mailsubject;
+	$mail->Body    = $mailhtml;
+	$mail->send();
 }

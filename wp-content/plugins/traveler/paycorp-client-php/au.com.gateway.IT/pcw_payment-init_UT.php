@@ -24,8 +24,8 @@
 <?php
 
 date_default_timezone_set('Asia/Colombo');
-error_reporting(E_ALL);
-ini_set('display_errors', 1);
+//error_reporting(E_ALL);
+//ini_set('display_errors', 1);
 /*------------------------------------------------------------------------------
 STEP1: Build ClientConfig object
 ------------------------------------------------------------------------------*/
@@ -67,7 +67,7 @@ $initRequest->setRedirect($redirect);
 STEP4: Process PaymentInitRequest object
 ------------------------------------------------------------------------------*/
 $initResponse = $Client->payment()->init($initRequest);
- echo $initResponse->getPaymentPageUrl(); 
+ //echo $initResponse->getPaymentPageUrl();
 /*------------------------------------------------------------------------------
 STEP5: Extract PaymentInitResponse object
 ------------------------------------------------------------------------------*/

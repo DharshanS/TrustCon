@@ -15,14 +15,10 @@ include_once  PLUG_DIR.'/service/ReservationResponse.php';
 function init_reservation()
 {
 
-    $reReq = $_POST['reservationRequest'];
-    error_log('reservationRequest ---- >' . print_r($reReq, true));
-    $paymode = $_POST['paymode'];
-    error_log('reservationRequest ---- >' . print_r($_SESSION['pay_details'], true));
+    $reReq = $_SESSION['pay_details'];
+    $paymode = $_SESSION['searchdata'];
+    error_log('reservationRequest ---- >' . print_r($paymode, true));
     $_SESSION['booking_reason'] = $paymode;
-//$_SESSION['reservation_details']=$reReq;
-
-    return;
     $pricingData = unserialize($_SESSION['price']);
     $searchData = $_SESSION['searchdata'];
 
@@ -185,7 +181,7 @@ function init_reservation()
         . '</soapenv:Envelope>';
 
 
-    error_log("Reservation Request ---- >" . $soapRequest);
+    //error_log("Reservation Request ---- >" . $soapRequest);
     $response = $util->sendPost(ENDPOINT, $soapRequest, "ReservationResponse.xml");
 
     return process_reservation_response($response, $reReq);

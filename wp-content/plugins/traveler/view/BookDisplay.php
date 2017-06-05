@@ -369,5 +369,5 @@ $util = new FlightUtility();
 
 
 <?php
-    before_reservation();
+   
 } ?>

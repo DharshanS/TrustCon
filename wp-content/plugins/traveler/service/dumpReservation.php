@@ -1,12 +1,13 @@
 <?php
 include_once PLUG_DIR.'/models/PricingFly.php';
+include_once PLUG_DIR.'/core/DBconnet.php';
 /* 
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
 
-function after_reservation($resp,$data,$mytripid,$resReq)
+function reservation_price_details($resReq)
 {
     $price_details = $_SESSION['price_details'];
     $post_id=  $_SESSION['post_id'];
@@ -21,10 +22,8 @@ function after_reservation($resp,$data,$mytripid,$resReq)
     $traveltype = $searchdata['mode'];
     $from = $searchdata['from_city'];
     $to = $searchdata['to_city'];
-    $PNR = $resp['uniRecLocCode'];
-     $booking_reason = ['booking_reason'];
-    $proResInfoLocCode = $resp['proResInfoLocCode'];
-    $ticketNumber = $resp['proResInfoLocCode'];
+
+
     $totalNetAmount = $price_details['totalNetAmount'];
     $totalBaseAmount = $price_details['totalBaseAmount'];
     $totalDiscont = $price_details['totalDiscount'];
@@ -36,18 +35,12 @@ function after_reservation($resp,$data,$mytripid,$resReq)
     $depatureTime = $price_details['departureTime'];
     $depatureDate = date("D, d M Y", $depatureTime);
     $booking_reason = $_SESSION['booking_reason'];
-    $booking_date = $resp['booking_date'];
-    $tickettype = $resp['ticket_type'];
-    $ticketdate = $resp['ticket_date'];
     $email=$resReq['email'];
 
 
+
     $SQL = "INSERT INTO `wp_postmeta` (`post_id`, `meta_key`, `meta_value`) VALUES";
-    $SQL .= "($post_id, 'TRIPID', '$mytripid'),";
-    $SQL .= "($post_id, 'PNR', '$PNR'),";
-    $SQL .= "($post_id, 'provider_code','$proResInfoLocCode'),";
-    $SQL .= "($post_id, 'ticket_number', '$ticketNumber'),";
-    $SQL .= "($post_id, 'AIRDATA', '" . base64_encode(serialize($data)) . "'),";
+
     $SQL .= "($post_id, 'from', '$from'),";
     $SQL .= "($post_id, 'to', '$to'),";
     $SQL .= "($post_id, 'totalprice', '$totalNetAmount'),";
@@ -63,27 +56,17 @@ function after_reservation($resp,$data,$mytripid,$resReq)
     $SQL.="($post_id, 'send_offers', '1'),";
     $SQL.="($post_id, 'contact_email', '$email'),";
     $SQL .= "($post_id, 'booking_reason', '" . $booking_reason . "'),";
-    if ($booking_date != '')
-        $SQL .= "($post_id, 'bookingdate', '" . date("Y-m-d H:i:s", strtotime($booking_date)) . "'),";
-    else
-        $SQL .= "($post_id, 'bookingdate', '" . date("Y-m-d H:i:s") . "'),";
 
-    $SQL .= "($post_id, 'tickettype', '$tickettype'),";
-    if ($ticketdate != '')
-        $SQL .= "($post_id, 'ticketdate', '" . date("Y-m-d H:i:s", strtotime($ticketdate)) . "'),";
-    else
-        $SQL .= "($post_id, 'ticketdate', ''),";
 
-    $SQL .= "($post_id, 'booking_entries', '" . base64_encode(serialize($price_dts)) . "'),";
-    $SQL .= "($post_id, 'searchdata', '" . $searchdata . "')";
+    $SQL .= "($post_id, 'booking_entries', '" .base64_encode(serialize($price_dts)) . "'),";
+    $SQL .= "($post_id, 'searchdata', '" .base64_encode($searchdata). "')";
     $db = new DBconnet();
     $mysqli = $db->getDbConnetion();
     $result = $mysqli->query($SQL);
     $mysqli->commit();
 
 // PNR history
-    $SQL = "INSERT INTO `pnr_history` SET `post_author`='" . $post_author . "',`post_id`='" . $post_id . "',`PNR`='" . $PNR . "',`ticket_number`='" . $ticketNumber . "',`departdate`='" . $departdate . "',`departtime`='" . $depatureTime . "',  `returndate`='" . $returndate . "'";
-    $mysqli->query($SQL);
+
 }
 
 function before_reservation()
@@ -138,3 +121,47 @@ function before_reservation()
     $_SESSION['post_id'] = $post_id;
 }
 
+function update_reservation($reservationRsp,$data,$tripId,$resReq)
+{   $post_id=  $_SESSION['post_id'];
+    $pnr=$reservationRsp['uniRecLocCode'];
+    $proResInfoLocCode = $reservationRsp['proResInfoLocCode'];
+    $ticketNumber = $reservationRsp['proResInfoLocCode'];
+    $booking_date = $reservationRsp['booking_date'];
+    $tickettype = $reservationRsp['ticket_type'];
+    $ticketdate = $reservationRsp['ticket_date'];
+    $email=$resReq['email'];
+    $price_details = $_SESSION['price_details'];
+
+    $db = new DBconnet();
+    $mysqli = $db->getDbConnetion();
+    $SQL = "INSERT INTO `wp_postmeta` (`post_id`, `meta_key`, `meta_value`) VALUES";
+    $SQL .= "($post_id, 'TRIPID', '$tripId'),";
+    $SQL .= "($post_id, 'PNR', '$pnr'),";
+    $SQL .= "($post_id, 'provider_code','$proResInfoLocCode'),";
+    $SQL .= "($post_id, 'AIRDATA', '" . base64_encode(serialize($data)) . "'),";
+    $SQL .= "($post_id, 'ticket_number', '$ticketNumber'),";
+    if ($booking_date != '')
+        $SQL .= "($post_id, 'bookingdate', '" . date("Y-m-d H:i:s", strtotime($booking_date)) . "'),";
+    else
+        $SQL .= "($post_id, 'bookingdate', '" . date("Y-m-d H:i:s") . "'),";
+
+    $SQL .= "($post_id, 'tickettype', '$tickettype'),";
+    if ($ticketdate != '')
+        $SQL .= "($post_id, 'ticketdate', '" . date("Y-m-d H:i:s", strtotime($ticketdate)) . "'),";
+    else
+        $SQL .= "($post_id, 'ticketdate', ''),";
+    $mysqli = $db->getDbConnetion();
+    $result = $mysqli->query($SQL);
+    $mysqli->commit();
+    $userid = get_current_user_id();
+    $post_author = $userid;
+
+    $reurnDate = $price_details['returnDate'];
+    $depatureTime = $price_details['departureTime'];
+    $depatureDate = date("D, d M Y", $depatureTime);
+    $reurnDate = $price_details['returnDate'];
+    $SQL = "INSERT INTO `pnr_history` SET `post_author`='" . $post_author . "',`post_id`='" . $post_id . "',`PNR`='" . $pnr. "',`ticket_number`='" . $ticketNumber . "',`departdate`='" . $depatureDate . "',`departtime`='" . $depatureTime . "',  `returndate`='" . $reurnDate . "'";
+    $mysqli->query($SQL);
+
+
+}

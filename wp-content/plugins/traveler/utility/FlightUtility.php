@@ -145,8 +145,11 @@ if (!class_exists('FlightUtility')) {
 
             $xml = preg_replace("/(<\/?)(\w+):([^>]*>)/", "$1$2$3", $resp);
             $xml = simplexml_load_string($xml);
+            error_log("Response Xml-----> ".$xml);
+
             $json = json_encode($xml);
             error_log('Response Json--->' . print_r($json, true));
+
             $responseArray = json_decode($json, true);
             return $responseArray;
 

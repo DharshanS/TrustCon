@@ -1,5 +1,5 @@
 jQuery(document).ready(function(){
-alert("clik !!!");
+
 
 jQuery("#cl").on("click", function() {
     alert("clik !!!");
