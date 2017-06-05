@@ -1,37 +1,760 @@
-/*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
-*/
-/* 
-    Created on : Mar 23, 2017, 11:21:48 AM
-    Author     : Dharshan
-*/
-/*
-.show-flight
-{
-    background-color: green;
-    box-shadow: 0 0 5px #4b4b4b;
-    background: #fff;
-    box-shadow: 0 0 5px #4b4b4b;
-    font-family: "Roboto", sans-serif;
-    margin: 25px 0;
-    width: 100%;
-    border:solid;
-    border-color: black;
-    display: none;
+/*html,body {
+  height: 100%; margin: 0px; padding: 0px; }
+
+#navbar {
+  margin-bottom:0; }
+
+.alert {
+  border-radius: 0; }
+
+.container {
+  width:100%;
+  padding-right: 0;
+  padding-left: 0;
+  margin-right: auto;
+  margin-left: auto; }
+
+.col-xs-1, .col-sm-1, .col-md-1, .col-sm-1, 
+.col-xs-2, .col-sm-2, .col-md-2, .col-sm-2, 
+.col-xs-3, .col-sm-3, .col-md-3, .col-sm-3, 
+.col-xs-4, .col-sm-4, .col-md-4, .col-sm-4, 
+.col-xs-5, .col-sm-5, .col-md-5, .col-sm-5, 
+.col-xs-6, .col-sm-6, .col-md-6, .col-sm-6, 
+.col-xs-7, .col-sm-7, .col-md-7, .col-sm-7, 
+.col-xs-8, .col-sm-8, .col-md-8, .col-sm-8, 
+.col-xs-9, .col-sm-9, .col-md-9, .col-sm-9, 
+.col-xs-10, .col-sm-10, .col-md-10, .col-sm-10, 
+.col-xs-11, .col-sm-11, .col-md-11, .col-sm-11, 
+.col-xs-12, .col-sm-12, .col-md-12, .col-sm-12 {
+  position: relative;
+  height:100%;
+  min-height: 1px;
+  padding-right: 0;
+  padding-left: 0; }
+
+.row {
+  margin-right: 0;
+  margin-left: 0; }
+
+.footer {
+  margin-top: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  border-top: none; }
+
+.panel {
+  border:none; }*/
+.main_head{
+    width:100%; /* 2000px */
+    height:72px;    
+}
+.fstmain > li{
+    float:left;
+}
+
+.fstmain > li > a >img{
+padding: 0px 5px;
+}
+.fstmain > li > a{
+    padding:25px 4px 28px 4px;
+}
+.sub_head{
+    width:100%;
+    height:100px;
+}
+.lgbrand{
+    /*width:153px;*/
+    height:98px;
+    float: left;
+}
+.fstsub > li{
+    float:left;
+}
+.navlinks{
+    /*width: 985px;*/
+    height:98px;
+    float: left;
+}
+
+.navlinks > .navbar-inner > .pull-right{
+    padding:20px 0px;
+}
+ul.fstsub > li > a.btnbook{
+   
+    width: 148px;
+    height: 64px;   
+    text-align: center;   
+    background: url(../images/btnbook.png)no-repeat 0px 0px;
+    background-size: 80%;
+}
+
+ul.fstsub > li > a.btnphone{
+   
+    width: 62px;
+    height: 100px;
+    color: #29b7d1;    
+    background: url(../images/phone.png)no-repeat top left;
+    background-size: 80%;
+    margin: 0px 2px 0px -23px;
+}
+
+.nav>li>a {
+    position: relative;
+    display: block;
+    padding: 14px 15px;
+}
+
+.bkform{
+    width: 400px;
+    height: 420px;
+    background-color: #ffffff;
+    margin-top: 70px;
+    position: absolute;
+    z-index: 1;
+    margin-left: 45px;
+    padding: 15px;
+    border:2px solid #0e6cdc;
+}
+
+.flgparent{
+    padding:0px 15px;
+}
+
+/*.flightbtn{
+    height: 37px;
+    background: url(../v1/images/flight.png)no-repeat 0px 0px;
+    width: 140px;
 }*/
 
-.payOptions h2
-{
-  font-family: "sans-serif!important";  
-  font-size: 20px;
-  color: black;
+.hotlparent{
+    padding:0px 29px;
+}
+
+.hotelbtn{
+   height: 37px;
+   background: url(../images/hotel.png)no-repeat 0px 0px;
+   width: 140px;
+}
+
+.ticktparent{
+   text-align: center;
+   color:#0e6cdc;
+   font-weight: bold;
+   padding: 10px 0px; 
+    
+}
+
+.clsradio{
+    margin:3px;
+}
+
+.frmcon{
+   height:37px;
+   margin: 15px 0px 0px 0px;
+   font-style:italic; 
+   background-color:#d6d6d6; 
+}
+
+.datepickerdepcls , .datepickertrncls {
+   width:150px;
+   height:37px;
+   margin: 15px 10px 0px 0px;
+   float: left;
+   font-style: italic; 
+   background-color:#d6d6d6; 
+}
+
+.datepickertrncls{
+   margin: 15px 0px 0px 25px; 
+}
+.searchbtn{
+    height: 37px;
+    background: url(../images/search.png)no-repeat 0px 0px;
+    width: 140px;
+    float: right;
+    margin: 15px 0px 0px 0px;
+}
+
+select.selectpicker {
+  -moz-appearance: none;
+   -webkit-appearance: none;
+   appearance: none;
+}
+
+/*input {
+    -webkit-appearance: textfield;
+    background-color: white;
+    -webkit-rtl-ordering: logical;
+    user-select: text;
+    cursor: auto;
+    padding: 1px;
+    border-width: 0px;
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 0px;
+    border-left-width: 0px;
+    border-style: inset;
+    border-color: initial;
+    border-image: initial;
+}*/
+
+.sladult , .slchildren , .slinfants , .slcls{
+   width: 72px;
+   height: 37px;
+   margin: 15px 12px 0px 0px;
+   font-style: italic;
+   float: left;
+   padding: 7px;
+   background-color:#d6d6d6; 
+}
+
+.slchildren {
+  width:89px;  
+}
+
+.slinfants{
+  width: 75px;  
+}
+
+.slcls{
+  width:62px;
+  margin: 15px 0px 0px 0px;
+}
+
+.pckcol{
+  text-align: center;
+  padding:3% 0% 0% 0%;
+      
+}
+
+.pckcol > h3{    
+  display:inline-block;
+  font-family: "Droid Sans", sans-serif;
+}
+
+.councol{
+  padding: 3% 7% 7% 7%;  
+    
+}
+.custcol{
+   background-color:#d6d6d6;
+   padding: 4% 2%; 
+}
+
+.custcolfirst{
+   float:left;
+   margin:10% 10% 10% 3%;
+}
+
+.custcolfirst > img{
+    width:80px;
+}
+
+.custcolsecond{
+    margin: 2% 11%;
+    font-family: "Droid Sans", sans-serif;
+}
+
+.custcolsecond > p:first-child{
+    font-size:18px;
+    font-family:"Droid Sans", sans-serif;
+}
+
+.custcolsecond > p:second-child{
+   font-size:12px;
+   font-family: "Droid Sans", sans-serif;
+} 
+
+.custcolleft{
+    background-color:#b3b3b3;
+}
+
+.interpckcol{
+    text-align: center;
+    padding:5%;
+}
+
+.interpckcol > h3{
+   display:inline-block;
+   font-family: Myriad Pro;
+}
+
+.intercolfirst{
+    padding: 0% 10%;
+}
+
+.colfirst{
+    padding: 0% 3%;
+}
+
+.colsecond{
+    margin: 0% 3%;
+    padding: 2% 3%;
+    background-color: #f0f5f6;
+    height: 175px;
+}
+
+.colsecond > p.colp1{
+    font-size: 16px;
+    font-family: Myriad Pro;
+}
+
+.colsecond > p.colp2{
+    color: #3880c1;
+    font-family: Myriad Pro;
+    font-size: 16px;
+}
+
+.colsecond > p.colp3{
+    font-family: Myriad Pro;
+    font-size: 16px;
+}
+
+.colsecond > p.colp4{
+    font-family: Myriad Pro;
+    float: left;
+    padding:4px 8px 8px 0px;
+    text-decoration: line-through;
+    font-size: 16px;
+}
+
+.colsecond > p.colp5{
+    font-size: 20px;
+    float: left;
+    color: #3880c1;
+    font-family: Myriad Pro;
+}
+
+.footlist > li{
+    float:left;
+}
+.login {
+  background: url(../images/twittericon.png) no-repeat 0px center;
+  width: 50px;
+  height: 50px;
+  display: block;
+}
+
+.login1 {
+  background: url(../images/fbicon.png) no-repeat 0px center;
+  width: 50px;
+  height: 50px;
+  display: block;
+}
+.login2 {
+  background: url(../images/camicon.png) no-repeat 0px center;
+  width: 50px;
+  height: 50px;
+  display: block;
+}
+
+
+
+.phonecls{
+    background: url(../images/phoneicon.png) no-repeat 2px;
+    background-size: 10%;      
+}
+
+.fstsub>li>a {
+    position: relative;
+    display: block;
+    padding: 25px 35px;
+    font-size: 19px;
+    font-family:Myriad Pro;
+   
+}
+
+ th{
+    padding: 25px 30px;
+    background-color: #167ff1;
+    font-family: Myriad Pro;
+    color: #fff;
+    
+}
+
+td {
+   padding: 50px 0px;
+    
+}
+
+tbody{
+    background-color:#ebeef0; 
+}
+
+input{
+   padding: 0px 5px;
+   height:20px;
+   font-size: 16px;
+   
+}
+.flightbtn{
+    width:80px;
+    height:100px;
+    background: url('../images/v1/flightbtn.png') no-repeat;
+    position: relative;
+        left: 20px;
+    z-index:1;
+  
+    
+    
+    
+    
+}
+
+.btnsearch{
+     position: absolute;
+    width: 90px;
+    height: 50px;
+     margin: -8px 56px;
+    padding: 0!important;
+    font-size: 12px !important;
+    line-height: 0 !important;
+    /* border-radius: 0 !important; */
+    background-color: #0c367e;
+}
+
+.flightdetails > div {
+    padding:0px !important;
+}
+textarea{
+    border:none;
+}
+
+/*.fstcol > div > input{
+  border:none;
+  //background-color:#ffffff;  
+  //text-align:center; 
+}
+
+.sedcol  > div > input{
+  border:none;
+ // background-color: #ebeef0;   
+  //text-align:center;
+} 
+*/
+
+
+input:focus {
+    outline-offset: -2px;
+}
+
+:focus {
+    outline: -webkit-focus-ring-color auto 5px;
+    outline-color: -webkit-focus-ring-color;
+    outline-style: auto;
+    outline-width: 5px;
+}
+
+.lbltxtarea{
+    width: 90%;
+    border:none;
+    font-size: 12px; 
+}
+
+.txtradio{
+    height: 15px;
+    float: left;
+    margin: 1px 8px !important;
+}
+
+.flight_main{
+    background-color:#ebeef0;
+}
+
+.flight_main > .navbar{
+    padding: 30px 100px 0px 100px;
+}
+
+.flight_con{
+    
+}
+
+.flight_con > .fstrow{
+    padding: 70px 25px 0px 25px;
+    width: 85%;
+    display: inline-block;
+}
+
+.fstrow > .fstmainrow{
+    background-color: #167ff1;
+    padding: -21px 31px;
+    color: #fff;
+    /* font-family: "Droid Sans", sans-serif; */
+    font-size: 11px !important;
+    /* margin-left: 209px; */
+    /* height: 54px; */
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: #167ff1 !important;
+    position: relative;
+    left: 17%;
+    width: 86%;
 
 }
-.payOptions
+
+.fstcol1{
+    padding: 1% 0% 0% 0%;
+}
+
+.secrow{
+       padding: 0px 7px;
+    width: 74%;
+    display: inline-block;
+    margin-left: 100px;
+    padding-left: 32px;
+    padding-right: 0px;
+    font-family: "Droid Sans", sans-serif;
+    font-size: 12px !important;
+    
+}
+.secrowmain{
+    height: 80px;
+    padding: 20px 0px 0px 0px;
+    font-family:"Droid Sans", sans-serif;
+    background-color: #ebeef0;
+}
+
+.secrowcol1{
+    margin: 0% -3% 0% 0%;
+    text-align:left;
+    padding: 0px 10px !important;
+}
+
+.secrowcol2{
+    margin: 0% 7% 0% 0%;
+    
+} 
+.fontMeera{
+ 
+    font-family: FontAwesome;
+    width: 71%;
+    position: relative;
+    left: 14%!important;
+
+}
+.secrowcol3{
+    margin: 0px 0px 0px 25px;
+}
+
+.secrowcol4{
+    margin: 0px 3px 0px 5px;
+}
+
+.secrowcol5{
+   margin: 0px 0px 0px -24px;
+   
+}
+
+.thdrowmain{
+    padding:0px 0px 25px 0px;
+    font-family: "Droid Sans", sans-serif;
+    background-color: #ebeef0;
+}
+
+.thdrowcol1{
+    margin: 0% -3% 0% 0%;
+}
+
+.thdrowcol2{
+    margin: 0% 7%;
+}
+
+.thdrowcol3{
+    margin: 0% -6%;
+}
+
+.thdrowcol4{
+    margin: 0% -9%;
+}
+
+.frthrowmain{
+    padding: 70px 25px 0px 25px;
+    width: 85%;
+    display: inline-block;
+}
+
+.frthrowsub{
+    height:46px;
+    padding: 20px 20px 0px 20px;
+    font-family:"Droid Sans", sans-serif;
+    background:url('../images/v1/border1.png')no-repeat;
+    margin-left: 100px;
+}
+
+.frthrowmain > table{
+    width:58.5%;
+    background-color:#fff;
+    float:left;
+}
+
+.tblfst{
+   background-color:#fff;
+}
+
+.tblscd{
+    background-color:#ebeef0;
+}
+
+.tblfst > td , .tblscd >td{
+    width:70px;
+    padding: 30px 0px;
+}
+
+.tblfst > td > textarea{
+    width:126.5px;
+    height:70px;
+    border:none;
+}
+
+.tblscd > td > textarea{
+    width:126.5px;
+    height:70px;
+    background-color:#ebeef0;
+}
+
+.ticketright{
+    width:30.2%;
+    background-color:#ebeef0;
+    height:275px;
+    margin-top: -2px;
+    float:left;
+    background:url('../images/v1/ticket1.png') no-repeat;
+        height: 141px;
+    
+}
+
+#depchildid{
+    width: 50%;
+    float:left;
+    margin: 0px 0px 0px -23px;
+    border:none;
+}
+
+#depinfantid{
+    width: 50%;
+    float:left;
+    margin: 0px 0px 0px 9px;
+    border:none;
+}
+
+#depclassid{
+    width: 110px;
+    margin: 0px 0px 0px 6px;
+    border:none;
+}
+
+#depairlnid{
+    margin: 0px 82px;
+    float: left;
+    width: 120px;
+    border:none;
+    
+}
+
+.secrowcol3 > .lbltxtarea{
+    width: 50%;
+}
+
+.secrowcol4 > .scdlbl{
+    width: 50%;
+    float:left;
+    margin: 0px 0px 0px 9px;
+}
+
+.secrowcol4 > .fstlbl{
+    width: 50%;
+    float:left;
+    margin: 0px 0px 0px -23px;
+}
+
+.thdrowcol3 > .lbltxtarea{
+    width: 110px;
+    margin: 0px 0px 0px 6px;
+}
+
+.thdrowcol4 > .lbltxtarea{
+    margin: 0px 82px;
+    float: left;
+    width: 120px;
+}
+
+#departfromid , #depdestinationid ,#depdateid ,#deparriveid{
+    width: 200px;
+    border:none;
+}
+
+#depadultid{
+    width: 50%;
+    border:none;
+}
+#departfromid {
+    width:100px;
+}
+.result_table
 {
-    /*Segoe,"Segoe UI","Open Sans","DejaVu Sans","Trebuchet MS",Verdana,sans-serif!important*/
- font-family: "Segoe UI";    
-font-weight: normal; 
+    margin-left: 100px;
+    font-family: "Droid Sans", sans-serif;
+    font-size: 12px;
+        height: 138px;
+}
+.result_table tr
+{
+    width: 500px;
+}
+.fly_sel
+{
+     margin-top: -32px;
+    margin-left: 10px;
+    margin-bottom: 0px;   
+}
+table td, table th {
+    border-width: 1px;
+    padding: 5px;
+    border-style: none !important; 
+/*     border-color:; */
+    text-align: left;
+}
+.tiket_head .row
+{
+    
+    font-family:"Droid Sans", sans-serif !important;
+    font-size: 10px;
+    background:url('../images/v1/border1.png')no-repeat;
+   
+     margin-left: 125px;
+    margin-top: 5%;
+        height: 40px;
+    
+}
+.tiket_body .tkt_dts{
+    font-family:"Droid Sans", sans-serif !important;
+    font-size: 12px;
+    background-color: white;
+        width: 55%;
+        min-height: 150px;
+    margin-left: 142px
+        
+}
+.tiket_body .tkt_dts .row
+{
+margin-top: 2%; 
+}
+.prz_dts
+{
+    background:url('../images/v1/ticket1.png') no-repeat;
+      min-height: 150px !important;
+    
+}
+.flySelect
+{
+
+}
+.v1_fsq
+{
+   margin-top: 20px; 
+}
+.moreFlys
+{
+    margin: 10px !important;
 }

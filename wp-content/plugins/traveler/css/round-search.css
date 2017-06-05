@@ -1,0 +1,195 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : May 16, 2017, 12:15:02 PM
+    Author     : mirdu
+*/
+.flight_con
+{
+    font-family: Segoe,"Segoe UI","Open Sans","DejaVu Sans","Trebuchet MS",Verdana,sans-serif !important;
+}
+.tiket_head_r .row
+{
+    
+
+    font-size: 10px;
+    background:url('../images/v1/border1.png')no-repeat;
+   
+     margin-left: 125px;
+    margin-top: 5%;
+        height: 40px;
+            position: relative;
+    left: 11%;
+    
+}
+.tiket_body_r .tkt_dts_r{
+
+    font-size: 12px;
+    background-color: white;
+   
+    
+        width: 90%;
+
+    margin-left: -7px;
+    margin-bottom: -51px;
+        min-height: 105% !important;
+/*        border-style: solid;*/
+        
+}
+.tkt_dts_r_m
+{
+
+    font-size: 12px;
+    background-color: white;
+   
+      width: 100%;
+    min-height: 150px;
+    margin-left: 115px !important;
+}
+.tiket_body_r .tkt_dts_r .row
+{
+margin-top: 2%; 
+}
+.prz_dts_r
+{
+    background:url('../images/v1/round.png') no-repeat;
+      min-height: 300px !important;
+          margin-left: -87px;
+/*          background-color: red;*/
+    width: 25%!important;
+        left: 8.1%;
+            min-height: 275px !important;
+    margin-left: -9.5%;
+    /* background-color: red; */
+    width: 31%!important;
+    left: 4%;
+    
+}
+.round_tr
+{
+      top: 90% !important;
+    width: 75% !important;
+
+    font-size: 12px;
+    background-color: white;
+    /* margin-left: 135px !important; */
+    width: 93% !important;
+    position: relative;
+    top: 144% !important;
+}
+.out-select
+{
+        margin-left: 6px !important;
+    margin-right: 8px !important;
+    margin-bottom: 2px !important;
+}
+.out-p
+{
+    padding-right: 10px !important;
+}
+
+.out-moretime
+{ 
+    padding: 1px 2px !important;
+
+    font-size: 11px !important;
+    margin-left: 24px;
+    color:white;
+    background-color: #003d99 !important;
+        
+}
+.out-p2
+{
+   margin-top: 10px;
+}
+.rnd-out-1
+{
+    width: 30.333333% !important;
+}
+.rd-airimage{
+    max-width: 50%;
+}
+.airdiv{
+     width: 60% !important;
+     margin-left: 91%;
+     margin-bottom: -18px !important;
+
+     font-size: 11px !important;
+         z-index: 1;
+}
+.item-rd
+{
+    border-style: solid;
+    border-color: #0047b3;
+     width: 80.6%;
+    border-radius: 10px;
+    margin-left: 11%!important;
+    border-width: 2px;
+    margin-bottom: 4px;
+   background-color: white !important;
+       position: relative;
+    left: 11%;
+}
+.shw
+{
+  
+        top: 157px!important;
+
+     font-size: 13px !important;
+     position: relative;
+       color:orange !important;
+}
+.shw2{
+      top: 157px!important;
+
+     font-size: 13px !important;
+     position: relative;
+    color:orange !important;
+}
+.bk-bt{
+     position: relative;
+       border-style: none;
+          top: 116px !important;
+    left: 37%;
+}
+.mtf
+{
+
+    
+         border-style: solid;
+    font-family: "Droid Sans", sans-serif !important;
+    font-size: 11px !important;
+    width: 127% !important;
+    margin-top: 2%;
+        margin-left: -1.7%!important;
+
+}
+.line-img
+{
+       
+    border-color: grey;
+    position: relative;
+    left: 189px;
+    top: 67px;
+    background-color: grey;
+    min-height: 3px !important; 
+   padding: 0 !important;
+}
+
+.row
+{
+    margin-left: 0px !important;
+}
+
+.cls-flight-prz
+{
+    color: white;
+    font-weight: bold;
+    position: relative;
+    top: 86px;
+    left: 58px;
+    font-size: 27px;
+}

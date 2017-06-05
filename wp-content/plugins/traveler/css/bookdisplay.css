@@ -1,0 +1,433 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : May 20, 2017, 9:44:19 AM
+    Author     : mirdu
+*/
+
+.flight_main{
+    background-color:#ebeef0;
+}
+
+.flight_main > .navbar{
+    padding: 30px 100px 0px 100px !important;
+}
+
+.fstsub > li{
+    float:left !important;
+}
+.phonecls{
+    background: url('../images/v1/phoneicon.png') no-repeat 2px !important;
+    background-size: 10% !important;      
+}
+
+.flicon{
+       background: url(../images/v1/ticketsimble.png) no-repeat !important;
+    width: 43px !important;
+    height: 41px !important;
+    background-size: 47% !important;
+    padding-left: 14px!important;
+    margin-left: 58%;
+    margin-top: 5%;
+
+}
+
+.arricon{
+       background: url(../images/v1/arrow.png) no-repeat !important;
+    width: 38px !important;
+    height: 35px !important;
+    background-size: 50% !important;
+    margin-top: 8px;
+}
+
+.lblcls{
+
+   text-align: left !important;
+}
+
+.clspad{
+    padding:0px !important;
+    text-align: center !important;
+}
+
+.ticbck{
+   background: url('../images/v1/bcktic.png') no-repeat !important; 
+   height:150px !important;
+   position: absolute !important;
+   float: right !important;
+ 
+       right: 10.4% !important;
+}
+
+.ticfront{
+   text-align: right !important;
+    padding: 14% !important;
+    color: #fff !important;
+
+}
+.tblgrand{
+    width: 85% !important;
+    margin: 0% 26%;
+    background-color: #ffffff !important;
+}
+
+.tblgrand > tbody > tr > td {
+
+  padding: 3px 4px !important;
+}
+
+.tblgrand > tbody > tr > td > label{
+  height:9px !important;
+}
+
+.btnpaylate{
+  background: url('../images/v1/btnpay.png') no-repeat !important;
+  width:200px !important;
+  height:200px !important;
+  background-size:contain !important;
+  border:none !important;
+}
+
+.btnpaynow{
+  background: url(../images/v1/btnpaynow.png) no-repeat !important;
+  width:250px!important;
+  height:250px!important;
+  background-size: cover!important;
+  border:none!important;
+}
+
+.btnembassy{
+  background: url(../images/v1/btnembasy.png) no-repeat!important;
+  width:200px!important;
+  height:200px!important;
+  background-size:contain!important;
+  border:none!important;
+}
+
+.confrmtic{
+    margin-top: 8%!important;
+    /* border-style: solid; */
+    margin-bottom: 3%;
+    position: relative;
+    left: 5%;
+   
+}
+.pr-dts
+{
+    width: 12% !important;
+
+    font-size: 13px;
+}
+
+.confrmcols-rd{
+    padding: 5px 0px !important;
+    background-color: #ffffff!important;
+    /*border-style: solid;*/
+    width: 93% !important;
+    position: relative;
+    right: 13px;
+    background-color: green;
+    height: 75px;
+}
+.confrmcol
+{
+    /*border-style: solid;*/
+    /*border-color:red;*/
+    /*background-color: #00a0d2;*/
+}
+
+.confrmcol1{
+    background-color:#ffffff!important;
+    padding:0px !important;
+}
+.confrmcol1 > .col-lg-10{
+  padding-left:0px !important; 
+}
+
+
+
+.confrmcols{
+   border-bottom: 1px solid #000!important;
+    height: 70px !important;
+}
+
+.flticbar{
+    position: absolute!important;
+    float: right!important;
+    right: 30px!important;
+    top: 63px!important;
+    padding: 0px!important;
+}
+
+.flticbar a{
+
+    text-decoration: none!important;
+}
+
+.lbltfront{
+    padding: 6px!important;
+}
+
+.lblsec{
+
+}
+
+.ticsec{
+    margin-top: -31px!important;
+    float: right!important;
+    margin-right: 37px!important;
+}
+
+.ticsec a{
+    color:#fff!important;
+}
+
+.ticthr{
+       
+        margin-top: 3%;
+    margin-left: 2%;
+    position: relative;
+    left: -7.6%;
+
+
+}
+
+.headersty{
+    font-size: 16px!important;
+    font-weight: bold;
+}
+
+.lblin{
+    font-weight: bold!important;
+
+}
+
+.infrm1{
+
+    width:100px!important;
+}
+
+.infrm{
+
+    width:200px!important;
+}
+
+.lblnote{
+
+    color: #464eb9!important;
+    margin-top: 10px!important;
+}
+
+.infrm2{
+
+    width:150px!important;
+}
+
+.ticfour{
+    margin-top: 3%!important;
+    
+}
+
+.ticfoursub{
+    background-color:#ececec!important;
+    padding: 3% 0%!important;
+      background-color: #ffffff!important;
+   ;
+    width: 91.3%!important;
+    margin-left: 3%!important
+}
+
+.lblcontact{
+    border-bottom:1px solid #000!important;
+}
+
+.lblborder{
+ font-weight: bold!important;
+}
+
+.areacontact{
+    margin-top:2%!important;
+}
+
+.pagepg{
+    background-color:#d7d5d5!important;
+}
+.clshead{
+    background-color: #ffffff!important;
+    padding: 6px 0px!important;
+    width: 89.3%!important;
+    /* margin-left: 3%!important; */
+    margin-top: 18px !important;
+    position: relative;
+    left: 5%;
+    
+}
+.clshead h5  {
+    margin: 0% !important;
+    /* margin-bottom: 10px; */
+    text-align: center;
+    color: gray;
+
+}
+.clshead1 h3
+{
+
+    margin-bottom: 2% !important;
+    margin-top: 2%;
+    text-align: center;
+    color: gray;
+
+    font-size: 13px !important;
+}
+.clshead1{
+    margin: 2% !important;
+    /* margin-bottom: 10px; */
+    text-align: center;
+    color: #231f1f;
+
+    background-color: #fff;
+    position: relative;
+    left: 5%;
+    width: 89.3%;
+}
+
+.subcontact{
+    background-color: #ffffff!important;
+    padding: 6px 0px!important;
+    width: 89.3%!important;
+    margin-left: 3%!important;
+    position: relative;
+    left: 5%;
+}
+
+.ticfv{
+    text-align: center!important;
+    padding: 3% 0%!important;
+    color: black !important;
+    background-color: white;
+    text-color: black !important;
+    width: 89.3% !important;
+    position: relative;
+    left: 5%;
+    height: 10px;
+    margin-bottom: 3%;
+}
+
+.ticfvsub{
+
+    text-transform: uppercase!important;
+    color:#000!important;
+
+}
+
+.btncls{
+    text-align:center!important;
+}
+
+.btncls1{
+    text-align:center!important;
+    padding:2%!important;
+}
+
+.empcls{
+   margin-bottom: 2%!important;
+}
+
+.efrmcls{
+    margin-top: 20px!important;
+    background-color: #fff!important;
+    padding-top: 15px!important;
+ }
+ 
+ .fotcls{
+    padding: 5% 0%!important;
+    background-color: #fff!important;
+    margin-top: 5%!important;
+ }
+ .fotcopy{
+    text-align: center!important;
+
+    margin-top: 2%!important;
+    background-color: #fff!important;
+    padding: 1% 0px!important;
+    border-top: 1px solid #cabdbd!important;
+ }
+ 
+ .emppurpose{
+     width:60%!important;
+ }
+ .empsurname{
+    width:90%!important; 
+ }
+ .empother{
+    width:82%!important; 
+ }
+ .btncontinue{
+    float: right!important;
+    right: 11%!important;
+    padding: -10px!important;
+    position: relative!important;
+    margin-top: -4%!important;
+    padding: 10px!important;
+    background-color:#003eff!important;
+    border:none!important;
+ }
+ #frmempassy{
+     display:none!important;
+ }
+ 
+ .clsheadopt {
+    background-color: #ffffff!important;
+    padding: 6px 0px!important;
+    text-align: center!important;
+
+   
+}
+.book-page
+{
+    font-family: Segoe,"Segoe UI","Open Sans","DejaVu Sans","Trebuchet MS",Verdana,sans-serif !important;
+
+    font-size: 14px !important;
+    line-height: 1.42857143 !important;
+    color: #000  !important;
+    background-color: #e6e6e6;
+}
+ 
+.layer-top{
+   width: 27% !important;
+} 
+
+.time-d{
+        width: 9.333333% !important;
+}
+
+.form-control
+{
+    height: 23px !important;
+
+            border: 1px solid black !important;
+}
+.date-meera
+{
+        height: 23px !important;
+
+
+        
+        
+}
+.price-dts-header
+{
+    border-style: solid;
+    width: 65%;
+    position: relative;
+    left: 5%;
+    border-color:InactiveBorder;
+
+}
+.price-dts-body
+{
+    background-color: white;
+}

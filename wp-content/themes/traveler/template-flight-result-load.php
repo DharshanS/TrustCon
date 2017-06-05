@@ -47,7 +47,7 @@ die('Submited');*/
  # Rajib test
 
 
-error_log(" ------------------- > Flight Request ");
+//error_log(" ------------------- > Flight Request ");
 
 
 $dt='';	
@@ -81,7 +81,7 @@ get_header();
 
             ?>
 			<div class="<?php echo apply_filters('st_blog_sidebar','right')=='no'?'col-sm-12':'col-sm-9'; ?>">
-				<?php while(have_posts()){
+			<?php while(have_posts()){
 
                     the_post();
 
@@ -99,14 +99,14 @@ get_header();
 										<div class="col-sm-4"> <?php echo $_POST['from_city'];?> </div>
 										<div class="col-sm-4"> <?php echo $_POST['depart_date'];?><br>
 										</div>
-										<div class="col-sm-4"> <?php echo $_POST['to_city'];?> </div>
+										<div class="col-sm-4"><?php echo $_POST['to_city'];?> </div>
 									</div>
 									<?php }else if($_POST['mode']=='roundtrip'){ ?>
 									<div class="row">
 										<div class="col-sm-4"> <?php echo $_POST['from_city'];?> </div>
 										<div class="col-sm-4"> <?php echo $_POST['depart_date'];?><br>
 											<?php echo $_POST['return_date'];?> </div>
-										<div class="col-sm-4"> <?php echo $_POST['to_city'];?> </div>
+										<div class="col-sm-4"><?php echo $_POST['to_city'];?> </div>
 									</div>
 									<?php } ?>
 									<br>
@@ -130,26 +130,17 @@ get_header();
 					<div class="entry-meta">
 						<?php
 
-                            wp_link_pages( );
 
-                           // edit_post_link(st_get_language('edit_this_page'), '<p>', '</p>');
-
-                            ?>
+                          ?>
 					</div>
 				</div>
 				<?php
 
-                }?>
+                } ?>
 			</div>
 			<?php
 
-            if($sidebar_pos=="right"){
-
-                //get_sidebar('blog');
-
-            }
-
-            ?>
+           ?>
 		</div>
 	</div>
 </div>
@@ -188,6 +179,4 @@ data: {},
 Loadresult('<?php echo $dt;?>');
 
 </script>
-<?php
-
-get_footer();
+<?php           wp_footer();

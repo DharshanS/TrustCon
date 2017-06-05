@@ -11,7 +11,8 @@
  *
  * @author mirdu
  */
-include (PLUG_DIR . 'core/DBconnet.php');
+
+include PLUG_DIR.'core/DBconnet.php';
 
 class DbUtility {
 

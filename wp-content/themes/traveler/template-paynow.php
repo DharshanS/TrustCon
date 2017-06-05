@@ -8,37 +8,11 @@ Template Name: Paynow
  * @since 1.0
  *
  */
-session_start();
+//session_start();
 date_default_timezone_set('Asia/Colombo');
-error_reporting(E_ALL);
-ini_set('display_errors', 1);
-$mysqli = new mysqli(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
-
-$pay_amount=0;
-$r='';
-$post_id='';
-$metavalues=array();
-if(isset($_REQUEST['r'])){
-	$r=$_REQUEST['r'];
-}
-if($r!=''){
-	$SQL="SELECT * FROM `wp_postmeta`  WHERE md5(`post_id`)='".$r."'";
-	$result = $mysqli->query($SQL);
-	foreach($result as $rt){
-		$metavalues[$rt['meta_key']]=$rt['meta_value'];
-		$post_id=$rt['post_id'];
-	}
-}
-$cost=isset($metavalues['cost'])?$metavalues['cost']:'';
-$TRIPID=isset($metavalues['TRIPID'])?$metavalues['TRIPID']:'';
-
-if(strlen($cost)>3)$cost=substr($cost,3);
-$cost=str_replace(",","",str_replace("","",$cost));
-
-$pay_amount=$cost * 100;
 
 
-$path = get_home_path();
+$path = PLUG_DIR;
 $path = $path.'/paycorp-client-php';
 include $path.'/au.com.gateway.client/GatewayClient.php';
 include $path.'/au.com.gateway.client.config/ClientConfig.php';
@@ -62,6 +36,45 @@ include $path.'/au.com.gateway.client.enums/Operation.php';
 include $path.'/au.com.gateway.client.facade/Vault.php';
 include $path.'/au.com.gateway.client.facade/Report.php';
 include $path.'/au.com.gateway.client.facade/AmexWallet.php';
+include PLUG_DIR.'core/DBconnet.php';
+//error_reporting(E_ALL);
+//ini_set('display_errors', 1);
+$db = new DBconnet();
+$mysqli = $db->getDbConnetion();
+
+$pay_amount=0;
+$r='';
+$post_id='';
+$metavalues=array();
+if(isset( $_SESSION['post_id'])){
+	$r= $_SESSION['post_id'];
+}
+
+if($r!=''){
+
+	//$wpdb->get_results("SELECT * FROM wp_postmeta WHERE post_id='".$r."'");
+	//error_log(print_r($wpdb,true));
+	$sql= 'SELECT * FROM wp_postmeta WHERE post_id="'.$r.'"';
+	error_log($sql);
+	$result = $mysqli->query($sql);
+	//$result = $mysqli->query($SQL);
+	//$result = mysqli_query($mysqli, $SQL);
+	foreach($result as $rt){
+		error_log("db data -- >". print_r($rt,true));
+		$metavalues[$rt['meta_key']]=$rt['meta_value'];
+		$post_id=$rt['post_id'];
+	}
+}
+
+
+$cost=isset($metavalues['cost'])?$metavalues['cost']:'';
+$TRIPID=isset($metavalues['TRIPID'])?$metavalues['TRIPID']:'';
+
+//if(strlen($cost)>3)$cost=substr($cost,3);
+//$cost=str_replace(",","",str_replace("","",$cost));
+
+$pay_amount=$cost;
+
 /*------------------------------------------------------------------------------
 STEP1: Build ClientConfig object
 ------------------------------------------------------------------------------*/
@@ -95,7 +108,8 @@ $transactionAmount->setCurrency("LKR");
 $initRequest->setTransactionAmount($transactionAmount);
 // sets redirect settings
 $redirect = new Redirect();
-$redirect->setReturnUrl("http://www.clickmybooking.com/paycorp-client-php/au.com.gateway.IT/pcw_payment-complete_paynow_UT.php");
+//$redirect->setReturnUrl("http://localhost:8080/travel/wp-content/plugins/traveler/paycorp-client-php/au.com.gateway.IT/pcw_payment-complete_paynow_UT.php");
+$redirect->setReturnUrl("http://localhost:8080/travel/route");
 $redirect->setReturnMethod("GET");
 $initRequest->setRedirect($redirect);
 
@@ -103,6 +117,8 @@ $initRequest->setRedirect($redirect);
 STEP4: Process PaymentInitRequest object
 ------------------------------------------------------------------------------*/
 $initResponse = $Client->payment()->init($initRequest);
+
+error_log("PaymentUrl--->".$initResponse->getPaymentPageUrl());
 
 /*------------------------------------------------------------------------------
 STEP5: Extract PaymentInitResponse object

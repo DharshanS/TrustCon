@@ -6,227 +6,190 @@
  * and open the template in the editor.
  */
 require_once(PLUG_DIR . 'models/RoundTrip.php');
-require_once(PLUG_DIR . 'view/RoundTripView.php');
+require_once(PLUG_DIR . 'view/RWSDisplay.php');
 require_once(PLUG_DIR . 'utility/FlightUtility.php');
 
 $airPricePointList;
 $airSegmentList;
-error_log("search data".print_r($_SESSION['searchdata'],true));
-function roundTrip()
+$tripObj;
+error_log("search data" . print_r($_SESSION['searchdata'], true));
+function roundTrip($responseArray)
 {
-    error_log('ROUND TRIP SERVICE') ;
-  global $airPricePointList;
-  global $airSegmentList;
+    error_log('ROUND TRIP SERVICE');
+    global $airPricePointList;
+    global $airSegmentList;
 
-        $resp=file_get_contents(PLUG_DIR.'xml/roundTripXml.xml', FILE_USE_INCLUDE_PATH);
-        $xml = preg_replace("/(<\/?)(\w+):([^>]*>)/", "$1$2$3", $resp);
-	$xml = simplexml_load_string($xml);
-	$json = json_encode($xml);
-        //error_log('encoded--->'.print_r($json,true));
-	$responseArray = json_decode($json,true);
-        $airPricePointList=$responseArray['SOAPBody']['airLowFareSearchRsp']['airAirPricePointList']['airAirPricePoint'];
-        $airSegmentList=$responseArray['SOAPBody']['airLowFareSearchRsp']['airAirSegmentList']['airAirSegment'];
-       airAirPricePointList();
-}        
-        
-    
+    $airPricePointList = $responseArray['SOAPBody']['airLowFareSearchRsp']['airAirPricePointList']['airAirPricePoint'];
+    $airSegmentList = $responseArray['SOAPBody']['airLowFareSearchRsp']['airAirSegmentList']['airAirSegment'];
+    airAirPricePointList();
+}
+
+
 function getAirsegment($Key)
 {
-   global $airSegmentList;
-   foreach($airSegmentList as $index)
-   {
-       if(strcmp($index['@attributes']['Key'],$Key)==0)
-       {
-           return $index;
-       }
-   }
-   
+    global $airSegmentList;
+    foreach ($airSegmentList as $index) {
+        if (strcmp($index['@attributes']['Key'], $Key) == 0) {
+            return $index;
+        }
+    }
+
 }
 
 function airAirPricePointList()
 {
-     global $airPricePointList;
-     $util=new FlightUtility();
-     //$tripArray;
-     $count=0;
-     foreach($airPricePointList as $index)
-     {
-            $trip = new Trip();
-            
-     if(isset($index['@attributes']))
-     {
-        $trip->basePrice=$index['@attributes']; 
-     }
+    global $airPricePointList;
+    $util = new FlightUtility();
+    $count = 0;
+    $flag = false;
+    $tripArray = array();
+    for ($out = 0; $out < count($airPricePointList); $out++) {
 
-    
-     
-         
-     if(isset($index['airAirPricingInfo']['airFlightOptionsList']['airFlightOption']))
-         {
-             $trip->airPrincingInfo=$index['airAirPricingInfo']['@attributes'];
-               
-            $outBoound = $index['airAirPricingInfo']['airFlightOptionsList']['airFlightOption'][0];
-            $inBound = $index['airAirPricingInfo']['airFlightOptionsList']['airFlightOption'][1];
-         
-      
-            
-           //  error_log(print_r($outBoound,true));
-             
-            $temOutBound = $outBoound['airOption'];
-            if (isset($temOutBound[0])) {
-                $temOutBound = $temOutBound;
-            } else {
-                $temOutBound = array($temOutBound);
+        if (isset($airPricePointList[$out]) && !empty($airPricePointList[$out])) {
+            $tripArray[] = get_trip_fly($airPricePointList[$out]);
+            $flag = true;
+        }
+        for ($in = $out + 1; $in < count($airPricePointList); $in++) {
+            //  error_log($airPricePointList[$out]['airAirPricingInfo']['@attributes']['PlatingCarrier']."===".$airPricePointList[$in]['airAirPricingInfo']['@attributes']['PlatingCarrier']);
+            if (!empty($airPricePointList[$out]) && ($airPricePointList[$out]['airAirPricingInfo']['@attributes']['PlatingCarrier'] === $airPricePointList[$in]['airAirPricingInfo']['@attributes']['PlatingCarrier'])) {
+
+
+                $tripArray[$count]->moreFly[] = get_trip_fly($airPricePointList[$in]);
+
+
+                $airPricePointList[$in] = null;
+
+
             }
-            
-            foreach ($temOutBound as $Key => $outer) {
-              
-                if (isset($outer['airBookingInfo'])) {
-                        $outerTemp = $outer['airBookingInfo'];
-                        if (isset($outerTemp[0])) {
-                            $outerTemp = $outerTemp;
-                        } else {
-                            $outerTemp = array($outerTemp);
-                        }
+        }
+        if ($flag) {
+            $count++;
+            $flag = false;
+        }
+//         if($out==3)
+//         {
+//          error_log(print_r(json_encode($tripArray),true));
+//          return;
+//         }
+    }
 
-                        $tempOut=null;
-                    foreach ($outerTemp as $inner) {
 
-                        
-                        if (isset($inner['@attributes']['SegmentRef'])) {
-                            if ($Key == 0) {
-                                $tem= getAirsegment($inner['@attributes']['SegmentRef']);
-                                $cityOr=$util->getCityName($tem['@attributes']['Origin']);
-                                $orTime=date("h:i a", strtotime($tem['@attributes']['DepartureTime']));
-                                $orDate=date("D, d M Y", strtotime($tem['@attributes']['DepartureTime']));
-                                
-                                $cityDe=$util->getCityName($tem['@attributes']['Destination']);
-                                $deTime=date("h:i a", strtotime($tem['@attributes']['ArrivalTime']));
-                                $deDate=date("D, d M Y", strtotime($tem['@attributes']['ArrivalTime']));
-                                $airline=$util->getAirLineName($tem['@attributes']['Carrier']);
-                                array_push($tem['@attributes'],$inner['@attributes']);
-                                
-                                array_push($tem['@attributes'],$cityOr);
-                                array_push($tem['@attributes'],$orTime);
-                                array_push($tem['@attributes'],$orDate);
-                                
-                          
-                                 array_push($tem['@attributes'],$cityDe);
-                                 array_push($tem['@attributes'],$deTime);
-                                 array_push($tem['@attributes'],$deDate);
-                                 
-                                 array_push($tem['@attributes'],$airline);
-                                 
-                                array_push($trip->bastOptionOut, $tem);
-                            } else {
-                                $tem= getAirsegment($inner['@attributes']['SegmentRef']);
-                                $cityOr=$util->getCityName($tem['@attributes']['Origin']);
-                                
-                                 $orTime=date("h:i a", strtotime($tem['@attributes']['DepartureTime']));
-                                 $orDate=date("D, d M Y", strtotime($tem['@attributes']['DepartureTime']));
-                                 $cityDe=$util->getCityName($tem['@attributes']['Destination']);
-                                 $deTime=date("h:i a", strtotime($tem['@attributes']['ArrivalTime']));
-                                 $airline=$util->getAirLineName($tem['@attributes']['Carrier']);
-                                 $deDate=date("D, d M Y", strtotime($tem['@attributes']['ArrivalTime']));
-                                 
-                                array_push($tem['@attributes'],$inner['@attributes']);
-
-                                array_push($tem['@attributes'],$cityOr);
-                                array_push($tem['@attributes'],$orTime);
-                                array_push($tem['@attributes'],$orDate);
-                                
-                                    array_push($tem['@attributes'],$cityDe);
-                                 array_push($tem['@attributes'],$deTime);
-                                 array_push($tem['@attributes'],$deDate);
-                                 array_push($tem['@attributes'],$airline);
-                                 
-                                $tempOut[] = $tem;
-                               
-                            }
-                        }
-                    }
-                    if (isset($tempOut[0])) {
-
-                        array_push($trip->outBound, $tempOut);
-                    }
-                }
-            }
-            
-/*************************************************************************/
-            $inBoundTemp = $inBound['airOption'];
-            if (isset($inBoundTemp[0])) {
-                $inBoundTem = $inBoundTemp;
-            } else {
-                $inBoundTem = array($inBoundTemp);
-            }
-            foreach($inBoundTem as $Key=>$outer)
-            {
-                if (isset($outer['airBookingInfo'])) {
-                   
-                    if (isset($outer['airBookingInfo'][0])) {
-                        $outerTemp = $outer['airBookingInfo'];
-                    } else {
-                        $outerTemp = array($outer['airBookingInfo']);
-                    }
-                     $temp = null;
-                    foreach ($outerTemp as $inner) {
-                        if (isset($inner['@attributes']['SegmentRef'])) {
-
-                            if ($Key == 0) {
-                                $tem=getAirsegment($inner['@attributes']['SegmentRef']);
-                                array_push($tem['@attributes'],$inner['@attributes']);
-                                 $orTime=date("h:i a", strtotime($tem['@attributes']['DepartureTime']));
-                                 $orDate=date("D, d M Y", strtotime($tem['@attributes']['DepartureTime']));
-                                 $cityDe=$util->getCityName($tem['@attributes']['Destination']);
-                                 $deTime=date("h:i a", strtotime($tem['@attributes']['ArrivalTime']));
-                                 $airline=$util->getAirLineName($tem['@attributes']['Carrier']);
-                                 $deDate=date("D, d M Y", strtotime($tem['@attributes']['ArrivalTime']));
-                                 array_push($tem['@attributes'],$cityOr);
-                                    array_push($tem['@attributes'],$orTime);
-                                    array_push($tem['@attributes'],$orDate);
-                                
-                                 array_push($tem['@attributes'],$cityDe);
-                                 array_push($tem['@attributes'],$deTime);
-                                 array_push($tem['@attributes'],$deDate);
-                                 array_push($tem['@attributes'],$airline);
-                                array_push($trip->bastOptionIn,$tem);
-                          
-                            } else {
-                                $tem=getAirsegment($inner['@attributes']['SegmentRef']);
-                                 array_push($tem['@attributes'],$inner['@attributes']);
-                                 $orTime=date("h:i a", strtotime($tem['@attributes']['DepartureTime']));
-                                 $orDate=date("D, d M Y", strtotime($tem['@attributes']['DepartureTime']));
-                                 $cityDe=$util->getCityName($tem['@attributes']['Destination']);
-                                 $deTime=date("h:i a", strtotime($tem['@attributes']['ArrivalTime']));
-                                 $airline=$util->getAirLineName($tem['@attributes']['Carrier']);
-                                 $deDate=date("D, d M Y", strtotime($tem['@attributes']['ArrivalTime']));
-                                 array_push($tem['@attributes'],$cityOr);
-                                    array_push($tem['@attributes'],$orTime);
-                                    array_push($tem['@attributes'],$orDate);
-                                
-                                 array_push($tem['@attributes'],$cityDe);
-                                 array_push($tem['@attributes'],$deTime);
-                                 array_push($tem['@attributes'],$deDate);
-                                 array_push($tem['@attributes'],$airline);
-                                $temp[] = $tem;
-                            }
-                        }
-                    }
-                    if (isset($temp[0])) {
-
-                        array_push($trip->inBound, $temp);
-                    }
-                }
-            }
-            
-       
-             $count++;
-            $tripArray[]=$trip;     
-         }
-         
-       }
-           
-     
-      roundTripView($tripArray);
+    init_display($tripArray);
 
 }
+
+
+function get_trip_fly($index)
+{
+
+    global $tripObj;
+    $tripObj = new Trip();
+
+    if (isset($index['@attributes'])) {
+        $tripObj->basePrice = $index['@attributes'];
+    }
+
+    if (isset($index['airAirPricingInfo']['airFlightOptionsList']['airFlightOption'])) {
+        $tripObj->airPrincingInfo = $index['airAirPricingInfo']['@attributes'];
+
+        $outBoound = $index['airAirPricingInfo']['airFlightOptionsList']['airFlightOption'][0];
+        $inBound = $index['airAirPricingInfo']['airFlightOptionsList']['airFlightOption'][1];
+
+        $temOutBound = $outBoound['airOption'];
+        if (isset($temOutBound['@attributes'])) {
+            $temOutBound = array($temOutBound);
+        } else if (isset($temOutBound['airBookingInfo']['@attributes'])) {
+            $temOutBound = array($temOutBound['airBookingInfo']);
+        } else if (isset($temOutBound['airBookingInfo'][0])) {
+            $temOutBound = $temOutBound['airBookingInfo'];
+        }
+
+        $tripObj = get_outbond_fly($temOutBound, $tripObj);
+
+
+        /*************************************************************************/
+        $inBoundTemp = $inBound['airOption'];
+
+        if (isset($inBoundTem['airBookingInfo']['@attributes'])) {
+            $inBoundTemp = array($inBoundTemp['airBookingInfo']);
+        } else if (isset($inBoundTemp['airBookingInfo'][0])) {
+            $inBoundTemp = array($inBoundTemp['airBookingInfo']);
+        } else if (isset($inBoundTemp['@attributes'])) {
+            $inBoundTemp = array($inBoundTemp);
+        }
+
+        $tripObj = get_inbond_fly($inBoundTemp, $tripObj);
+
+
+        //return;
+    }
+
+    return $tripObj;
+}
+
+
+function get_outbond_fly($out_bound, $tripObj)
+{
+    global $tripObj;
+
+    foreach ($out_bound as $key => $out) {
+        $bookInfo = '';
+        if (isset($out['airBookingInfo'][0])) {
+            $bookInfo = $out['airBookingInfo'];
+        } else if (isset($out['airBookingInfo']['@attributes'])) {
+            $bookInfo = array($out['airBookingInfo']);
+        } else if (isset($out['@attributes'])) {
+            $bookInfo = array($out);
+        } else {
+            $bookInfo = $out;
+        }
+
+        $temp = '';
+
+        foreach ($bookInfo as $bookInfoItem) {
+
+
+            $temp[] = getAirsegment($bookInfoItem['@attributes']['SegmentRef']);
+            array_push($temp[count($temp) - 1]['@attributes'], $bookInfoItem['@attributes']);
+        }
+        if ($key == 0) {
+            $tripObj->bastOptionOut = $temp;
+
+        } elseif (isset($temp[0])) {
+            array_push($tripObj->outBound, $temp);
+        }
+    }
+    return $tripObj;
+}
+
+function get_inbond_fly($in_bound, $tripObj)
+{
+    global $tripObj;
+    foreach ($in_bound as $key => $out) {
+        $bookInfo = '';
+        if (isset($out['airBookingInfo'][0])) {
+            $bookInfo = $out['airBookingInfo'];
+        } else if (isset($out['airBookingInfo']['@attributes'])) {
+            $bookInfo = array($out['airBookingInfo']);
+        } elseif (isset($out['@attributes'])) {
+            $bookInfo = array($out);
+        } else {
+            $bookInfo = $out;
+        }
+
+
+        $temp = '';
+        foreach ($bookInfo as $bookInfoItem) {
+            $temp[] = getAirsegment($bookInfoItem['@attributes']['SegmentRef']);
+            array_push($temp[count($temp) - 1]['@attributes'], $bookInfoItem['@attributes']);
+        }
+
+        if ($key == 0) {
+            $tripObj->bastOptionIn = $temp;
+        } elseif (isset ($temp[0])) {
+            array_push($tripObj->inBound, $temp);
+        }
+    }
+    return $tripObj;
+}
+     

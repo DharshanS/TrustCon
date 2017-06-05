@@ -190,12 +190,7 @@ function my_custom_authenticate( $user, $username, $password )
     return null;
 }
 
-function register_script()
-{
 
- wp_register_script( 'search-v1',TRAVELER__PLUGIN_URL . 'tr-search.js', 'jquery' );
- wp_enqueue_script ( 'search-v1' );
-}
 //add_action( 'wp_enqueue_scripts', 'register_script' );
 add_action( 'init', 'wpse26388_rewrites_init' );
 function wpse26388_rewrites_init(){
@@ -204,3 +199,9 @@ function wpse26388_rewrites_init(){
         'index.php?/travel/wp-content/plugins/traveler/free-booking.php',
         'top' );
 }
+
+function my_add_frontend_scripts() {
+
+        wp_enqueue_script('jquery-ui', 'http://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js', array('jquery'), '1.8.6');
+}
+add_action('wp_enqueue_scripts', 'my_add_frontend_scripts');

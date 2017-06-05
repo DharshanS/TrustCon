@@ -72,6 +72,8 @@ Bookng area
 	top:150px;
 	left:60px;
 	z-index:9999;
+        width: 400px;
+        height: 400px;
 }
 /* search form */
 
@@ -2013,7 +2015,9 @@ img.pp-img {
 	margin-bottom: 10px;
 }
 .header-top {
-	padding: 10px 0;
+	
+            margin-bottom: 11px !important;
+            padding: -22px !important;
 	/*max-height: 60px;*/
 
   background: #4d4d4d;
@@ -2021,6 +2025,8 @@ img.pp-img {
  @media (max-width:992px) {
 .header-top {
 	max-height: none;
+         margin-bottom: 11px !important;
+             padding: -22px !important;
 }
 }
 .logo {
@@ -2301,7 +2307,8 @@ footer#main-footer .form-control:focus {
 	text-decoration: underline;
 }
 header#main-header {
-	border-bottom: 2px solid #ed8323;
+	border-bottom: 0px !important;
+        margin-bottom: 9px!important;
 }
 .main-header-search {
 	top: 4px;
@@ -2310,6 +2317,7 @@ header#main-header {
  @media (max-width:992px) {
 .main-header-search {
 	margin-top: 15px;
+         
 }
 }
 .main-header-search .form-control {
@@ -9620,7 +9628,7 @@ img.mfp-img {
 	font-weight: normal;
 }
 .comment .comment-reply {
- [class^="fa fa-"]: 13px;
+// [class^="fa fa-"]: 13px;
 }
 .comment:hover .comment-like {
 	opacity: 1;
@@ -9784,22 +9792,28 @@ img.mfp-img {
 ======================================================================*/
 
 .booking-system {
-	box-shadow: 0 0 5px #b4b4b4;
-	font-family: "Droid Sans", sans-serif;
-	margin: 10px;
-	width: 325px;
-	background: #fff;
-	position:relative;
+
+            box-shadow: 0 0 5px #b4b4b4;
+    
+   
+    width:460px;
+   height: 390px;
+    background: #fff;
+    position: relative;
+        border-style: solid;
+     border-color: #1a53ff;
+/*    background:rgba(0, 0, 77,0.5);*/
 }
 .top-tab {
-	background: #009de0;
+/*	background: #009de0;*/
 	width: 100%;
 }
 .top-tab ul {
 	width:100%;
 	position:relative;
-	margin:0;
-	padding:0;
+	margin-top:10px;
+        margin-left:10px;
+	padding:10px;
 	list-style:none;
 }
 .top-tab ul li {
@@ -9815,13 +9829,16 @@ img.mfp-img {
 	text-transform: uppercase;
 }
 .top-tab ul li:hover, .top-tab ul li.active {
+        background: #1a53ff !important;
+    width: 34% !important;
+    text-align: center !important;
 	background: #0c367e;
 }
 .top-tab ul li:hover:after, .top-tab ul li.active:after {
 	border-left: 10px solid rgba(255, 255, 255, 0);
 	border-right: 10px solid rgba(255, 255, 255, 0);
 	border-top: 10px solid #0c367e;
-	content: "";
+/*	content: "";*/
 	display: block;
 	left: 0;
 	margin-left: auto;
@@ -9833,12 +9850,17 @@ img.mfp-img {
 .booking-area {
 	padding: 3%;
 	width: 100%;
+       // font-family: "Droid Sans", sans-serif !important;
+            font: normal normal normal 14px/1 FontAwesome !important;
+     font-size: 13px !important;
+         height: 28px;
 }
 .booking-area hr {
 	border-color: #d3d3d3;
 	clear: both;
 	margin: 30px auto 10px;
 	width: 90%;
+        
 }
 .booking-area select, .booking-area input[type="text"] {
 	border: 1px solid #d3d3d3;
@@ -9846,9 +9868,16 @@ img.mfp-img {
 	margin: 3px 0;
 	padding: 3px 10px;
 	width: 100%;
+            height: 35px;
 }
 .booking-area input[type="radio"] {
-	margin:0 5px 0
+	margin:0 5px 0;
+         background:green;
+
+}
+
+.booking-area input[type='radio']:checked:before {
+  background:green !important;
 }
 .booking-area .date_picker img {
 	position:absolute;
@@ -9864,15 +9893,19 @@ img.mfp-img {
 	margin:3px 0;
 }
 .booking-area button {
-	background: #0c367d;
+	background: #1a53ff !important;
 	border: 1px solid #0c367d;
 	color: #fff;
 	margin: 7px 0;
 	padding: 3px 20px;
 	text-transform:uppercase;
 	width: 94%;
-	border-radius: 3px;
+	border-radius: 0px;
+            border-radius: 1px;
+    height: 35px;
 }
+        
+
 .booking-area button:hover {
 	background: #0c367d;
 }
@@ -10028,11 +10061,7 @@ Booking Form CSS
 .srh-lcl, .srh-btn, .srh-date, .srh-psg {
 	width: 50%;
 }
-.edit-visl {
-	height:172px;
-	overflow:scroll;
-/*	overflow-x:hidden;*/
-}
+
 .col-sm-2.col-xs-4.flt {
 	line-height: 100px;
 }
@@ -10092,7 +10121,7 @@ Flight Result CSS
 ==========================================================================*/
 
 .sky-bg {
-	background:url(../images/c-background.jpg) no-repeat top left fixed;
+	background:url(../images/3.jpg) no-repeat top left fixed;
 	background-size:100% auto;
 	width:100%;
 	float:left;
@@ -10107,13 +10136,16 @@ Flight Result CSS
 	font-family: 'Roboto', sans-serif;
 }
 .edit-area {
-	background:#EAEAEA;
+	background: #EAEAEA;
 	padding: 1%;
-	width: 100%;
-	position:relative;
-	top: 0;
-	display:none;
-	min-height: 180px;
+	width: 75%;
+	position: relative;
+	left: 14%;
+	top: 11px;
+	display: none;
+	min-height: 40px !important;
+	border-radius: 6px;
+	height: 136px;
 }
 .select-trip-option {
 	width: 10%;
@@ -10123,12 +10155,12 @@ Flight Result CSS
 .r-trip {
 	width: 100%;
 	float:left;
-	font-size:15px;
+
 }
 .o-way {
 	width: 100%;
 	float:left;
-	font-size:15px;
+
 }
 .edit-book-dtl {
 	width:45%;
@@ -10163,7 +10195,6 @@ Flight Result CSS
 .edit-lcl > div i {
 	bottom: 5px;
 	color: #cfcfcf;
-	font-size: 25px;
 	position: absolute;
 	right: 5px;
 }
@@ -10173,7 +10204,6 @@ Flight Result CSS
 }
 .edit-lcl > div input[type="text"] {
 	border: none;
-	font-size: 15px;
 	letter-spacing: 1px;
 	width: 100%;
 }
@@ -10198,7 +10228,7 @@ Flight Result CSS
 }
 .date-pick-area > div .date_picker input[type="text"] {
 	border: none;
-	font-size: 15px;
+
 	width: 100%;
 }
 .date-pick-area > div .date_picker label {
@@ -10241,12 +10271,14 @@ Flight Result CSS
 .edit-psg > div .select-option select {
 	width: 100%;
 	border: none;
-	font-size:15px
+
 }
 .edit-psg-btn-area {
 	float: right;
 	margin: 7px;
 	width: 170px;
+	position: relative;
+	top: -60px;
 }
 .edit-psg-btn-area button {
 	background: #0c367e;
@@ -10254,9 +10286,11 @@ Flight Result CSS
 	border-radius: 3px;
 	clear: both;
 	color: #fff;
-	font-size: 18px;
-	padding: 11px 8px;
-	width: 100%;
+	font-size: 15px;
+	padding: 9px 13px;
+	width: 77%;
+	position: relative;
+	left: 34px;
 }
 .edit-psg-btn-area button i {
 	font-size: 24px;
@@ -10271,9 +10305,16 @@ Flight Result CSS
 .edit-book-dtl2 p a:hover {
 	color:#0C367E;
 }
+
 .srh-result-area {
-	width: 100%;
+	width: 75%;
+	position: relative;
+	top: 7px;
 	background: #fff;
+	left: 14%;
+	border-radius: 6px;
+	height: 47px;
+	background-color: #EAEAEA;
 }
 .srh-btn {
 	width: 10%;
@@ -10285,15 +10326,16 @@ Flight Result CSS
 	-moz-border-right-colors: none;
 	-moz-border-top-colors: none;
 	background: #0c367e none repeat scroll 0 0;
-	border-color: #0c367e #0c367e #0c367e #f00;
+	/*border-color: #0c367e #0c367e #0c367e #f00;*/
 	border-image: none;
 	border-style: solid;
 	border-width: 1px 1px 1px 2px;
 	color: #fff;
-	padding: 15px 0;
+	padding: 11px 0;
 	text-align:center;
 	width: 100%;
 	font-size:14px;
+	border-radius: 6px !important;
 }
 .srh-button:hover {
 	cursor:pointer;
@@ -10305,16 +10347,17 @@ Flight Result CSS
 }
 .srh-lcl input[type="text"] {
 	border: none;
-	font-size: 15px;
 	padding: 10px 7px;
 	width: 100%;
 	letter-spacing: 1px;
+	background-color: #EAEAEA;
 }
 .srh-date {
 	width:15%;
 	float:left;
 	padding: 4px 0;
-	height: 54px;
+	height: 47px;
+	background-color: #EAEAEA;
 }
 .srh-date label {
 	font-size: 10px;
@@ -10325,6 +10368,7 @@ Flight Result CSS
 	text-transform: uppercase;
 	width: 100%;
 	position:relative;
+	background-color: #EAEAEA;
 }
 .srh-date input[type="text"] {
 	width: 100%;
@@ -10332,18 +10376,21 @@ Flight Result CSS
 	padding: 0 5px;
 	font-size:15px;
 	letter-spacing: 1px;
+	background-color: #EAEAEA;
 }
 .srh-psg {
 	float: left;
 	width: 20%;
-	padding: 4px 0;
+	padding: 1px 0;
+	background-color: #EAEAEA;
 }
 .srh-psg input[type="text"] {
 	border: none;
-	font-size: 15px;
+	font-size: 13px;
 	padding: 0 12px;
 	text-align: right;
 	width: 100%;
+	background-color: #EAEAEA;
 }
 .in-active {
 	display: none;
@@ -10431,14 +10478,16 @@ Flight Result CSS
 	left:0;
 	z-index:9999999;
 	box-shadow: 0 0 5px #545454;
+        font-family: 
+              font-family:"Droid Sans", sans-serif !important;
 }
 .edit-visl .head {
 	background: #082299;
 	color: #fff;
-	font-size: 16px;
-	padding: 5px 10px;
+
 	text-transform: uppercase;
 	width: 100%;
+            font-size: 12px;
 }
 .edit-visl .head i {
 	margin-right: 10px;
@@ -11355,7 +11404,7 @@ Edited On 15/09/15
 .quotehead textarea {
 	height: 50px;
 	max-height:50%;
-	min=height:50%;
+	
 }
 /* Free Booking popup*/
 
@@ -11827,4 +11876,26 @@ Newly added
 .tou-popup .pop-date {
 	left:11px;
 }
+}
+.meeraPack 
+{
+/*    border-style: solid;
+    border-color:red;*/
+/*     max-width: 70%;*/
+/*     margin-left: -150px;*/
+     margin-bottom: -90px;
+     padding-right: -100px;
+     
+  
+}
+.booking-area input[type=radio]:checked + label:after {
+  border-radius: 11px;
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  top: 9px;
+  left: 10px;
+  content: " ";
+  display: block;
+  background: #004c97;
 }

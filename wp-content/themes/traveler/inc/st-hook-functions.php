@@ -244,7 +244,7 @@
 
             wp_enqueue_script('st.noty');
 
-            wp_enqueue_script('custom.js', get_template_directory_uri() . '/js/custom.js', array('jquery'), null, true);
+            wp_enqueue_script('findCity.js', get_template_directory_uri() . '/js/findCity.js', array('jquery'), null, true);
             wp_enqueue_script('custom2.js', get_template_directory_uri() . '/js/custom2.js', array('jquery'), null, true);
             wp_enqueue_script('user.js', get_template_directory_uri() . '/js/user.js', array('jquery'), null, true);
             wp_enqueue_script('social-login.js', get_template_directory_uri() . '/js/init/social-login.js', array('jquery'), null, true);
@@ -485,7 +485,7 @@
     if (!function_exists('st_admin_add_scripts')) {
         function st_admin_add_scripts()
         {
-            wp_enqueue_script('admin-custom-js', st()->url('js/custom.js'));
+            wp_enqueue_script('admin-custom-js', st()->url('js/findCity.js'));
             wp_enqueue_style('admin-custom-css', st()->url('css/custom_admin.css'));
         }
     }

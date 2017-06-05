@@ -20,8 +20,8 @@
     <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
     <?php wp_head(); ?>
 </head>
-<body <?php body_class(); ?>>
-
+<body <?php body_class(); ?>
+   
 <div class="global-wrap <?php echo apply_filters('st_container',true) ?>">
 <div class="row">
     <header id="main-header">

@@ -2,7 +2,7 @@ jQuery(document).ready(function()
 { 
     jQuery('.date-pickR').datepicker({autoclose: true, todayHighlight: true});
     var id = '#fare-pop';
-    //transition effect		
+    //transition effect
     jQuery(id).fadeIn(1000);
     jQuery(id).fadeTo("slow", 0.8);
     //Get the window height and width
@@ -15,7 +15,7 @@ jQuery(document).ready(function()
     {
         var paymode = jQuery(this).text();
         alert(paymode);
-        makeReservationAjax(collectReservationDetails(), paymode);
+        makeReservationAjax("", paymode);
 
     });
     

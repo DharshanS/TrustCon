@@ -46,12 +46,11 @@ function addingSameALtogether($airAirPricePointList) {
 
     for ($index = 0; $index < count($airAirPricePointList); $index++) {
         //getsegRef($airAirPricePointList[$index]);
-       if($index==1)
-       {
+   
         array_push($fDeatails, getFlightObject(getsegRef($airAirPricePointList[$index]), $airAirPricePointList[$index]['@attributes']));
         //  error_log(" ----adding----> ".print_r($fDeatails,true));
-        return $fDeatails;
-       }
+       
+       
     }
     return $fDeatails;
 }

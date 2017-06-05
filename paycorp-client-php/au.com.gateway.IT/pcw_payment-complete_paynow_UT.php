@@ -23,11 +23,13 @@
 <?php include '../au.com.gateway.client.facade/Report.php'; ?>
 <?php include '../au.com.gateway.client.facade/AmexWallet.php'; ?>
 
+
 <?php
 date_default_timezone_set('Asia/Colombo');
+
 //error_reporting(E_ALL);
-error_reporting(E_ALL & ~E_NOTICE);
-ini_set('display_errors', 1);
+//error_reporting(E_ALL & ~E_NOTICE);
+//ini_set('display_errors', 1);
 /*------------------------------------------------------------------------------
 STEP1: Build ClientConfig object
 ------------------------------------------------------------------------------*/
@@ -47,10 +49,16 @@ STEP3: Build PaymentCompleteRequest object
 $completeRequest = new PaymentCompleteRequest();
 $completeRequest->setClientId(14000327);
 $completeRequest->setReqid($_GET['reqid']);
+
 /*------------------------------------------------------------------------------
 STEP4: Process PaymentCompleteRequest object
 ------------------------------------------------------------------------------*/
+
+error_log(" PayNow Request --->". print_r($completeRequest,true));
+sendPost();
+
 $completeResponse = $Client->payment()->complete($completeRequest);
+
 /*------------------------------------------------------------------------------
 STEP5: Process PaymentCompleteResponse object
 ------------------------------------------------------------------------------*/
@@ -65,10 +73,11 @@ STEP5: Process PaymentCompleteResponse object
 //echo '<br>----------------------------------------------------------------------';
 // Code below by Abdul Manashi @lozingle.com
 $extradata=$completeResponse->getExtraData();
+error_log("Extra Data --->".print_r($extradata,true));
 $post_id=$extradata[0]['post_id'];
 
 if($post_id=='' || $post_id<1){
-	die('<div align="center" style="padding: 10% 0;">Your session has expired, please start with a new search!</div>');
+	die('<div align="center" style="padding: 10% 0;">Your session has expired, please start with a new search!!!!!</div>');
 }
 
 
@@ -103,8 +112,10 @@ $mail->From = $mailsetters['from'];
 $mail->FromName = $mailsetters['fromname'];
 
 require_once("../../travelportsettings.php");
-require_once("../../tconnect.php");
-$mysqli = new mysqli(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
+
+
+$db = new DBconnet();
+$mysqli=$db->getDbConnetion();
 // insert into wp_postmeta
 $responsindb=$responseCode.' '.$responseText;
 $SQL="INSERT INTO `wp_postmeta` (`post_id`, `meta_key`, `meta_value`) VALUES";
@@ -130,5 +141,18 @@ $mail->addReplyTo($mailsetters['from']);
 $mail->isHTML(true);
 $mail->Subject = $mailsubject;
 $mail->Body    = $mailhtml;
-$mail->send();  
+$mail->send();
+
+
+function sendPost()
+{
+
+    echo "Iam Here";
+
+}
+
+
+
 ?>
+
+

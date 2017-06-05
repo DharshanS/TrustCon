@@ -3,13 +3,17 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/xampp/htdocs/travel/wp-content/plugins/traveler/service/FreeBookingRequest.php</file>
-            <file>file:/C:/xampp/htdocs/travel/wp-content/plugins/traveler/view/FreeBookingView.php</file>
-            <file>file:/C:/xampp/htdocs/travel/wp-content/plugins/traveler/view/store.php</file>
-            <file>file:/C:/xampp/htdocs/travel/wp-content/plugins/traveler/service/FreeBookingResponse.php</file>
+            <file>file:/C:/xampp/htdocs/travel/wp-content/plugins/traveler/service/InsertReservation.php</file>
+            <file>file:/C:/xampp/htdocs/travel/wp-content/plugins/traveler/core/DBconnet.php</file>
+            <file>file:/C:/xampp/htdocs/travel/wp-content/plugins/traveler/service/ReservationResponse_1.php</file>
             <file>file:/C:/xampp/htdocs/travel/wp-content/plugins/traveler/utility/FlightUtility.php</file>
-            <file>file:/C:/xampp/htdocs/travel/wp-content/plugins/traveler/view/RoundTripView.php</file>
-            <file>file:/C:/xampp/htdocs/travel/wp-content/plugins/traveler/xml/PriceResponse.xml</file>
+            <file>file:/C:/xampp/htdocs/travel/wp-content/plugins/traveler/view/BookDisplay.php</file>
+            <file>file:/C:/xampp/htdocs/travel/wp-content/plugins/traveler/utility/DbUtility.php</file>
+            <file>file:/C:/xampp/htdocs/travel/wp-content/plugins/traveler/view/RDisplay.php</file>
+            <file>file:/C:/xampp/htdocs/travel/wp-content/plugins/traveler/js/book.js</file>
+            <file>file:/C:/xampp/htdocs/travel/wp-content/plugins/traveler/service/ReservationRequest.php</file>
+            <file>file:/C:/xampp/htdocs/travel/wp-content/plugins/traveler/models/PricingFly.php</file>
+            <file>file:/C:/xampp/htdocs/travel/wp-content/plugins/traveler/service/ReservationResponse.php</file>
         </group>
     </open-files>
 </project-private>

@@ -43,9 +43,19 @@ $ptypefull=array('ADT'=>'Adult','CNN'=>'Child','INF'=>'Infant');
 
 
 
-error_log("BOOKING INVOKED");
+error_log("BOOKING INVOKED".print_r($_SESSION['searchdata'],true));
 get_header();
-include PLUG_DIR.'/service/RoundTripBookReq.php';
+
+$searchdata=$_SESSION['searchdata'];
+if($searchdata['mode']=='oneway')
+{
+    error_log(" One Way ");
+ include PLUG_DIR.'/service/LowFareAirPriceRequest.php';   
+}
+ else {
+   include PLUG_DIR.'/service/RoundTripBookReq.php'; 
+}
+
 get_footer();
 
 

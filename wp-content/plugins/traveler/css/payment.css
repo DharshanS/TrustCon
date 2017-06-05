@@ -1,0 +1,174 @@
+.flight_main{
+    background-color:#ebeef0;
+}
+
+.flight_main > .navbar{
+    padding: 30px 100px 0px 100px;
+}
+
+.fstsub > li{
+    float:left;
+}
+.phonecls{
+    background: url(../images/v1/phoneicon.png) no-repeat 2px;
+    background-size: 10%;      
+}
+.clsheadopt {
+    width: 75%;
+    position: relative;
+    left: 13%;
+    margin-bottom: 10px;
+    height: 83px;
+}
+
+.fotcls{
+    padding: 5% 0%;
+    background-color: #fff;
+    margin-top: 5%;
+ }
+ .fotcopy{
+    text-align: center;
+
+    margin-top: 2%;
+    background-color: #fff;
+    padding: 1% 0px;
+    border-top: 1px solid #cabdbd;
+ }
+ 
+ .clsdebit{
+
+     font-size:16px;
+     color:#5a5959;
+     font-weight: bold;
+ }
+ .payfirst{
+     padding: 2% 0%;
+     background-color: #ebeef0;
+     width: 75%;
+     position: relative;
+     left: 13%;
+ }
+ 
+ .cardcls{
+     text-align: left;
+     padding: 6px 0px;
+     font-size: 15px;
+     color: #5a5959;
+ }
+ 
+ .cardcls1{
+   text-align: left;   
+   padding: 18px 0px;
+   font-size: 18px;
+   color:#5a5959;
+ }
+ 
+ .cardcls2{
+   text-align: left;   
+   padding: 8px 0px;
+   font-size: 18px;
+   color:#5a5959;
+ }
+ 
+ .imgcls{
+    text-align: center;
+     width: 8% !important;
+ }
+ 
+ .imgclsimg{
+    padding:0px;
+
+ }
+ .radioon{
+     background:url('../images/v1/radion.png')no-repeat;
+     width:50px;
+     height:50px;
+     margin:-10px -4px;
+     position:absolute; 
+ }
+ 
+ .radiooff{
+     background:url('../images/v1/radioff.png')no-repeat;
+     width:50px;
+     height:50px;
+     margin:-10px -4px;
+     position:absolute; 
+ }
+ 
+ .backbtn{
+    background:url('../images/v1/backbtn.png')no-repeat; 
+    width: 200px !important      ;
+    height: 80px !important;
+    float:right;
+ }
+ 
+ .mkpayment{
+    background:url('../images/v1/mkpayment.png')no-repeat; 
+
+
+     height: 56px !important;
+     border-style: none;
+ }
+ .make-pay-bt
+ {
+     width: 100%!important;
+     height: 103% !important;
+ }
+ .backbtncls{
+     padding: 0px 20px;
+ }
+ 
+ .totcls{
+
+     font-size:30px;
+     color:#5a5959;
+     float:right;
+ }
+ .totcls1{
+
+     font-size:30px;
+     color:#5a5959;
+ }
+  
+ .totmain{
+     padding: 2% 0%;
+     border-style: solid;
+     width: 75%;
+     position: relative;
+     left: 13%;
+ }
+ .titlecls{
+     text-align:right;
+ }
+
+ .pay_options
+ {
+     font-family: Segoe,"Segoe UI","Open Sans","DejaVu Sans","Trebuchet MS",Verdana,sans-serif !important;
+ }
+
+ .img-responsive
+ {
+     height: 49px !important;
+ }
+ .conform-book-btns
+ {
+
+     border-style: solid;
+     width: 75%;
+     position: relative;
+     left: 13%;
+ }
+ .pay-botom-label
+ {
+     border-style: solid;
+     width: 75% !important;
+     position: relative !important;
+     left: 13%;
+     text-align: center;
+ }
+ .paycard-type
+ {
+
+     border-style: solid;
+     text-align: center;
+ }

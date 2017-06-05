@@ -23,11 +23,12 @@
 <?php include '../au.com.gateway.client.facade/Report.php'; ?>
 <?php include '../au.com.gateway.client.facade/AmexWallet.php'; ?>
 
+
 <?php
 date_default_timezone_set('Asia/Colombo');
 //error_reporting(E_ALL);
-error_reporting(E_ALL & ~E_NOTICE);
-ini_set('display_errors', 1);
+//error_reporting(E_ALL & ~E_NOTICE);
+//ini_set('display_errors', 1);
 /*------------------------------------------------------------------------------
 STEP1: Build ClientConfig object
 ------------------------------------------------------------------------------*/
@@ -45,8 +46,11 @@ $Client = new GatewayClient($ClientConfig);
 STEP3: Build PaymentCompleteRequest object
 ------------------------------------------------------------------------------*/
 $completeRequest = new PaymentCompleteRequest();
+
 $completeRequest->setClientId(14000327);
 $completeRequest->setReqid($_GET['reqid']);
+
+
 /*------------------------------------------------------------------------------
 STEP4: Process PaymentCompleteRequest object
 ------------------------------------------------------------------------------*/
@@ -65,13 +69,15 @@ STEP5: Process PaymentCompleteResponse object
 //echo '<br>----------------------------------------------------------------------';
 // Code below by Abdul Manashi @lozingle.com
 $extradata=$completeResponse->getExtraData();
+
 $post_id=$extradata[0]['post_id'];
 
 $post_id=$_SESSION['post_id'];
 
 if($post_id=='' || $post_id<1){
-	die('<div align="center" style="padding: 10% 0;">Your session has expired, please start with a new search!</div>');
+	die('<div align="center" style="padding: 10% 0;">Your session has expired, please start with a new search! UT</div>');
 }
+
 
 $booking_type=$extradata[0]['booking_type'];
 
@@ -152,6 +158,7 @@ unset($mail);
 
 // test
 //$paymentsuccess=1;
+
 $AirSegment=array();
 $priceresult=array();
 if($paymentsuccess && $booking_type=='air'){
@@ -162,6 +169,8 @@ $row = $result->fetch_assoc();
 $booking_entries=$row['meta_value'];
 $booking_entries=base64_decode($booking_entries);
 $booking_entries=unserialize($booking_entries);	
+
+	
 }else{
 	die('There was an error running the query [' . $mysqli->error . ']');
 }

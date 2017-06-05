@@ -1,7 +1,8 @@
  <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
 	<soapenv:Header/>
 	<soapenv:Body>
-		<air:AirPriceReq TargetBranch="P2721018"  xmlns:air="http://www.travelport.com/schema/air_v32_0" xmlns:com="http://www.travelport.com/schema/common_v32_0" CheckOBFees="true" AuthorizedBy="User" TraceId="trace" >
+		<air:AirPriceReq TargetBranch="P2721018"  xmlns:air="http://www.travelport.com/schema/air_v32_0" xmlns:com="http://www.travelport.com/schema/common_v32_0"
+                                 CheckOBFees="true" AuthorizedBy="User" TraceId="trace" >
 			<BillingPointOfSaleInfo OriginApplication="UAPI" xmlns="http://www.travelport.com/schema/common_v32_0"/>
 			<air:AirItinerary>
 				<air:AirSegment  Key="e2I78rBAAA/BwhAbyDAAAA==" CabinClass="" Group="0" Carrier="9W" FlightNumber="255" Origin="CMB" Destination="BOM" DepartureTime="2017-04-13T05:40:00.000+05:30" ArrivalTime="2017-04-13T08:15:00.000+05:30" FlightTime="155" Distance="948"  ETicketability="Yes" Equipment="73H" ChangeOfPlane="false" ParticipantLevel="Secure Sell" LinkAvailability="true" PolledAvailabilityOption="Cached status used. Polled avail exists" OptionalServicesIndicator="false" AvailabilitySource=""  AvailabilityDisplayType="Fare Shop/Optimal Shop" ProviderCode="1G" >

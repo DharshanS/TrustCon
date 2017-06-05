@@ -1,0 +1,51 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : May 22, 2017, 10:12:46 PM
+    Author     : Dharshan
+*/
+
+.flexslider .slides img {
+    width: 100% !important;
+    display: block !important;
+    height: 330px !important;
+}
+
+img.alignnone {
+    margin: 51px 0;
+    height: 130px;
+    width: 127px;
+}
+.front-book-button
+{
+    
+}
+.front-cus
+{
+   border-style: solid;
+   border-color: white;
+   margin-right: 10px;
+}
+.srh-button-v1:hover {
+    cursor:pointer;
+}
+.srh-button-v1 {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background: #0c367e none repeat scroll 0 0;
+    /* border-color: #0c367e #0c367e #0c367e #f00; */
+    border-image: none;
+    border-style: solid;
+    border-width: 1px 1px 1px 2px;
+    color: #fff;
+    padding: 11px 0;
+    text-align: center;
+    width: 100%;
+    font-size: 14px;
+    border-radius: 6px !important
+}

@@ -64,11 +64,12 @@ if(isset($airPricingInfoList[0]['airAirSegmentRef'][0]))
  $loop=count($airPricingInfoList[0]['airAirSegmentRef']);   
 }
 
-
+$outBound=array();
+$inbound=array();
     for ($count=0;$count<$loop;$count++) {
 
 
-        $flightDetails[] = getFlightDetails($count);
+        
 
         if(isset($airPricingInfoList[0]['airAirPricingInfo'][0]))
         {
@@ -79,10 +80,19 @@ if(isset($airPricingInfoList[0]['airAirSegmentRef'][0]))
          $airbookingInfo=$airPricingInfoList[0]['airAirPricingInfo']['airBookingInfo'];  
         }
         
-        array_push($flightDetails[$count]['@attributes'], $airbookingInfo);
+        $temp = getFlightDetails($count);
+        array_push($temp['@attributes'], $airbookingInfo);
+        if($temp['@attributes']['Group']==0)
+        {
+            $outBound[]=$temp;
+        }else{
+            $inbound[]=$temp;
+        }
+       
 
     }
-
+$flightDetails[]=$outBound;
+$flightDetails[]=$inbound;
    
     $pricingFly->airDetails = $flightDetails;
     
@@ -178,3 +188,82 @@ function getPriceDetails() {
    // error_log('getPriceDetails --- >'.print_r($pricingDetails,true));
     return $pricingDetails;
 }
+//
+//$SQL = 'SELECT discount FROM airlines WHERE airline = "'.$thisairlinename.'" ';
+//$result = $mysqli->query($SQL);
+//$row = $result->fetch_object();
+//$discount = $row->discount;
+//if($discount>0)
+//{
+// $disAmt = ($grandbaseprice / 100) * $discount;
+//}
+//if($disAmt){
+//	$discountamount=$currency."".number_format($disAmt);
+//}else{
+//	$discountamount=0;
+//}
+//$netprice= $grandtotalprice - $disAmt;
+//$netpricewithcurrency=$currency."".number_format($netprice);
+//
+//
+//
+//// insert into wp post table
+//
+//// discount
+//$disAmt=0;
+//foreach($priceresult['BookingInfo'] as $BI){
+//$segmentref=$BI['SegmentRef'];
+//$skey=getSegmentKey($segmentref,$AirSegment);
+//$segmentdtls=$airsegments[$skey];	
+//// only departure leg
+//if($segmentdtls['Group']==0){
+//$thisCarrier=$segmentdtls['Carrier'];
+//$thisairlinename=$airlines[$thisCarrier];
+//break;
+//}}
+//
+//if(count($priceresult)){
+//$FareInfoRef=$priceresult['FareInfo']['0']['Key'];
+//$FareRuleKey=$priceresult['FareInfo']['0']['FareRuleKey'];
+//$BaggageRestriction=$priceresult['BaggageRestriction'];
+//
+//$EquivalentBasePrice=$priceresult['EquivalentBasePrice'];
+//$currency=substr($EquivalentBasePrice,0,3);
+//$EquivalentBasePrice=substr($EquivalentBasePrice,3);
+//$EquivalentBasePrice=$currency."".number_format($EquivalentBasePrice);
+//
+//$Taxes=$priceresult['Taxes'];
+//$currency=substr($Taxes,0,3);
+//$Taxes=substr($Taxes,3);
+//$Taxes=$currency."".number_format($Taxes);
+//
+//$TotalPrice=$priceresult['TotalPrice'];
+//$tPrice=$TotalPrice;
+//$currency=substr($TotalPrice,0,3);
+//$TotalPrice=substr($TotalPrice,3);
+//$TotalPrice=$currency."".number_format($TotalPrice);
+//
+//// discount
+//foreach($priceresult['BookingInfo'] as $BI){
+//$segmentref=$BI['SegmentRef'];
+//$skey=getSegmentKey($segmentref,$AirSegment);
+//$segmentdtls=$airsegments[$skey];	
+//// only departure leg
+//if($segmentdtls['Group']==0){
+//$thisCarrier=$segmentdtls['Carrier'];
+//$thisairlinename=$airlines[$thisCarrier];
+//break;
+//}}
+//$res = 'SELECT discount FROM airlines WHERE airline = "'.$thisairlinename.'" ';
+//$result = $mysqli->query($res); //$wpdb->get_results($res);
+//$row = $result->fetch_object();
+//$discount = $row->discount;
+//if($discount>0)
+//{
+////$disAmt = (substr($tPrice,3) / 100) * $discount;
+//$disAmt = ($grandbaseprice / 100) * $discount;
+//}else{
+//	$disAmt=0;
+//}
+//$netprice=substr($tPrice,3) - $disAmt;
+//$netprice=$grandtotalprice - $disAmt;

@@ -1,0 +1,90 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : May 22, 2017, 2:00:17 PM
+    Author     : mirdu
+*/
+
+.ow-shw
+{
+       top: 63px!important;
+      /*right: 76px!important;*/
+    
+      
+    font-family: "Droid Sans", sans-serif !important;
+    font-size: 12px !important;
+    position: relative;
+    color: orange !important;
+}
+
+.ow-shw-fr
+{
+    
+    top: 80px!important;
+    font-family: "Droid Sans", sans-serif !important;
+    font-size: 12px !important;
+    position: relative;
+    color: orange !important;
+    /*right: 100px!important;*/
+}
+.ow-bk-bt
+{
+   
+   position: relative;
+    border-style: none;
+    top: 68px !important;
+    left: 35%;
+}
+.ow-tkt-dts-row
+{
+    border-style: solid;
+        position: relative;
+
+    border-width: 2px !important;
+    border-color: #0047b3 !important;
+    width: 80.5%;
+    left: 10.8%!important;
+
+}
+.ow-tkt-dts
+{
+    font-family: "Droid Sans", sans-serif !important;
+    font-size: 12px !important;
+    background-color: white !important;;
+    width: 70% !important;
+    min-height: 150px !important; 
+    margin-left: 0px !important;;
+    
+}
+
+.ow-prz-dts{
+    background: url(../images/v1/ticket1.png) no-repeat;
+    min-height: 150px !important;
+   
+    /* padding-left: 97px !important; */
+    position: relative !important;
+    
+    width: 30% !important;
+    margin-right:0px!important;
+ 
+}
+.tiket_head_ow
+{
+    position: relative;
+    left: 1%;
+    font-family: "Droid Sans", sans-serif !important;
+    font-size: 10px;
+    background: url(../images/v1/border1.png)no-repeat;
+    height: 40px !important;
+    margin-top: 15px;
+
+    width: 69%!important;
+}
+.tiket_body
+{
+    margin-bottom: 10px;
+
+}

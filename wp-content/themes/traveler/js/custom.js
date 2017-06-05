@@ -51,22 +51,25 @@ jQuery(document).ready(function($){
         });
     });
 
-    $('.typeahead').typeahead({
+    $('.cls-booking-arvl').typeahead({
             hint: true,
             highlight: true,
             minLength: 3,
             limit: 8
         }, {
-            source: function(q, cb) { 
+
+            source: function(q, cb) {
                 return $.ajax({
                     dataType: 'json',
                     type: 'get',
-                    //url: 'http://gd.geobytes.com/AutoCompleteCity?callback=?&q=' + q,
-					url: 'http://localhost:8080/travel/getcity_airport.php?q=' + q,
+                    data: {action: 'getCity',q:q},
+                    url: '/travel/wp-admin/admin-ajax.php?',
                     chache: false,
+            
                     success: function(data) { //alert(data);
                         var result = [];
                         $.each(data, function(index, val) {
+
                             result.push({
                                 value: val
                             });

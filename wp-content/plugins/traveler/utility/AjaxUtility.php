@@ -8,31 +8,18 @@
 
 include_once 'FlightUtility.php';
  error_log('AJAX UTILTY');
- $action=$_POST['method'];
- switch ($action)
- {
-     case'details':echo formatFlightDetails();break;
- }
- 
-function formatFlightDetails()
+
+echo airDetails();
+function airDetails()
 {
-    $data=$_POST['data'];
-    foreach($data as $index)
-    {
-        
-    }
+    $fly=new FlightUtility();
+  $dts='{"ori":"'.$fly->getCityName($_GET['ori']).'","oriAir":"'.$fly->getAirportName($_GET['ori']).'","des":"'.$fly->getCityName($_GET['des']).'","desAir":"'.$fly->getCityName($_GET['des']).'","air":"'.$fly->getAirLineName($_GET['air']).'"
+}';
+
+
+  
+    
+    return $dts;
    
 }
-function getCityName()
-{
-    
-}
-function getAirportName()
-{
-    
-}
 
-function getTimeDiff()
-{
-    
-}

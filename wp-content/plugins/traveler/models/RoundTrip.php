@@ -26,6 +26,7 @@ class Trip
     var $bastOptionIn=array();
     var $inBound=array();
     var $outBound=array(); 
+    var $moreFly=array();
 
 }
 

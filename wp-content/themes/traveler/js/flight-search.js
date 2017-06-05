@@ -33,13 +33,15 @@ function rmv(ele){
  ncity=ncity-1;
 }
 jQuery("#addcity-btn").on("click", function() {
+	alert('click');
 	if( ncity < 5 ){
 	 var l=ncity-2+1;
 	  jQuery.ajax({
+
 			type: 'post',
 			data:{l:l},
-			url: 'http://www.clickmybooking.com/addcity.php',
-			//url: 'http://localhost/clickmybooking/addcity.php',
+			//url: 'http://www.clickmybooking.com/addcity.php',
+			url: 'http://localhost:8080/travel/addcity.php',
 			success: function(h) { 
 			  jQuery('#pps').html(h);	
 		      ncity = ncity +1;	

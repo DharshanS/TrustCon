@@ -27,7 +27,7 @@
     <footer id="main-footer">
         <div class="container text-center">
             <div align="left">Copy © 2015 Click My Booking. All Rights Reserved</div><div align="right"> About Us | Deals | Visa Service | Privacy Policy | Contact Us </div>
-      
+          <script type="application/javascript" src='http://localhost:8080/travel/wp-content/plugins/traveler/js/tr-search.js'/>
 </div>
     </footer>
 <?php }?>

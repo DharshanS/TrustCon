@@ -17,7 +17,7 @@
 /** The name of the database for WordPress */
 //define('WP_CACHE', true); //Added by WP-Cache Manager
 //define( 'WPCACHEHOME', '/home/clickmybooking/public_html/wp-content/plugins/wp-super-cache/' ); //Added by WP-Cache Manager
-define('DB_NAME', 'v1');
+define('DB_NAME', 'v2');
 
 /** MySQL database username */
 define('DB_USER', 'root');

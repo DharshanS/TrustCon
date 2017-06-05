@@ -7,6 +7,7 @@
  */
 function LowFareSearchRequest($searchdata)
 {
+  
 if($searchdata['mode']=='oneway'){
 
 $message = '';
@@ -60,7 +61,7 @@ $message = '
 <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
   <soapenv:Header/>
 	<soapenv:Body>
-		<LowFareSearchReq xmlns="http://www.travelport.com/schema/air_v32_0" AuthorizedBy="User" TraceId="trace" TargetBranch="'.$TARGETBRANCH.'" >
+		<LowFareSearchReq xmlns="http://www.travelport.com/schema/air_v32_0" AuthorizedBy="User" TraceId="trace" TargetBranch="'.TARGETBRANCH.'" >
 		  <BillingPointOfSaleInfo xmlns="http://www.travelport.com/schema/common_v32_0" OriginApplication="UAPI" />
 		  <SearchAirLeg>
 			<SearchOrigin>
@@ -92,7 +93,7 @@ $message = '
 		  </SearchAirLeg>
 		  <AirSearchModifiers>
 			<PreferredProviders>
-			  <Provider xmlns="http://www.travelport.com/schema/common_v32_0" Code="'.$Provider.'" />
+			  <Provider xmlns="http://www.travelport.com/schema/common_v32_0" Code="'.PROVIDER.'" />
 			</PreferredProviders>
 		  </AirSearchModifiers>';
 				foreach($searchdata['passengers'] as $k=>$psgcode){
