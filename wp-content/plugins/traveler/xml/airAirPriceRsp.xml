@@ -1,0 +1,83 @@
+<SOAPEnvelope xmlns:SOAP="http://schemas.xmlsoap.org/soap/envelope/">
+	<SOAPBody>
+		<airAirPriceRsp TraceId="trace" TransactionId="9121B37E0A0759C03544BFF348F5D85B" ResponseTime="672" xmlns:air="http://www.travelport.com/schema/air_v32_0" xmlns:common_v32_0="http://www.travelport.com/schema/common_v32_0">
+			<common_v32_0ResponseMessage Code="4400" Type="Warning" ProviderCode="1G">No Merchandising optional services returned for Flight(s) [OD][186]</common_v32_0ResponseMessage>
+			<common_v32_0ResponseMessage Code="4400" Type="Warning" ProviderCode="1G">No Merchandising optional services returned for Flight(s) [OD][522]</common_v32_0ResponseMessage>
+			<airAirItinerary>
+				<airAirSegment Key="9RPLEyBAAA/Bu25EIEAAAA==" Group="0" Carrier="OD" FlightNumber="186" ProviderCode="1G" Origin="CMB" Destination="KUL" DepartureTime="2017-08-24T00:25:00.000+05:30" ArrivalTime="2017-08-24T06:45:00.000+08:00" FlightTime="230" TravelTime="230" Distance="1526" ClassOfService="V" Equipment="738" ChangeOfPlane="false" OptionalServicesIndicator="false" ParticipantLevel="Secure Sell" LinkAvailability="true" AvailabilityDisplayType="Fare Specific Fare Quote Unbooked">
+					<airCodeshareInfo OperatingCarrier="OD">Malindo Airways</airCodeshareInfo>
+					<airFlightDetails Key="9RPLEyBAAA/Bv25EIEAAAA==" Origin="CMB" Destination="KUL" DepartureTime="2017-08-24T00:25:00.000+05:30" ArrivalTime="2017-08-24T06:45:00.000+08:00" FlightTime="230" TravelTime="230" Distance="1526"/>
+				</airAirSegment>
+				<airAirSegment Key="9RPLEyBAAA/Bw25EIEAAAA==" Group="0" Carrier="OD" FlightNumber="522" ProviderCode="1G" Origin="KUL" Destination="DMK" DepartureTime="2017-08-24T16:00:00.000+08:00" ArrivalTime="2017-08-24T17:10:00.000+07:00" FlightTime="130" TravelTime="130" Distance="754" ClassOfService="X" Equipment="738" ChangeOfPlane="false" OptionalServicesIndicator="false" ParticipantLevel="Secure Sell" LinkAvailability="true" AvailabilityDisplayType="Fare Specific Fare Quote Unbooked">
+					<airCodeshareInfo OperatingCarrier="OD">Malindo Airways</airCodeshareInfo>
+					<airFlightDetails Key="9RPLEyBAAA/Bx25EIEAAAA==" Origin="KUL" Destination="DMK" DepartureTime="2017-08-24T16:00:00.000+08:00" ArrivalTime="2017-08-24T17:10:00.000+07:00" FlightTime="130" TravelTime="130" Distance="754"/>
+				</airAirSegment>
+			</airAirItinerary>
+			<airAirPriceResult>
+				<airAirPricingSolution Key="9RPLEyBAAA/By25EIEAAAA==" TotalPrice="LKR22165" BasePrice="LKR12200" ApproximateTotalPrice="LKR22165" ApproximateBasePrice="LKR12200" Taxes="LKR9965" Fees="LKR0" ApproximateTaxes="LKR9965" QuoteDate="2017-06-10">
+					<airAirSegmentRef Key="9RPLEyBAAA/Bu25EIEAAAA=="/>
+					<airAirSegmentRef Key="9RPLEyBAAA/Bw25EIEAAAA=="/>
+					<airAirPricingInfo Key="9RPLEyBAAA/Bz25EIEAAAA==" TotalPrice="LKR22165" BasePrice="LKR12200" ApproximateTotalPrice="LKR22165" ApproximateBasePrice="LKR12200" ApproximateTaxes="LKR9965" Taxes="LKR9965" LatestTicketingTime="2017-06-11T23:59:00.000+05:30" PricingMethod="Guaranteed" IncludesVAT="false" ETicketability="Yes" PlatingCarrier="OD" ProviderCode="1G">
+						<airFareInfo Key="9RPLEyBAAA/B425EIEAAAA==" FareBasis="VOWLK" PassengerTypeCode="ADT" Origin="CMB" Destination="KUL" EffectiveDate="2017-06-10T14:02:00.000+05:30" DepartureDate="2017-08-24" Amount="LKR9500">
+							<common_v32_0Endorsement Value="CHCKIN 2PC MAX 30KG IN TTL"/>
+							<airFareRuleKey FareInfoRef="9RPLEyBAAA/B425EIEAAAA==" ProviderCode="1G">6UUVoSldxwhkmoKifaSsFMbKj3F8T9EyxsqPcXxP0TIjSPOlaHfQe5cuasWd6i8Dly5qxZ3qLwOXLmrFneovA5cuasWd6i8Dly5qxZ3qLwOXLmrFneovA/+vsMmYmMn+M3ExqSoG051bRiEEv1xWFdd8Jf1IfArkVCulqMwbpNYRHrzWZukgtn4zsDCoQFCZ4Vv9Z0YzQ0Lq/20RpEmAXlby9IE1rxlSp7GoYpQef1gXV1oPgUILB66cW4+txcdRFVHsNy1BaPCAdcY0m0a4yk4nKb2G5mOFPt76rzP+wEdTHI/R3tptRb+F729rtUMfv4Xvb2u1Qx+/he9va7VDH7+F729rtUMfv4Xvb2u1Qx80GqQ2wgDK/01BlpTwyo+r9GjARZYw7j/TROTkGAG0MWxL8OD6CMOBvkWd0BvnJFZx4j4s3qKGsuVuG0bsK6zw</airFareRuleKey>
+						</airFareInfo>
+						<airFareInfo Key="9RPLEyBAAA/B625EIEAAAA==" FareBasis="XOWKPGMY" PassengerTypeCode="ADT" Origin="KUL" Destination="DMK" EffectiveDate="2017-06-10T14:02:00.000+05:30" DepartureDate="2017-08-24" Amount="LKR2700">
+							<airFareSurcharge Key="9RPLEyBAAA/B725EIEAAAA==" Type="Other" Amount="NUC3.00"/>
+							<common_v32_0Endorsement Value="CHCKIN 2PC MAX 30KG IN TTL"/>
+							<airFareRuleKey FareInfoRef="9RPLEyBAAA/B625EIEAAAA==" ProviderCode="1G">6UUVoSldxwhkmoKifaSsFMbKj3F8T9EyxsqPcXxP0TIjSPOlaHfQe5cuasWd6i8Dly5qxZ3qLwOXLmrFneovA5cuasWd6i8Dly5qxZ3qLwOXLmrFneovA/+vsMmYmMn+M3ExqSoG0517Efhtb54I2YKxm8v2izTRffAIozri2AARHrzWZukgtrQ0wegD0jFG92Lrg4qrFGKco2yDRdskdxll6FxyIC6cYuAWfcH2w92IEQfz1U0L78U7PUrRH1SK3wmg1+l4DwLqkp0FEw0raOCbZ1nsUQQBZcgyAzH4/foObLxK6edkIYq+cJFUBzrily5qxZ3qLwOXLmrFneovA5cuasWd6i8Dly5qxZ3qLwOXLmrFneovA3N5jV9Rrzq8txHW6jzw2UbAQJCzzE4cyVpHQceE36HzHGkjBTxHKEaPDYhImy3Qz4VE8uAtEedr</airFareRuleKey>
+						</airFareInfo>
+						<airBookingInfo BookingCode="V" CabinClass="Economy" FareInfoRef="9RPLEyBAAA/B425EIEAAAA==" SegmentRef="9RPLEyBAAA/Bu25EIEAAAA=="/>
+						<airBookingInfo BookingCode="X" CabinClass="Economy" FareInfoRef="9RPLEyBAAA/B625EIEAAAA==" SegmentRef="9RPLEyBAAA/Bw25EIEAAAA=="/>
+						<airTaxInfo Category="LK" Amount="LKR7000" Key="9RPLEyBAAA/B025EIEAAAA=="/>
+						<airTaxInfo Category="E7" Amount="LKR157" Key="9RPLEyBAAA/B125EIEAAAA=="/>
+						<airTaxInfo Category="G8" Amount="LKR68" Key="9RPLEyBAAA/B225EIEAAAA=="/>
+						<airTaxInfo Category="YR" Amount="LKR2740" Key="9RPLEyBAAA/B325EIEAAAA=="/>
+						<airFareCalc>CMB OD KUL 62.64VOWLK OD BKK Q3.00 14.59XOWKPGMY NUC80.23END ROE151.642</airFareCalc>
+						<airPassengerType Code="ADT"/>
+						<airBaggageAllowances>
+							<airBaggageAllowanceInfo TravelerType="ADT" Origin="CMB" Destination="BKK" Carrier="OD">
+								<airURLInfo>
+									<airURL>MYTRIPANDMORE.COM/BAGGAGEDETAILSOD.BAGG</airURL>
+								</airURLInfo>
+								<airTextInfo>
+									<airText>30K</airText>
+									<airText>BAGGAGE DISCOUNTS MAY APPLY BASED ON FREQUENT FLYER STATUS/ ONLINE CHECKIN/FORM OF PAYMENT/MILITARY/ETC.</airText>
+								</airTextInfo>
+								<airBagDetails ApplicableBags="1stChecked">
+									<airBaggageRestriction>
+										<airTextInfo>
+											<airText>CHGS MAY APPLY IF BAGS EXCEED TTL WT ALLOWANCE</airText>
+										</airTextInfo>
+									</airBaggageRestriction>
+								</airBagDetails>
+								<airBagDetails ApplicableBags="2ndChecked">
+									<airBaggageRestriction>
+										<airTextInfo>
+											<airText>CHGS MAY APPLY IF BAGS EXCEED TTL WT ALLOWANCE</airText>
+										</airTextInfo>
+									</airBaggageRestriction>
+								</airBagDetails>
+							</airBaggageAllowanceInfo>
+							<airCarryOnAllowanceInfo Origin="CMB" Destination="KUL" Carrier="OD">
+								<airTextInfo>
+									<airText>BAGGAGE ALLOWANCE DATA NOT AVAILABLE</airText>
+								</airTextInfo>
+							</airCarryOnAllowanceInfo>
+							<airCarryOnAllowanceInfo Origin="KUL" Destination="BKK" Carrier="OD">
+								<airTextInfo>
+									<airText>BAGGAGE ALLOWANCE DATA NOT AVAILABLE</airText>
+								</airTextInfo>
+							</airCarryOnAllowanceInfo>
+						</airBaggageAllowances>
+					</airAirPricingInfo>
+					<airFareNote Key="9RPLEyBAAA/B/25EIEAAAA==">LAST DATE TO PURCHASE TICKET: 11JUN17</airFareNote>
+					<airFareNote Key="9RPLEyBAAA/BA35EIEAAAA==">TICKETING AGENCY 3OS2</airFareNote>
+					<airFareNote Key="9RPLEyBAAA/BB35EIEAAAA==">DEFAULT PLATING CARRIER OD</airFareNote>
+					<airFareNote Key="9RPLEyBAAA/BC35EIEAAAA==">E-TKT REQUIRED</airFareNote>
+					<airFareNote Key="9RPLEyBAAA/BD35EIEAAAA==">TICKETING FEES MAY APPLY</airFareNote>
+				</airAirPricingSolution>
+			</airAirPriceResult>
+		</airAirPriceRsp>
+	</SOAPBody>
+</SOAPEnvelope>
