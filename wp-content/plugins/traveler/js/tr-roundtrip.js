@@ -92,8 +92,25 @@ jQuery(document).ready(function()
     })
 
 
+     jQuery( window ).resize(function() {
+          
+        if (window.matchMedia("(min-width:500px)").matches) {
+           $('.ow-prz-dts').height((parseInt($('.sub-tkt').innerHeight()))+'px');
+           
+        }
+    });
 
-
+    if(jQuery('#ritema').prop('checked')==true){        
+        jQuery('input[name="return_date"]').hide(); 
+    };
+    
+    jQuery('input[name="mode"]').change(function (){       
+       if(jQuery(this).attr('id')=='ritema'){        
+         jQuery('input[name="return_date"]').hide(); 
+       }else{
+         jQuery('input[name="return_date"]').show();    
+       } 
+    }); 
 
 
 
