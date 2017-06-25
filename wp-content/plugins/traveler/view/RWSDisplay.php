@@ -14,7 +14,7 @@ function init_display($response) {$flyUtil =new FlightUtility();
 ?>
 <div class="container sky-bg flight_con">
 
-    <div class="srh-result-area">
+    <div class="col-lg-9 col-md-9 srh-result-area">
 
         <form>
 
@@ -343,25 +343,23 @@ function init_display($response) {$flyUtil =new FlightUtility();
                         {
                           $moreFlyList=$index->moreFly;  
                         }
-                    ?> 
+                        ?> 
 
 
 
   <div class="row ticket_details_r">
       
-        <div class="container tiket_head_r">
-            <div class="row">
-               
-            </div>
+        <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12 tiket_head_r">
+            
         </div>
       <!-- fly details start-->
-        <div class="container tiket_body_r">
-            <div class="row  item-rd ">
-            <div class="col-lg-9 well-sm ">
+        <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12 tiket_body_r">
+            <div class="row  col-lg-12  col-md-12 col-sm-12 col-xs-12 item-rd ">
+            <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9 well-sm item-rd-sub">
       
                   <!--Out Bond start -->
                     <div class="row tkt_dts_r">
-                                <div class="col-sm-3 col-xs-6 col-lg-4 flt rnd-out-1">
+                                <div class="col-sm-3 col-xs-4 col-lg-4 flt rnd-out-1">
                                     <p class="out-p">  
                                         <input type="radio" class="radio-small out-select" name="outBound_select"  key="<?php echo $Key ?>"
                                                value="<?php echo base64_encode(json_encode($outBoundBestFlight)); ?>" >  &#160;&#160;&#160;&#160;   <?php echo $outBoundBestFirstFlight['Origin'] ?> <br>
@@ -374,19 +372,19 @@ function init_display($response) {$flyUtil =new FlightUtility();
                                         </span> <?php } ?>
                                     </p>  
                                 </div>
-                                <div class="col-sm-3 col-xs-6 col-lg-4 flt">
+                                <div class="col-sm-4 col-xs-4 col-lg-4 flt">
                                     <p class="out-p2">&#160;&#160;&#160;&#160;&#160;&#160; <?php echo $outBoundBestLastFlight['Destination'] ?>  <br>
                                         <?php echo date("h:i a", strtotime($outBoundBestLastFlight['ArrivalTime'])) ?> | <?php echo date("D, d M y", strtotime($outBoundBestLastFlight['ArrivalTime'])) ?> <br>
                                         </p>
                                 </div>
 
-                                <div class="col-sm-1 col-xs-4 col-lg-2 flt">1Stop</div>
-                                <div class="col-sm-2 col-xs-4 col-lg-2 flt">
+                                <div class="col-sm-2 col-xs-2 col-lg-2 flt flt_sub">1Stop</div>
+                                <div class="col-sm-2 col-xs-2 col-lg-2 flt flt_sub">
                                     <?php echo $flightUtility->getTimeDiff(date("h:i a", strtotime($outBoundBestLastFlight['DepartureTime'])), date("h:i a", strtotime($outBoundBestFirstFlight['ArrivalTime']))) ?>
                                 </div>
                     </div>
                   <div class="row rd-airimage">
-                                   <div class="col-sm-3 col-xs-4 col-lg-3 airdiv ">
+                                   <div class="col-sm-4 col-xs-4 col-lg-3 airdiv ">
                                     <p><img src="../airimages/<?php echo $inBoundBestLastFlight['Carrier'] ?>.GIF">
                                     <?php echo $flightUtility->getAirLineName($inBoundBestLastFlight['Carrier']) ?></p> 
                                                                    </div>
@@ -406,7 +404,7 @@ function init_display($response) {$flyUtil =new FlightUtility();
                   
                    <!--Best inbound Start-->
                   <div class="row tkt_dts_r">           
-                              <div class="col-sm-3 col-xs-6 col-lg-4 flt  rnd-out-1">                                             
+                              <div class="col-sm-3 col-xs-4 col-lg-4 flt  rnd-out-1">                                             
                                   <p class="out-p">
                                       <input type="radio" class="radio-small out-select" name="inBound_select"  key="<?php echo $Key ?>"
                                              value="<?php echo base64_encode(json_encode($inBoundBestFlight)); ?>" > &#160;&#160;&#160;&#160;
@@ -421,7 +419,7 @@ function init_display($response) {$flyUtil =new FlightUtility();
                                       <?php } ?>
                                   </p>
                               </div>
-                              <div class="col-sm-3 col-xs-6 col-lg-4 flt ">
+                              <div class="col-sm-4 col-xs-4 col-lg-4 flt ">
                                   <p class="out-p2" >&#160;&#160;&#160;&#160;&#160;&#160;<?php echo $inBoundBestLastFlight['Destination'] ?> <br>
                                       <?php echo date("h:i a", strtotime($inBoundBestLastFlight['ArrivalTime'])) ?>
                                       <?php echo date("D, d M y", strtotime($inBoundBestLastFlight['ArrivalTime'])) ?><br>
@@ -434,8 +432,8 @@ function init_display($response) {$flyUtil =new FlightUtility();
                                   </p>
                               </div>
                              
-                              <div class="col-sm-1 col-xs-4 col-lg-2 flt ">1Stop</div>
-                              <div class="col-sm-2 col-xs-4 col-lg-2 flt ">
+                              <div class="col-sm-2 col-xs-2 col-lg-2 flt flt_sub">1Stop</div>
+                              <div class="col-sm-2 col-xs-2 col-lg-2 flt flt_sub ">
                                   <?php echo $flightUtility->getTimeDiff(date("h:i a", strtotime($inBoundBestLastFlight['DepartureTime'])), date("h:i a", strtotime($inBoundBestFirstFlight['ArrivalTime']))) ?>
                               </div>
              </div>
@@ -453,7 +451,7 @@ function init_display($response) {$flyUtil =new FlightUtility();
             </div>
             
                 
-                 <div class="col-lg-3 prz_dts_r">
+                 <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 prz_dts_r">
                   <label class="cls-flight-prz"><?php echo $baseprice['TotalPrice']?></label>
                           <form name="frmAvail" action="../booking" method="post">
                             <input type="hidden" name="outbound" id="bout_<?php echo $Key ?>" value="<?php echo base64_encode(json_encode($outBoundBestFlight)); ?>">
@@ -506,7 +504,7 @@ function init_display($response) {$flyUtil =new FlightUtility();
       
                   <!--Out Bond start -->
                     <div class="row tkt_dts_r">
-                                <div class="col-sm-3 col-xs-6 col-lg-4 flt rnd-out-1">
+                                <div class="col-sm-3 col-xs-6 col-lg-4 col-md-4 flt rnd-out-1">
                                     <p class="out-p">  
                                         <input type="radio" class="radio-small out-select" name="outBound_select"  key="<?php echo $KeyLoc ?>"
                                                value="<?php echo base64_encode(json_encode($m_outBoundBestFlight)); ?>" >  &#160;&#160;&#160;&#160;   <?php echo $outBoundBestFirstFlight['Origin'] ?> <br>
@@ -519,19 +517,19 @@ function init_display($response) {$flyUtil =new FlightUtility();
                                         </span> <?php } ?>
                                     </p>  
                                 </div>
-                                <div class="col-sm-3 col-xs-6 col-lg-4 flt">
+                                <div class="col-sm-4 col-xs-6 col-lg-4 col-md-4 flt">
                                     <p class="out-p2">&#160;&#160;&#160;&#160;&#160;&#160; <?php echo $m_outBoundBestLastFlight['Destination'] ?>  <br>
                                         <?php echo date("h:i a", strtotime($m_outBoundBestLastFlight['ArrivalTime'])) ?> | <?php echo date("D, d M y", strtotime($m_outBoundBestLastFlight['ArrivalTime'])) ?> <br>
                                         </p>
                                 </div>
 
-                                <div class="col-sm-1 col-xs-4 col-lg-2 flt">1Stop</div>
-                                <div class="col-sm-2 col-xs-4 col-lg-2 flt">
+                                <div class="col-sm-2 col-xs-4 col-lg-2 col-md-2 flt">1Stop</div>
+                                <div class="col-sm-2 col-xs-4 col-lg-2 col-md-2 flt">
                                     <?php echo $flightUtility->getTimeDiff(date("h:i a", strtotime($m_outBoundBestFirstFlight['DepartureTime'])), date("h:i a", strtotime($m_outBoundBestLastFlight['ArrivalTime']))) ?>
                                 </div>
                     </div>
                   <div class="row rd-airimage">
-                                   <div class="col-sm-3 col-xs-4 col-lg-3 airdiv ">
+                                   <div class="col-sm-3 col-xs-4 col-lg-3 col-md-3 airdiv ">
                                     <p><img src="../airimages/<?php echo $m_outBoundBestLastFlight['Carrier'] ?>.GIF">
                                     <?php echo $flightUtility->getAirLineName($m_outBoundBestLastFlight['Carrier']) ?></p>    
                                     <div class="break">erty</div>
@@ -551,7 +549,7 @@ function init_display($response) {$flyUtil =new FlightUtility();
                   
                    <!--Best inbound Start-->
                   <div class="row tkt_dts_r">           
-                              <div class="col-sm-3 col-xs-6 col-lg-4 flt  rnd-out-1">                                             
+                              <div class="col-sm-3 col-xs-6 col-lg-4 col-md-4 flt  rnd-out-1">                                             
                                   <p class="out-p">
                                       <input type="radio" class="radio-small out-select" name="inBound_select"  key="<?php echo $KeyLoc ?>"
                                              value="<?php echo base64_encode(json_encode($m_inBoundBestFlight)); ?>" > &#160;&#160;&#160;&#160;
@@ -566,7 +564,7 @@ function init_display($response) {$flyUtil =new FlightUtility();
                                       <?php } ?>
                                   </p>
                               </div>
-                              <div class="col-sm-3 col-xs-6 col-lg-4 flt ">
+                              <div class="col-sm-3 col-xs-6 col-lg-4 col-md-4 flt ">
                                   <p class="out-p2" >&#160;&#160;&#160;&#160;&#160;&#160;<?php echo $m_inBoundBestLastFlight['Destination'] ?> <br>
                                       <?php echo date("h:i a", strtotime($m_inBoundBestLastFlight['ArrivalTime'])) ?> 
                                       <?php echo date("D, d M y", strtotime($m_inBoundBestLastFlight['ArrivalTime'])) ?><br>
@@ -574,8 +572,8 @@ function init_display($response) {$flyUtil =new FlightUtility();
                                   </p>
                               </div>
                              
-                              <div class="col-sm-1 col-xs-4 col-lg-2 flt ">1Stop</div>
-                              <div class="col-sm-2 col-xs-4 col-lg-2 flt ">
+                              <div class="col-sm-1 col-xs-4 col-lg-2 col-md-2 flt ">1Stop</div>
+                              <div class="col-sm-2 col-xs-4 col-lg-2 col-md-2 flt ">
                                   <?php echo $flightUtility->getTimeDiff(date("h:i a", strtotime($m_inBoundBestFirstFlight['DepartureTime'])), date("h:i a", strtotime($m_inBoundBestLastFlight['ArrivalTime']))) ?>
                               </div>
              </div>
