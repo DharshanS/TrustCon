@@ -56,24 +56,12 @@ else{
                     <ul class="list nav-drop-menu user_nav_big social_login_nav_drop" >
                         <li><a  class="" href="<?php echo get_permalink($page_login) ?>"><?php st_the_language('sign_in')?></a></li>
 
-                       <?php /*?> <?php if($login_fb=="on"): ?>
-                        <li><a onclick="return false" class="btn_login_fb_link login_social_link" href="<?php echo STSocialLogin::get_provider_login_url('Facebook') ?>"><?php st_the_language('connect_with')?> <i class="fa fa-facebook"></i></a></li>
-                        <?php endif;?>
-
-                        <?php if($login_gg=="on"): ?>
-                        <li><a onclick="return false" class="btn_login_gg_link login_social_link" href="<?php echo STSocialLogin::get_provider_login_url('Google') ?>"><?php st_the_language('connect_with')?> <i class="fa fa-google-plus"></i></a></li>
-
-                        <?php endif;?>
-
-                        <?php if($login_tw=="on"): ?>
-                        <li><a onclick="return false" class="btn_login_tw_link login_social_link" href="<?php echo STSocialLogin::get_provider_login_url('Twitter') ?>"><?php st_the_language('connect_with')?> <i class="fa fa-twitter"></i></a></li>
-                        <?php endif;?><?php */?>
                     </ul>
 </li>
 <li class="nav-drop"><a href="<?php echo get_permalink($page_login) ?>"><i class="fa fa-user-plus"></i> Sign Up</a>
 				</li>
             <?php endif;?>
-            <li><img src="http://www.clickmybooking.com/wp-content/uploads/2015/07/hotline.png" width="160px" height="33px" ></li>
+            <li><img src="<?php echo TRAVELER__PLUGIN_URL.'images/v1/hotline.png' ?>" width="160px" height="33px" ></li>
            
         </ul>
        

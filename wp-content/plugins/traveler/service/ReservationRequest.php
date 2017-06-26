@@ -1,4 +1,4 @@
-<?php
+ <?php
 
 /* 
  * To change this license header, choose License Headers in Project Properties.
@@ -123,8 +123,7 @@ function init_reservation()
                 if (isset($fareInfp['NotValidBefore'])) {
                     $NotValidBefore = $fareInfp['NotValidBefore'];
                 }
-                $soapRequest .= ' NotValidAfter="' . $NotValidAfter . '" NotValidBefore="' . $NotValidBefore . '"'
-                    . ' Origin="' . $fareInfp['Origin'] . '" PassengerTypeCode="' . $fareInfp['PassengerTypeCode'] . '" >'
+                $soapRequest .= ' Origin="' . $fareInfp['Origin'] . '" PassengerTypeCode="' . $fareInfp['PassengerTypeCode'] . '" >'
                     . '<common_v32_0:Endorsement Value="NON-REF/NON-END"/>'
                     . '<air:FareRuleKey FareInfoRef="' . $fareInfp['Key'] . '"'
                     . ' ProviderCode="1G">'
@@ -182,7 +181,7 @@ function init_reservation()
 
 
     //error_log("Reservation Request ---- >" . $soapRequest);
-    $response = $util->sendPost(ENDPOINT, $soapRequest, "ReservationResponse.xml");
+    $response = $util->sendPost(ENDPOINT, $soapRequest, "");
 
     return process_reservation_response($response, $reReq);
 

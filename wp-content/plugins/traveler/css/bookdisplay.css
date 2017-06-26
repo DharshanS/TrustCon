@@ -54,7 +54,7 @@ and open the template in the editor.
 }
 
 .ticbck{
-   background: url('../images/v1/bcktic.png') no-repeat !important; 
+   background: url('../images/v1/ticket.png') no-repeat !important;
    height:150px !important;
    position: absolute !important;
    float: right !important;
@@ -117,12 +117,12 @@ and open the template in the editor.
 }
 .pr-dts
 {
-    width: 12% !important;
+
 
     font-size: 13px;
 }
 
-.confrmcols-rd{
+.book-round{
     padding: 5px 0px !important;
     background-color: #ffffff!important;
     /*border-style: solid;*/
@@ -196,8 +196,7 @@ and open the template in the editor.
 }
 
 .headersty{
-    font-size: 16px!important;
-    font-weight: bold;
+
 }
 
 .lblin{
@@ -213,6 +212,7 @@ and open the template in the editor.
 .infrm{
 
     width:200px!important;
+    height: 34px;
 }
 
 .lblnote{
@@ -224,6 +224,7 @@ and open the template in the editor.
 .infrm2{
 
     width:150px!important;
+    height: 34px;
 }
 
 .ticfour{
@@ -379,16 +380,11 @@ and open the template in the editor.
      display:none!important;
  }
  
- .clsheadopt {
-    background-color: #ffffff!important;
-    padding: 6px 0px!important;
-    text-align: center!important;
 
-   
-}
+
 .book-page
 {
-    font-family: Segoe,"Segoe UI","Open Sans","DejaVu Sans","Trebuchet MS",Verdana,sans-serif !important;
+    font-family: Segoe,"Segoe UI","Open Sans";
 
     font-size: 14px !important;
     line-height: 1.42857143 !important;
@@ -406,13 +402,15 @@ and open the template in the editor.
 
 .form-control
 {
-    height: 23px !important;
+
+    height: 30px !important;
+    padding: 0px 12px;
 
             border: 1px solid black !important;
 }
 .date-meera
 {
-        height: 23px !important;
+        height: 34px !important;
 
 
         
@@ -421,13 +419,32 @@ and open the template in the editor.
 .price-dts-header
 {
     border-style: solid;
-    width: 65%;
+    width: 50%;
     position: relative;
     left: 5%;
+    height: 40px;
     border-color:InactiveBorder;
 
 }
 .price-dts-body
 {
     background-color: white;
+    width: 50%;
+    position: relative;
+    left: 5%;
+}
+.book-oneway{
+    padding: 51px 0px !important;
+    background-color: #ffffff!important;
+    /* border-style: solid; */
+    width: 93% !important;
+    position: relative;
+    right: 13px;
+    background-color: green;
+    height: 150px;
+}
+.total-price-label
+{
+    font-size: 20px !important;
+    font-weight: bold !important;
 }

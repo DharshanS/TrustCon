@@ -23,7 +23,7 @@ if (!class_exists('FlightUtility')) {
             }
 
             $countries = $_SESSION['countries_new'];
-            error_log(" CountryName -- >" . print_r($countries[$ctycode], true));
+
 
             return $countries[$ctycode];
         }
@@ -35,7 +35,7 @@ if (!class_exists('FlightUtility')) {
                 $dbUtlity->load_place_details();
             }
             $airportsname = $_SESSION['airportsname'];
-            error_log(" AirportName  -- >" . print_r($airportsname[$ctycode], true));
+
 
             return $airportsname[$ctycode];
         }
@@ -47,7 +47,7 @@ if (!class_exists('FlightUtility')) {
                 $dbUtlity->airlineload();
             }
             $airlines = $_SESSION['airlines'];
-            error_log(" AirLineName -- >" . print_r($airlines[$aircode], true));
+
 
             return $airlines[$aircode];
         }
@@ -59,7 +59,6 @@ if (!class_exists('FlightUtility')) {
                 $dbUtlity->load_place_details();
             }
             $airportscity = $_SESSION['airportscity'];
-            error_log(" AirLineName -- >" . print_r($airportscity[$aircode], true));
 
             return $airportscity[$aircode];
         }
@@ -107,7 +106,7 @@ if (!class_exists('FlightUtility')) {
         function sendPost($endpoint, $soap, $fileXml)
         {
 
-        error_log("Request Xml-----> ".$soap);
+
            
             $gzdata = gzencode($soap);
             $auth = base64_encode(CREDENTIALS);
@@ -136,21 +135,29 @@ if (!class_exists('FlightUtility')) {
             curl_setopt($curl, CURLOPT_ENCODING, 'gzip');
             curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
 
-            $resp = curl_exec($curl);
-
-            curl_close($curl);
 
 
-            //$resp=file_get_contents(PLUG_DIR .'/xml/'.$fileXml, FILE_USE_INCLUDE_PATH);
+            if($fileXml!="") {
+                $resp = file_get_contents(PLUG_DIR . '/xml/' . $fileXml, FILE_USE_INCLUDE_PATH);
+            }
+            else
+            {  $resp = curl_exec($curl);
+                curl_close($curl);
+            }
 
+           // error_log('Request Xml--->' . print_r($soap, true));
             $xml = preg_replace("/(<\/?)(\w+):([^>]*>)/", "$1$2$3", $resp);
+          //  error_log('Response Xml--->' . print_r($xml, true));
             $xml = simplexml_load_string($xml);
-            error_log("Response Xml-----> ".$xml);
+
 
             $json = json_encode($xml);
-            error_log('Response Json--->' . print_r($json, true));
+
 
             $responseArray = json_decode($json, true);
+    if($json=='false'|| isset($responseArray['SOAPBody']['SOAPFault'])){
+    echo "Please search again changing your input or contact travel agent ................";
+    return;}
             return $responseArray;
 
         }
@@ -179,5 +186,3 @@ if (!class_exists('FlightUtility')) {
 
 
 //    
-//}
-// if(empty($_SESSION['airlines']))$_SESSION['airlines']=$airlines;

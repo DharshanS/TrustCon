@@ -7,52 +7,31 @@
  */
 include_once PLUG_DIR .'/utility/FlightUtility.php';
 include PLUG_DIR.'/service/LowFareAirPriceResponse.php';
-include PLUG_DIR.'/view/RDisplay.php';
-
-
-$bookingdataoriginal = '';
-$bookingdata = '';
-$TARGETBRANCH = 'P2721018'; 
-$CREDENTIALS = 'Universal API/uAPI4655248065-02590718:nA?9{c3YC8';
-$PCC='3OS2';
-$Provider = '1G'; 
+include PLUG_DIR.'/view/BookDisplay.php';
 //get the encodeed booking data which set from search request
-$bookingdataEncode = filter_input(INPUT_POST, 'bookingdata');
-//error_log('bookingdataEncode--->'.print_r($bookingdataEncode, true));
-
+$bookingdataEncode = filter_input(INPUT_POST, 'outbound');
 if (isset($bookingdataEncode)) {
-   // $bookingdataoriginal = $bookingdataEncode;
-   // $bookingdataDecode = base64_decode($bookingdataEncode);
+
    $bookingdata = unserialize(base64_decode($bookingdataEncode));
     
-    //error_log('bookingdata !!! ---> '.print_r($bookingdata,true));
 
-   // $_SESSION['searchdata']=$bookingdata->searchData;
 }
-//echo 'FREE BOOKING CALLED';
 
-
-
-
-$freebookingRequest = '<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">'.
+$booking_Request = '<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">'.
    '<soapenv:Header/>'.
    '<soapenv:Body>'.
-      '<air:AirPriceReq TargetBranch="P2721018"  xmlns:air="http://www.travelport.com/schema/air_v32_0" '. 
+      '<air:AirPriceReq TargetBranch="'.TARGET_BRANCH.'"  xmlns:air="http://www.travelport.com/schema/air_v32_0" '.
         'xmlns:com="http://www.travelport.com/schema/common_v32_0" CheckOBFees="true" AuthorizedBy="User" TraceId="trace" >'.
   '<BillingPointOfSaleInfo OriginApplication="UAPI" xmlns="http://www.travelport.com/schema/common_v32_0"/>'.
         
   '<air:AirItinerary>';
-      $bookingSegment=$freebookingRequest;  
+      $bookingSegment=$booking_Request;  
       $airPriceSegment='';
-       //error_log('before loop --- >'.print_r($bookingdata, true));
-       
-    
-     
        if(isset($bookingdata))
        {
         foreach($bookingdata as $item)
             {
-            error_log(print_r($item,true));
+
             $index=$item['@attributes'];
             if(isset($item[0]['airBookingInfo']['@attributes']))
             {
@@ -61,7 +40,7 @@ $freebookingRequest = '<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.o
             {
              $bookingInfo=$item[0]['@attributes'];   
             }
-           // error_log('bookingdata --- >'.print_r($index, true));
+        $_SESSION['air_line']=$index['Carrier'];
         $bookingSegment.='<air:AirSegment '.
                 'Key="'.$index['Key'].'" '.
                 'CabinClass="'.$bookingInfo['CabinClass'].'"  ' .'Group="'.$index['Group'].'"  '.
@@ -116,29 +95,20 @@ $bookingSegment.='</air:AirPriceReq>'.
    '</soapenv:Body>'.
 '</soapenv:Envelope>';
 
-$freebookingRequest=$bookingSegment;
+$booking_Request=$bookingSegment;
        }
 
-       
-       error_log('REQUEST-->'.$freebookingRequest);
+
 
 $endpoint='https://apac.universal-api.travelport.com/B2BGateway/connect/uAPI/AirService';
-// If pricing get failed then we remove the cache so that in next search user get new response
-	//$cache->delete($cachekey);
-//$freebookingRequest = file_get_contents(PLUG_DIR .'/xml/PriceRequest.xml', FILE_USE_INCLUDE_PATH);
-     
-// include PLUG_DIR.'/view/FreeBookingView.php';  
- //freeBookingInit($response);
-
 $flightUtility=new FlightUtility();
 
-$response=$flightUtility->sendPost($endpoint,$freebookingRequest,"PriceResponse.xml");
+$response=$flightUtility->sendPost($endpoint,$booking_Request,"");//airAirPriceRsp.xml
 
 
 
 $bookreponse=process_price_response($response);
-
-echo init_priceDisplay($bookreponse);
+echo book_Init($bookreponse);
 
 //error_log('Response---->'.print_r($response,true));
 

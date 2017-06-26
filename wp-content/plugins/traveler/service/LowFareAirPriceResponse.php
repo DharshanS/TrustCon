@@ -13,14 +13,12 @@
 include PLUG_DIR.'/models/PricingFly.php';
 function process_price_response($response)
 {
-   // error_log('Price Response --- >'.print_r($response,true));
     global $airsegment;
     global $airPricingInfo;
 
 
     $airsegment=$response['SOAPBody']['airAirPriceRsp']['airAirItinerary']['airAirSegment'];
     $airPricingInfo=$response['SOAPBody']['airAirPriceRsp']['airAirPriceResult']['airAirPricingSolution'];
-   // $airFareNote=$response['SOAPBody']['airAirPriceRsp']['airAirPriceResult']['airAirPricingSolution']['airFareNote'];
 
    $pricingData=airSegment();
    $_SESSION['price']=serialize($pricingData);
@@ -33,7 +31,7 @@ function process_price_response($response)
 
 
 function getFlightDetails($index) {
-   //  error_log("Price details -->".$index);
+
     global $airsegment;
    
     $airsegmentList='';
@@ -42,7 +40,7 @@ function getFlightDetails($index) {
     } else {
         $airsegmentList = array($airsegment);
     }
-   //  error_log("Price details --> ".print_r($airsegmentList[$index],true) );
+
      return $airsegmentList[$index];
 }
 
@@ -56,7 +54,6 @@ function airSegment()
     } else {
         $airPricingInfoList = array($airPricingInfo);
     }
-  //  error_log('airPricingInfoList -->'.print_r($airPricingInfoList,true));
     $pricingFly = new PricingFly();
     $loop=1;
 if(isset($airPricingInfoList[0]['airAirSegmentRef'][0]))
@@ -67,9 +64,6 @@ if(isset($airPricingInfoList[0]['airAirSegmentRef'][0]))
 $outBound=array();
 $inbound=array();
     for ($count=0;$count<$loop;$count++) {
-
-
-        
 
         if(isset($airPricingInfoList[0]['airAirPricingInfo'][0]))
         {
@@ -104,6 +98,7 @@ function getPriceDetails() {
 
     
     global $airPricingInfo;
+    $db_util=new DbUtility();
 
     $pricingDetails = new PricingDetails();
     if (isset($airPricingInfo[0])) {
@@ -124,12 +119,9 @@ function getPriceDetails() {
     {
        $airPricingInfoList=$airPricingInfoList[0]['airAirPricingInfo'];
     }
-    // error_log('/////\\\\\\'.print_r($airPricingInfoList,true));
-   
+
     foreach ($airPricingInfoList as $index) {
 
-        //  $priceDetails[] = $index['@attributes'];
-        //error_log("Index---->" . print_r($index, true));
         $pricing = new Pricing();
         $otherDestails = new OtherInfo();
         $otherDestails->airBookingInfo = $index['airBookingInfo'];
@@ -179,12 +171,14 @@ function getPriceDetails() {
         }
         $priceDet[$count] = $pricing;
         $otherDet[$count]=$otherDestails;
-        //array_push($priceDet[$count],$pricing);
+
         $count++;
     }
 
     $pricingDetails->fareInfo = $priceDet;
      $pricingDetails->otherInfo=$otherDet;
-   // error_log('getPriceDetails --- >'.print_r($pricingDetails,true));
+    $pricingDetails->webFareDiscount=$db_util->get_discount($_SESSION['air_line']);
+    $pricingDetails->serviceCharge=$db_util->get_service_charge();
+    
     return $pricingDetails;
 }

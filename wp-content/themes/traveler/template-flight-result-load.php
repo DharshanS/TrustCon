@@ -65,6 +65,7 @@ get_header();
 ?>
 
 <div id="resultloader">
+
 	<div class="container">
 		<h1 class="page-title">
 			

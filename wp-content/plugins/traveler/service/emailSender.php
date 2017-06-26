@@ -9,7 +9,7 @@
 
 
 
-require_once(get_home_path().'PHPMailer/PHPMailerAutoload.php');
+require_once(PLUG_DIR.'PHPMailer/PHPMailerAutoload.php');
 require_once(PLUG_DIR."/core/MailSettings.php");
 require_once(PLUG_DIR.'/utility/FlightUtility.php');
 //session_start();
@@ -242,6 +242,7 @@ function get_passanger_details($resReq)
 
 function email_send_after_reservation_to_admin($completeResponse)
 {
+	error_log('email_send_after_reservation_to_admin called........');
 	$mailsetters=$GLOBALS['mailsetters'];
 	$adminmail=$mailsetters['adminmail'];
 	$mailsubject="PCW Payment-Complete Respopnse:";

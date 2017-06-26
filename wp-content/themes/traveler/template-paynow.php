@@ -108,7 +108,7 @@ $initRequest->setTransactionAmount($transactionAmount);//
 // sets redirect settings
 $redirect = new Redirect();
 //$redirect->setReturnUrl("http://localhost:8080/travel/wp-content/plugins/traveler/paycorp-client-php/au.com.gateway.IT/pcw_payment-complete_paynow_UT.php");
-$redirect->setReturnUrl("http://localhost:8080/travel/route");
+$redirect->setReturnUrl("http://localhost:8080/travel/pay-route-4");
 $redirect->setReturnMethod("GET");
 $initRequest->setRedirect($redirect);
 
@@ -133,7 +133,11 @@ get_header();
     <div class="container">
      <br>
         <div class="row mb20">
-			 <iframe class="col-sm-12" style="border:none;" height="375px"   src="<?php echo $initResponse->getPaymentPageUrl(); ?>"></iframe>
+			 <iframe class="col-sm-12" style="border:none;" height="375px"   src="<?php echo $initResponse->getPaymentPageUrl();
+
+			 ?>"
+
+			 </iframe>
         </div>
         <p><strong>We use the highest secure payment gateway to process your transaction.</strong></p>
       <div class="payment_mode-final">

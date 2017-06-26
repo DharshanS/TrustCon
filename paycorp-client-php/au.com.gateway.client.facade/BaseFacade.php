@@ -9,15 +9,10 @@ abstract class BaseFacade {
     }
 
     protected function process($request, $operation, $jsonHelper) {
+
         $jsonRequest = $this->buildRequest($request, $operation, $jsonHelper);
-     
-
         $headers = $this->buildHeaders($jsonRequest);
-  
         $jsonResponse =RestClient::sendRequest($this->config, $jsonRequest, $headers);
-       
-     
-
         return $this->buildResponse($jsonResponse, $jsonHelper);
     }
 
@@ -36,14 +31,14 @@ abstract class BaseFacade {
 
     private function buildRequest($requestData, $operation, $jsonHelper) {
 
-      
+
         $paycorpRequest = new PaycorpRequest();
         $paycorpRequest->setOperation($operation);
         $paycorpRequest->setRequestDate(date('Y-m-d H:i:s'));
         $paycorpRequest->setValidateOnly($this->config->isValidateOnly());
         $paycorpRequest->setRequestData($requestData);
 
-        $jsonRequest = $jsonHelper->toJson($paycorpRequest);
+        $jsonRequest = "";$jsonHelper->toJson($paycorpRequest);
         return json_encode($jsonRequest);
     }
 

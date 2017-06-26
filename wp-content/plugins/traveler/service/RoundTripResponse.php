@@ -12,10 +12,16 @@ require_once(PLUG_DIR . 'utility/FlightUtility.php');
 $airPricePointList;
 $airSegmentList;
 $tripObj;
-error_log("search data" . print_r($_SESSION['searchdata'], true));
+//error_log("search data" . print_r($_SESSION['searchdata'], true));
 function roundTrip($responseArray)
 {
-    error_log('ROUND TRIP SERVICE');
+
+    if(isset($responseArray['SOAPBody']['SOAPFault'])||$responseArray==='false' )
+    {
+        echo 'Please  search again ........';
+        return ;
+    }
+
     global $airPricePointList;
     global $airSegmentList;
 
@@ -44,15 +50,36 @@ function airAirPricePointList()
     $flag = false;
     $tripArray = array();
     for ($out = 0; $out < count($airPricePointList); $out++) {
+        $airPricePointListMain="";
 
-        if (isset($airPricePointList[$out]) && !empty($airPricePointList[$out])) {
+        if(isset($airPricePointList[$out]['airAirPricingInfo'][0])){
+            $airPricePointListMain=$airPricePointList[$out]['airAirPricingInfo'][0];
+        }else{
+
+            error_log('else part'.print_r($airPricePointListMain,true));
+            $airPricePointListMain=$airPricePointList[$out]['airAirPricingInfo'];
+        }
+//        error_log("Round .....".print_r($airPricePointList[$out],true));
+//        return;
+        if (isset($airPricePointListMain) && !empty($airPricePointListMain)) {
             $tripArray[] = get_trip_fly($airPricePointList[$out]);
             $flag = true;
         }
         for ($in = $out + 1; $in < count($airPricePointList); $in++) {
-            //  error_log($airPricePointList[$out]['airAirPricingInfo']['@attributes']['PlatingCarrier']."===".$airPricePointList[$in]['airAirPricingInfo']['@attributes']['PlatingCarrier']);
-            if (!empty($airPricePointList[$out]) && ($airPricePointList[$out]['airAirPricingInfo']['@attributes']['PlatingCarrier'] === $airPricePointList[$in]['airAirPricingInfo']['@attributes']['PlatingCarrier'])) {
+            $airPricePointListIn=$airPricePointList[$in];
+            if(isset($airPricePointList[$in]['airAirPricingInfo'][0])){
+                $airPricePointListIn=$airPricePointList[$in]['airAirPricingInfo'][0];
+            }else{
 
+                error_log('else part'.print_r($airPricePointListIn,true));
+                $airPricePointListIn=$airPricePointList[$in]['airAirPricingInfo'];
+
+            }
+
+            //error_log(print_r($airPricePointListMain,true));
+            //  error_log($airPricePointList[$out]['airAirPricingInfo']['@attributes']['PlatingCarrier']."===".$airPricePointList[$in]['airAirPricingInfo']['@attributes']['PlatingCarrier']);
+            if (!empty($airPricePointListMain) && ($airPricePointListMain['@attributes']['PlatingCarrier'] === $airPricePointListIn['@attributes']['PlatingCarrier'])) {
+                error_log('coming'.print_r($airPricePointListMain,true));
 
                 $tripArray[$count]->moreFly[] = get_trip_fly($airPricePointList[$in]);
 
@@ -66,34 +93,41 @@ function airAirPricePointList()
             $count++;
             $flag = false;
         }
-//         if($out==3)
+//         if($out==2)
 //         {
 //          error_log(print_r(json_encode($tripArray),true));
 //          return;
 //         }
     }
 
-
+error_log(print_r($tripArray,true));
     init_display($tripArray);
 
 }
 
 
-function get_trip_fly($index)
+function get_trip_fly($indexMain)
 {
 
     global $tripObj;
     $tripObj = new Trip();
-
-    if (isset($index['@attributes'])) {
-        $tripObj->basePrice = $index['@attributes'];
+    $index="";
+//error_log(print_r($index,true));
+   // foreach($indexList as $index)
+    if (isset($indexMain['@attributes'])) {
+        $tripObj->basePrice = $indexMain['@attributes'];
     }
 
-    if (isset($index['airAirPricingInfo']['airFlightOptionsList']['airFlightOption'])) {
-        $tripObj->airPrincingInfo = $index['airAirPricingInfo']['@attributes'];
 
-        $outBoound = $index['airAirPricingInfo']['airFlightOptionsList']['airFlightOption'][0];
-        $inBound = $index['airAirPricingInfo']['airFlightOptionsList']['airFlightOption'][1];
+    if(isset($indexMain['airAirPricingInfo'][0])){
+        $index= $indexMain['airAirPricingInfo'][0];
+    }else{$index=$indexMain['airAirPricingInfo'];}
+
+    if (isset($index['airFlightOptionsList']['airFlightOption'])) {
+        $tripObj->airPrincingInfo = $index['@attributes'];
+
+        $outBoound = $index['airFlightOptionsList']['airFlightOption'][0];
+        $inBound = $index['airFlightOptionsList']['airFlightOption'][1];
 
         $temOutBound = $outBoound['airOption'];
         if (isset($temOutBound['@attributes'])) {

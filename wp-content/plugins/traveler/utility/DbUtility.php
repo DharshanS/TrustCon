@@ -47,12 +47,40 @@ class DbUtility {
     }
 
      function airlineload() {
+         global $alink;
         $SQL = "SELECT `iata`,`airline` FROM `airlines` WHERE `iata`!='' ORDER BY `airline`";
         $rs = mysqli_query($alink, $SQL);
         while ($row = mysqli_fetch_array($rs, MYSQLI_ASSOC)) {
             $airlines[$row['iata']] = $row['airline'];
         }
         $_SESSION['airlines'] = $airlines;
+    }
+
+    function get_discount($airline_code)
+    {
+        global $alink;
+        $SQL = "SELECT `discount` FROM `airlines` WHERE `iata`='".$airline_code."'";
+        $rs = mysqli_query($alink, $SQL)->fetch_object()->discount;
+
+       return $rs;
+    }
+
+    function get_bank_charge($bank)
+    {
+        global $alink;
+        $SQL = "SELECT `charge` FROM `bank_charge` WHERE `bank_Name`='".$bank."'";
+        $rs = mysqli_query($alink, $SQL)->fetch_object()->charge;
+        return $rs;
+
+    }
+
+    function get_service_charge()
+    {
+        global $alink;
+        $SQL = "SELECT `amount` FROM `service_charge` WHERE `id`='1'";
+        $rs = mysqli_query($alink, $SQL)->fetch_object()->amount;
+
+        return $rs;
     }
 
 }

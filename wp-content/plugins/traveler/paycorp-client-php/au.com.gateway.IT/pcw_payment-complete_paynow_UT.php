@@ -80,9 +80,9 @@ $extradata=$completeResponse->getExtraData();
 //error_log("Extra Data --->".print_r($extradata,true));
 $post_id=$extradata[0]['post_id'];
 
-if($post_id=='' || $post_id<1){
-	die('<div align="center" style="padding: 10% 0;">Your session has expired, please start with a new search!!!!!</div>');
-}
+//if($post_id=='' || $post_id<1){
+//	die('<div align="center" style="padding: 10% 0;">Your session has expired, please start with a new search!!!!!</div>');
+//}
 
 
 

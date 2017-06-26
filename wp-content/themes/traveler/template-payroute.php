@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: PayRoute
+Template Name: payroute
 */
 /**
  * @package WordPress
@@ -8,7 +8,7 @@ Template Name: PayRoute
  * @since 1.0
  *
  */
-get_header();
-error_log("Routed to Pay ..............");
+//session_start();
+
+error_log("..............routed pay response ..............");
 include PLUG_DIR."paycorp-client-php/au.com.gateway.IT/pcw_payment-complete_paynow_UT.php";
-get_footer();

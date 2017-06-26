@@ -5,7 +5,7 @@
  * Date: 5/31/2017
  * Time: 10:40 AM
  */
-require_once(get_home_path().'PHPMailer/PHPMailerAutoload.php');
+require_once(PLUG_DIR.'PHPMailer/PHPMailerAutoload.php');
 require_once(PLUG_DIR."/core/MailSettings.php");
 include_once PLUG_DIR.'/utility/FlightUtility.php';
 $mailsetters = array();

@@ -30,7 +30,8 @@
                 <div class="row">
                     <div class="col-md-3">
                         <a class="logo" href="<?php echo site_url('/')?>">
-                            <img src="<?php echo st()->get_option('logo',get_template_directory_uri().'/img/logo-invert.png') ?>" alt="logo" title="<?php bloginfo('name')?>">
+
+                            <img src="<?php echo TRAVELER__PLUGIN_URL.'images/v1/bookinglog.png' ?>" alt="logo" title="<?php bloginfo('name')?>">
                         </a>
                     </div>
                     <?php get_template_part('users/user','nav');?>

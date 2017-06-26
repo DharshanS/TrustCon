@@ -15,7 +15,7 @@ $message = '
 <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
 	   <soapenv:Header/>
 	   <soapenv:Body>
-		<LowFareSearchReq xmlns="http://www.travelport.com/schema/air_v32_0" AuthorizedBy="User" TraceId="trace" TargetBranch="'.TARGETBRANCH.'" >
+		<LowFareSearchReq xmlns="http://www.travelport.com/schema/air_v32_0" AuthorizedBy="User" TraceId="trace" TargetBranch="'.TARGET_BRANCH.'" >
 			  <BillingPointOfSaleInfo xmlns="http://www.travelport.com/schema/common_v32_0" OriginApplication="UAPI" />
 			  <SearchAirLeg>
 				<SearchOrigin>
@@ -61,7 +61,7 @@ $message = '
 <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
   <soapenv:Header/>
 	<soapenv:Body>
-		<LowFareSearchReq xmlns="http://www.travelport.com/schema/air_v32_0" AuthorizedBy="User" TraceId="trace" TargetBranch="'.TARGETBRANCH.'" >
+		<LowFareSearchReq xmlns="http://www.travelport.com/schema/air_v32_0" AuthorizedBy="User" TraceId="trace" TargetBranch="'.TARGET_BRANCH.'" >
 		  <BillingPointOfSaleInfo xmlns="http://www.travelport.com/schema/common_v32_0" OriginApplication="UAPI" />
 		  <SearchAirLeg>
 			<SearchOrigin>

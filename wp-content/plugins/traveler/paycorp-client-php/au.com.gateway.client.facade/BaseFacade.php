@@ -15,7 +15,7 @@ abstract class BaseFacade {
         $headers = $this->buildHeaders($jsonRequest);
   
         $jsonResponse =RestClient::sendRequest($this->config, $jsonRequest, $headers);
-        error_log(print_r($jsonResponse));
+      //  error_log(print_r($jsonResponse));
      
 
         return $this->buildResponse($jsonResponse, $jsonHelper);

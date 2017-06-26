@@ -116,6 +116,30 @@ function my_webfaire_discount_menu()
 	
 }
 
+
+
+add_action( 'admin_menu', 'service_charge_menu' );
+
+function service_charge_menu()
+{
+
+    add_menu_page('Service Charge Options', 'Service Charges', 'manage_options','my-service-charge','add_service_charge');
+    add_submenu_page('my-service-charge', 'Set Service Charge', 'Set Service Charge', 'manage_options','add_service_charge', 'add_service_charge');
+    add_submenu_page('my-service-charge', 'Bank Service Charge', 'Bank Service Charge', 'manage_options','add_bank_charge', 'add_bank_charge');
+//    add_submenu_page('my-webfaire-discount', 'Edit Webfaire Discount', 'Edit Webfaire Discount', 'manage_options','edit-webfaire-discount', 'edit_webfaire_discount');
+
+}
+
+
+function add_service_charge()
+{
+    include('add_service_charge.php');
+    include('admin_service.php');
+}
+function add_bank_charge()
+{
+    include ('add_bank_charge.php');
+}
 function list_webfaire_discount()
 {
   include('list_webfaire_discount.php'); 
@@ -205,3 +229,28 @@ function my_add_frontend_scripts() {
         wp_enqueue_script('jquery-ui', 'http://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js', array('jquery'), '1.8.6');
 }
 add_action('wp_enqueue_scripts', 'my_add_frontend_scripts');
+
+add_action( 'admin_enqueue_scripts', 'add_my_backend_scripts' );
+
+function add_my_backend_scripts() {
+
+    wp_enqueue_script( 'ajax-script', get_admin_url().'/js/admin_custom.js', array('jquery') );
+
+}
+
+add_action("wp_ajax_admin_custom_service", "admin_service_charge_setup");
+add_action("wp_ajax_nopriv_admin_custom_service", "admin_service_charge_setup");
+function admin_service_charge_setup() {
+    return require(get_admin_url(__FILE__) . '/admin_service.php' );
+}
+add_action( 'wp_ajax_my_action', 'my_action' );
+function my_action() {
+    global $wpdb; // this is how you get access to the database
+
+    $whatever = intval( $_POST['whatever'] );
+    $rows = $wpdb->get_results("select * from bank_charge");
+    $result=base64_encode(json_encode($rows));
+   echo($result);
+   error_log(print_r( json_encode($rows),true));
+die(); // this is required to terminate immediately and return a proper response
+}

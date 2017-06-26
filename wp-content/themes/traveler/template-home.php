@@ -287,28 +287,7 @@ while (have_posts()) {
         </div>
     </div>
     <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/flight-search.js"></script>
-    <script type="application/javascript">
-        //jQuery('.date-pick').datepicker({ autoclose: true});
-        //jQuery(document).ready( function () {
-        //	jQuery('#id-booking-arvl').blur( function () {
-        //	if(jQuery('#id-booking-dtn').val() != '')
-        //	{
-        //		var from = jQuery('#id-booking-dtn').val();
-        //		var to = jQuery('#id-booking-arvl').val();
-        //		var vto = to.split(",");
-        //		var vfrom = from.split(",");
-        //		//alert(vfrom[2]+'==='+vto[2]);
-        //		if(vfrom[2] == vto[2])
-        //		jQuery('#passport_type').val('domestic');
-        //		else
-        //		jQuery('#passport_type').val('international');
-        //		//alert(jQuery('#passport_type').val());
-        //	}else{
-        //		jQuery('#id-booking-dtn').focus();
-        //	}
-        // });
-        //});
-    </script>
+    
     <?php
 }
 get_footer();

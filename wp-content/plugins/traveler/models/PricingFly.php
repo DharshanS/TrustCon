@@ -25,7 +25,7 @@ class PricingDetails
     var $baseFare;
   
     var $webFareDiscount;
-    
+    var $serviceCharge;
     var $fareInfo;
     var $otherInfo;
 }

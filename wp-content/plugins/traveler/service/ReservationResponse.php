@@ -42,7 +42,7 @@ if(isset($responseArray['SOAPBody']['SOAPFault']['faultstring']))
 		wp_die();
 }
 else
-{
+{error_log("............Reservation Response..............sucess");
  reservationSuceess($responseArray,$resReq);   
 }
 }

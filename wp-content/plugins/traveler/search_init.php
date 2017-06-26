@@ -7,6 +7,7 @@ date_default_timezone_set('Asia/Colombo');
 
 
 require_once(plugin_dir_path( __FILE__ ) . 'service/LowFareSearchRequest.php');
+require_once(plugin_dir_path( __FILE__ ) . 'service/LowFareSearchResponse.php');
 require_once(plugin_dir_path( __FILE__ ) . 'service/RoundTripResponse.php');
 include_once(plugin_dir_path(__FILE__) . 'utility/FlightUtility.php');
 
@@ -68,8 +69,9 @@ if (isset($_SESSION['airportscity'])) {
     while ($row = mysqli_fetch_array($rs, MYSQLI_ASSOC)) {
         $airportscity[$row['iata_code']] = $row['city'];
         $airportsname[$row['iata_code']] = $row['airport_name'];
-        $airlines[$row['iata']] = $row['iata_code'];
-        $countries['countries'] = $row['country'];
+        if(isset($row['iata_code'])){  $airlines[$row['iata']] = $row['iata_code'];}
+        if(isset($row['country'])){  $countries['countries'] = $row['country']; }
+
     }
     $_SESSION['airportscity'] = $airportscity;
     $_SESSION['airportsname'] = $airportsname;
@@ -185,12 +187,12 @@ if (isset($_SESSION['baseresponse']) && is_array($_SESSION['baseresponse']) && 1
 if (isset($_POST['mode']) && ($_POST['mode'] == 'roundtrip' || $_POST['mode'] == 'oneway')) {
     if ($_POST['mode'] == 'roundtrip') {
        // require_once(plugin_dir_path(__FILE__) . 'service/RoundTripResponse.php');
-        error_log("......................Round trip search initiated .......................");
+        error_log("......................Round trip search initiated ..........roundTripXml.xml.............");
         roundTrip($fly->sendPost(ENDPOINT, LowFareSearchRequest($searchdata),""));
     } else if ($_POST['mode'] == 'oneway') {
        // require_once(plugin_dir_path(__FILE__) . 'service/LowFareSearchResponse.php');
         error_log("......................One way search initiated ..........................");
-        initSearch($fly->sendPost(ENDPOINT, LowFareSearchRequest($searchdata),""));
+        init($fly->sendPost(ENDPOINT, LowFareSearchRequest($searchdata),""));
 
     }
 }

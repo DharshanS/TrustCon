@@ -1,12 +1,22 @@
 
 <?php
 include_once (PLUG_DIR . '/service/dumpReservation.php');
+include_once (PLUG_DIR.'/models/PricingFly.php');
 
 function book_Init($reponse) {
+
 $air = $reponse->airDetails;
+    $baseFare=$reponse->priceDetails->baseFare;
+    $discount=$reponse->priceDetails->webFareDiscount;
+    $service_charge=$reponse->priceDetails->serviceCharge;
+    error_log('Discount amount---->'.$service_charge);
 $fareInfo = $reponse->priceDetails->fareInfo;
 $_SESSION['air'] = serialize($air);
 $_SESSION['fareInfo'] = serialize($fareInfo);
+    $totalPay= str_replace('LKR','',$baseFare['TotalPrice']);
+
+
+
 
 $pasArry = array("ADT" => "ADULT", "CNN" => "CHILD", "INF" => "INFANT");
 $util = new FlightUtility();
@@ -15,62 +25,28 @@ $util = new FlightUtility();
     <div class="row confrmtic">
 
         <?php
-        $airItem = $air[0][0]['@attributes'];
-        $aircount = count($air[0]) - 1;
-        $airItemlast = $air[0][$aircount]['@attributes'];
+        $air_item_top = $air[0][0]['@attributes'];
+        $air_count = count($air[0]) - 1;
+        $air_item_bot = $air[0][$air_count]['@attributes'];
+        $mode=$_SESSION['searchdata']['mode'];
         $price_details = array
         ("totalNetAmount" => "", "totalBaseAmount" => "",
             "totalDiscount" => "", "totalTaxAmount" => "", "serviceCharge" => "", "departureTime" => "", "arrivalTime" => "", "returnDate" => "");
-        $price_details['serviceCharge']=100.00;
-        $price_details['totalDiscount']=120.00;
+        $price_details['serviceCharge']=$service_charge;
+        $price_details['totalDiscount']=$discount;
 
-
+        get_out_details( $air_item_top,$air_item_bot,$util,$air_count,$mode);
 
         ?>
 
-        <div class="col-lg-9 confrmcol ">
-            <div class="row confrmcols-rd ">
-                <div class="col-lg-2 clspad"><label class="flicon"></label></div>
-                <div class="col-lg-3 ">
-                    <label class="lblcls">
-                        <?php echo $util->getCityName($airItem['Origin']);
-                        echo "(" . $airItem['Origin'] . ")" ?>
-                        <br/>
-                        <?php echo date("D, d M y h:i a", strtotime($airItem['DepartureTime']));
-                        $price_details['departureTime'] = $airItem['DepartureTime']; ?>
-                        </p>
-                    </label>
-                </div>
-                <div class="col-lg-1 clspad"><label class="arricon"></label></div>
-                <div class="col-lg-3 ">
-                    <label class="lblcls">
-                        <?php echo $util->getCityName($airItemlast['Destination']);
-                        echo "(" . $airItemlast['Destination'] . ")" ?>
-                        <br/>
-                        <?php echo date("D, d M y h:i a", strtotime($airItemlast['ArrivalTime']));
-                        $price_details['arrivalTime'] = $airItemlast['ArrivalTime']; ?>
-                        </p>
-                    </label>
-                </div>
-                <div class="col-lg-1 clspad">
-                    <label class="lblcls"> <?php if ($aircount > 0) {
-                            echo $aircount . 'stops';
-                        } else {
-                            echo "direct";
-                        } ?> </label>
-                </div>
-                <div class="col-lg-1 clspad time-d">
-                    <label
-                        class="lblcls"><?php echo $util->getTimeDiff($airItemlast['ArrivalTime'], $airItem['DepartureTime']) ?></label>
-                </div>
-            </div>
-        </div>
+
 
 
         <?php
         $airItem = $air[1][0]['@attributes'];
         $aircount = count($air[1]) - 1;
         $airItemlast = $air[1][$aircount]['@attributes'];
+
         ?>
 
         <div class="col-lg-9 confrmcol ">
@@ -128,9 +104,9 @@ $util = new FlightUtility();
 
         <div class="col-lg-3 ticbck">
             <div class='ticfront'>
-                <label>Trevellers :1</label><br/>
+                <label>Trevellers : <?php echo count($fareInfo);?> </label><br/>
                 <label class='lbltfront'>Total Amount</label>
-                <label class='lblsec'>LKR 26,000</label>
+                <label class='lblsec total-price-label'><?php echo ' LKR '.$totalPay ;?></label>
 
 
             </div>
@@ -141,15 +117,13 @@ $util = new FlightUtility();
     </div>
 
     <div class="row price-dts-header">
-        <div class="col-lg-1 pr-dts"> Pass Type</div>
-        <div class="col-lg-1 pr-dts"> Head</div>
+        <div class="col-lg-2 pr-dts"> Pass Type</div>
+        <div class="col-lg-2 pr-dts"> Head</div>
         <div class="col-lg-2 pr-dts"> Base</div>
         <div class="col-lg-2 pr-dts"> Tax</div>
-        <div class="col-lg-2 pr-dts"> Discount</div>
-        <div class="col-lg-2 pr-dts"> Service</div>
-        <div class="col-lg-2 pr-dts"> Total</div>
+        <div class="col-lg-3 pr-dts"> Total</div>
     </div>
-    <div class="row  price-dts-header price-dts-body">
+    <div class="row  price-dts-body">
         <?php foreach ($fareInfo as $fare)
         {
             $price_details['totalBaseAmount']=$price_details['totalBaseAmount']+$fare->headPrice;
@@ -157,16 +131,24 @@ $util = new FlightUtility();
             $price_details['totalNetAmount']= $price_details['totalNetAmount']+$fare->headTax+$fare->headPrice;
 
             ?>
-            <div class="col-lg-1  pr-dts"><?php echo $fare->pasType?></div>
-            <div class="col-lg-1  pr-dts"><?php echo $fare->count?></div>
+            <div class="col-lg-2  pr-dts"><?php echo $fare->pasType?></div>
+            <div class="col-lg-2  pr-dts"><?php echo $fare->count?></div>
 
             <div class="col-lg-2  pr-dts"><?php echo $fare->headPrice."LKR"?></div>
             <div class="col-lg-2  pr-dts"><?php echo $fare->headTax ."LKR"?></div>
-            <div class="col-lg-2  pr-dts"><?php echo $fare->count?></div>
-            <div class="col-lg-2  pr-dts"><?php echo $fare->count?></div>
-            <div class="col-lg-2  pr-dts"><?php echo $fare->totalPrice+$fare->headTax."LKR"?></div>
 
-        <?php }    $_SESSION['price_details']=$price_details;
+            <div class="col-lg-4 pr-dts"><?php echo $fare->totalPrice+$fare->headTax."LKR"?></div>
+
+        <?php } ?>
+
+
+        <div class="col-lg-8"><label class="other-price-label">Discount amt</label></></div><div class="col-lg-4 service-charge">123 LKR</div>
+        <div class="col-lg-8"><label class="other-price-label">Service amt</label></></div><div class="col-lg-4  service-charge">100 LKR</div>
+        <div class="col-lg-8"><label class="other-price-label">Grand Total</label></></div><div class="col-lg-4  service-charge">100</div>
+
+<?php
+        $_SESSION['price_details']=$price_details;
+        $dis=($price_details['totalNetAmount']+$price_details['totalTaxAmount']+$price_details['serviceCharge'])*$discount/100;
         $totalAmountPay=($price_details['totalNetAmount']+$price_details['totalTaxAmount']+$price_details['serviceCharge'])-$price_details['totalDiscount'];
         $_SESSION['totalAmountPay']=$totalAmountPay;
         ?>
@@ -179,7 +161,7 @@ $util = new FlightUtility();
     </div>
     <div class='row clshead'>
         <div class='col-lg-12'>
-            <div class='col-lg-11'><h5 class='headersty'>TRAVELLER DETAILS</h5></div>
+            <div class='col-lg-11'><h5 class='headersty'>Traveler Details</h5></div>
         </div>
     </div>
     <form action="" method="" id="frmflighttic">
@@ -192,7 +174,7 @@ $util = new FlightUtility();
 
             <div class='row clshead1'>
                 <div class='col-lg-12'>
-                    <div class='col-lg-11'><h3 class='headersty'>TRAVELLER - <?php echo " ". $i + 1 ."(". $pasArry[$ind].")" ?></h3>
+                    <div class='col-lg-11'><h3 class='headersty'>Traveler - <?php echo " ". $i + 1 ."(". $pasArry[$ind].")" ?></h3>
                     </div>
                 </div>
                 <div class='col-lg-12'>
@@ -311,7 +293,7 @@ $util = new FlightUtility();
     </div>
     <div class='row ticfour'>
         <div class='col-lg-12 ticfv'>
-            <label class='ticfvsub'>Total to be paid is LKR 36,577</label>
+            <label class='ticfvsub total-price-label'>Total to be paid is LKR <?php echo $totalPay ?></label>
         </div>
         <div class='col-lg-12'>
             <div class='col-lg-4 btncls1'>
@@ -370,4 +352,71 @@ $util = new FlightUtility();
 
 <?php
    
-} ?>
+}
+
+
+function get_out_details($air_item_top,$air_item_bot,$util,$air_count,$mode)
+{
+    $book_class='';
+    if($mode=="oneway"){ $book_class='book-oneway';}
+    else {$book_class='book-round';}
+    ?>
+    <div class="col-lg-9 confrmcol ">
+        <div class="row <?php echo $book_class?>">
+            <div class="col-lg-2 clspad"><label class="flicon"></label></div>
+           <?php get_flight_origin($air_item_top,$util) ?>
+            <div class="col-lg-1 clspad"><label class="arricon"></label></div>
+            <?php get_flight_origin($air_item_bot,$util) ?>
+            <div class="col-lg-1 clspad">
+                <label class="lblcls"> <?php if ($air_count > 0) {
+                        echo $air_count . 'stops';
+                    } else {
+                        echo "direct";
+                    } ?> </label>
+            </div>
+            <div class="col-lg-1 clspad time-d">
+                <label
+                    class="lblcls"><?php echo $util->getTimeDiff($air_item_bot['ArrivalTime'], $air_item_top['DepartureTime']) ?></label>
+            </div>
+        </div>
+    </div>
+
+<?php }
+
+function get_flight_origin($airItem,$util)
+{ ?>
+<div class="col-lg-3 ">
+    <label class="lblcls">
+        <?php echo $util->getCityName($airItem['Origin']);
+        echo "(" . $airItem['Origin'] . ")" ?>
+        <br/>
+        <?php echo date("D, d M y h:i a", strtotime($airItem['DepartureTime']));
+        $price_details['departureTime'] = $airItem['DepartureTime']; ?>
+        </p>
+    </label>
+</div>
+<?php
+
+}
+function get_flight_destination($air_item_bot,$util)
+{?>
+<div class="col-lg-3 ">
+    <label class="lblcls">
+        <?php echo $util->getCityName($air_item_bot['Destination']);
+        echo "(" . $air_item_bot['Destination'] . ")" ?>
+        <br/>
+        <?php echo date("D, d M y h:i a", strtotime($air_item_bot['ArrivalTime']));
+        $price_details['arrivalTime'] = $air_item_bot['ArrivalTime']; ?>
+        </p>
+    </label>
+</div>
+ <?php
+}
+
+
+
+?>
+
+
+
+

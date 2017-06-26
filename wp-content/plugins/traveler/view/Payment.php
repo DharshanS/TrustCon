@@ -7,29 +7,26 @@
   ?>
    <div class="container pay_options" >
         <form action="../paynow" method="post" id="frmoption">
-        <div class="row clsheadopt">
-            <div class="col-lg-12 pay-option-header"><h3>PAYMENT OPTION</h3></div>
-            <div class="col-lg-12 pay-option-header-two"><h5>TOTAL TO BE PAID IS LKR <?php echo $_SESSION['totalAmountPay']?></h5></div>
-        </div>
-        <div class="row payfirst">
-            <div class="col-lg-1">
-                
-            </div>
-            <div class="col-lg-12 paycard-type">
-                <span class="clsdebit">CREDIT/DEBIT CARD </span>
-            </div>
 
-        </div>
+
+        <div class="row">
+            <div class="col-lg-12 pay-option-header"><p>
+                    <label class="pay-head">PAYMENT OPTIONS(CREDIT/DEBIT CARD)</label><br>
+                        <label class="pay-amount"><?php echo $_SESSION['totalAmountPay']?></label>
+                </p></div>
+           </div>
+
+
         <div class="row payfirst">
             <div class="col-lg-1">
-                <img class="img-responsive" src="<?php echo IMG_PATH ?>/listicon.png">
+                <img class="line-icon" src="<?php echo IMG_PATH ?>/listicon.png">
             </div>                
            
-            <div class="col-lg-2 imgcls">
-                <img class="img-responsive" src="<?php echo IMG_PATH ?>/visa.png">
+            <div class="col-lg-2">
+                <img class="img-responsive" src="<?php echo IMG_PATH ?>cards/visa.png">
             </div> 
-            <div class="col-lg-8 cardcls">
-                <span>We Accept All VISA Cards Issued by Sri Lankan Banks </span>
+            <div class="col-lg-8 ">
+                <span>We accept all VISA cards issued by Sri Lankan banks </span>
             </div> 
             <div class="col-lg-1 cardcls">
                 <input type="radio" name="cardType" id="visacard" >
@@ -37,13 +34,13 @@
         </div>
         <div class="row payfirst">
             <div class="col-lg-1">
-                <img class="img-responsive" src="<?php echo IMG_PATH ?>/listicon.png"> 
+                <img class="line-icon" src="<?php echo IMG_PATH ?>/listicon.png">
             </div>
-            <div class="col-lg-2 imgcls">
-                <img class="img-responsive" src="<?php echo IMG_PATH ?>/master.png"/>
+            <div class="col-lg-2 ">
+                <img class="img-responsive" src="<?php echo IMG_PATH ?>/cards/master.png"/>
             </div>
-            <div class="col-lg-8 cardcls">
-               <span>We Accept All MASTER Cards Issued by Sri Lankan Banks </span>
+            <div class="col-lg-8 ">
+               <span>We accept all MASTER cards issued by Sri Lankan banks </span>
             </div>
             <div class="col-lg-1 cardcls">
               <input type="radio" name="cardType" id="mastercard" >
@@ -52,13 +49,13 @@
         </div>
         <div class="row payfirst">
             <div class="col-lg-1">
-                <img class="img-responsive" src="<?php echo IMG_PATH ?>/listicon.png"> 
+                <img class="line-icon" src="<?php echo IMG_PATH ?>/listicon.png"> 
             </div>
-            <div class="col-lg-2 imgcls">
-                <img class="img-responsive" src="<?php echo IMG_PATH ?>/amarican.png"/>
+            <div class="col-lg-2 ">
+                <img class="img-responsive" src="<?php echo IMG_PATH ?>/cards/ame.png"/>
             </div>
-            <div class="col-lg-8 cardcls">
-               <span>We Accept All AMERICAN EXPRESS Cards Issued by Sri Lankan Banks </span>
+            <div class="col-lg-8 ">
+               <span>We accept all AMERICAN EXPRESS cards issued by Sri Lankan Banks </span>
             </div>
              <div class="col-lg-1 cardcls">
               <input type="radio" name="cardType" id="amaricancard" >
@@ -67,12 +64,12 @@
         </div>
         <div class="row payfirst">
             <div class="col-lg-1">
-                 <img class="img-responsive" src="<?php echo IMG_PATH ?>/listicon.png">
+                 <img class="line-icon" src="<?php echo IMG_PATH ?>/listicon.png">
             </div>
-            <div class="col-lg-2 imgcls">
-                <img class="img-responsive" src="<?php echo IMG_PATH ?>/standerd.png"/>
+            <div class="col-lg-2 ">
+                <img class="img-responsive" src="<?php echo IMG_PATH ?>/cards/stb.png"/>
             </div>
-            <div class="col-lg-8 cardcls1">
+            <div class="col-lg-8 ">
                <span>Standard Chartered Bank </span>
             </div>
              <div class="col-lg-1 cardcls">
@@ -82,12 +79,12 @@
         </div>
         <div class="row payfirst">
             <div class="col-lg-1">
-                <img class="img-responsive" src="<?php echo IMG_PATH ?>/listicon.png"> 
+                <img class="line-icon" src="<?php echo IMG_PATH ?>/listicon.png">
             </div>
-            <div class="col-lg-2 imgcls imgclsimg">
-                <img class="img-responsive" src="<?php echo IMG_PATH ?>/hnb.png"/>
+            <div class="col-lg-2  ">
+                <img class="img-responsive" src="<?php echo IMG_PATH ?>/cards/hnb.png"/>
             </div>
-            <div class="col-lg-8 cardcls2">
+            <div class="col-lg-8 ">
                <span>Hatton National Bank</span>
             </div>
              <div class="col-lg-1 cardcls">
@@ -97,12 +94,12 @@
         </div>
         <div class="row payfirst">
             <div class="col-lg-1">
-                 <img class="img-responsive" src="<?php echo IMG_PATH ?>/listicon.png">
+                 <img class="line-icon" src="<?php echo IMG_PATH ?>/listicon.png">
             </div>
-            <div class="col-lg-2 imgcls imgclsimg">
-                <img class="img-responsive" src="<?php echo IMG_PATH ?>/commercial.png"/>
+            <div class="col-lg-2  ">
+                <img class="img-responsive" src="<?php echo IMG_PATH ?>/cards/comm.png"/>
             </div>
-            <div class="col-lg-8 cardcls2">
+            <div class="col-lg-8 ">
                <span>Commercial Bank</span>
             </div>
              <div class="col-lg-1 cardcls">
@@ -112,12 +109,12 @@
         </div>
         <div class="row payfirst">
             <div class="col-lg-1">
-                 <img class="img-responsive" src="<?php echo IMG_PATH ?>/listicon.png">
+                 <img class="line-icon" src="<?php echo IMG_PATH ?>/listicon.png">
             </div>
-            <div class="col-lg-2 imgcls">
-                <img class="img-responsive"  src="<?php echo IMG_PATH ?>/seylan.png"/>
+            <div class="col-lg-2 ">
+                <img class="img-responsive"  src="<?php echo IMG_PATH ?>/cards/slb.png"/>
             </div>
-            <div class="col-lg-8 cardcls2">
+            <div class="col-lg-8 ">
                <span>Seylan Bank </span>
             </div>
              <div class="col-lg-1 cardcls">
@@ -126,25 +123,28 @@
         </div>
         <div class="row payfirst">
             <div class="col-lg-1">
-                 <img class="img-responsive" src="<?php echo IMG_PATH ?>/listicon.png">
+                 <img class="line-icon" src="<?php echo IMG_PATH ?>/listicon.png">
             </div>
-            <div class="col-lg-2 imgcls imgclsimg">
-                <img class="img-responsive"  src="<?php echo IMG_PATH ?>/sampath.png"/>
+            <div class="col-lg-2 ">
+                <img class="img-responsive"  src="<?php echo IMG_PATH ?>/cards/sampath.png"/>
             </div>
-            <div class="col-lg-8 cardcls2">
+            <div class="col-lg-8 ">
                <span>Sampath Bank Cards</span>
             </div>
             <div class="col-lg-1 cardcls">
-              <input type="radio" name="cardType" id="sampathcard" >
+              <input type="radio" name="cardType" id="sampath" >
             </div>
             
         </div>
-        <div class="row totmain">
+        <div class="row tot-main">
            
 
-                <div class="col-lg-6"><label class="totcls">TOTAL AMOUNT</label></div>
-            <div class="col-lg-2"><input type="text" value="348.00" placeholder="charge"></div>
-                <div class="col-lg-4"><label class="totcls1"> <?php echo $_SESSION['totalAmountPay']?></label></div>
+                <div class="col-lg-5"><label class="totcls">TOTAL AMOUNT</label></div>
+            <div class="col-lg-2" class="bank-service-charge-div"><label class="bank-service-charge-label"></label>
+            </label></div>
+                <div class="col-lg-2"><label class="totcls1 bank-net-label "> <?php echo $_SESSION['totalAmountPay']?></label></div>
+            <div class="col-lg-1">=</div>
+            <div class="col-lg-2"><label class="bank-net-label"></label></div>
             
         </div>
         <div class="row conform-book-btns">

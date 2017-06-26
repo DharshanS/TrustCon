@@ -102,7 +102,8 @@ $flightDetails[]=$inbound;
 
 function getPriceDetails() {
 
-    
+    $db_util=new DbUtility();
+
     global $airPricingInfo;
 
     $pricingDetails = new PricingDetails();
@@ -114,6 +115,7 @@ function getPriceDetails() {
     }
     
     $pricingDetails->baseFare = $airPricingInfoList[0]['@attributes'];
+
     $count=0;
     
     if(empty($airPricingInfoList[0]['airAirPricingInfo'][0]))
@@ -185,7 +187,8 @@ function getPriceDetails() {
 
     $pricingDetails->fareInfo = $priceDet;
      $pricingDetails->otherInfo=$otherDet;
-   // error_log('getPriceDetails --- >'.print_r($pricingDetails,true));
+
+
     return $pricingDetails;
 }
 //

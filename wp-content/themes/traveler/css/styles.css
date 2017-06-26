@@ -2018,7 +2018,7 @@ img.pp-img {
 	
             margin-bottom: 11px !important;
             padding: -22px !important;
-	/*max-height: 60px;*/
+	background: #f4f4f4 !important;
 
   background: #4d4d4d;
 }
@@ -2031,13 +2031,16 @@ img.pp-img {
 }
 .logo {
 	display: block;
+	margin-top: 12%;
 }
 .logo img {
 	width: auto;
+	height: 40px;
 }
 .top-user-area {
 	font-size: 12px;
 	position: relative;
+	margin-bottom: 3%;
 }
 .top-user-area > ul >li {
 	line-height: 40px;
@@ -10513,9 +10516,9 @@ Flight Result CSS
 	content: "";
 	display: block;
 	font-family: fontAwesome;
-	font-size: 60px;
+	font-size: 40px;
 	position: absolute;
-	left:70%;
+	left: 90%;
 	top: 40%;
 }
 

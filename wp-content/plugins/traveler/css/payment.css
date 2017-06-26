@@ -19,6 +19,9 @@
     left: 13%;
     margin-bottom: 10px;
     height: 83px;
+    background-color: #ebeef0;
+    font-family: Segoe,"Segoe UI","Open Sans","DejaVu Sans","Trebuchet MS",Verdana,sans-serif !important;
+    text-align: center;
 }
 
 .fotcls{
@@ -42,11 +45,13 @@
      font-weight: bold;
  }
  .payfirst{
-     padding: 2% 0%;
+     padding: 1% 1% 0% 1%;
      background-color: #ebeef0;
      width: 75%;
      position: relative;
      left: 13%;
+     border-style: solid;
+     border-color: white;
  }
  
  .cardcls{
@@ -120,19 +125,22 @@
  
  .totcls{
 
-     font-size:30px;
-     color:#5a5959;
-     float:right;
+     font-size: 19px;
+     color: #5a5959;
+     float: right;
+     font-weight: 500!important;
  }
  .totcls1{
 
      font-size:30px;
      color:#5a5959;
+     position: relative;
+     left: 103px;
  }
   
- .totmain{
+ .tot-main{
      padding: 2% 0%;
-     border-style: solid;
+
      width: 75%;
      position: relative;
      left: 13%;
@@ -143,24 +151,25 @@
 
  .pay_options
  {
-     font-family: Segoe,"Segoe UI","Open Sans","DejaVu Sans","Trebuchet MS",Verdana,sans-serif !important;
+     font-family:Segoe,"Segoe UI","Open Sans","DejaVu Sans","Trebuchet MS",Verdana,sans-serif !important;
+     background-color: white;
+     width: 100% !important;
  }
 
  .img-responsive
  {
-     height: 49px !important;
+
  }
  .conform-book-btns
  {
 
-     border-style: solid;
      width: 75%;
      position: relative;
      left: 13%;
  }
  .pay-botom-label
  {
-     border-style: solid;
+
      width: 75% !important;
      position: relative !important;
      left: 13%;
@@ -169,6 +178,44 @@
  .paycard-type
  {
 
-     border-style: solid;
      text-align: center;
  }
+ .pay-option-header
+ {
+     margin-top: 10px;
+ }
+
+.pay-option-header > p
+{
+    position: relative;
+    left:40%;
+
+}
+.pay-amount {
+    position: relative;
+    left: 6%;
+    font-weight: bold;
+    color: darkorange;
+    margin-top: -2%;
+    margin-bottom: 3%;
+}
+.pay-head
+{
+    font-weight: bold;
+    margin-top: 3%;
+}
+
+.line-icon
+{
+    width: 10%;
+}
+.card
+{
+    height: 10px;
+}
+.bank-service-charge-label
+{
+    font-weight: bold;
+    font-size:30px;
+
+}

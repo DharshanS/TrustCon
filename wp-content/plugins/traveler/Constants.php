@@ -6,7 +6,7 @@
  * and open the template in the editor.
  */
 
-define('TARGETBRANCH', 'P2721018'); 
+define('TARGET_BRANCH', 'P2721018'); 
 define('CREDENTIALS','Universal API/uAPI4655248065-02590718:nA?9{c3YC8');
 define('PROVIDER', '1G'); 
 define('PCC','3OS2');

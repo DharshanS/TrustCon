@@ -54,17 +54,21 @@ function process_Three() {
     return require(plugin_dir_path(__FILE__) . '/service/StepThreeRequest.php' );
 }
 
-add_action("wp_ajax_ajaxUtility", "ajaxUtility");
-add_action("wp_ajax_nopriv_ajaxUtility", "ajaxUtility");
-function ajaxUtility() {
-    error_log("ajaxUtility.................".plugin_dir_path(__FILE__) . '/utility/AjaxUtility.php');
-    return require(plugin_dir_path(__FILE__) . '/utility/AjaxUtility.php' );
+
+
+add_action("wp_ajax_bank_service", "bank_service");
+add_action("wp_ajax_nopriv_bank_service", "bank_service");
+function bank_service() {
+    error_log("ajaxUtility.................".plugin_dir_path(__FILE__) . '/service/BankService.php');
+    return require(plugin_dir_path(__FILE__) . '/service/BankService.php');
 }
+
 
 add_action('wp_enqueue_scripts', 'load_tr_scripts');
 function load_tr_scripts() {
      
    wp_enqueue_script('js-booking', TRAVELER__PLUGIN_URL . 'js/tr-booking.js');
+//    wp_enqueue_script('js-oneway', TRAVELER__PLUGIN_URL . 'js/oneway.js');
     wp_enqueue_script('findcity-js',TRAVELER__PLUGIN_URL.'js/findCity.js');
     wp_enqueue_script('js-book', TRAVELER__PLUGIN_URL . 'js/book.js');
    wp_enqueue_script('js-moment',TRAVELER__PLUGIN_URL.'js/moment.min.js');

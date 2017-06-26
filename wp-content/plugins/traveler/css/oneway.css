@@ -10,10 +10,10 @@ and open the template in the editor.
 
 .ow-shw
 {
-       top: 63px!important;
+    top: 38px!important;
       /*right: 76px!important;*/
-    
-      
+
+    cursor: pointer;
     font-family: "Droid Sans", sans-serif !important;
     font-size: 12px !important;
     position: relative;
@@ -23,7 +23,7 @@ and open the template in the editor.
 .ow-shw-fr
 {
     
-    top: 80px!important;
+    top: 50px!important;
     font-family: "Droid Sans", sans-serif !important;
     font-size: 12px !important;
     position: relative;
@@ -35,7 +35,7 @@ and open the template in the editor.
    
    position: relative;
     border-style: none;
-    top: 68px !important;
+    top: 45px !important;
     left: 35%;
 }
 .ow-tkt-dts-row
@@ -47,6 +47,8 @@ and open the template in the editor.
     border-color: #0047b3 !important;
     width: 80.5%;
     left: 10.8%!important;
+    border-bottom-right-radius: 13px;
+    border-bottom-left-radius: 13px
 
 }
 .ow-tkt-dts
@@ -55,13 +57,22 @@ and open the template in the editor.
     font-size: 12px !important;
     background-color: white !important;;
     width: 70% !important;
-    min-height: 150px !important; 
-    margin-left: 0px !important;;
-    
-}
+    min-height: 150px !important;
+    border-bottom-left-radius: 13px;
 
+}
+.ow-tks-p
+{
+    margin: 17px 0 9px !important;
+    text-align: center !important;
+}
+.ow-tks-span
+{
+    position: relative;
+    left: 22%;
+}
 .ow-prz-dts{
-    background: url(../images/v1/ticket1.png) no-repeat;
+    background: url(../images/v1/oneway.png) no-repeat;
     min-height: 150px !important;
    
     /* padding-left: 97px !important; */
@@ -87,4 +98,53 @@ and open the template in the editor.
 {
     margin-bottom: 10px;
 
+}
+
+.more-time-dts {
+    position: relative !important;
+    left: 13.05% !important;
+    width: 78.1% !important;
+    min-height: 37px !important;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #0047b3 !important;
+    border-top: none;
+}
+.ow-tks-radio
+{
+    position: relative;
+    right: 43px;
+    margin: -4px 0 0 !important;
+}
+.more-fly-dts
+{
+
+    position: relative;
+
+    margin-bottom: 1%;
+}
+.edit-vsl-ow
+{
+    width: 56% !important;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #0047b3 !important;
+    left: 11% !important;
+    position: relative !important;
+
+}
+.ow-tks-radio-more-time
+{
+    position: relative;
+    right: 13px;
+    margin-top: -9px!important;
+}
+.oneway-price
+{
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+    position: relative;
+    top:  40px;
+    left: 75px;
 }
