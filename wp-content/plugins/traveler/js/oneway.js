@@ -15,7 +15,7 @@ jQuery(document).ready(function()
         var radioValue = JSON.parse(atob(jQuery(this).val()));
         var key=jQuery(this).attr("key");
 
-
+alert(radioValue);
         set_flight_dts_oneway(radioValue,key,"oneway");
         //jQuery(bookKey).html('Hellow World ....');
 
@@ -31,11 +31,11 @@ function set_flight_dts_oneway(radioValue,key,mode)
     var jsRs;
     var fly_dts = "";
     var htmlEla = "." + mode + "_" + key;
-    alert('key'+htmlEla);
+    //alert('key'+htmlEla);
 
     jQuery.each(radioValue, function (index, element) {
 
-        console.log("........."+element);
+       // console.log("........."+element);
         var air = element["@attributes"];
 
         var b_dts=element["0"]["@attributes"];
@@ -47,7 +47,10 @@ function set_flight_dts_oneway(radioValue,key,mode)
             data: {action: 'ajaxUtility'},
             url: '/travel/wp-admin/admin-ajax.php?ori=' + air.Origin + '&des=' + air.Destination + '&air=' + air.Carrier,
                 success: function (response, status) {
+                    alert(response);
+                    console.log(jsRs);
                 jsRs = JSON.parse(response.split("0")[0]);
+                    console.log(jsRs);
                 }, async: false
         });
 

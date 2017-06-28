@@ -241,7 +241,7 @@ function add_my_backend_scripts() {
 add_action("wp_ajax_admin_custom_service", "admin_service_charge_setup");
 add_action("wp_ajax_nopriv_admin_custom_service", "admin_service_charge_setup");
 function admin_service_charge_setup() {
-    return require(get_admin_url(__FILE__) . '/admin_service.php' );
+    return require('admin_service.php' );
 }
 add_action( 'wp_ajax_my_action', 'my_action' );
 function my_action() {

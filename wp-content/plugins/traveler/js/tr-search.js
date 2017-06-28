@@ -4,10 +4,6 @@ jQuery(document).ready(function(){
 jQuery("#cl").on("click", function() {
     alert("clik !!!");
 });
-jQuery(".cl").on("click", function() {
-    alert("clik !!!");
-});
-	
 
 	jQuery(".shw").on("click", function() {
 

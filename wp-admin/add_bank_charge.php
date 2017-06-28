@@ -24,25 +24,12 @@
             </tr>
             </thead>
             <tbody class="charge_body">
-            <tr>
-                <td>1</td>
-                <td>smapath</td>
-                <td>img</td>
-                <td>100</td>
-                <td>  <button type="button" class="btn btn-primary add-charge">Edit</button></td>
 
-            </tr>
-            <tr>
-                <td>1</td>
-                <td>smapath</td>
-                <td>img</td>
-                <td>100</td>
-                <td>  <button type="button" class="btn btn-primary add-charge">Edit</button></td>
 
-            </tr>
+
             </tbody>
         </table>
-        <button type="button" class="btn btn-primary test">TEST</button>
+       
     </div>
 </div>
 </div>

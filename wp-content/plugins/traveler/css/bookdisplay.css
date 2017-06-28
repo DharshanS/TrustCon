@@ -426,6 +426,10 @@ and open the template in the editor.
     border-color:InactiveBorder;
 
 }
+.embasy_class {
+    /*display: none;*/
+    border-style: solid;
+}
 .price-dts-body
 {
     background-color: white;

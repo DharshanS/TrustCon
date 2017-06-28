@@ -169,7 +169,7 @@ $util = new FlightUtility();
         <?php $pas = $_SESSION['searchdata']['passengers'];
 
         foreach ($pas as $i => $ind) {
-            error_log("BOOK-->" . print_r($ind, true));
+        
             ?>
 
             <div class='row clshead1'>
@@ -305,11 +305,11 @@ $util = new FlightUtility();
             <div class='col-lg-4 btncls1'>
                 <button class='btnembassy'></button>
             </div>
-        </div>
+        </div>  
     </div>
 
 
-    <form action="" method="" id="frmempassy">
+    <div class="embasy_class" >
         <div class='row'>
             <div class='col-lg-12 clshead'>
                 <div class='col-lg-11'><h5 class='headersty'>EMBASSY PURPOSE</h5></div>
@@ -334,16 +334,8 @@ $util = new FlightUtility();
                 <input type="text" class="empsurname" id="emppassportid" name="emppasspornm"/>
             </div>
         </div>
-    </form>
 </div>
-<script>
-
-    jQuery('.btnembassy').click(function () {
-        jQuery("#frmempassy").fadeToggle("slow", "linear");
-    });
-
-
-</script>
+    </div>
 
 
 

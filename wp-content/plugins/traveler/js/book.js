@@ -6,7 +6,7 @@
 
 
 jQuery(document).ready(function () {
-
+    jQuery(".embasy_class").hide();
     jQuery(".btnpaynow").click(function () {
 
 
@@ -14,6 +14,17 @@ jQuery(document).ready(function () {
         makeReservationAjax(collectReservationDetails(), "btnpaynow");
 
 
+    });
+
+    jQuery(".btnembassy").on("click", function() {
+      // alert('clcik');
+        jQuery(".embasy_class").slideToggle("slow");
+
+    });
+
+    jQuery(".btncontinue").on("click", function() {
+
+        pay_embassy_purpose();
     });
 
 
@@ -35,7 +46,22 @@ function makeReservationAjax(request, mode) {
     });
 }
 
+function pay_embassy_purpose() {
 
+    alert('method called');
+   
+    jQuery.ajax({
+        type: 'post',
+        data: {action: 'paymentPage'},
+        url: '/travel/wp-admin/admin-ajax.php',
+        success: function (h) {
+
+
+            jQuery(location).attr('href', '../travel/Payment');
+
+        }
+    });
+}
 function collectReservationDetails() {
     alert('collectReservationDetails');
     var k = 0;

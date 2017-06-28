@@ -2,64 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="70d469d7-ddbb-4870-b266-f9484b64eb61" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/v1/ticket1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/traveler/images/v1/bcktic.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/traveler/images/v1/bookinglogo.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/traveler/images/v1/ticket1.png" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/v1/ticket.png" afterPath="$PROJECT_DIR$/images/v1/ticket.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/traveler/images/v1/ticket.png" afterPath="$PROJECT_DIR$/wp-content/plugins/traveler/images/v1/ticket.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/plugins/traveler/service/EmbassyPurpose.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/traveler/admin_service.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/traveler/test.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paycorp-client-php/au.com.gateway.client.facade/BaseFacade.php" afterPath="$PROJECT_DIR$/paycorp-client-php/au.com.gateway.client.facade/BaseFacade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-admin/add_bank_charge.php" afterPath="$PROJECT_DIR$/wp-admin/add_bank_charge.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-admin/add_service_charge.php" afterPath="$PROJECT_DIR$/wp-admin/add_service_charge.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-admin/admin_service.php" afterPath="$PROJECT_DIR$/wp-admin/admin_service.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-admin/custom_admin.php" afterPath="$PROJECT_DIR$/wp-admin/custom_admin.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-admin/js/admin_custom.js" afterPath="$PROJECT_DIR$/wp-admin/js/admin_custom.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-config.php" afterPath="$PROJECT_DIR$/wp-config.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/debug.log" afterPath="$PROJECT_DIR$/wp-content/debug.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/mega_main_menu/src/css/cache.skin.css" afterPath="$PROJECT_DIR$/wp-content/plugins/mega_main_menu/src/css/cache.skin.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/traveler/Constants.php" afterPath="$PROJECT_DIR$/wp-content/plugins/traveler/Constants.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/traveler/core/MailSettings.php" afterPath="$PROJECT_DIR$/wp-content/plugins/traveler/core/MailSettings.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/traveler/css/bookdisplay.css" afterPath="$PROJECT_DIR$/wp-content/plugins/traveler/css/bookdisplay.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/traveler/css/oneway.css" afterPath="$PROJECT_DIR$/wp-content/plugins/traveler/css/oneway.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/traveler/css/payment.css" afterPath="$PROJECT_DIR$/wp-content/plugins/traveler/css/payment.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/traveler/css/round-search.css" afterPath="$PROJECT_DIR$/wp-content/plugins/traveler/css/round-search.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/traveler/js/book.js" afterPath="$PROJECT_DIR$/wp-content/plugins/traveler/js/book.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/traveler/js/oneway.js" afterPath="$PROJECT_DIR$/wp-content/plugins/traveler/js/oneway.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/traveler/js/payment.js" afterPath="$PROJECT_DIR$/wp-content/plugins/traveler/js/payment.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/traveler/models/PricingFly.php" afterPath="$PROJECT_DIR$/wp-content/plugins/traveler/models/PricingFly.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/traveler/paycorp-client-php/au.com.gateway.IT/pcw_payment-complete_paynow_UT.php" afterPath="$PROJECT_DIR$/wp-content/plugins/traveler/paycorp-client-php/au.com.gateway.IT/pcw_payment-complete_paynow_UT.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/traveler/paycorp-client-php/au.com.gateway.client.facade/BaseFacade.php" afterPath="$PROJECT_DIR$/wp-content/plugins/traveler/paycorp-client-php/au.com.gateway.client.facade/BaseFacade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/traveler/js/tr-roundtrip.js" afterPath="$PROJECT_DIR$/wp-content/plugins/traveler/js/tr-roundtrip.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/traveler/js/tr-search.js" afterPath="$PROJECT_DIR$/wp-content/plugins/traveler/js/tr-search.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/traveler/search_init.php" afterPath="$PROJECT_DIR$/wp-content/plugins/traveler/search_init.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/traveler/search_initialization.php" afterPath="$PROJECT_DIR$/wp-content/plugins/traveler/search_initialization.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/traveler/service/BankService.php" afterPath="$PROJECT_DIR$/wp-content/plugins/traveler/service/BankService.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/traveler/service/LowFareAirPriceRequest.php" afterPath="$PROJECT_DIR$/wp-content/plugins/traveler/service/LowFareAirPriceRequest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/traveler/service/LowFareAirPriceResponse.php" afterPath="$PROJECT_DIR$/wp-content/plugins/traveler/service/LowFareAirPriceResponse.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/traveler/service/LowFareSearchRequest.php" afterPath="$PROJECT_DIR$/wp-content/plugins/traveler/service/LowFareSearchRequest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/traveler/service/LowFareSearchResponse.php" afterPath="$PROJECT_DIR$/wp-content/plugins/traveler/service/LowFareSearchResponse.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/traveler/service/ReservationRequest.php" afterPath="$PROJECT_DIR$/wp-content/plugins/traveler/service/ReservationRequest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/traveler/service/ReservationResponse.php" afterPath="$PROJECT_DIR$/wp-content/plugins/traveler/service/ReservationResponse.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/traveler/service/RoundTripBookReq.php" afterPath="$PROJECT_DIR$/wp-content/plugins/traveler/service/RoundTripBookReq.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/traveler/service/RoundTripBookRes.php" afterPath="$PROJECT_DIR$/wp-content/plugins/traveler/service/RoundTripBookRes.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/traveler/service/RoundTripResponse.php" afterPath="$PROJECT_DIR$/wp-content/plugins/traveler/service/RoundTripResponse.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/traveler/service/emailSender.php" afterPath="$PROJECT_DIR$/wp-content/plugins/traveler/service/emailSender.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/traveler/utility/DbUtility.php" afterPath="$PROJECT_DIR$/wp-content/plugins/traveler/utility/DbUtility.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/traveler/utility/FlightUtility.php" afterPath="$PROJECT_DIR$/wp-content/plugins/traveler/utility/FlightUtility.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/traveler/view/BookDisplay.php" afterPath="$PROJECT_DIR$/wp-content/plugins/traveler/view/BookDisplay.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/traveler/view/OWSDisplay.php" afterPath="$PROJECT_DIR$/wp-content/plugins/traveler/view/OWSDisplay.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/traveler/view/Payment.php" afterPath="$PROJECT_DIR$/wp-content/plugins/traveler/view/Payment.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/traveler/xml/LowFareSearchRsp.xml" afterPath="$PROJECT_DIR$/wp-content/plugins/traveler/xml/LowFareSearchRsp.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/traveler/xml/roundTripXml.xml" afterPath="$PROJECT_DIR$/wp-content/plugins/traveler/xml/roundTripXml.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/template-flight-result-load.php" afterPath="$PROJECT_DIR$/wp-content/themes/template-flight-result-load.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/traveler/css/styles.css" afterPath="$PROJECT_DIR$/wp-content/themes/traveler/css/styles.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/traveler/view/RWSDisplay.php" afterPath="$PROJECT_DIR$/wp-content/plugins/traveler/view/RWSDisplay.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/traveler/functions.php" afterPath="$PROJECT_DIR$/wp-content/themes/traveler/functions.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/traveler/header.php" afterPath="$PROJECT_DIR$/wp-content/themes/traveler/header.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/traveler/js/admin_custom.js" afterPath="$PROJECT_DIR$/wp-content/themes/traveler/js/admin_custom.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/traveler/template-booking.php" afterPath="$PROJECT_DIR$/wp-content/themes/traveler/template-booking.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/traveler/template-flight-result-load.php" afterPath="$PROJECT_DIR$/wp-content/themes/traveler/template-flight-result-load.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/traveler/template-home.php" afterPath="$PROJECT_DIR$/wp-content/themes/traveler/template-home.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/traveler/template-paynow.php" afterPath="$PROJECT_DIR$/wp-content/themes/traveler/template-paynow.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/traveler/template-payroute.php" afterPath="$PROJECT_DIR$/wp-content/themes/traveler/template-payroute.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/traveler/users/user-nav.php" afterPath="$PROJECT_DIR$/wp-content/themes/traveler/users/user-nav.php" />
     </list>
     <ignored path="travel.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -88,112 +51,113 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="LowFareAirPriceRequest.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wp-content/plugins/traveler/service/LowFareAirPriceRequest.php">
+      <file leaf-file-name="oneway.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/plugins/traveler/js/oneway.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="311">
-              <caret line="105" column="29" selection-start-line="105" selection-start-column="29" selection-end-line="105" selection-end-column="29" />
+            <state relative-caret-position="119">
+              <caret line="7" column="21" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="29" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ReservationRequest.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wp-content/plugins/traveler/service/ReservationRequest.php">
+      <file leaf-file-name="book.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/plugins/traveler/js/book.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="107">
-              <caret line="125" column="32" selection-start-line="125" selection-start-column="32" selection-end-line="125" selection-end-column="32" />
+            <state relative-caret-position="782">
+              <caret line="50" column="24" selection-start-line="50" selection-start-column="24" selection-end-line="50" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="add_bank_charge.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-admin/add_bank_charge.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="376">
+              <caret line="31" column="7" selection-start-line="31" selection-start-column="7" selection-end-line="31" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="admin_custom.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/wp-admin/js/admin_custom.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="286">
+              <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
               <folding>
-                <marker date="1498381322453" expanded="true" signature="1215:1892" ph="..." />
-                <marker date="1498381322453" expanded="true" signature="1272:1892" ph="..." />
-                <marker date="1498381322453" expanded="true" signature="1383:1892" ph="..." />
-                <marker date="1498381322453" expanded="true" signature="2587:2678" ph="..." />
-                <marker date="1498381322453" expanded="true" signature="3039:3116" ph="..." />
+                <element signature="e#45#89#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="search_init.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wp-content/plugins/traveler/search_init.php">
+      <file leaf-file-name="payment.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/plugins/traveler/js/payment.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="368">
-              <caret line="189" column="95" selection-start-line="189" selection-start-column="95" selection-end-line="189" selection-end-column="95" />
+            <state relative-caret-position="340">
+              <caret line="20" column="78" selection-start-line="20" selection-start-column="78" selection-end-line="20" selection-end-column="78" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="functions.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/traveler/functions.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="4165">
+              <caret line="254" column="53" selection-start-line="248" selection-start-column="0" selection-end-line="254" selection-end-column="53" />
               <folding>
-                <marker date="1498483725155" expanded="true" signature="1166:1224" ph="SELECT * FRO... countries" />
-                <marker date="1498483725155" expanded="true" signature="1532:1607" ph="SELECT `iata... airlines" />
-                <marker date="1498483725155" expanded="true" signature="2010:2076" ph="SELECT `iata... airports" />
+                <marker date="1498640620946" expanded="true" signature="7722:7747" ph="select * fro... bank_charge" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RoundTripBookReq.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wp-content/plugins/traveler/service/RoundTripBookReq.php">
+      <file leaf-file-name="admin_service.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/traveler/admin_service.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1936">
+            <state relative-caret-position="102">
+              <caret line="11" column="77" selection-start-line="11" selection-start-column="77" selection-end-line="11" selection-end-column="77" />
+              <folding>
+                <marker date="1498646844266" expanded="true" signature="201:238" ph="UPDATE bank_... " />
+                <marker date="1498646844266" expanded="true" signature="201:255" ph="UPDATE bank_... " />
+                <marker date="1498646844266" expanded="true" signature="201:266" ph="UPDATE bank_... " />
+                <marker date="1498646844266" expanded="true" signature="201:321" ph="UPDATE bank_... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/test.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RoundTripResponse.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/wp-content/plugins/traveler/service/RoundTripResponse.php">
+      <file leaf-file-name="test.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/test.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="74" column="59" selection-start-line="74" selection-start-column="59" selection-end-line="74" selection-end-column="59" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LowFareSearchRsp.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wp-content/plugins/traveler/xml/LowFareSearchRsp.xml">
+      <file leaf-file-name="test.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/traveler/test.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="546">
-              <caret line="2497" column="15" selection-start-line="2497" selection-start-column="15" selection-end-line="2497" selection-end-column="15" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RoundTrip.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wp-content/plugins/traveler/models/RoundTrip.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="20" column="6" selection-start-line="20" selection-start-column="6" selection-end-line="20" selection-end-column="6" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="search_result.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backup/search_result.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="193">
-              <caret line="904" column="0" selection-start-line="904" selection-start-column="0" selection-end-line="904" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="roundTripXml.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wp-content/plugins/traveler/xml/roundTripXml.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="59228">
-              <caret line="3484" column="0" selection-start-line="3484" selection-start-column="0" selection-end-line="3484" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FlightUtility.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wp-content/plugins/traveler/utility/FlightUtility.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="134">
-              <caret line="149" column="12" selection-start-line="149" selection-start-column="12" selection-end-line="149" selection-end-column="12" />
-              <folding />
+            <state relative-caret-position="34">
+              <caret line="7" column="16" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
+              <folding>
+                <element signature="e#6#91#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -213,20 +177,12 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/wp-content/plugins/traveler/css/round-search.css" />
-        <option value="$PROJECT_DIR$/wp-content/plugins/traveler/service/LowFareSearchRequest.php" />
-        <option value="$PROJECT_DIR$/wp-content/plugins/traveler/service/RoundTripBookReq.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/traveler/template-booking.php" />
-        <option value="$PROJECT_DIR$/wp-content/plugins/traveler/xml/PriceResponse.xml" />
-        <option value="$PROJECT_DIR$/wp-content/plugins/traveler/js/tr-roundtrip.js" />
-        <option value="$PROJECT_DIR$/wp-content/plugins/traveler/css/oneway.css" />
         <option value="$PROJECT_DIR$/wp-content/themes/traveler/header.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/traveler/template-home.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/traveler/users/user-nav.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/traveler/css/styles.css" />
         <option value="$PROJECT_DIR$/wp-content/themes/template-flight-result-load.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/traveler/template-flight-result-load.php" />
-        <option value="$PROJECT_DIR$/wp-content/plugins/traveler/view/OWSDisplay.php" />
         <option value="$PROJECT_DIR$/wp-content/plugins/traveler/service/RoundTripBookRes.php" />
         <option value="$PROJECT_DIR$/wp-admin/add_service_charge.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/traveler/template-route.php" />
@@ -238,12 +194,6 @@
         <option value="$PROJECT_DIR$/wp-admin/js/cunstom.js" />
         <option value="$PROJECT_DIR$/wp-admin/custom_admin.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/traveler/js/admin_custom.js" />
-        <option value="$PROJECT_DIR$/wp-admin/admin_service.php" />
-        <option value="$PROJECT_DIR$/wp-content/plugins/traveler/js/oneway.js" />
-        <option value="$PROJECT_DIR$/wp-content/themes/traveler/functions.php" />
-        <option value="$PROJECT_DIR$/wp-admin/add_bank_charge.php" />
-        <option value="$PROJECT_DIR$/wp-admin/js/admin_custom.js" />
-        <option value="$PROJECT_DIR$/wp-content/plugins/traveler/search_initialization.php" />
         <option value="$PROJECT_DIR$/wp-content/plugins/traveler/css/payment.css" />
         <option value="$PROJECT_DIR$/wp-content/plugins/traveler/view/Payment.php" />
         <option value="$PROJECT_DIR$/wp-content/plugins/traveler/js/payment.js" />
@@ -251,8 +201,6 @@
         <option value="$PROJECT_DIR$/wp-content/plugins/traveler/models/PricingFly.php" />
         <option value="$PROJECT_DIR$/wp-content/plugins/traveler/utility/DbUtility.php" />
         <option value="$PROJECT_DIR$/wp-content/plugins/traveler/service/LowFareAirPriceResponse.php" />
-        <option value="$PROJECT_DIR$/wp-content/plugins/traveler/css/bookdisplay.css" />
-        <option value="$PROJECT_DIR$/wp-content/plugins/traveler/view/BookDisplay.php" />
         <option value="$PROJECT_DIR$/wp-content/plugins/traveler/service/LowFareAirPriceRequest.php" />
         <option value="$PROJECT_DIR$/wp-content/plugins/traveler/xml/LowFareSearchRsp.xml" />
         <option value="$PROJECT_DIR$/wp-content/plugins/traveler/service/LowFareSearchResponse.php" />
@@ -262,8 +210,24 @@
         <option value="$PROJECT_DIR$/wp-content/plugins/traveler/service/ReservationRequest.php" />
         <option value="$PROJECT_DIR$/wp-content/plugins/traveler/xml/roundTripXml.xml" />
         <option value="$PROJECT_DIR$/wp-content/plugins/traveler/utility/FlightUtility.php" />
-        <option value="$PROJECT_DIR$/wp-content/plugins/traveler/search_init.php" />
         <option value="$PROJECT_DIR$/wp-content/plugins/traveler/service/RoundTripResponse.php" />
+        <option value="$PROJECT_DIR$/wp-content/plugins/traveler/css/oneway.css" />
+        <option value="$PROJECT_DIR$/wp-content/plugins/traveler/view/OWSDisplay.php" />
+        <option value="$PROJECT_DIR$/wp-content/plugins/traveler/search_init.php" />
+        <option value="$PROJECT_DIR$/wp-content/plugins/traveler/css/round-search.css" />
+        <option value="$PROJECT_DIR$/wp-content/plugins/traveler/js/tr-roundtrip.js" />
+        <option value="$PROJECT_DIR$/wp-content/plugins/traveler/js/oneway.js" />
+        <option value="$PROJECT_DIR$/wp-content/plugins/traveler/search_initialization.php" />
+        <option value="$PROJECT_DIR$/wp-content/plugins/traveler/js/tr-search.js" />
+        <option value="$PROJECT_DIR$/wp-content/plugins/traveler/css/bookdisplay.css" />
+        <option value="$PROJECT_DIR$/wp-content/plugins/traveler/view/BookDisplay.php" />
+        <option value="$PROJECT_DIR$/wp-content/plugins/traveler/js/book.js" />
+        <option value="$PROJECT_DIR$/wp-admin/add_bank_charge.php" />
+        <option value="$PROJECT_DIR$/wp-admin/admin_service.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/traveler/functions.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/test.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/traveler/admin_service.php" />
+        <option value="$PROJECT_DIR$/wp-admin/js/admin_custom.js" />
       </list>
     </option>
   </component>
@@ -312,7 +276,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -447,141 +410,7 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="xml" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="travel" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="travel" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wp-content" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="plugins" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="traveler" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="view" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="travel" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="travel" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wp-content" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="plugins" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="traveler" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="utility" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="travel" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="travel" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wp-content" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="plugins" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="traveler" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="service" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="travel" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="travel" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wp-content" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="plugins" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="traveler" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="paycorp-client-php" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="au.com.gateway.IT" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="travel" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="travel" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wp-content" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="plugins" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="traveler" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="paycorp-client-php" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -611,38 +440,13 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="travel" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="travel" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wp-content" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="plugins" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="traveler" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="Scope">
         <subPane subId="Problems" />
         <subPane subId="Project Files" />
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -656,11 +460,11 @@
       <recent name="C:\xampp\htdocs\travel\wp-content\themes\traveler" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\travel\wp-content" />
+      <recent name="C:\xampp\htdocs\travel\wp-content\themes" />
+      <recent name="C:\xampp\htdocs\travel\wp-content\themes\traveler" />
       <recent name="C:\xampp\htdocs\travel\wp-admin\js" />
       <recent name="C:\xampp\htdocs\travel\wp-content\plugins\traveler" />
-      <recent name="C:\xampp\htdocs\travel\wp-content\plugins\traveler\js" />
-      <recent name="C:\xampp\htdocs\travel\wp-content\plugins\traveler\core" />
-      <recent name="C:\xampp\htdocs\travel" />
     </key>
   </component>
   <component name="RunManager">
@@ -742,18 +546,21 @@
       <workItem from="1498069101562" duration="18507000" />
       <workItem from="1498235828451" duration="4425000" />
       <workItem from="1498277490050" duration="30177000" />
-      <workItem from="1498447293173" duration="10972000" />
+      <workItem from="1498447293173" duration="23949000" />
+      <workItem from="1498630994600" duration="7228000" />
+      <workItem from="1498642453725" duration="5240000" />
+      <workItem from="1498649293225" duration="348000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="385575000" />
+    <option name="totallyTimeSpent" value="411368000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="9" y="9" width="1370" height="744" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2688331" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27769572" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -815,14 +622,9 @@
           <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/wp-content/plugins/traveler/js/tr-roundtrip.js</url>
-          <line>112</line>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/wp-admin/js/admin_custom.js</url>
-          <line>15</line>
-          <option name="timeStamp" value="9" />
+          <line>14</line>
+          <option name="timeStamp" value="11" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/wp-content/themes/traveler/template-paynow.php</url>
@@ -835,138 +637,15 @@
           <option name="timeStamp" value="8" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="11" />
+      <option name="time" value="12" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/traveler/inc/admin/class.admin.activity.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="157" column="88" selection-start-line="157" selection-start-column="88" selection-end-line="157" selection-end-column="88" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/traveler/js/flight-search.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-admin/user/admin_service.php" />
-    <entry file="file://$PROJECT_DIR$/wp-admin/js/bookmarklet.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-admin/js/common.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-admin/js/custom-background.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-admin/js/common.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-459">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-admin/admin_service.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/plugins/traveler/service/airAirRetrieveDocumentRsp.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/plugins/traveler/js/tr-booking.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2193">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-admin/add_service_charge.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="7" column="89" selection-start-line="7" selection-start-column="89" selection-end-line="7" selection-end-column="89" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-admin/add_bank_charge.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="393">
-          <caret line="39" column="97" selection-start-line="39" selection-start-column="14" selection-end-line="39" selection-end-column="97" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/plugins/traveler/js/tr-search.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/plugins/traveler/js/oneway.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="51" column="11" selection-start-line="42" selection-start-column="0" selection-end-line="51" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/plugins/traveler/js/book.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-255">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/traveler/functions.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="385">
-          <caret line="250" column="1" selection-start-line="250" selection-start-column="1" selection-end-line="252" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-admin/js/admin_custom.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-272">
-          <caret line="6" column="38" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="38" />
-          <folding>
-            <element signature="e#45#89#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/plugins/traveler/service/AirRetrieveDocumentReq.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/plugins/traveler/search_initialization.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
-          <caret line="62" column="68" selection-start-line="62" selection-start-column="68" selection-end-line="62" selection-end-column="68" />
         </state>
       </provider>
     </entry>
@@ -984,21 +663,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/plugins/traveler/view/Payment.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="88" selection-start-line="14" selection-start-column="61" selection-end-line="14" selection-end-column="88" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/plugins/traveler/js/payment.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="78" selection-start-line="20" selection-start-column="78" selection-end-line="20" selection-end-column="78" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/plugins/traveler/models/PricingFly.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="287">
@@ -1010,16 +674,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="499">
           <caret line="76" column="31" selection-start-line="76" selection-start-column="13" selection-end-line="76" selection-end-column="31" />
-          <folding>
-            <marker date="1498361410618" expanded="true" signature="656:722" ph="SELECT `iata... airports" />
-            <marker date="1498361410618" expanded="true" signature="1471:1546" ph="SELECT `iata... airlines" />
-            <marker date="1498361410618" expanded="true" signature="1855:1921" ph="SELECT `disc... airlines" />
-            <marker date="1498361410618" expanded="true" signature="2100:2154" ph="SELECT `char... bank_charge" />
-            <marker date="1498361410618" expanded="true" signature="2100:2164" ph="SELECT `disc... airlines" />
-            <marker date="1498361410618" expanded="true" signature="2100:2490" ph="SELECT `char... bank_charge" />
-            <marker date="1498361410618" expanded="true" signature="2340:2390" ph="SELECT `amou... service_charge" />
-            <marker date="1498361410618" expanded="true" signature="2340:2392" ph="SELECT `amou... service_charge" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1034,28 +688,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="410">
           <caret line="180" column="21" selection-start-line="180" selection-start-column="21" selection-end-line="180" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/plugins/traveler/css/bookdisplay.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="433" column="13" selection-start-line="433" selection-start-column="13" selection-end-line="433" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/plugins/traveler/view/BookDisplay.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="146" column="138" selection-start-line="146" selection-start-column="138" selection-end-line="146" selection-end-column="138" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/plugins/traveler/view/OWSDisplay.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1020">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1077,33 +709,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-544">
           <caret line="7" column="9" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
-          <folding>
-            <marker date="1497080893969" expanded="true" signature="380:1508" ph="..." />
-            <marker date="1497080893969" expanded="true" signature="421:1508" ph="..." />
-            <marker date="1497080893969" expanded="true" signature="562:1508" ph="..." />
-            <marker date="1497080893969" expanded="true" signature="694:1310" ph="..." />
-            <marker date="1497080893969" expanded="true" signature="713:851" ph="..." />
-            <marker date="1497080893969" expanded="true" signature="875:1016" ph="..." />
-            <marker date="1497080893969" expanded="true" signature="1106:1289" ph="..." />
-            <marker date="1497080893969" expanded="true" signature="1130:1266" ph="..." />
-            <marker date="1497080893969" expanded="true" signature="1336:1508" ph="..." />
-            <marker date="1497080893969" expanded="true" signature="1362:1481" ph="..." />
-            <marker date="1497080893969" expanded="true" signature="2501:4221" ph="..." />
-            <marker date="1497080893969" expanded="true" signature="2537:4221" ph="..." />
-            <marker date="1497080893969" expanded="true" signature="2678:4221" ph="..." />
-            <marker date="1497080893969" expanded="true" signature="2808:3411" ph="..." />
-            <marker date="1497080893969" expanded="true" signature="2826:2962" ph="..." />
-            <marker date="1497080893969" expanded="true" signature="2985:3124" ph="..." />
-            <marker date="1497080893969" expanded="true" signature="3212:3391" ph="..." />
-            <marker date="1497080893969" expanded="true" signature="3235:3369" ph="..." />
-            <marker date="1497080893969" expanded="true" signature="3430:4029" ph="..." />
-            <marker date="1497080893969" expanded="true" signature="3448:3582" ph="..." />
-            <marker date="1497080893969" expanded="true" signature="3605:3746" ph="..." />
-            <marker date="1497080893969" expanded="true" signature="3832:4009" ph="..." />
-            <marker date="1497080893969" expanded="true" signature="3853:3987" ph="..." />
-            <marker date="1497080893969" expanded="true" signature="4054:4221" ph="..." />
-            <marker date="1497080893969" expanded="true" signature="4078:4195" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1111,7 +716,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-408">
           <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1133,9 +737,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1496630920957" expanded="true" signature="1244:1416" ph="INSERT INTO `wp_posts`... " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1143,12 +744,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1207">
           <caret line="71" column="9" selection-start-line="71" selection-start-column="9" selection-end-line="71" selection-end-column="9" />
-          <folding>
-            <marker date="1496630921035" expanded="true" signature="1428:1498" ph="INSERT INTO `wp_postmeta`... " />
-            <marker date="1496630921035" expanded="true" signature="3970:4142" ph="INSERT INTO `wp_posts`... " />
-            <marker date="1496630921035" expanded="true" signature="5138:5208" ph="INSERT INTO `wp_postmeta`... " />
-            <marker date="1496630921035" expanded="true" signature="6342:6607" ph="INSERT INTO `pnr_history`... " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1156,14 +751,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1037">
           <caret line="61" column="19" selection-start-line="61" selection-start-column="19" selection-end-line="61" selection-end-column="19" />
-          <folding>
-            <marker date="1498372857303" expanded="true" signature="4327:4342" ph="..." />
-            <marker date="1498372857303" expanded="true" signature="4716:4786" ph="INSERT INTO `wp_postmeta`... " />
-            <marker date="1498372857303" expanded="true" signature="4949:5052" ph="UPDATE `wp_p... " />
-            <marker date="1498372857303" expanded="true" signature="5260:5275" ph="..." />
-            <marker date="1498372857303" expanded="true" signature="5678:5693" ph="..." />
-            <marker date="1498372857303" expanded="true" signature="5884:5899" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1171,7 +758,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="748">
           <caret line="44" column="24" selection-start-line="44" selection-start-column="24" selection-end-line="44" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1179,7 +765,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="8" column="33" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="33" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1187,7 +772,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="311">
           <caret line="105" column="29" selection-start-line="105" selection-start-column="29" selection-end-line="105" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1195,7 +779,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="59228">
           <caret line="3484" column="0" selection-start-line="3484" selection-start-column="0" selection-end-line="3484" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1203,7 +786,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="134">
           <caret line="149" column="12" selection-start-line="149" selection-start-column="12" selection-end-line="149" selection-end-column="12" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1211,7 +793,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="20" column="6" selection-start-line="20" selection-start-column="6" selection-end-line="20" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1219,7 +800,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="193">
           <caret line="904" column="0" selection-start-line="904" selection-start-column="0" selection-end-line="904" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1227,19 +807,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="546">
           <caret line="2497" column="15" selection-start-line="2497" selection-start-column="15" selection-end-line="2497" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/plugins/traveler/search_init.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="189" column="95" selection-start-line="189" selection-start-column="95" selection-end-line="189" selection-end-column="95" />
-          <folding>
-            <marker date="1498483725155" expanded="true" signature="1166:1224" ph="SELECT * FRO... countries" />
-            <marker date="1498483725155" expanded="true" signature="1532:1607" ph="SELECT `iata... airlines" />
-            <marker date="1498483725155" expanded="true" signature="2010:2076" ph="SELECT `iata... airports" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1247,7 +814,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1936">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1255,13 +821,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="107">
           <caret line="125" column="32" selection-start-line="125" selection-start-column="32" selection-end-line="125" selection-end-column="32" />
-          <folding>
-            <marker date="1498381322453" expanded="true" signature="1215:1892" ph="..." />
-            <marker date="1498381322453" expanded="true" signature="1272:1892" ph="..." />
-            <marker date="1498381322453" expanded="true" signature="1383:1892" ph="..." />
-            <marker date="1498381322453" expanded="true" signature="2587:2678" ph="..." />
-            <marker date="1498381322453" expanded="true" signature="3039:3116" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1269,7 +828,199 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
           <caret line="74" column="59" selection-start-line="74" selection-start-column="59" selection-end-line="74" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/traveler/css/oneway.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="546">
+          <caret line="270" column="1" selection-start-line="270" selection-start-column="1" selection-end-line="270" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/traveler/view/RWSDisplay.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="88" column="38" selection-start-line="88" selection-start-column="38" selection-end-line="88" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/traveler/css/tr-search.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="65" column="20" selection-start-line="65" selection-start-column="20" selection-end-line="65" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/traveler/css/round-search.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4709">
+          <caret line="289" column="0" selection-start-line="289" selection-start-column="0" selection-end-line="289" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/traveler/js/tr-roundtrip.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="674">
+          <caret line="220" column="44" selection-start-line="220" selection-start-column="44" selection-end-line="220" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/traveler/view/OWSDisplay.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="83" column="54" selection-start-line="83" selection-start-column="41" selection-end-line="83" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/traveler/search_initialization.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="67" column="24" selection-start-line="67" selection-start-column="24" selection-end-line="67" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/traveler/search_init.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="189" column="83" selection-start-line="189" selection-start-column="83" selection-end-line="190" selection-end-column="79" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/traveler/view/Payment.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2293">
+          <caret line="14" column="88" selection-start-line="14" selection-start-column="61" selection-end-line="14" selection-end-column="88" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/traveler/js/tr-search.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/traveler/view/BookDisplay.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="241">
+          <caret line="322" column="38" selection-start-line="322" selection-start-column="27" selection-end-line="322" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/traveler/css/bookdisplay.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="429" column="0" selection-start-line="429" selection-start-column="0" selection-end-line="429" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/traveler/service/EmbassyPurpose.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="3" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-admin/admin_service.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
+          <folding>
+            <element signature="e#6#91#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/traveler/test.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="7" column="16" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
+          <folding>
+            <element signature="e#6#91#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/traveler/js/book.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="782">
+          <caret line="50" column="24" selection-start-line="50" selection-start-column="24" selection-end-line="50" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/test.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/test.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/traveler/functions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4165">
+          <caret line="254" column="53" selection-start-line="248" selection-start-column="0" selection-end-line="254" selection-end-column="53" />
+          <folding>
+            <marker date="1498640620946" expanded="true" signature="7722:7747" ph="select * fro... bank_charge" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/traveler/admin_service.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="11" column="77" selection-start-line="11" selection-start-column="77" selection-end-line="11" selection-end-column="77" />
+          <folding>
+            <marker date="1498646844266" expanded="true" signature="201:238" ph="UPDATE bank_... " />
+            <marker date="1498646844266" expanded="true" signature="201:255" ph="UPDATE bank_... " />
+            <marker date="1498646844266" expanded="true" signature="201:266" ph="UPDATE bank_... " />
+            <marker date="1498646844266" expanded="true" signature="201:321" ph="UPDATE bank_... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/traveler/js/payment.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="78" selection-start-line="20" selection-start-column="78" selection-end-line="20" selection-end-column="78" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/traveler/js/oneway.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="21" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-admin/add_bank_charge.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="376">
+          <caret line="31" column="7" selection-start-line="31" selection-start-column="7" selection-end-line="31" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-admin/js/admin_custom.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+          <folding>
+            <element signature="e#45#89#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

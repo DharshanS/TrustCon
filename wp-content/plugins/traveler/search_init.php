@@ -188,11 +188,11 @@ if (isset($_POST['mode']) && ($_POST['mode'] == 'roundtrip' || $_POST['mode'] ==
     if ($_POST['mode'] == 'roundtrip') {
        // require_once(plugin_dir_path(__FILE__) . 'service/RoundTripResponse.php');
         error_log("......................Round trip search initiated ..........roundTripXml.xml.............");
-        roundTrip($fly->sendPost(ENDPOINT, LowFareSearchRequest($searchdata),""));
+        roundTrip($fly->sendPost(ENDPOINT, LowFareSearchRequest($searchdata),"roundTripXml.xml"));
     } else if ($_POST['mode'] == 'oneway') {
        // require_once(plugin_dir_path(__FILE__) . 'service/LowFareSearchResponse.php');
         error_log("......................One way search initiated ..........................");
-        init($fly->sendPost(ENDPOINT, LowFareSearchRequest($searchdata),""));
+        init($fly->sendPost(ENDPOINT, LowFareSearchRequest($searchdata),"LowFareSearchRsp.xml"));
 
     }
 }

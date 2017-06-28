@@ -59,8 +59,15 @@ function process_Three() {
 add_action("wp_ajax_bank_service", "bank_service");
 add_action("wp_ajax_nopriv_bank_service", "bank_service");
 function bank_service() {
-    error_log("ajaxUtility.................".plugin_dir_path(__FILE__) . '/service/BankService.php');
+    //error_log("ajaxUtility.................".plugin_dir_path(__FILE__) . '/service/BankService.php');
     return require(plugin_dir_path(__FILE__) . '/service/BankService.php');
+}
+
+add_action("wp_ajax_ajaxUtility", "ajaxUtility");
+add_action("wp_ajax_nopriv_ajaxUtility", "ajaxUtility");
+function ajaxUtility() {
+    //error_log("ajaxUtility.................".plugin_dir_path(__FILE__) . '/service/BankService.php');
+    return require(plugin_dir_path(__FILE__) . '/utility/AjaxUtility.php');
 }
 
 
